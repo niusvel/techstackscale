@@ -18,11 +18,17 @@
         "footer_transparency_desc": "This site is maintained through affiliate links. They do not influence the mathematical calculation of costs."
     },
     "PriceCard": {
-        "best_value": "Best Value",
+        "best_value": "Most sold",
         "tagline": "Recommended hosting to start your first SaaS or blog.",
         "per_month": "/month",
         "get_offer": "Get Offer →",
-        "last_update": "Last update:"
+        "last_update": "Last update:",
+        "features": {
+            "websites": "{value} Websites",
+            "node_apps": "{value} Node.js Apps",
+            "storage": "{value} GB SSD Storage",
+            "emails": "{value} Email Accounts"
+        }
     },
     "Navbar": {
         "calculators": "Calculators",

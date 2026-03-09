@@ -18,11 +18,17 @@
         "footer_transparency_desc": "Ce site est maintenu via des liens d'affiliation. Ils n'influencent pas le calcul mathématique des coûts."
     },
     "PriceCard": {
-        "best_value": "Meilleure Valeur",
+        "best_value": "Le plus vendu",
         "tagline": "Hébergement recommandé pour lancer votre premier SaaS ou blog.",
         "per_month": "/mois",
         "get_offer": "Obtenir l'Offre →",
-        "last_update": "Dernière mise à jour :"
+        "last_update": "Dernière mise à jour :",
+        "features": {
+            "websites": "{value} Sites web",
+            "node_apps": "{value} Applications Node.js",
+            "storage": "{value} Go de stockage SSD",
+            "emails": "{value} Comptes e-mail"
+        }
     },
     "Navbar": {
         "calculators": "Calculateurs",

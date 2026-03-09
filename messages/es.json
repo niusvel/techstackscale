@@ -18,11 +18,17 @@
         "footer_transparency_desc": "Este sitio se mantiene mediante enlaces de afiliación. No influyen en el cálculo matemático de los costes."
     },
     "PriceCard": {
-        "best_value": "Mejor Valor",
+        "best_value": "Más vendido",
         "tagline": "Hosting recomendado para empezar tu primer SaaS o blog.",
         "per_month": "/mes",
         "get_offer": "Obtener Oferta →",
-        "last_update": "Última actualización:"
+        "last_update": "Última actualización:",
+        "features": {
+            "websites": "{value} Sitios web",
+            "node_apps": "{value} Aplicaciones Node.js",
+            "storage": "{value} GB de almacenamiento SSD",
+            "emails": "{value} Cuentas de correo"
+        }
     },
     "Navbar": {
         "calculators": "Calculadoras",

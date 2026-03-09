@@ -1,5 +1,8 @@
+import fs from 'fs';
 import { getTranslations } from 'next-intl/server';
 import PriceCard from './components/PriceCard';
+import path from 'path';
+import process from 'process';
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -8,6 +11,12 @@ interface Props {
 export default async function Home({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations('HomePage');
+
+  const filePath = path.join(process.cwd(), 'data', 'providers.json');
+  const fileContent = fs.readFileSync(filePath, 'utf8');
+  const jsonData = JSON.parse(fileContent);
+  const hostingerBestPlan = jsonData.plans.find((p: any) => p.is_best_seller === true)
+    || jsonData.plans[1];
 
   return (
     <div className="min-h-screen">
@@ -44,7 +53,16 @@ export default async function Home({ params }: Props) {
 
         {/* ToolsGrid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <PriceCard />
+          {hostingerBestPlan && (
+            <PriceCard
+              name={`Hostinger ${hostingerBestPlan.name}`}
+              price={hostingerBestPlan.price}
+              features={hostingerBestPlan.features}
+              affiliateLink="https://www.hostinger.com/techstackscale"
+              isBestValue={true}
+              lastUpdate={jsonData.last_update}
+            />
+          )}
 
           <div className="border-2 border-dashed border-slate-200 rounded-3xl p-8 flex flex-col items-center justify-center text-center opacity-60">
             <div className="w-12 h-12 bg-slate-100 rounded-full mb-4 flex items-center justify-center text-xl">☁️</div>

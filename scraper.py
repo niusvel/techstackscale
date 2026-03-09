@@ -2,86 +2,90 @@ import asyncio
 from playwright.async_api import async_playwright
 import json
 import os
-import sys
 from datetime import datetime
+import re
+import sys
 
 async def run_scraper():
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True) 
+        browser = await p.chromium.launch(headless=True)
         context = await browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            viewport={'width': 1920, 'height': 1080}
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
         )
         page = await context.new_page()
         
         try:
             print("Accessing Hostinger...")
             await page.goto("https://www.hostinger.es/hosting-web", wait_until="networkidle", timeout=60000)
-            await page.mouse.wheel(0, 500) 
-            await page.wait_for_timeout(5000)
             
-            print("Clearing page obstacles...")
-            try:
-                await page.click("button:has-text('Aceptar todo')", timeout=5000)
-            except:
-                await page.evaluate("""() => {
-                    const cookieBanner = document.querySelector('.qc-cmp2-container, #hs-eu-cookie-confirmation, [id*="cookie"]');
-                    if (cookieBanner) cookieBanner.remove();
-                    
-                    const kodeeChat = document.querySelector('.kodee-chat-container, [id*="kodee"]');
-                    if (kodeeChat) kodeeChat.remove();
-                    
-                    document.querySelectorAll('.modal-backdrop, .overlay').forEach(el => el.remove());
-                    document.body.style.overflow = 'auto';
-                }""")
+            cards_locator = page.locator(".h-pricing-card")
+            count = await cards_locator.count()
+            
+            plans_data = {}
+            # Definimos las claves para internacionalización según el orden que comentaste
+            feature_keys = ["websites", "node_apps", "storage", "emails", "domain"]
 
-            await page.wait_for_timeout(3000)
-
-            print("Searching for price...")
-            
-            price_locator = page.locator("span.price__amount").first
-            
-            try:
-                await price_locator.wait_for(state="visible", timeout=10000)
+            for i in range(count):
+                card = cards_locator.nth(i)
                 
-                raw_price = await price_locator.inner_text()
-                print(f"Captured text: {repr(raw_price)}")
-            except Exception as e:
-                print(f"Failed to locate main selector, trying alternative...")
-                raw_price = await page.get_by_text("2,49").first.inner_text()
+                title_el = card.locator(".h-pricing-card__title")
+                if await title_el.count() == 0: continue
+                title = (await title_el.first.inner_text()).strip()
+                
+                if title in plans_data: continue
 
-            clean_price_str = raw_price.replace('€', '').replace('/mes', '').replace('\n', '').replace(',', '.').strip()
-            
-            import re
-            clean_price_str = re.sub(r'[^\d.]', '', clean_price_str)
-            
-            current_price = float(clean_price_str)
-            
-            new_data = {
+                # IDENTIFICACIÓN DEL MÁS VENDIDO (Best Seller)
+                # Buscamos el div del badge y verificamos si contiene el texto bold
+                badge_locator = card.locator(".h-pricing-card__badge .h-t-body-2-bold")
+                is_best_seller = await badge_locator.count() > 0
+
+                # Precio y Features (mantenemos tu lógica precisa)
+                current_price = await card.locator(".h-dynamic-size-price").first.get_attribute("price")
+                
+                features_status = []
+                feature_keys = ["websites", "node_apps", "storage", "emails", "domain"]
+                feature_elements = await card.locator(".h-plan-feature__content .h-t-body-2").all()
+                
+                features_status = []
+                for idx in range(min(4, len(feature_elements))):
+                    feat_el = feature_elements[idx]
+                    is_disabled = await feat_el.evaluate("el => el.classList.contains('h-plan-feature__content--disabled')")
+                    
+                    # Extraer solo el valor numérico/clave
+                    text = (await feat_el.inner_text()).strip()
+                    value_match = re.search(r'(\d+)', text)
+                    value = value_match.group(1) if value_match else text
+
+                    features_status.append({
+                        "key": feature_keys[idx],
+                        "enabled": not is_disabled,
+                        "value": value if not is_disabled else None
+                    })
+
+                plans_data[title] = {
+                    "plan_id": title.lower().replace(" ", "_"),
+                    "name": title,
+                    "price": float(current_price) if current_price else 0.0,
+                    "is_best_seller": is_best_seller, # Nueva propiedad clave
+                    "features": features_status
+                }
+                if is_best_seller: print(f"⭐ {title} identified as Best Seller")
+
+            output = {
                 "last_update": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                "providers": [
-                    {
-                        "id": "hostinger",
-                        "name": "Hostinger",
-                        "base_price": current_price,
-                        "currency": "EUR",
-                        "affiliate_link": "https://www.hostinger.com/techstackscale"
-                    }
-                ]
+                "provider": "Hostinger",
+                "plans": list(plans_data.values())
             }
-            
+
             os.makedirs('data', exist_ok=True)
             with open('data/providers.json', 'w', encoding='utf-8') as f:
-                json.dump(new_data, f, indent=4, ensure_ascii=False)
+                json.dump(output, f, indent=4, ensure_ascii=False)
                 
-            print(f"Success! providers.json updated: {current_price}€")
+            print("Success! Data ready for internationalization.")
 
         except Exception as e:
-            print(f"Critical error: {e}")
-            await page.screenshot(path="error_debug.png")
-            print("Check error_debug.png to see why it failed.")
+            print(f"Scraper error: {e}")
             sys.exit(1)
-            
         finally:
             await browser.close()
 
