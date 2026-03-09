@@ -10,12 +10,7 @@
         "do_title": "DigitalOcean Droplets",
         "do_desc": "Bientôt : Comparaison VPS",
         "db_title": "Database TCO",
-        "db_desc": "Bientôt : Supabase vs PlanetScale",
-        "footer_tagline": "Outils indépendants pour les développeurs en quête d'efficacité technique et financière.",
-        "footer_methodology_title": "Méthodologie",
-        "footer_methodology_desc": "Nos bots parcourent les prix officiels tous les 7 jours pour garantir que vous ne preniez jamais de décision avec des données obsolètes.",
-        "footer_transparency_title": "Transparence",
-        "footer_transparency_desc": "Ce site est maintenu via des liens d'affiliation. Ils n'influencent pas le calcul mathématique des coûts."
+        "db_desc": "Bientôt : Supabase vs PlanetScale"
     },
     "PriceCard": {
         "best_value": "Le plus vendu",
@@ -24,14 +19,64 @@
         "get_offer": "Obtenir l'Offre →",
         "last_update": "Dernière mise à jour :",
         "features": {
-            "websites": "{value} Sites web",
-            "node_apps": "{value} Applications Node.js",
-            "storage": "{value} Go de stockage SSD",
-            "emails": "{value} Comptes e-mail"
+            "memory": "{value} Mémoire RAM",
+            "vcpu": "{value} vCPUs Dédiés",
+            "transfer": "{value} Transfert de Données",
+            "storage": "{value} Stockage SSD",
+            "node_apps": "{value}",
+            "websites": "{value} Sites Web",
+            "emails": "{value} Comptes E-mail",
+            "domain": "Nom de Domaine Gratuit"
         }
     },
     "Navbar": {
         "calculators": "Calculateurs",
         "compare": "Comparer"
+    },
+    "Footer": {
+        "affiliate_disclosure": "TechStackScale participe à des programmes d'affiliation. Nous pouvons recevoir une commission pour les achats effectués via nos liens, sans frais supplémentaires pour vous.",
+        "privacy_policy": "Politique de Confidentialité",
+        "terms_of_service": "Conditions d'Utilisation",
+        "cookies": "Politique de Cookies",
+        "all_rights_reserved": "© {year} TechStackScale. Tous droits réservés.",
+        "tagline": "Outils indépendants pour les développeurs en quête d'efficacité technique et financière.",
+        "methodology_title": "Méthodologie",
+        "methodology_desc": "Nos bots parcourent les prix officiels tous les 7 jours pour garantir que vous ne preniez jamais de décision avec des données obsolètes.",
+        "transparency_title": "Transparence",
+        "transparency_desc": "Ce site est maintenu via des liens d'affiliation. Ils n'influencent pas le calcul mathématique des coûts."
+    },
+    "Privacy": {
+        "title": "Politique de Confidentialité",
+        "last_updated": "Dernière mise à jour : Mars 2026",
+        "intro": "Chez TechStackScale, la confidentialité de nos visiteurs est l'une de nos principales priorités. Ce document décrit quels types d'informations sont collectés et comment nous les utilisons.",
+        "cookies_title": "Cookies et Liens d'Affiliation",
+        "cookies_text": "Nous utilisons des cookies tiers pour suivre les références d'affiliation. Lorsque vous cliquez sur un plan d'hébergement ou d'infrastructure, un cookie est généré permettant au fournisseur de savoir que vous venez de notre site. Cela ne vous coûte rien de plus et nous permet de maintenir le service.",
+        "data_title": "Collecte de Données",
+        "data_text": "Nous ne stockons pas de données personnelles des utilisateurs. Les scrapers collectent uniquement des informations publiques de prix provenant de fournisseurs officiels.",
+        "third_party_title": "Politiques de Tiers",
+        "third_party_text": "TechStackScale n'a aucun contrôle sur les cookies utilisés par des sites web tiers comme Hostinger ou DigitalOcean. Nous vous recommandons de consulter leurs Politiques de Confidentialité respectives."
+    },
+    "Terms": {
+        "title": "Conditions d'Utilisation",
+        "last_updated": "Dernière mise à jour : Mars 2026",
+        "section1_title": "1. Acceptation des Termes",
+        "section1_text": "En accédant à TechStackScale, vous acceptez de respecter ces termes. Si vous n'êtes pas d'accord avec une partie, vous ne devez pas utiliser notre site.",
+        "section2_title": "2. Exactitude des Informations",
+        "section2_text": "TechStackScale utilise des systèmes automatiques pour obtenir les prix de tiers. Bien que nous nous efforcions de maintenir les informations à jour, nous ne garantissons pas que les prix, caractéristiques ou disponibilités soient exacts à tout moment. Le prix final sera toujours celui affiché sur le site officiel du fournisseur.",
+        "section3_title": "3. Responsabilité",
+        "section3_text": "Nous ne sommes pas responsables des contrats, services ou problèmes techniques survenant entre l'utilisateur et les fournisseurs externes (Hostinger, DigitalOcean, etc.). TechStackScale est un outil purement informatif.",
+        "section4_title": "4. Modifications",
+        "section4_text": "Nous nous réservons le droit de modifier ces termes ou le contenu du site sans préavis."
+    },
+    "Cookies": {
+        "title": "Politique de Cookies",
+        "last_updated": "Dernière mise à jour : Mars 2026",
+        "intro": "TechStackScale utilise des cookies pour améliorer l'expérience utilisateur et gérer le programme d'affiliation.",
+        "what_are_title": "Que sont les cookies ?",
+        "what_are_text": "Les cookies sont de petits fichiers texte stockés sur votre appareil lorsque vous visitez des sites web. Ils nous aident à mémoriser vos préférences et à comprendre comment vous interagissez avec notre outil.",
+        "types_title": "Types de cookies que nous utilisons",
+        "types_text": "1. Cookies Techniques : Nécessaires au fonctionnement du site et au choix de la langue. 2. Cookies d'Affiliation : Cookies tiers (Hostinger, DigitalOcean) qui identifient que vous venez de notre site pour traiter d'éventuelles commissions.",
+        "control_title": "Contrôle des cookies",
+        "control_text": "Vous pouvez bloquer ou supprimer les cookies via les paramètres de votre navigateur. Veuillez noter que cela peut affecter la fonctionnalité des liens d'offre."
     }
 }

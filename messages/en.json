@@ -10,12 +10,7 @@
         "do_title": "DigitalOcean Droplets",
         "do_desc": "Coming Soon: VPS Comparison",
         "db_title": "Database TCO",
-        "db_desc": "Coming Soon: Supabase vs PlanetScale",
-        "footer_tagline": "Independent tools for developers seeking technical and financial efficiency.",
-        "footer_methodology_title": "Methodology",
-        "footer_methodology_desc": "Our bots crawl official prices every 7 days to ensure you never make a decision based on outdated data.",
-        "footer_transparency_title": "Transparency",
-        "footer_transparency_desc": "This site is maintained through affiliate links. They do not influence the mathematical calculation of costs."
+        "db_desc": "Coming Soon: Supabase vs PlanetScale"
     },
     "PriceCard": {
         "best_value": "Most sold",
@@ -24,14 +19,64 @@
         "get_offer": "Get Offer →",
         "last_update": "Last update:",
         "features": {
+            "memory": "{value} RAM Memory",
+            "vcpu": "{value} Dedicated vCPUs",
+            "transfer": "{value} Bandwidth Transfer",
+            "storage": "{value} SSD Storage",
+            "node_apps": "{value}",
             "websites": "{value} Websites",
-            "node_apps": "{value} Node.js Apps",
-            "storage": "{value} GB SSD Storage",
-            "emails": "{value} Email Accounts"
+            "emails": "{value} Email Accounts",
+            "domain": "Free Domain"
         }
     },
     "Navbar": {
         "calculators": "Calculators",
         "compare": "Compare"
+    },
+    "Footer": {
+        "affiliate_disclosure": "TechStackScale participates in affiliate programs. We may receive a commission for purchases made through our links, at no additional cost to you.",
+        "privacy_policy": "Privacy Policy",
+        "terms_of_service": "Terms of Service",
+        "cookies": "Cookie Policy",
+        "all_rights_reserved": "© {year} TechStackScale. All rights reserved.",
+        "tagline": "Independent tools for developers seeking technical and financial efficiency.",
+        "methodology_title": "Methodology",
+        "methodology_desc": "Our bots crawl official prices every 7 days to ensure you never make a decision based on outdated data.",
+        "transparency_title": "Transparency",
+        "transparency_desc": "This site is maintained through affiliate links. They do not influence the mathematical calculation of costs."
+    },
+    "Privacy": {
+        "title": "Privacy Policy",
+        "last_updated": "Last updated: March 2026",
+        "intro": "At TechStackScale, the privacy of our visitors is one of our top priorities. This document outlines what types of information are collected and how we use them.",
+        "cookies_title": "Cookies and Affiliate Links",
+        "cookies_text": "We use third-party cookies to track affiliate referrals. When you click on a hosting or infrastructure plan, a cookie is generated allowing the provider to know that you came from our site. This does not cost you anything extra and allows us to maintain the service.",
+        "data_title": "Data Collection",
+        "data_text": "We do not store personal user data. Scrapers only collect public pricing information from official providers.",
+        "third_party_title": "Third-Party Policies",
+        "third_party_text": "TechStackScale does not control the cookies used by third-party websites like Hostinger or DigitalOcean. We recommend you consult their respective Privacy Policies."
+    },
+    "Terms": {
+        "title": "Terms of Service",
+        "last_updated": "Last updated: March 2026",
+        "section1_title": "1. Acceptance of Terms",
+        "section1_text": "By accessing TechStackScale, you agree to comply with these terms. If you do not agree with any part, you must not use our site.",
+        "section2_title": "2. Accuracy of Information",
+        "section2_text": "TechStackScale uses automatic systems to obtain prices from third parties. Although we strive to keep information updated, we do not guarantee that prices, features, or availability are accurate at all times. The final price will always be the one shown on the provider's official website.",
+        "section3_title": "3. Responsibility",
+        "section3_text": "We are not responsible for contracts, services, or technical problems that arise between the user and external providers (Hostinger, DigitalOcean, etc.). TechStackScale is a purely informational tool.",
+        "section4_title": "4. Modifications",
+        "section4_text": "We reserve the right to modify these terms or the site content without prior notice."
+    },
+    "Cookies": {
+        "title": "Cookie Policy",
+        "last_updated": "Last updated: March 2026",
+        "intro": "TechStackScale uses cookies to improve user experience and manage the affiliate program.",
+        "what_are_title": "What are cookies?",
+        "what_are_text": "Cookies are small text files stored on your device when you visit websites. They help us remember your preferences and understand how you interact with our tool.",
+        "types_title": "Types of cookies we use",
+        "types_text": "1. Technical Cookies: Necessary for the site's operation and language selection. 2. Affiliate Cookies: Third-party cookies (Hostinger, DigitalOcean) that identify that you came from our site to process potential commissions.",
+        "control_title": "Cookie control",
+        "control_text": "You can block or delete cookies through your browser settings. Please note that this may affect the functionality of the offer links."
     }
 }

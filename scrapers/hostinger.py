@@ -6,7 +6,7 @@ from datetime import datetime
 import re
 import sys
 
-async def run_scraper():
+async def run_hostinger_scraper():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         context = await browser.new_context(
@@ -69,7 +69,7 @@ async def run_scraper():
                     "is_best_seller": is_best_seller, # Nueva propiedad clave
                     "features": features_status
                 }
-                if is_best_seller: print(f"⭐ {title} identified as Best Seller")
+                if is_best_seller: print(f"[BEST SELLER] {title} identified")
 
             output = {
                 "last_update": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -77,8 +77,10 @@ async def run_scraper():
                 "plans": list(plans_data.values())
             }
 
-            os.makedirs('data', exist_ok=True)
-            with open('data/providers.json', 'w', encoding='utf-8') as f:
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            output_path = os.path.join(current_dir, '..', 'data', 'hostinger.json')
+            os.makedirs(os.path.dirname(output_path), exist_ok=True)
+            with open(output_path, 'w', encoding='utf-8') as f:
                 json.dump(output, f, indent=4, ensure_ascii=False)
                 
             print("Success! Data ready for internationalization.")
@@ -90,4 +92,4 @@ async def run_scraper():
             await browser.close()
 
 if __name__ == "__main__":
-    asyncio.run(run_scraper())
+    asyncio.run(run_hostinger_scraper())

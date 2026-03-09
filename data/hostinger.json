@@ -1,0 +1,118 @@
+{
+    "last_update": "2026-03-09 13:28:46",
+    "provider": "Hostinger",
+    "plans": [
+        {
+            "plan_id": "single",
+            "name": "Single",
+            "price": 1.49,
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": null
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "10"
+                },
+                {
+                    "key": "emails",
+                    "enabled": true,
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "plan_id": "premium",
+            "name": "Premium",
+            "price": 2.49,
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "3"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": null
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "20"
+                },
+                {
+                    "key": "emails",
+                    "enabled": true,
+                    "value": "2"
+                }
+            ]
+        },
+        {
+            "plan_id": "business",
+            "name": "Business",
+            "price": 3.29,
+            "is_best_seller": true,
+            "features": [
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "50"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": true,
+                    "value": "5"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "50"
+                },
+                {
+                    "key": "emails",
+                    "enabled": true,
+                    "value": "5"
+                }
+            ]
+        },
+        {
+            "plan_id": "cloud_startup",
+            "name": "Cloud Startup",
+            "price": 6.99,
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "100"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": true,
+                    "value": "10"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "100"
+                },
+                {
+                    "key": "emails",
+                    "enabled": true,
+                    "value": "10"
+                }
+            ]
+        }
+    ]
+}

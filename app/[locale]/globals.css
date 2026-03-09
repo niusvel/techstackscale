@@ -1,16 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  /* Paleta profesional: Blanco humo y Azul profundo */
-  --background: #f8fafc;
-  --foreground: #0f172a;
-  --accent: #2563eb;
+  /* Paleta "Java Evolution": Profundo, Galáctico y Neon */
+  --background: #0a0b1e;
+  /* Deep Space Navy */
+  --foreground: #f8fafc;
+  --accent-purple: #8b5cf6;
+  /* More vibrant purple */
+  --accent-cyan: #22d3ee;
+  /* Cleaner neon cyan */
+  --accent-blue: #3b82f6;
+  /* New supplementary blue */
+  --accent-silver: #cbd5e1;
+  /* Metallic silver */
+  --card-bg: rgba(15, 23, 42, 0.7);
+  --card-border: rgba(148, 163, 184, 0.15);
+  --metallic-bg: #f1f5f9;
+  /* Soft metallic gray base */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-accent: var(--accent);
+  --color-purple: var(--accent-purple);
+  --color-cyan: var(--accent-cyan);
+  --color-blue: var(--accent-blue);
+  --color-silver: var(--accent-silver);
 }
 
 /* Eliminamos el bloque dark automático para mantener consistencia de marca */
@@ -18,11 +33,52 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  /* Un degradado sutil para que no sea un blanco plano aburrido */
   background-image:
-    radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.05) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, rgba(15, 23, 42, 0.02) 0px, transparent 50%);
+    radial-gradient(at 0% 0%, rgba(139, 92, 246, 0.2) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(34, 211, 238, 0.15) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(59, 130, 246, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(10, 11, 30, 1) 0px, transparent 50%);
+  background-attachment: fixed;
   min-height: 100vh;
+}
+
+/* Glassmorphism Utility */
+.glass {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
+}
+
+.glow-silver {
+  box-shadow: 0 0 20px rgba(203, 213, 225, 0.3);
+}
+
+.bg-metallic {
+  background: var(--metallic-bg);
+  background-image:
+    linear-gradient(to bottom, rgba(203, 213, 225, 0.2), transparent),
+    radial-gradient(at 0% 0%, rgba(139, 92, 246, 0.05) 0px, transparent 30%),
+    radial-gradient(at 100% 100%, rgba(34, 211, 238, 0.05) 0px, transparent 30%);
+  position: relative;
+}
+
+.bg-metallic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(148, 163, 184, 0.2), transparent);
 }
 
 /* Mejora de tipografía para lectura técnica */
@@ -31,4 +87,50 @@ h2,
 h3 {
   letter-spacing: -0.025em;
   font-weight: 800;
+  background: linear-gradient(to bottom right, #fff, #94a3b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@layer components {
+
+  /* Contenedor Grid: Asegura que todas las celdas tengan la misma altura */
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+    /* gap-8 */
+    align-items: stretch;
+    /* CLAVE: Fuerza a los hijos a estirarse */
+  }
+
+  @media (min-width: 768px) {
+    .pricing-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .pricing-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  /* La Card Individual: Se convierte en un contenedor flex vertical */
+  .price-card-v2 {
+    @apply rounded-3xl p-8 border border-white/10 flex flex-col h-full;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.5) 0%, rgba(15, 23, 42, 0.8) 100%);
+    backdrop-filter: blur(10px);
+  }
+
+  /* Sección Superior (Plan, Precio, Features): Crece para empujar el resto abajo */
+  .price-card-v2-content {
+    @apply flex-grow mb-10;
+  }
+
+  /* Sección Inferior (Botón, Fecha): Se queda abajo */
+  .price-card-v2-footer {
+    @apply mt-auto space-y-4;
+  }
 }

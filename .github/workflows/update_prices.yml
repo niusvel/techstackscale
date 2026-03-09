@@ -22,8 +22,10 @@ jobs:
           pip install -r requirements.txt
           playwright install chromium
 
-      - name: Run Scraper
-        run: python scraper.py
+      - name: Run All Scrapers
+        run: |
+          cd scrapers
+          python run_all.py
 
       - name: Upload debug screenshot on failure
         if: failure()
@@ -36,7 +38,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -f data/ || echo "There is no folder data yet"
+          git add -f data/*.json || echo "There is no folder data yet"
           if git diff --staged --quiet; then
             echo "There is no change on the price. Skipping commit."
           else
