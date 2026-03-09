@@ -1,0 +1,31 @@
+{
+    "HomePage": {
+        "title": "Scale your Stack with Real Data",
+        "description": "We analyze and compare infrastructure costs so you can make data-driven decisions.",
+        "cta_explore": "Explore Calculators",
+        "cta_compare": "View Comparisons",
+        "section_infra_title": "Recommended Infrastructure",
+        "section_infra_description": "Prices automatically updated via weekly scraping.",
+        "live_data": "LIVE DATA",
+        "do_title": "DigitalOcean Droplets",
+        "do_desc": "Coming Soon: VPS Comparison",
+        "db_title": "Database TCO",
+        "db_desc": "Coming Soon: Supabase vs PlanetScale",
+        "footer_tagline": "Independent tools for developers seeking technical and financial efficiency.",
+        "footer_methodology_title": "Methodology",
+        "footer_methodology_desc": "Our bots crawl official prices every 7 days to ensure you never make a decision based on outdated data.",
+        "footer_transparency_title": "Transparency",
+        "footer_transparency_desc": "This site is maintained through affiliate links. They do not influence the mathematical calculation of costs."
+    },
+    "PriceCard": {
+        "best_value": "Best Value",
+        "tagline": "Recommended hosting to start your first SaaS or blog.",
+        "per_month": "/month",
+        "get_offer": "Get Offer →",
+        "last_update": "Last update:"
+    },
+    "Navbar": {
+        "calculators": "Calculators",
+        "compare": "Compare"
+    }
+}

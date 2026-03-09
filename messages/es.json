@@ -1,0 +1,31 @@
+{
+    "HomePage": {
+        "title": "Escala tu Stack con Datos Reales",
+        "description": "Analizamos y comparamos costes de infraestructura para que tomes decisiones basadas en datos.",
+        "cta_explore": "Explorar Calculadoras",
+        "cta_compare": "Ver Comparativas",
+        "section_infra_title": "Infraestructura Recomendada",
+        "section_infra_description": "Precios actualizados automáticamente vía scraping semanal.",
+        "live_data": "LIVE DATA",
+        "do_title": "DigitalOcean Droplets",
+        "do_desc": "Próximamente: Comparativa de VPS",
+        "db_title": "Database TCO",
+        "db_desc": "Próximamente: Supabase vs PlanetScale",
+        "footer_tagline": "Herramientas independientes para desarrolladores que buscan eficiencia técnica y financiera.",
+        "footer_methodology_title": "Metodología",
+        "footer_methodology_desc": "Nuestros bots rastrean los precios oficiales cada 7 días para garantizar que nunca tomes una decisión con datos obsoletos.",
+        "footer_transparency_title": "Transparencia",
+        "footer_transparency_desc": "Este sitio se mantiene mediante enlaces de afiliación. No influyen en el cálculo matemático de los costes."
+    },
+    "PriceCard": {
+        "best_value": "Mejor Valor",
+        "tagline": "Hosting recomendado para empezar tu primer SaaS o blog.",
+        "per_month": "/mes",
+        "get_offer": "Obtener Oferta →",
+        "last_update": "Última actualización:"
+    },
+    "Navbar": {
+        "calculators": "Calculadoras",
+        "compare": "Comparar"
+    }
+}
