@@ -10,12 +10,7 @@
         "do_title": "DigitalOcean Droplets",
         "do_desc": "Próximamente: Comparativa de VPS",
         "db_title": "Database TCO",
-        "db_desc": "Próximamente: Supabase vs PlanetScale",
-        "footer_tagline": "Herramientas independientes para desarrolladores que buscan eficiencia técnica y financiera.",
-        "footer_methodology_title": "Metodología",
-        "footer_methodology_desc": "Nuestros bots rastrean los precios oficiales cada 7 días para garantizar que nunca tomes una decisión con datos obsoletos.",
-        "footer_transparency_title": "Transparencia",
-        "footer_transparency_desc": "Este sitio se mantiene mediante enlaces de afiliación. No influyen en el cálculo matemático de los costes."
+        "db_desc": "Próximamente: Supabase vs PlanetScale"
     },
     "PriceCard": {
         "best_value": "Más vendido",
@@ -24,14 +19,64 @@
         "get_offer": "Obtener Oferta →",
         "last_update": "Última actualización:",
         "features": {
+            "memory": "{value} Memoria RAM",
+            "vcpu": "{value} vCPUs Dedicadas",
+            "transfer": "{value} Transferencia",
             "websites": "{value} Sitios web",
             "node_apps": "{value} Aplicaciones Node.js",
             "storage": "{value} GB de almacenamiento SSD",
-            "emails": "{value} Cuentas de correo"
+            "emails": "{value} Cuentas de correo",
+            "domain": "Dominio Gratis"
         }
     },
     "Navbar": {
         "calculators": "Calculadoras",
         "compare": "Comparar"
+    },
+    "Footer": {
+        "affiliate_disclosure": "TechStackScale participa en programas de afiliación. Podemos recibir una comisión por las compras realizadas a través de nuestros enlaces, sin coste adicional para ti.",
+        "privacy_policy": "Política de Privacidad",
+        "terms_of_service": "Términos de Servicio",
+        "cookies": "Política de Cookies",
+        "all_rights_reserved": "© {year} TechStackScale. Todos los derechos reservados.",
+        "tagline": "Herramientas independientes para desarrolladores que buscan eficiencia técnica y financiera.",
+        "methodology_title": "Metodología",
+        "methodology_desc": "Nuestros bots rastrean los precios oficiales cada 7 días para garantizar que nunca tomes una decisión con datos obsoletos.",
+        "transparency_title": "Transparencia",
+        "transparency_desc": "Este sitio se mantiene mediante enlaces de afiliación. No influyen en el cálculo matemático de los costes."
+    },
+    "Privacy": {
+        "title": "Política de Privacidad",
+        "last_updated": "Última actualización: Marzo 2026",
+        "intro": "En TechStackScale, la privacidad de nuestros visitantes es una de nuestras principales prioridades. Este documento describe qué tipos de información se recogen y cómo los utilizamos.",
+        "cookies_title": "Cookies y Enlaces de Afiliación",
+        "cookies_text": "Utilizamos cookies de terceros para rastrear las referencias de afiliación. Cuando haces clic en un plan de hosting o infraestructura, se genera una cookie que permite al proveedor saber que vienes de nuestro sitio. Esto no tiene coste adicional para ti y nos permite mantener el servicio.",
+        "data_title": "Recogida de Datos",
+        "data_text": "No almacenamos datos personales de los usuarios. Los scrapers solo recogen información pública de precios de proveedores oficiales.",
+        "third_party_title": "Políticas de Terceros",
+        "third_party_text": "TechStackScale no tiene control sobre las cookies utilizadas por sitios web de terceros como Hostinger o DigitalOcean. Te recomendamos consultar sus respectivas Políticas de Privacidad."
+    },
+    "Terms": {
+        "title": "Términos de Servicio",
+        "last_updated": "Última actualización: Marzo 2026",
+        "section1_title": "1. Aceptación de los Términos",
+        "section1_text": "Al acceder a TechStackScale, aceptas cumplir con estos términos. Si no estás de acuerdo con alguna parte, no debes utilizar nuestro sitio.",
+        "section2_title": "2. Exactitud de la Información",
+        "section2_text": "TechStackScale utiliza sistemas automáticos para obtener precios de terceros. Aunque nos esforzamos por mantener la información actualizada, no garantizamos que los precios, características o disponibilidad sean exactos en todo momento. El precio final será siempre el que figure en el sitio oficial del proveedor.",
+        "section3_title": "3. Responsabilidad",
+        "section3_text": "No somos responsables de los contratos, servicios o problemas técnicos que surjan entre el usuario y los proveedores externos (Hostinger, DigitalOcean, etc.). TechStackScale es una herramienta puramente informativa.",
+        "section4_title": "4. Modificaciones",
+        "section4_text": "Nos reservamos el derecho de modificar estos términos o el contenido del sitio sin previo aviso."
+    },
+    "Cookies": {
+        "title": "Política de Cookies",
+        "last_updated": "Última actualización: Marzo 2026",
+        "intro": "TechStackScale utiliza cookies para mejorar la experiencia del usuario y gestionar el programa de afiliados.",
+        "what_are_title": "¿Qué son las cookies?",
+        "what_are_text": "Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo al visitar sitios web. Nos ayudan a recordar tus preferencias y a entender cómo interactúas con nuestra herramienta.",
+        "types_title": "Tipos de cookies que usamos",
+        "types_text": "1. Cookies Técnicas: Necesarias para el funcionamiento del sitio y la selección de idioma. 2. Cookies de Afiliación: Cookies de terceros (Hostinger, DigitalOcean) que identifican que procedes de nuestra web para procesar posibles comisiones.",
+        "control_title": "Control de cookies",
+        "control_text": "Puedes bloquear o eliminar las cookies a través de la configuración de tu navegador. Ten en cuenta que esto podría afectar a la funcionalidad de los enlaces de oferta."
     }
 }

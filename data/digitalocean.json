@@ -1,0 +1,244 @@
+{
+    "last_update": "2026-03-09 15:09:27",
+    "provider": "DigitalOcean",
+    "plans": [
+        {
+            "plan_id": "do_basic_512mib",
+            "name": "DigitalOcean Regular",
+            "price": 4.0,
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "512 MiB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "500 GiB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "10 GiB"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": true,
+                    "value": "Root Access"
+                }
+            ]
+        },
+        {
+            "plan_id": "do_basic_1gib",
+            "name": "DigitalOcean Regular",
+            "price": 6.0,
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "1 GiB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "1000 GiB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "25 GiB"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": true,
+                    "value": "Root Access"
+                }
+            ]
+        },
+        {
+            "plan_id": "do_basic_2gib",
+            "name": "DigitalOcean Regular",
+            "price": 12.0,
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "2 GiB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "2000 GiB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "50 GiB"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": true,
+                    "value": "Root Access"
+                }
+            ]
+        },
+        {
+            "plan_id": "do_basic_2gib",
+            "name": "DigitalOcean Regular",
+            "price": 18.0,
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "2 GiB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "3000 GiB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "60 GiB"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": true,
+                    "value": "Root Access"
+                }
+            ]
+        },
+        {
+            "plan_id": "do_basic_4gib",
+            "name": "DigitalOcean Regular",
+            "price": 24.0,
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "4 GiB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "4000 GiB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "80 GiB"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": true,
+                    "value": "Root Access"
+                }
+            ]
+        },
+        {
+            "plan_id": "do_basic_8gib",
+            "name": "DigitalOcean Regular",
+            "price": 48.0,
+            "currency": "USD",
+            "is_best_seller": true,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "8 GiB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "4"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "5000 GiB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "160 GiB"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": true,
+                    "value": "Root Access"
+                }
+            ]
+        },
+        {
+            "plan_id": "do_basic_16gib",
+            "name": "DigitalOcean Regular",
+            "price": 96.0,
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "16 GiB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "8"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "6000 GiB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "320 GiB"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": true,
+                    "value": "Root Access"
+                }
+            ]
+        }
+    ]
+}
