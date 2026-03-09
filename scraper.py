@@ -15,12 +15,12 @@ async def run_scraper():
         page = await context.new_page()
         
         try:
-            print("Accediendo a Hostinger...")
+            print("Accessing Hostinger...")
             # Aumentamos el tiempo de espera por si la red va lenta
             await page.goto("https://www.hostinger.es/hosting-web", wait_until="domcontentloaded", timeout=60000)
             
             # 1. ELIMINACIÓN AGRESIVA DE MODALES (Cookies y Chat)
-            print("Limpiando la página de obstáculos...")
+            print("Clearing page obstacles...")
             # Intentamos aceptar cookies por el método normal primero
             try:
                 await page.click("button:has-text('Aceptar todo')", timeout=5000)
@@ -42,7 +42,7 @@ async def run_scraper():
             await page.wait_for_timeout(3000)
 
             # 2. BÚSQUEDA DEL PRECIO
-            print("Buscando el precio...")
+            print("Searching for price...")
             
             # Definimos el locator (SIN await aquí)
             # Buscamos el contenedor que tiene la clase 'price__amount'
@@ -54,9 +54,9 @@ async def run_scraper():
                 
                 # Ahora sí usamos await para extraer el texto
                 raw_price = await price_locator.inner_text()
-                print(f"Texto capturado: {repr(raw_price)}")
+                print(f"Captured text: {repr(raw_price)}")
             except Exception as e:
-                print(f"Fallo al localizar el selector principal, intentando alternativa...")
+                print(f"Failed to locate main selector, trying alternative...")
                 # Alternativa: buscar por texto si el selector de clase falla
                 raw_price = await page.get_by_text("2,49").first.inner_text()
 
@@ -87,12 +87,12 @@ async def run_scraper():
             with open('data/providers.json', 'w', encoding='utf-8') as f:
                 json.dump(new_data, f, indent=4, ensure_ascii=False)
                 
-            print(f"¡Éxito!providers.json actualizado: {current_price}€")
+            print(f"Success! providers.json updated: {current_price}€")
 
         except Exception as e:
-            print(f"Error crítico: {e}")
+            print(f"Critical error: {e}")
             await page.screenshot(path="error_debug.png")
-            print("Revisa error_debug.png para ver por qué falló.")
+            print("Check error_debug.png to see why it failed.")
             
         finally:
             await browser.close()
