@@ -1,18 +1,24 @@
 {
-    "last_update": "2026-03-09 15:09:27",
+    "last_update": "2026-03-10 22:08:37",
     "provider": "DigitalOcean",
+    "affiliate_link": "https://www.digitalocean.com/pricing/droplets",
+    "verdicts": {
+        "es": "El estándar para desarrolladores. Gran ecosistema de herramientas y documentación.",
+        "en": "The standard for developers. Great ecosystem of tools and documentation.",
+        "fr": "La référence pour les développeurs. Grand écosystème d'outils et de documentation."
+    },
     "plans": [
         {
-            "plan_id": "do_basic_512mib",
-            "name": "DigitalOcean Regular",
-            "price": 4.0,
+            "plan_id": "digitalocean_regular_512_mb_1",
+            "name": "Regular 512 MB",
+            "price": 4,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
                 {
                     "key": "memory",
                     "enabled": true,
-                    "value": "512 MiB"
+                    "value": "512 MB"
                 },
                 {
                     "key": "vcpu",
@@ -22,31 +28,31 @@
                 {
                     "key": "transfer",
                     "enabled": true,
-                    "value": "500 GiB"
+                    "value": "500 GB"
                 },
                 {
                     "key": "storage",
                     "enabled": true,
-                    "value": "10 GiB"
+                    "value": "10 GB SSD"
                 },
                 {
                     "key": "node_apps",
-                    "enabled": true,
-                    "value": "Root Access"
+                    "enabled": false,
+                    "value": ""
                 }
             ]
         },
         {
-            "plan_id": "do_basic_1gib",
-            "name": "DigitalOcean Regular",
-            "price": 6.0,
+            "plan_id": "digitalocean_regular_1_gb_2",
+            "name": "Regular 1 GB",
+            "price": 6,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
                 {
                     "key": "memory",
                     "enabled": true,
-                    "value": "1 GiB"
+                    "value": "1 GB"
                 },
                 {
                     "key": "vcpu",
@@ -56,31 +62,31 @@
                 {
                     "key": "transfer",
                     "enabled": true,
-                    "value": "1000 GiB"
+                    "value": "1000 GB"
                 },
                 {
                     "key": "storage",
                     "enabled": true,
-                    "value": "25 GiB"
+                    "value": "25 GB SSD"
                 },
                 {
                     "key": "node_apps",
-                    "enabled": true,
-                    "value": "Root Access"
+                    "enabled": false,
+                    "value": ""
                 }
             ]
         },
         {
-            "plan_id": "do_basic_2gib",
-            "name": "DigitalOcean Regular",
-            "price": 12.0,
+            "plan_id": "digitalocean_regular_2_gb_3",
+            "name": "Regular 2 GB",
+            "price": 12,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
                 {
                     "key": "memory",
                     "enabled": true,
-                    "value": "2 GiB"
+                    "value": "2 GB"
                 },
                 {
                     "key": "vcpu",
@@ -90,31 +96,31 @@
                 {
                     "key": "transfer",
                     "enabled": true,
-                    "value": "2000 GiB"
+                    "value": "2000 GB"
                 },
                 {
                     "key": "storage",
                     "enabled": true,
-                    "value": "50 GiB"
+                    "value": "50 GB SSD"
                 },
                 {
                     "key": "node_apps",
-                    "enabled": true,
-                    "value": "Root Access"
+                    "enabled": false,
+                    "value": ""
                 }
             ]
         },
         {
-            "plan_id": "do_basic_2gib",
-            "name": "DigitalOcean Regular",
-            "price": 18.0,
+            "plan_id": "digitalocean_regular_2_gb_2vcpu_4",
+            "name": "Regular 2 GB 2vCPU",
+            "price": 18,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
                 {
                     "key": "memory",
                     "enabled": true,
-                    "value": "2 GiB"
+                    "value": "2 GB"
                 },
                 {
                     "key": "vcpu",
@@ -124,31 +130,31 @@
                 {
                     "key": "transfer",
                     "enabled": true,
-                    "value": "3000 GiB"
+                    "value": "3000 GB"
                 },
                 {
                     "key": "storage",
                     "enabled": true,
-                    "value": "60 GiB"
+                    "value": "60 GB SSD"
                 },
                 {
                     "key": "node_apps",
-                    "enabled": true,
-                    "value": "Root Access"
+                    "enabled": false,
+                    "value": ""
                 }
             ]
         },
         {
-            "plan_id": "do_basic_4gib",
-            "name": "DigitalOcean Regular",
-            "price": 24.0,
+            "plan_id": "digitalocean_regular_4_gb_5",
+            "name": "Regular 4 GB",
+            "price": 24,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
                 {
                     "key": "memory",
                     "enabled": true,
-                    "value": "4 GiB"
+                    "value": "4 GB"
                 },
                 {
                     "key": "vcpu",
@@ -158,31 +164,31 @@
                 {
                     "key": "transfer",
                     "enabled": true,
-                    "value": "4000 GiB"
+                    "value": "4000 GB"
                 },
                 {
                     "key": "storage",
                     "enabled": true,
-                    "value": "80 GiB"
+                    "value": "80 GB SSD"
                 },
                 {
                     "key": "node_apps",
-                    "enabled": true,
-                    "value": "Root Access"
+                    "enabled": false,
+                    "value": ""
                 }
             ]
         },
         {
-            "plan_id": "do_basic_8gib",
-            "name": "DigitalOcean Regular",
-            "price": 48.0,
+            "plan_id": "digitalocean_regular_8_gb_6",
+            "name": "Regular 8 GB",
+            "price": 48,
             "currency": "USD",
             "is_best_seller": true,
             "features": [
                 {
                     "key": "memory",
                     "enabled": true,
-                    "value": "8 GiB"
+                    "value": "8 GB"
                 },
                 {
                     "key": "vcpu",
@@ -192,31 +198,31 @@
                 {
                     "key": "transfer",
                     "enabled": true,
-                    "value": "5000 GiB"
+                    "value": "5000 GB"
                 },
                 {
                     "key": "storage",
                     "enabled": true,
-                    "value": "160 GiB"
+                    "value": "160 GB SSD"
                 },
                 {
                     "key": "node_apps",
-                    "enabled": true,
-                    "value": "Root Access"
+                    "enabled": false,
+                    "value": ""
                 }
             ]
         },
         {
-            "plan_id": "do_basic_16gib",
-            "name": "DigitalOcean Regular",
-            "price": 96.0,
+            "plan_id": "digitalocean_regular_16_gb_7",
+            "name": "Regular 16 GB",
+            "price": 96,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
                 {
                     "key": "memory",
                     "enabled": true,
-                    "value": "16 GiB"
+                    "value": "16 GB"
                 },
                 {
                     "key": "vcpu",
@@ -226,17 +232,17 @@
                 {
                     "key": "transfer",
                     "enabled": true,
-                    "value": "6000 GiB"
+                    "value": "6000 GB"
                 },
                 {
                     "key": "storage",
                     "enabled": true,
-                    "value": "320 GiB"
+                    "value": "320 GB SSD"
                 },
                 {
                     "key": "node_apps",
-                    "enabled": true,
-                    "value": "Root Access"
+                    "enabled": false,
+                    "value": ""
                 }
             ]
         }

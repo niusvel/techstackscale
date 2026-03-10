@@ -4,17 +4,14 @@
         "description": "Nous analysons et comparons les coûts d'infrastructure pour des décisions basées sur les données.",
         "cta_explore": "Explorer les Calculateurs",
         "cta_compare": "Voir les Comparaisons",
-        "section_infra_title": "Infrastructure Recommandée",
+        "section_infra_title": "Infrastructure Relevante",
         "section_infra_description": "Prix mis à jour automatiquement via un scraping hebdomadaire.",
         "live_data": "LIVE DATA",
-        "do_title": "DigitalOcean Droplets",
-        "do_desc": "Bientôt : Comparaison VPS",
         "db_title": "Database TCO",
         "db_desc": "Bientôt : Supabase vs PlanetScale"
     },
     "PriceCard": {
-        "best_value": "Le plus vendu",
-        "tagline": "Hébergement recommandé pour lancer votre premier SaaS ou blog.",
+        "best_value": "Pertinent",
         "per_month": "/mois",
         "get_offer": "Obtenir l'Offre →",
         "last_update": "Dernière mise à jour :",
@@ -22,11 +19,10 @@
             "memory": "{value} Mémoire RAM",
             "vcpu": "{value} vCPUs Dédiés",
             "transfer": "{value} Transfert de Données",
-            "storage": "{value} Stockage SSD",
+            "storage": "{value} Stockage",
             "node_apps": "{value}",
             "websites": "{value} Sites Web",
-            "emails": "{value} Comptes E-mail",
-            "domain": "Nom de Domaine Gratuit"
+            "emails": "{value} Comptes E-mail"
         }
     },
     "Navbar": {
@@ -38,7 +34,6 @@
         "privacy_policy": "Politique de Confidentialité",
         "terms_of_service": "Conditions d'Utilisation",
         "cookies": "Politique de Cookies",
-        "all_rights_reserved": "© {year} TechStackScale. Tous droits réservés.",
         "tagline": "Outils indépendants pour les développeurs en quête d'efficacité technique et financière.",
         "methodology_title": "Méthodologie",
         "methodology_desc": "Nos bots parcourent les prix officiels tous les 7 jours pour garantir que vous ne preniez jamais de décision avec des données obsolètes.",

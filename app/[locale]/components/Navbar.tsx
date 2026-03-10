@@ -2,7 +2,7 @@ import Link from 'next/link';
 import LanguagePicker from './LanguagePicker';
 import { getTranslations } from 'next-intl/server';
 
-export default async function Navbar() {
+export default async function PageNavbar() {
     const t = await getTranslations('Navbar');
     return (
         <nav className="glass sticky top-0 z-50 border-b-0">
