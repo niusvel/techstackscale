@@ -76,5 +76,4 @@ pw-browsers/
 .next/
 node_modules/
 venv/
-data/providers.json
 __pycache__/

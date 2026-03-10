@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import Navbar from "./components/Navbar";
+import PageNavbar from "./components/Navbar";
+import PageFooter from "./components/PageFooter";
+
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,11 +28,15 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={`${inter.className} antialiased`}>
         <NextIntlClientProvider messages={messages} locale={locale}>
-          <Navbar />
+          <PageNavbar />
 
           <main>
             {children}
           </main>
+
+          <div className="bg-metallic">
+            <PageFooter />
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -4,17 +4,14 @@
         "description": "We analyze and compare infrastructure costs so you can make data-driven decisions.",
         "cta_explore": "Explore Calculators",
         "cta_compare": "View Comparisons",
-        "section_infra_title": "Recommended Infrastructure",
+        "section_infra_title": "Relevant Infrastructure",
         "section_infra_description": "Prices automatically updated via weekly scraping.",
         "live_data": "LIVE DATA",
-        "do_title": "DigitalOcean Droplets",
-        "do_desc": "Coming Soon: VPS Comparison",
         "db_title": "Database TCO",
         "db_desc": "Coming Soon: Supabase vs PlanetScale"
     },
     "PriceCard": {
-        "best_value": "Most sold",
-        "tagline": "Recommended hosting to start your first SaaS or blog.",
+        "best_value": "Relevant",
         "per_month": "/month",
         "get_offer": "Get Offer →",
         "last_update": "Last update:",
@@ -22,11 +19,10 @@
             "memory": "{value} RAM Memory",
             "vcpu": "{value} Dedicated vCPUs",
             "transfer": "{value} Bandwidth Transfer",
-            "storage": "{value} SSD Storage",
+            "storage": "{value} Storage",
             "node_apps": "{value}",
             "websites": "{value} Websites",
-            "emails": "{value} Email Accounts",
-            "domain": "Free Domain"
+            "emails": "{value} Email Accounts"
         }
     },
     "Navbar": {
@@ -38,7 +34,6 @@
         "privacy_policy": "Privacy Policy",
         "terms_of_service": "Terms of Service",
         "cookies": "Cookie Policy",
-        "all_rights_reserved": "© {year} TechStackScale. All rights reserved.",
         "tagline": "Independent tools for developers seeking technical and financial efficiency.",
         "methodology_title": "Methodology",
         "methodology_desc": "Our bots crawl official prices every 7 days to ensure you never make a decision based on outdated data.",

@@ -1,9 +1,15 @@
 {
-    "last_update": "2026-03-09 13:28:46",
+    "last_update": "2026-03-10 22:00:17",
     "provider": "Hostinger",
+    "affiliate_link": "https://www.hostinger.com/es/hosting-web",
+    "verdicts": {
+        "es": "La opción más sencilla. Panel intuitivo y soporte 24/7 para quienes no quieren complicaciones.",
+        "en": "The simplest option. Intuitive panel and 24/7 support for those who don't want complications.",
+        "fr": "L'option la plus simple. Panneau intuitif et support 24/7 pour ceux qui ne veulent pas de complications."
+    },
     "plans": [
         {
-            "plan_id": "single",
+            "plan_id": "hostinger_single_1",
             "name": "Single",
             "price": 1.49,
             "is_best_seller": false,
@@ -21,17 +27,18 @@
                 {
                     "key": "storage",
                     "enabled": true,
-                    "value": "10"
+                    "value": "10 GB SSD"
                 },
                 {
                     "key": "emails",
                     "enabled": true,
                     "value": "1"
                 }
-            ]
+            ],
+            "currency": "EUR"
         },
         {
-            "plan_id": "premium",
+            "plan_id": "hostinger_premium_2",
             "name": "Premium",
             "price": 2.49,
             "is_best_seller": false,
@@ -49,17 +56,18 @@
                 {
                     "key": "storage",
                     "enabled": true,
-                    "value": "20"
+                    "value": "20 GB SSD"
                 },
                 {
                     "key": "emails",
                     "enabled": true,
                     "value": "2"
                 }
-            ]
+            ],
+            "currency": "EUR"
         },
         {
-            "plan_id": "business",
+            "plan_id": "hostinger_business_3",
             "name": "Business",
             "price": 3.29,
             "is_best_seller": true,
@@ -77,17 +85,18 @@
                 {
                     "key": "storage",
                     "enabled": true,
-                    "value": "50"
+                    "value": "50 GB SSD"
                 },
                 {
                     "key": "emails",
                     "enabled": true,
                     "value": "5"
                 }
-            ]
+            ],
+            "currency": "EUR"
         },
         {
-            "plan_id": "cloud_startup",
+            "plan_id": "hostinger_cloud_startup_4",
             "name": "Cloud Startup",
             "price": 6.99,
             "is_best_seller": false,
@@ -105,14 +114,15 @@
                 {
                     "key": "storage",
                     "enabled": true,
-                    "value": "100"
+                    "value": "100 GB SSD"
                 },
                 {
                     "key": "emails",
                     "enabled": true,
                     "value": "10"
                 }
-            ]
+            ],
+            "currency": "EUR"
         }
     ]
 }
