@@ -5,7 +5,7 @@ export default async function PageFooter() {
     const tf = await getTranslations('Footer');
 
     return (
-        <footer className="bg-[#0b0c21] border-t border-white/10 pb-10 rounded-t-[0.5rem] backdrop-blur-xl">
+        <footer className="bg-background border-t border-white/10 pb-10 rounded-t-[0.5rem] backdrop-blur-xl">
             <div className="max-w-7xl mx-auto px-4">
                 {/* Enlaces Legales y Copyright al principio */}
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400 border-b border-white/5 py-6 mb-5">

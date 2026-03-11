@@ -1,0 +1,47 @@
+{
+    "description": "Hostinger est un fournisseur mondial d'hébergement web reconnu pour ses plans très compétitifs, ses excellentes performances et sa facilité d'utilisation. Il vise à démocratiser l'accès au web, le rendant idéal aussi bien pour les débutants que pour les développeurs expérimentés. Ces dernières années, il a fortement intégré l'Intelligence Artificielle (IA) dans ses outils pour simplifier la création et la gestion de sites web.",
+    "services": [
+        {
+            "title": "Hébergement Web Mutualisé",
+            "info": "L'option la plus économique et populaire. Plusieurs sites web partagent les ressources d'un même serveur. Idéal pour les blogs personnels, les sites de petites entreprises et les portfolios."
+        },
+        {
+            "title": "Hébergement WordPress Infogéré",
+            "info": "Optimisé spécifiquement pour le CMS WordPress, améliorant considérablement sa vitesse et sa sécurité. Idéal pour tout site web construit sur WordPress, des blogs aux boutiques WooCommerce."
+        },
+        {
+            "title": "Hébergement Cloud",
+            "info": "Combine la simplicité de l'hébergement mutualisé avec la puissance et les ressources dédiées d'un serveur virtuel. Idéal pour les sites web à fort trafic, les grandes boutiques en ligne et les projets en forte croissance."
+        },
+        {
+            "title": "VPS (Serveur Privé Virtuel)",
+            "info": "Fournit des ressources dédiées et un contrôle total (accès root) dans un environnement virtualisé. Idéal pour les développeurs, les administrateurs système et les projets nécessitant des configurations de serveur personnalisées ou des logiciels spécifiques."
+        },
+        {
+            "title": "Hébergement pour Agences / Revendeurs",
+            "info": "Conçu pour les professionnels gérant plusieurs sites web de clients. Idéal pour les développeurs web, les agences de marketing et les designers indépendants."
+        }
+    ],
+    "sections": [
+        {
+            "title": "Créateur de Sites Web avec IA",
+            "info": "Permet de créer des sites web réactifs à partir de zéro en quelques minutes par glisser-déposer, sans aucune compétence en codage requise."
+        },
+        {
+            "title": "Performance et Vitesse",
+            "info": "Ils utilisent des disques SSD NVMe, des serveurs web LiteSpeed (LSWS) et un réseau de diffusion de contenu (CDN) mondial interne pour garantir des temps de chargement ultra-rapides."
+        },
+        {
+            "title": "Domaine et Migration Gratuits",
+            "info": "La plupart des plans annuels incluent un nom de domaine gratuit pour la première année, ainsi que la protection de la vie privée (WHOIS). Ils proposent également un outil de migration de site web automatisé et gratuit."
+        },
+        {
+            "title": "Sécurité Complète",
+            "info": "Certificats SSL gratuits et illimités, protection de base Cloudflare, scanner de logiciels malveillants, protection avancée contre les attaques DDoS et sauvegardes hebdomadaires ou quotidiennes."
+        },
+        {
+            "title": "hPanel",
+            "info": "Contrairement au cPanel traditionnel, Hostinger a développé son propre panneau, qui est beaucoup plus visuel, rapide et facile à utiliser pour les débutants."
+        }
+    ]
+}
