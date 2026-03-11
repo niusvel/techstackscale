@@ -25,6 +25,11 @@
             "emails": "{value} Cuentas de correo"
         }
     },
+    "AdminEdit": {
+        "get_admin_password": "Introduce la contraseña de administrador:",
+        "verify_password": "Verificando credenciales",
+        "access_denied": "Acceso denegado"
+    },
     "Navbar": {
         "calculators": "Calculadoras",
         "compare": "Comparar"
