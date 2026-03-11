@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getTranslations, getMessages } from 'next-intl/server';
+import { Analytics } from '@vercel/analytics/react';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import PageNavbar from "./components/Navbar";
 import PageFooter from "./components/PageFooter";
 
@@ -89,6 +91,8 @@ export default async function RootLayout({
             })
           }}
         />
+        <Analytics />
+        <GoogleAnalytics gaId="G-9D5KFZ39QX" />
       </body>
     </html>
   );
