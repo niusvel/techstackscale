@@ -4,7 +4,7 @@ export default async function PageHeader() {
     const t = await getTranslations('HomePage');
 
     return (
-        <div className="bg-[#0a0b1e] rounded-b-[0.5rem] mb-10 shadow-2xl">
+        <div className="bg-background rounded-b-[0.5rem] mb-10 shadow-2xl">
             <header className="max-w-7xl mx-auto px-4 pt-10 pb-10 text-center">
                 <h1 className="text-4xl font-extrabold mb-6 tracking-tight text-white">
                     {t('title')}

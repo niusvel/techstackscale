@@ -24,11 +24,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     };
 }
 
+import ProviderSummary from '../../components/ProviderSummary';
+
 export default async function ProviderPage({ params }: { params: Promise<{ locale: string, provider: string }> }) {
     const { locale, provider } = await params;
     const t = await getTranslations({ locale, namespace: 'ProviderPage' });
+    const tpc = await getTranslations({ locale, namespace: 'PriceCard' });
 
-    // 1. Intentar leer el archivo JSON del proveedor
+    // ...
     const filePath = path.join(process.cwd(), 'data', `${provider}.json`);
 
     if (!fs.existsSync(filePath)) {
@@ -39,35 +42,42 @@ export default async function ProviderPage({ params }: { params: Promise<{ local
     const data = JSON.parse(fileContent);
 
     return (
-        <main className="min-h-screen bg-slate-950 text-white p-8">
+        <main className="min-h-screen bg-background text-white p-8">
             <div className="max-w-4xl mx-auto">
-                <Link
-                    href="/"
-                    className="inline-flex items-center text-slate-400 hover:text-white mb-8 transition-colors"
-                >
-                    <span className="mr-2">←</span> {t('back_to_comparison')}
-                </Link>
 
                 {/* Encabezado con Logo y Nombre */}
-                <header className="mb-12 border-b border-slate-800 pb-8">
-                    <h1 className="text-4xl font-bold mb-4">{data.name}</h1>
-                    <p className="text-xl text-slate-400">{t('analysis_subtitle', { name: data.name })}</p>
+                <header className="mb-8 flex justify-between sticky top-16 pt-6 -mt-6 z-10 bg-background/95 backdrop-blur-sm shadow-[0_10px_20px_-10px_rgba(0,43,54,1)] pb-4">
+                    <Link
+                        href="/"
+                        className="inline-flex items-center text-slate-400 hover:text-white mb-8 transition-colors"
+                    >
+                        <span className="mr-2">←</span> {t('back_to_comparison')}
+                    </Link>
+                    <h1 className="text-4xl font-bold mb-4">{provider}</h1>
                 </header>
 
-                {/* Sección del Veredicto (SEO GOLD) */}
-                <section className="mb-12 bg-slate-900/50 p-6 rounded-xl border border-blue-500/30">
-                    <h2 className="text-2xl font-semibold mb-4 text-blue-400">{t('our_verdict')}</h2>
-                    <p className="leading-relaxed text-lg italic">"{data.verdicts[locale]}"</p>
-                </section>
+                {/* Añadimos el componente ProviderSummary dinámico aquí */}
+                <ProviderSummary provider={provider} locale={locale} />
 
                 {/* Lista completa de Planes */}
                 <section>
                     <h2 className="text-2xl font-semibold mb-6">{t('available_plans')}</h2>
                     <div className="flex flex-wrap gap-3 mt-3">
                         {data.plans.map((plan: any, index: number) => (
-                            <div key={index} className="bg-slate-900 w-full p-6 rounded-lg flex justify-between items-center border border-slate-800 hover:border-blue-500/50 transition-all group">
+                            <a 
+                                key={index} 
+                                href={data.affiliate_link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`bg-white/5 w-full p-6 rounded-lg flex justify-between items-center border hover:border-cyan/50 transition-all group cursor-pointer ${plan.is_best_seller ? 'border-red-500 shadow-[0_0_15px_rgba(239,68,68,0.3)]' : 'border-white/10'}`}
+                            >
                                 <div>
-                                    <h3 className="font-bold text-xl text-white group-hover:text-blue-400 transition-colors">{plan.name}</h3>
+                                    <div className="flex items-center gap-2 justify-between align-center">
+                                        <h3 className="font-bold text-xl text-white group-hover:text-cyan transition-colors">
+                                            {plan.name}
+                                        </h3>
+                                        {plan.is_best_seller && <span className="ml-3 text-[10px] font-black tracking-widest uppercase bg-red-500/20 text-red-400 px-2 py-1 rounded-full border border-red-500/30">{tpc('best_value')}</span>}
+                                    </div>
                                     <div className="flex flex-wrap gap-3 mt-3">
                                         {plan.features
                                             .filter((feature: any) => feature.enabled)
@@ -75,7 +85,7 @@ export default async function ProviderPage({ params }: { params: Promise<{ local
                                                 return (
                                                     <span
                                                         key={fIndex}
-                                                        className="text-sm text-slate-400 bg-slate-800/50 px-3 py-1 rounded-full border border-slate-700/50"
+                                                        className="text-sm text-slate-400 bg-white/5 px-3 py-1 rounded-full border border-white/10"
                                                     >
                                                         {t(`features.${feature.key}`, { value: feature.value })}
                                                     </span>
@@ -84,10 +94,12 @@ export default async function ProviderPage({ params }: { params: Promise<{ local
                                     </div>
                                 </div>
                                 <div className="text-right">
-                                    <span className="text-3xl font-mono font-bold text-green-400">{plan.price}</span>
+                                    <span className="text-3xl font-mono font-bold text-cyan drop-shadow-[0_0_8px_rgba(42,161,152,0.3)]">
+                                        {plan.currency === 'USD' ? '$' : ''}{Number(plan.price).toFixed(2)}{plan.currency !== 'USD' ? '€' : ''}
+                                    </span>
                                     <p className="text-xs text-slate-500 uppercase tracking-widest">{t('per_month')}</p>
                                 </div>
-                            </div>
+                            </a>
                         ))}
                     </div>
                 </section>

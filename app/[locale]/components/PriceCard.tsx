@@ -11,13 +11,14 @@ const CheckIcon = ({ className }: { className?: string }) => (
 export default function PriceCard({ name, price, currency, features, affiliateLink, isBestValue, lastUpdate, provider, verdict }: any) {
     const t = useTranslations('PriceCard');
 
-    // Mapeo simple de símbolos (opcional, podrías recibir el símbolo directo)
     const currencySymbol = currency === 'USD' ? '$' : '€';
+    const formattedPrice = Number(price).toFixed(2);
+    const displayPrice = currency === 'USD' ? `${currencySymbol}${formattedPrice}` : `${formattedPrice}${currencySymbol}`;
 
     return (
-        <div className={`relative h-full flex flex-col rounded-2xl overflow-hidden glass transition-all duration-300 ${isBestValue
-            ? 'border-silver/40 shadow-lg shadow-silver/5 scale-105 z-10 bg-slate-900/60'
-            : 'border-white/10 bg-slate-900/40'
+        <div className={`relative h-full flex flex-col rounded-2xl overflow-hidden transition-all duration-300 ${isBestValue
+            ? 'border-silver/40 shadow-lg shadow-silver/5 scale-105 z-10 bg-background'
+            : 'border-white/10 bg-background'
             }`}>
 
             {isBestValue && (
@@ -35,28 +36,12 @@ export default function PriceCard({ name, price, currency, features, affiliateLi
             <div className="pb-6 px-6 pt-2 flex flex-col flex-grow relative z-10">
                 <header className="mb-4">
                     <p className="text-cyan text-[10px] font-bold uppercase tracking-widest mb-1 opacity-80">{provider}</p>
-                    <div className="relative group inline-block">
-                        <Link
-                            href={`/cloud/${provider}`}
-                            className="text-lg font-bold text-white leading-tight hover:text-cyan transition-colors"
-                        >
-                            <h3 className="text-lg font-bold leading-tight">{name}</h3>
-                        </Link>
-
-                        {/* El Tooltip */}
-                        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block z-50">
-                            <div className="bg-slate-800 text-white text-[10px] py-1 px-2 rounded border border-slate-700 whitespace-nowrap shadow-xl">
-                                {t('view_all_plans')}
-                                {/* Triangulito del tooltip */}
-                                <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-800"></div>
-                            </div>
-                        </div>
-                    </div>
+                    <h3 className="text-lg font-bold leading-tight">{name}</h3>
                 </header>
 
                 <div className="mb-6 flex items-baseline gap-1">
                     <span className="text-4xl font-black text-cyan drop-shadow-[0_0_12px_rgba(6,182,212,0.5)]">
-                        {price}{currencySymbol}
+                        {displayPrice}
                     </span>
                     <span className="text-slate-400 text-xs font-semibold uppercase">{t('per_month')}</span>
                 </div>
@@ -80,18 +65,32 @@ export default function PriceCard({ name, price, currency, features, affiliateLi
                         "{verdict}"
                     </p>
                 </div>
-                    <a
-                        href={affiliateLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`flex items-center justify-center w-full text-center text-sm font-bold py-3 px-4 rounded-xl transition-all active:scale-95 border ${isBestValue
-                            ? 'bg-silver text-slate-950 border-silver hover:bg-white hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]'
-                            : 'bg-white/10 hover:bg-white/20 text-white border-white/10'
-                            }`}
-                    >
-                        {t('get_offer')}
-                        <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" />
-                    </a>
+                    <div className="flex flex-col gap-2">
+                        <a
+                            href={affiliateLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`flex items-center justify-center w-full text-center text-sm font-bold py-3 px-4 rounded-xl transition-all active:scale-95 border ${isBestValue
+                                ? 'bg-silver text-slate-950 border-silver hover:bg-white hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]'
+                                : 'bg-white/10 hover:bg-white/20 text-white border-white/10'
+                                }`}
+                        >
+                            {t('get_offer')}
+                            <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" />
+                        </a>
+
+                        <a
+                            href={`/cloud/${provider}`}
+                            target="_self"
+                            className={`flex items-center justify-center w-full text-center text-sm font-bold py-3 px-4 rounded-xl transition-all active:scale-95 border ${isBestValue
+                                ? 'bg-silver text-slate-950 border-silver hover:bg-white hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]'
+                                : 'bg-white/10 hover:bg-white/20 text-white border-white/10'
+                                }`}
+                        >
+                            {t('view_all_plans')}
+                            <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" />
+                        </a>
+                    </div>
 
                     <footer className="mt-5 border-t border-white/10 pt-4">
                         <p className="text-[9px] text-slate-500 text-center uppercase tracking-widest font-medium">

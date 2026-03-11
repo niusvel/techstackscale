@@ -11,7 +11,7 @@
         {
             "plan_id": "digitalocean_regular_512_mb_1",
             "name": "Regular 512 MB",
-            "price": 4,
+            "price": 4.00,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
@@ -45,7 +45,7 @@
         {
             "plan_id": "digitalocean_regular_1_gb_2",
             "name": "Regular 1 GB",
-            "price": 6,
+            "price": 6.00,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
@@ -79,7 +79,7 @@
         {
             "plan_id": "digitalocean_regular_2_gb_3",
             "name": "Regular 2 GB",
-            "price": 12,
+            "price": 12.00,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
@@ -113,7 +113,7 @@
         {
             "plan_id": "digitalocean_regular_2_gb_2vcpu_4",
             "name": "Regular 2 GB 2vCPU",
-            "price": 18,
+            "price": 18.00,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
@@ -147,7 +147,7 @@
         {
             "plan_id": "digitalocean_regular_4_gb_5",
             "name": "Regular 4 GB",
-            "price": 24,
+            "price": 24.00,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
@@ -181,7 +181,7 @@
         {
             "plan_id": "digitalocean_regular_8_gb_6",
             "name": "Regular 8 GB",
-            "price": 48,
+            "price": 48.00,
             "currency": "USD",
             "is_best_seller": true,
             "features": [
@@ -215,7 +215,7 @@
         {
             "plan_id": "digitalocean_regular_16_gb_7",
             "name": "Regular 16 GB",
-            "price": 96,
+            "price": 96.00,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
