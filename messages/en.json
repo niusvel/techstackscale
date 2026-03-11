@@ -25,6 +25,11 @@
             "emails": "{value} Email Accounts"
         }
     },
+    "AdminEdit": {
+        "get_admin_password": "Get admin password:",
+        "verify_password": "Verifying credentials",
+        "access_denied": "Access denied"
+    },
     "Navbar": {
         "calculators": "Calculators",
         "compare": "Compare"
