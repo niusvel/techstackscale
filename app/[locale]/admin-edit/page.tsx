@@ -1,7 +1,11 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function AdminEdit() {
+    const t = useTranslations('AdminEdit');
+
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [provider, setProvider] = useState('Proveedor');
     const [plans, setPlans] = useState([
         {
@@ -24,6 +28,20 @@ export default function AdminEdit() {
         en: '',
         fr: ''
     });
+
+    useEffect(() => {
+        const pass = prompt(t('get_admin_password'));
+        if (pass === process.env.NEXT_PUBLIC_ADMIN_PASSWORD) {
+            setIsAuthenticated(true);
+        } else {
+            alert(t('access_denied'));
+            window.location.href = "/";
+        }
+    }, []);
+
+    if (!isAuthenticated) {
+        return <div className="min-h-screen bg-slate-950 flex items-center justify-center text-white font-mono">{`${t('verify_password')}...`}</div>;
+    }
 
     // CARGAR JSON
     const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {

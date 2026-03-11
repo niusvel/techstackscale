@@ -25,6 +25,11 @@
             "emails": "{value} Comptes E-mail"
         }
     },
+    "AdminEdit": {
+        "get_admin_password": "Saisissez le mot de passe administrateur:",
+        "verify_password": "Vérification des identifiants",
+        "access_denied": "Accès refusé"
+    },
     "Navbar": {
         "calculators": "Calculateurs",
         "compare": "Comparer"
