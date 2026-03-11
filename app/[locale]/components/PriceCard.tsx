@@ -24,7 +24,7 @@ export default function PriceCard({ name, price, currency, features, affiliateLi
             )}
 
             {isBestValue && (
-                <div className="bg-silver/20 border-b border-silver/30 py-1.5 text-center">
+                <div className="bg-silver/10 border-b border-silver/30 py-1.5 text-center">
                     <span className="text-silver text-[10px] font-bold uppercase tracking-[0.2em]">
                         {t('best_value')}
                     </span>

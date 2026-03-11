@@ -29,12 +29,11 @@ export default async function RootLayout({
       <body className={`${inter.className} antialiased`}>
         <NextIntlClientProvider messages={messages} locale={locale}>
           <PageNavbar />
-
-          <main>
-            {children}
-          </main>
-
           <div className="bg-metallic">
+            <main>
+              {children}
+            </main>
+
             <PageFooter />
           </div>
         </NextIntlClientProvider>
