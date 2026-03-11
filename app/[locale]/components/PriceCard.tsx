@@ -60,11 +60,12 @@ export default function PriceCard({ name, price, currency, features, affiliateLi
                     ))}
                 </div>
 
-                <div className="mt-auto"><div className="mb-5 px-3 py-2 rounded-lg bg-cyan/5 border border-cyan/10">
-                    <p className="text-[11px] leading-relaxed text-slate-400 italic">
-                        "{verdict}"
-                    </p>
-                </div>
+                <div className="mt-auto">
+                    <div className="mb-5 px-3 py-2 rounded-lg bg-cyan/5 border border-cyan/10">
+                        <p className="text-[11px] leading-relaxed text-slate-400 italic">
+                            "{verdict}"
+                        </p>
+                    </div>
                     <div className="flex flex-col gap-2">
                         <a
                             href={affiliateLink}
