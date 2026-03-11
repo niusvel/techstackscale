@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import { Link } from '../../../i18n/routing';
 
 const CheckIcon = ({ className }: { className?: string }) => (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className={className || "w-4 h-4"}>
@@ -31,11 +32,26 @@ export default function PriceCard({ name, price, currency, features, affiliateLi
                 </div>
             )}
 
-            <div className="p-6 flex flex-col flex-grow relative z-10">
+            <div className="pb-6 px-6 pt-2 flex flex-col flex-grow relative z-10">
                 <header className="mb-4">
-                    {/* Añadimos el proveedor para dar contexto */}
                     <p className="text-cyan text-[10px] font-bold uppercase tracking-widest mb-1 opacity-80">{provider}</p>
-                    <h3 className="text-lg font-bold text-white leading-tight">{name}</h3>
+                    <div className="relative group inline-block">
+                        <Link
+                            href={`/cloud/${provider}`}
+                            className="text-lg font-bold text-white leading-tight hover:text-cyan transition-colors"
+                        >
+                            <h3 className="text-lg font-bold leading-tight">{name}</h3>
+                        </Link>
+
+                        {/* El Tooltip */}
+                        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block z-50">
+                            <div className="bg-slate-800 text-white text-[10px] py-1 px-2 rounded border border-slate-700 whitespace-nowrap shadow-xl">
+                                {t('view_all_plans')}
+                                {/* Triangulito del tooltip */}
+                                <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-800"></div>
+                            </div>
+                        </div>
+                    </div>
                 </header>
 
                 <div className="mb-6 flex items-baseline gap-1">
