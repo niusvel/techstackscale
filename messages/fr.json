@@ -10,6 +10,10 @@
         "db_title": "Database TCO",
         "db_desc": "Bientôt : Supabase vs PlanetScale"
     },
+    "Metadata": {
+        "title": "TechStackScale | Comparateur de Prix Cloud en Temps Réel",
+        "description": "Nous analysons et comparons les coûts d'infrastructure pour que vous puissiez prendre des décisions basées sur des données réelles."
+    },
     "PriceCard": {
         "best_value": "Pertinent",
         "per_month": "/mois",
