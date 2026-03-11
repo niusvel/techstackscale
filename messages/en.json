@@ -19,6 +19,7 @@
         "per_month": "/month",
         "get_offer": "Get Offer →",
         "last_update": "Last update:",
+        "view_all_plans": "View all plans",
         "features": {
             "memory": "{value} RAM Memory",
             "vcpu": "{value} Dedicated vCPUs",
@@ -82,5 +83,25 @@
         "types_text": "1. Technical Cookies: Necessary for the site's operation and language selection. 2. Affiliate Cookies: Third-party cookies (Hostinger, DigitalOcean) that identify that you came from our site to process potential commissions.",
         "control_title": "Cookie control",
         "control_text": "You can block or delete cookies through your browser settings. Please note that this may affect the functionality of the offer links."
+    },
+    "ProviderPage": {
+        "analysis_subtitle": "Detailed analysis of plans and costs for {name}",
+        "our_verdict": "Our Verdict",
+        "available_plans": "Available Plans",
+        "per_month": "/ month",
+        "back_to_comparison": "Back",
+        "features": {
+            "memory": "{value} RAM Memory",
+            "vcpu": "{value} Dedicated vCPUs",
+            "transfer": "{value} Bandwidth Transfer",
+            "storage": "{value} Storage",
+            "node_apps": "{value}",
+            "websites": "{value} Websites",
+            "emails": "{value} Email Accounts"
+        }
+    },
+    "ProviderMetadata": {
+        "title": "{name} - Plans and Prices 2026",
+        "description": "Full analysis of {name}. Compare costs and performance to make the best decision."
     }
 }
