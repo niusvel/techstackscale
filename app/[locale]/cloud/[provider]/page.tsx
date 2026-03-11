@@ -31,7 +31,7 @@ export default async function ProviderPage({ params }: { params: Promise<{ local
     const t = await getTranslations({ locale, namespace: 'ProviderPage' });
     const tpc = await getTranslations({ locale, namespace: 'PriceCard' });
 
-    // ...
+    // 1. Intentar leer el archivo JSON del proveedor
     const filePath = path.join(process.cwd(), 'data', `${provider}.json`);
 
     if (!fs.existsSync(filePath)) {
