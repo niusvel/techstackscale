@@ -1,0 +1,43 @@
+{
+    "description": "DigitalOcean es un proveedor de infraestructura en la nube (IaaS) diseñado fundamentalmente para desarrolladores, startups y pequeñas o medianas empresas (pymes). Destaca por su gran simplicidad, precios predecibles, una excelente documentación y una de las comunidades de desarrolladores más activas del mundo. Su enfoque está en facilitar el despliegue y la escalabilidad de aplicaciones modernas sin la complejidad extrema de AWS o Azure.",
+    "services": [
+        {
+            "title": "Droplets (Máquinas Virtuales)",
+            "info": "Es el producto estrella de DigitalOcean. Son servidores virtuales privados (VPS) basados en Linux escalables y muy rápidos de desplegar (menos de 1 minuto). Incluyen opciones de uso general, optimizados para CPU, memoria o almacenamiento."
+        },
+        {
+            "title": "Kubernetes Administrado (DOKS)",
+            "info": "Un servicio de Kubernetes gestionado donde DigitalOcean se encarga del plano de control de forma gratuita. Los usuarios solo pagan por los Droplets (nodos trabajadores) y los recursos asociados."
+        },
+        {
+            "title": "App Platform (Plataforma como Servicio - PaaS)",
+            "info": "Una solución totalmente gestionada para crear, implementar y escalar aplicaciones rápidamente sacando el código directamente desde repositorios como GitHub o GitLab, o imágenes de contenedores."
+        },
+        {
+            "title": "Spaces (Almacenamiento de Objetos S3)",
+            "info": "Almacenamiento compatible con el protocolo S3 para alojar y distribuir grandes volúmenes de archivos no estructurados. Incluye un Content Delivery Network (CDN) global integrado."
+        },
+        {
+            "title": "Volumes (Almacenamiento en Bloque)",
+            "info": "Discos duros virtuales escalables que se pueden conectar a los Droplets para aumentar su capacidad de almacenamiento SSD en cualquier momento."
+        }
+    ],
+    "sections": [
+        {
+            "title": "Redes y Seguridad (Networking)",
+            "info": "Ofrece Virtual Private Cloud (VPC) para redes privadas aisladas, Balanceadores de Carga para distribuir tráfico, Firewalls en la nube gratuitos y Direcciones IP Reservadas."
+        },
+        {
+            "title": "Bases de Datos Administradas",
+            "info": "Bases de datos 'como servicio' (MySQL, PostgreSQL, Redis, MongoDB). DigitalOcean se encarga de los parches de seguridad, backups diarios y la escalabilidad de forma desatendida."
+        },
+        {
+            "title": "DigitalOcean Marketplace",
+            "info": "Una tienda con más de 200 aplicaciones (como WordPress, Docker, GitLab, cPanel) configuradas en '1-Click' que se instalan y despliegan sobre un Droplet automáticamente."
+        },
+        {
+            "title": "DigitalOcean Functions",
+            "info": "Solución de computación sin servidor (Serverless) para ejecutar fragmentos de código bajo demanda sin proveer ningún hardware."
+        }
+    ]
+}

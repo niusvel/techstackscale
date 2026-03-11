@@ -1,22 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  /* Paleta "Java Evolution": Profundo, Galáctico y Neon */
-  --background: #0a0b1e;
-  /* Deep Space Navy */
-  --foreground: #f8fafc;
-  --accent-purple: #8b5cf6;
-  /* More vibrant purple */
-  --accent-cyan: #22d3ee;
-  /* Cleaner neon cyan */
-  --accent-blue: #3b82f6;
-  /* New supplementary blue */
-  --accent-silver: #cbd5e1;
-  /* Metallic silver */
-  --card-bg: rgba(15, 23, 42, 0.7);
-  --card-border: rgba(148, 163, 184, 0.15);
-  --metallic-bg: #f1f5f9;
-  /* Soft metallic gray base */
+  /* Solarized Dark Palette */
+  --background: #002b36; /* base03 */
+  --foreground: #839496; /* base0 */
+  
+  --accent-purple: #6c71c4; /* violet */
+  --accent-cyan: #2aa198; /* cyan */
+  --accent-blue: #268bd2; /* blue */
+  --accent-silver: #586e75; /* base01 for metallic/subtle elements */
+  
+  --card-bg: rgba(7, 54, 66, 0.7); /* base02 with transparency */
+  --card-border: rgba(88, 110, 117, 0.3); /* base01 */
+  --metallic-bg: #eee8d5; /* base2 - Lightest background color for contrast */
+  
+  /* Additional Solarized accents for potential use */
+  --accent-yellow: #b58900;
+  --accent-orange: #cb4b16;
+  --accent-red: #dc322f;
+  --accent-magenta: #d33682;
+  --accent-green: #859900;
 }
 
 @theme inline {
@@ -51,23 +54,23 @@ body {
 }
 
 .glow-purple {
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  box-shadow: 0 0 20px rgba(108, 113, 196, 0.3);
 }
 
 .glow-cyan {
-  box-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
+  box-shadow: 0 0 20px rgba(42, 161, 152, 0.3);
 }
 
 .glow-silver {
-  box-shadow: 0 0 20px rgba(203, 213, 225, 0.3);
+  box-shadow: 0 0 20px rgba(88, 110, 117, 0.3);
 }
 
 .bg-metallic {
   background: var(--metallic-bg);
   background-image:
-    linear-gradient(to bottom, rgba(203, 213, 225, 0.2), transparent),
-    radial-gradient(at 0% 0%, rgba(139, 92, 246, 0.05) 0px, transparent 30%),
-    radial-gradient(at 100% 100%, rgba(34, 211, 238, 0.05) 0px, transparent 30%);
+    linear-gradient(to bottom, rgba(88, 110, 117, 0.2), transparent),
+    radial-gradient(at 0% 0%, rgba(108, 113, 196, 0.05) 0px, transparent 30%),
+    radial-gradient(at 100% 100%, rgba(42, 161, 152, 0.05) 0px, transparent 30%);
   position: relative;
 }
 
@@ -87,7 +90,7 @@ h2,
 h3 {
   letter-spacing: -0.025em;
   font-weight: 800;
-  background: linear-gradient(to bottom right, #fff, #94a3b8);
+  background: linear-gradient(to bottom right, #93a1a1, #586e75);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
