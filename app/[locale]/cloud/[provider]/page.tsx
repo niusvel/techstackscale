@@ -53,7 +53,7 @@ export default async function ProviderPage({ params }: { params: Promise<{ local
                     >
                         <span className="mr-2">←</span> {t('back_to_comparison')}
                     </Link>
-                    <h1 className="text-4xl font-bold mb-4">{provider}</h1>
+                    <h1 className="text-4xl font-bold mb-4">{provider.toUpperCase()}</h1>
                 </header>
 
                 {/* Añadimos el componente ProviderSummary dinámico aquí */}
@@ -64,8 +64,8 @@ export default async function ProviderPage({ params }: { params: Promise<{ local
                     <h2 className="text-2xl font-semibold mb-6">{t('available_plans')}</h2>
                     <div className="flex flex-wrap gap-3 mt-3">
                         {data.plans.map((plan: any, index: number) => (
-                            <a 
-                                key={index} 
+                            <a
+                                key={index}
                                 href={data.affiliate_link}
                                 target="_blank"
                                 rel="noopener noreferrer"
