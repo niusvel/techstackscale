@@ -4,7 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getTranslations, getMessages } from 'next-intl/server';
 import { Analytics } from '@vercel/analytics/react';
 import { GoogleAnalytics } from '@next/third-parties/google';
-import PageNavbar from "./components/Navbar";
+import PageNavbar from "./components/PageNavbar";
 import PageFooter from "./components/PageFooter";
 
 import "./globals.css";

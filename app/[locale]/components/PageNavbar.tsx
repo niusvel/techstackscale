@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import LanguagePicker from './LanguagePicker';
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 
 export default async function PageNavbar() {
+    const locale = await getLocale();
     const t = await getTranslations('Navbar');
     return (
         <nav className="glass sticky top-0 z-50 border-b-0">
@@ -12,9 +13,9 @@ export default async function PageNavbar() {
                 </Link>
 
                 <div className="flex items-center gap-6">
-                    <div className="hidden gap-6 text-sm font-medium text-slate-300">
-                        <Link href="#" className="hover:text-cyan transition-colors">{t('calculators')}</Link>
-                        <Link href="#" className="hover:text-cyan transition-colors">{t('compare')}</Link>
+                    <div className="gap-6 text-sm font-medium text-slate-300">
+                        <Link href={`/${locale}/calculators`} className="hidden hover:text-cyan transition-colors">{t('calculators')}</Link>
+                        <Link href={`/${locale}/compare`} className="hover:text-cyan transition-colors">{t('compare')}</Link>
                     </div>
                     <LanguagePicker />
                 </div>

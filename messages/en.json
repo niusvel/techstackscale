@@ -98,10 +98,33 @@
             "node_apps": "{value}",
             "websites": "{value} Websites",
             "emails": "{value} Email Accounts"
-        }
+        },
+        "general_overview": "General Overview",
+        "main_services": "Main Services",
+        "key_features": "Key Features"
     },
     "ProviderMetadata": {
         "title": "{name} - Plans and Prices 2026",
         "description": "Full analysis of {name}. Compare costs and performance to make the best decision."
+    },
+    "ComparePage": {
+        "title": "Infrastructure Comparison",
+        "description": "Analyze and compare the plans from the most recommended providers side-by-side.",
+        "provider": "Provider",
+        "price": "Monthly Price",
+        "best_plan": "Best Plan",
+        "features": {
+            "memory": "RAM",
+            "vcpu": "vCPUs",
+            "transfer": "Bandwidth",
+            "storage": "Storage",
+            "websites": "Websites",
+            "node_apps": "Node.js Apps",
+            "emails": "Emails"
+        },
+        "get_offer": "Get Offer",
+        "waiting_data": "Fetching data for {provider}...",
+        "not_available": "N/A",
+        "back_to_comparison": "Back"
     }
 }
