@@ -60,11 +60,12 @@ export default function PriceCard({ name, price, currency, features, affiliateLi
                     ))}
                 </div>
 
-                <div className="mt-auto"><div className="mb-5 px-3 py-2 rounded-lg bg-cyan/5 border border-cyan/10">
-                    <p className="text-[11px] leading-relaxed text-slate-400 italic">
-                        "{verdict}"
-                    </p>
-                </div>
+                <div className="mt-auto">
+                    <div className="mb-5 px-3 py-2 rounded-lg bg-cyan/5 border border-cyan/10">
+                        <p className="text-[11px] leading-relaxed text-slate-400 italic">
+                            "{verdict}"
+                        </p>
+                    </div>
                     <div className="flex flex-col gap-2">
                         <a
                             href={affiliateLink}
@@ -80,7 +81,7 @@ export default function PriceCard({ name, price, currency, features, affiliateLi
                         </a>
 
                         <a
-                            href={`/cloud/${provider}`}
+                            href={`/cloud/${provider.toLowerCase()}`}
                             target="_self"
                             className={`flex items-center justify-center w-full text-center text-sm font-bold py-3 px-4 rounded-xl transition-all active:scale-95 border ${isBestValue
                                 ? 'bg-silver text-slate-950 border-silver hover:bg-white hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]'
