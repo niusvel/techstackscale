@@ -2,7 +2,7 @@
     "HomePage": {
         "title": "Scale your Stack with Real Data",
         "description": "We analyze and compare infrastructure costs so you can make data-driven decisions.",
-        "cta_explore": "Explore Calculators",
+        "cta_calculator": "Explore Calculators",
         "cta_compare": "View Comparisons",
         "section_infra_title": "Relevant Infrastructure",
         "section_infra_description": "Prices automatically updated via weekly scraping.",
@@ -35,7 +35,7 @@
         "access_denied": "Access denied"
     },
     "Navbar": {
-        "calculators": "Calculators",
+        "calculator": "Calculator",
         "compare": "Compare"
     },
     "Footer": {
@@ -124,6 +124,26 @@
         "get_offer": "Get Offer",
         "waiting_data": "Fetching data for {provider}...",
         "not_available": "N/A",
+        "back_to_comparison": "Back"
+    },
+    "Calculator": {
+        "title": "Configure your ideal server",
+        "subtitle": "Find the perfect plan by filtering by your real needs.",
+        "max_price": "Maximum budget: {value}",
+        "min_ram": "Minimum RAM: {value}",
+        "min_cpu": "Minimum vCPUs: {value}",
+        "results_found": "Found {count} plans.",
+        "no_results": "No plans match your filters. Try being flexible with some criteria.",
+        "recommendation": "Our recommendation",
+        "best_match": "Best match for you",
+        "get_offer": "Get Offer →",
+        "reset": "Reset filters",
+        "providers": "Providers",
+        "storage": "Min Storage: {value}GB",
+        "transfer": "Min Transfer: {value}GB",
+        "nodes": "Min App Nodes: {value}",
+        "unit_mb": "MB",
+        "unit_gb": "GB",
         "back_to_comparison": "Back"
     }
 }

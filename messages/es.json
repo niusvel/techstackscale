@@ -2,7 +2,7 @@
     "HomePage": {
         "title": "Escala tu Stack con Datos Reales",
         "description": "Analizamos y comparamos costes de infraestructura para que tomes decisiones basadas en datos.",
-        "cta_explore": "Explorar Calculadoras",
+        "cta_calculator": "Explorar Calculadoras",
         "cta_compare": "Ver Comparativas",
         "section_infra_title": "Infraestructura Relevante",
         "section_infra_description": "Precios actualizados automáticamente vía scraping semanal.",
@@ -35,7 +35,7 @@
         "access_denied": "Acceso denegado"
     },
     "Navbar": {
-        "calculators": "Calculadoras",
+        "calculator": "Calculadora",
         "compare": "Comparar"
     },
     "Footer": {
@@ -124,6 +124,26 @@
         "get_offer": "Obtener Oferta",
         "waiting_data": "Obteniendo datos de {provider}...",
         "not_available": "No disponible",
+        "back_to_comparison": "Volver"
+    },
+    "Calculator": {
+        "title": "Configura tu servidor ideal",
+        "subtitle": "Encuentra el plan perfecto filtrando por tus necesidades reales.",
+        "max_price": "Presupuesto máximo: {value}",
+        "min_ram": "RAM mínima: {value}",
+        "min_cpu": "vCPUs mínimas: {value}",
+        "results_found": "Se encontraron {count} planes.",
+        "no_results": "No hay planes que coincidan con tus filtros. Se flexible con algunos criterios.",
+        "recommendation": "Nuestra recomendación",
+        "best_match": "Mejor opción para ti",
+        "get_offer": "Obtener Oferta →",
+        "reset": "Restablecer filtros",
+        "providers": "Proveedores",
+        "storage": "Almacenamiento mín: {value}GB",
+        "transfer": "Transferencia mín: {value}GB",
+        "nodes": "Nodos de App mín: {value}",
+        "unit_mb": "MB",
+        "unit_gb": "GB",
         "back_to_comparison": "Volver"
     }
 }

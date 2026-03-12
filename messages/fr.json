@@ -2,7 +2,7 @@
     "HomePage": {
         "title": "Optimisez votre Stack avec des Données Réelles",
         "description": "Nous analysons et comparons les coûts d'infrastructure pour des décisions basées sur les données.",
-        "cta_explore": "Explorer les Calculateurs",
+        "cta_calculator": "Explorer les Calculateurs",
         "cta_compare": "Voir les Comparaisons",
         "section_infra_title": "Infrastructure Relevante",
         "section_infra_description": "Prix mis à jour automatiquement via un scraping hebdomadaire.",
@@ -35,7 +35,7 @@
         "access_denied": "Accès refusé"
     },
     "Navbar": {
-        "calculators": "Calculateurs",
+        "calculator": "Calculateur",
         "compare": "Comparer"
     },
     "Footer": {
@@ -124,6 +124,26 @@
         "get_offer": "Obtenir l'Offre",
         "waiting_data": "Récupération des données pour {provider}...",
         "not_available": "N/A",
+        "back_to_comparison": "Retour"
+    },
+    "Calculator": {
+        "title": "Configurez votre serveur idéal",
+        "subtitle": "Trouvez le forfait idéal en filtrant selon vos besoins réels.",
+        "max_price": "Budget maximum: {value}",
+        "min_ram": "RAM minimum: {value}",
+        "min_vcpu": "vCPUs minimum: {value}",
+        "results_found": "Trouvés {count} forfaits.",
+        "no_results": "Aucun forfait ne correspond à vos critères. Essayez d'être plus flexible sur certains critères.",
+        "recommendation": "Notre recommendation",
+        "best_match": "La meilleure option pour vous",
+        "get_offer": "Obtenir l'Offre →",
+        "reset": "Réinitialiser les filtres",
+        "providers": "Fournisseurs",
+        "storage": "Stockage min: {value}GB",
+        "transfer": "Transfert min: {value}GB",
+        "nodes": "Nœuds d'App min: {value}",
+        "unit_mb": "MB",
+        "unit_gb": "GB",
         "back_to_comparison": "Retour"
     }
 }

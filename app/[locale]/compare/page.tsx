@@ -84,14 +84,16 @@ export default async function ComparePage({ params }: Props) {
               className="inline-flex items-center text-slate-400 hover:text-white mb-8 transition-colors"
             >
               <span className="mr-2">←</span> {t('back_to_comparison')}
-            </Link></div>
+            </Link>
+          </div>
           <div className="text-center w-full">
             <h1 className="text-4xl font-extrabold mb-6 tracking-tight text-white">
               {t('title')}
             </h1>
             <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10 font-medium">
               {t('description')}
-            </p></div>
+            </p>
+          </div>
         </header>
       </div>
 
