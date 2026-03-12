@@ -106,5 +106,24 @@
     "ProviderMetadata": {
         "title": "{name} - Plans and Prices 2026",
         "description": "Full analysis of {name}. Compare costs and performance to make the best decision."
+    },
+    "ComparePage": {
+        "title": "Infrastructure Comparison",
+        "description": "Analyze and compare the best plans from Hostinger, DigitalOcean, and Hetzner side-by-side.",
+        "provider": "Provider",
+        "price": "Monthly Price",
+        "best_plan": "Best Plan",
+        "features": {
+            "memory": "RAM",
+            "vcpu": "vCPUs",
+            "transfer": "Bandwidth",
+            "storage": "Storage",
+            "websites": "Websites",
+            "node_apps": "Node.js Apps",
+            "emails": "Emails"
+        },
+        "get_offer": "Get Offer",
+        "waiting_data": "Fetching data for {provider}...",
+        "not_available": "N/A"
     }
 }

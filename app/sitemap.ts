@@ -18,6 +18,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'daily' as const,
             priority: 1,
         },
+        {
+            url: `${baseUrl}/${locale}/compare`,
+            lastModified: new Date(),
+            changeFrequency: 'daily' as const,
+            priority: 0.8,
+        },
     ]);
 
     const providerRoutes = locales.flatMap((locale) =>
