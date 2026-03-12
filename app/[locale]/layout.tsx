@@ -79,7 +79,7 @@ export default async function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "ComparisonWebSite",
+              "@type": "WebSite",
               "name": "TechStackScale",
               "description": "Cloud Infrastructure Price Comparison",
               "url": "https://techstackscale.vercel.app",

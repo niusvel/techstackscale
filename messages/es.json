@@ -7,8 +7,7 @@
         "section_infra_title": "Infraestructura Relevante",
         "section_infra_description": "Precios actualizados automáticamente vía scraping semanal.",
         "live_data": "LIVE DATA",
-        "db_title": "Database TCO",
-        "db_desc": "Próximamente: Supabase vs PlanetScale"
+        "loading_provider": "Esperando datos de {provider}..."
     },
     "Metadata": {
         "title": "TechStackScale | Comparador de Precios Cloud en Tiempo Real",

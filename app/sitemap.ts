@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const dataDirectory = path.join(process.cwd(), 'data');
     const filenames = fs.readdirSync(dataDirectory);
     const providers = filenames
-        .filter((file) => file.endsWith('.json'))
+        .filter((file) => file.endsWith('.json') && !file.includes('_summary_'))
         .map((file) => file.replace('.json', ''));
 
     const staticRoutes = locales.flatMap((locale) => [
