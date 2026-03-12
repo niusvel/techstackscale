@@ -5,6 +5,7 @@ import { getTranslations } from 'next-intl/server';
 
 import PriceCard from './components/PriceCard';
 import PageHeader from './components/PageHeader';
+import ValueProposition from './components/ValueProposition';
 
 function getLocalData(fileName: string) {
   const filePath = path.join(process.cwd(), 'data', fileName);
@@ -117,6 +118,8 @@ export default async function Home({ params }: Props) {
           </div>
         </div>
       </section>
+
+      <ValueProposition />
     </div>
   );
 }

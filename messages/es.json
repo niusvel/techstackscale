@@ -7,7 +7,23 @@
         "section_infra_title": "Infraestructura Relevante",
         "section_infra_description": "Precios actualizados automáticamente vía scraping semanal.",
         "live_data": "LIVE DATA",
-        "loading_provider": "Esperando datos de {provider}..."
+        "loading_provider": "Esperando datos de {provider}...",
+        "why_us_title": "¿Por qué usar TechStackScale?",
+        "why_us_subtitle": "Diseñado para desarrolladores y CTOs que buscan optimizar costes sin sacrificar rendimiento.",
+        "features": {
+            "money": {
+                "title": "Ahorra Tiempo y Dinero",
+                "desc": "Deja de pagar de más por servidores sobrevalorados. Nuestros comparadores encuentran la mejor relación calidad-precio."
+            },
+            "data": {
+                "title": "Decisiones Basadas en Datos",
+                "desc": "Comparamos proveedores lado a lado usando datos reales de hardware y precios actualizados constantemente."
+            },
+            "algorithm": {
+                "title": "Motor de Ranking Inteligente",
+                "desc": "Evaluamos los planes dinámicamente usando un algoritmo propio que sopesa (RAM, CPU, Transferencia) vs Precio, según tus necesidades."
+            }
+        }
     },
     "Metadata": {
         "title": "TechStackScale | Comparador de Precios Cloud en Tiempo Real",

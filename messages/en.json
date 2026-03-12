@@ -7,7 +7,23 @@
         "section_infra_title": "Relevant Infrastructure",
         "section_infra_description": "Prices automatically updated via weekly scraping.",
         "live_data": "LIVE DATA",
-        "loading_provider": "Waiting for {provider} data..."
+        "loading_provider": "Waiting for {provider} data...",
+        "why_us_title": "Why use TechStackScale?",
+        "why_us_subtitle": "Designed for developers and CTOs looking to optimize costs without sacrificing performance.",
+        "features": {
+            "money": {
+                "title": "Save Time and Money",
+                "desc": "Stop overpaying for overpriced servers. Our comparators find the best value for your needs."
+            },
+            "data": {
+                "title": "Data-Driven Decisions",
+                "desc": "We compare providers side-by-side using real hardware metrics and constantly updated pricing."
+            },
+            "algorithm": {
+                "title": "Intelligent Ranking Engine",
+                "desc": "We dynamically evaluate plans using a custom algorithm that weighs (RAM, CPU, Bandwidth) against Price."
+            }
+        }
     },
     "Metadata": {
         "title": "TechStackScale | Real-Time Cloud Price Comparison",

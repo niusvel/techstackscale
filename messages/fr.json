@@ -7,7 +7,23 @@
         "section_infra_title": "Infrastructure Relevante",
         "section_infra_description": "Prix mis à jour automatiquement via un scraping hebdomadaire.",
         "live_data": "LIVE DATA",
-        "loading_provider": "En attente des données de {provider}..."
+        "loading_provider": "En attente des données de {provider}...",
+        "why_us_title": "Pourquoi utiliser TechStackScale ?",
+        "why_us_subtitle": "Conçu pour les développeurs et DSI cherchant à optimiser les coûts sans sacrifier les performances.",
+        "features": {
+            "money": {
+                "title": "Gagnez du Temps et de l'Argent",
+                "desc": "Arrêtez de payer trop cher pour des serveurs surévalués. Nos comparatifs trouvent le meilleur rapport qualité-prix."
+            },
+            "data": {
+                "title": "Décisions Basées sur les Données",
+                "desc": "Nous comparons les fournisseurs côte à côte en utilisant des métriques réelles régulièrement mises à jour."
+            },
+            "algorithm": {
+                "title": "Moteur de Classement Intelligent",
+                "desc": "Nous évaluons les forfaits dynamiquement avec un algorithme qui pondère (RAM, CPU, Bande passante) par rapport au Prix."
+            }
+        }
     },
     "Metadata": {
         "title": "TechStackScale | Comparateur de Prix Cloud en Temps Réel",
