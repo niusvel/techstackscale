@@ -31,11 +31,10 @@ export default async function ProviderPage({ params }: { params: Promise<{ local
     const t = await getTranslations({ locale, namespace: 'ProviderPage' });
     const tpc = await getTranslations({ locale, namespace: 'PriceCard' });
 
-    // ...
     const filePath = path.join(process.cwd(), 'data', `${provider}.json`);
 
     if (!fs.existsSync(filePath)) {
-        notFound(); // Si el archivo no existe, enviamos a 404
+        notFound();
     }
 
     const fileContent = fs.readFileSync(filePath, 'utf8');
@@ -45,7 +44,6 @@ export default async function ProviderPage({ params }: { params: Promise<{ local
         <main className="min-h-screen bg-background text-white p-8">
             <div className="max-w-4xl mx-auto">
 
-                {/* Encabezado con Logo y Nombre */}
                 <header className="mb-8 flex justify-between sticky top-16 pt-6 -mt-6 z-10 bg-background/95 backdrop-blur-sm shadow-[0_10px_20px_-10px_rgba(0,43,54,1)] pb-4">
                     <Link
                         href="/"
@@ -56,10 +54,8 @@ export default async function ProviderPage({ params }: { params: Promise<{ local
                     <h1 className="text-4xl font-bold mb-4">{provider.toUpperCase()}</h1>
                 </header>
 
-                {/* Añadimos el componente ProviderSummary dinámico aquí */}
                 <ProviderSummary provider={provider} locale={locale} />
 
-                {/* Lista completa de Planes */}
                 <section>
                     <h2 className="text-2xl font-semibold mb-6">{t('available_plans')}</h2>
                     <div className="flex flex-wrap gap-3 mt-3">

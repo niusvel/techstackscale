@@ -23,9 +23,10 @@ jobs:
           playwright install chromium
 
       - name: Run All Scrapers
-        run: |
-          cd scrapers
-          python run_all.py
+        #run: |
+        #  cd scrapers
+        #  python run_all.py
+        run: echo "Skipping price update"
 
       - name: Upload debug screenshot on failure
         if: failure()
