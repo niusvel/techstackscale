@@ -13,10 +13,14 @@ export default async function PageHeader() {
                 <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10 font-medium">
                     {t('description')}
                 </p>
-                <div className="justify-center gap-4">
-                    <button className="hidden bg-purple text-white px-8 py-4 rounded-2xl font-bold shadow-lg shadow-purple/20 hover:bg-purple/90 transition-all">
-                        {t('cta_explore')}
-                    </button>
+                <div className="flex justify-center gap-4">
+                    <a
+                        href={`/${locale}/calculator`}
+                        target="_self"
+                        className="bg-purple text-white px-8 py-4 rounded-2xl font-bold shadow-lg shadow-purple/20 hover:bg-purple/90 transition-all"
+                    >
+                        {t('cta_calculator')}
+                    </a>
                     <a
                         href={`/${locale}/compare`}
                         target="_self"

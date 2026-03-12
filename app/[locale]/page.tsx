@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import process from 'process';
+
 import { getTranslations } from 'next-intl/server';
 
 import PriceCard from './components/PriceCard';
@@ -75,7 +75,7 @@ export default async function Home({ params }: Props) {
               />
             ) : (
               <div className="p-6 border-2 border-dashed border-white/5 rounded-2xl flex items-center text-slate-400 text-sm italic glass">
-                Esperando datos de Hostinger...
+                {t('loading_provider', { provider: 'Hostinger' })}
               </div>
             )}
 
@@ -93,7 +93,7 @@ export default async function Home({ params }: Props) {
               />
             ) : (
               <div className="p-6 border-2 border-dashed border-slate-200 rounded-2xl flex items-center text-slate-500 text-sm italic bg-white/50">
-                Esperando datos de DigitalOcean...
+                {t('loading_provider', { provider: 'DigitalOcean' })}
               </div>
             )}
 
@@ -111,7 +111,7 @@ export default async function Home({ params }: Props) {
               />
             ) : (
               <div className="p-6 border-2 border-dashed border-slate-200 rounded-2xl flex items-center text-slate-500 text-sm italic bg-white/50">
-                Esperando datos de Hetzner...
+                {t('loading_provider', { provider: 'Hetzner' })}
               </div>
             )}
           </div>

@@ -33,7 +33,7 @@
                 {
                     "key": "transfer",
                     "enabled": true,
-                    "value": "20 TB"
+                    "value": "20000 GB"
                 }
             ]
         },
@@ -62,7 +62,7 @@
                 {
                     "key": "transfer",
                     "enabled": true,
-                    "value": "20 TB"
+                    "value": "20000 GB"
                 }
             ]
         },
@@ -91,7 +91,7 @@
                 {
                     "key": "transfer",
                     "enabled": true,
-                    "value": "20 TB"
+                    "value": "20000 GB"
                 }
             ]
         },
@@ -120,7 +120,7 @@
                 {
                     "key": "transfer",
                     "enabled": true,
-                    "value": "20 TB"
+                    "value": "20000 GB"
                 }
             ]
         }

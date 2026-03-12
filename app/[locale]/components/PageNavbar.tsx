@@ -13,8 +13,8 @@ export default async function PageNavbar() {
                 </Link>
 
                 <div className="flex items-center gap-6">
-                    <div className="gap-6 text-sm font-medium text-slate-300">
-                        <Link href={`/${locale}/calculators`} className="hidden hover:text-cyan transition-colors">{t('calculators')}</Link>
+                    <div className="flex items-center gap-6 text-sm font-medium text-slate-300">
+                        <Link href={`/${locale}/calculator`} className="hover:text-cyan transition-colors">{t('calculator')}</Link>
                         <Link href={`/${locale}/compare`} className="hover:text-cyan transition-colors">{t('compare')}</Link>
                     </div>
                     <LanguagePicker />

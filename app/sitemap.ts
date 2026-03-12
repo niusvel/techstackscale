@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const dataDirectory = path.join(process.cwd(), 'data');
     const filenames = fs.readdirSync(dataDirectory);
     const providers = filenames
-        .filter((file) => file.endsWith('.json'))
+        .filter((file) => file.endsWith('.json') && !file.includes('_summary_'))
         .map((file) => file.replace('.json', ''));
 
     const staticRoutes = locales.flatMap((locale) => [
@@ -23,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
             changeFrequency: 'daily' as const,
             priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/${locale}/calculator`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
         },
     ]);
 
