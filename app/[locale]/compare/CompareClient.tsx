@@ -2,6 +2,7 @@
 
 import { useState, type FocusEvent } from 'react';
 import { useTranslations } from 'next-intl';
+import { formatPrice } from '@/utils/currency';
 
 export default function CompareClient({ initialProviders }: { initialProviders: any[] }) {
   const t = useTranslations('ComparePage');
@@ -28,10 +29,7 @@ export default function CompareClient({ initialProviders }: { initialProviders: 
 
   const getPlanKey = (plan: any) => String(plan?.plan_id ?? plan?.name ?? '');
 
-  const getCurrencySymbol = (currency?: string) => (currency === 'USD' ? '$' : '\u20AC');
-
-  const formatPlanPrice = (plan: any) =>
-    `${getCurrencySymbol(plan?.currency)}${Number(plan?.price ?? 0).toFixed(2)}`;
+  const formatPlanPrice = (plan: any) => formatPrice(plan?.price, plan?.currency);
 
   const formatPlanName = (name: string, maxLength = 15) =>
     name.length > maxLength ? `${name.slice(0, maxLength - 3)}...` : name;
@@ -150,7 +148,7 @@ export default function CompareClient({ initialProviders }: { initialProviders: 
                     <>
                       {getPlanNameElement(p)}
                       <div className="text-3xl font-black text-cyan drop-shadow-[0_0_12px_rgba(6,182,212,0.5)] mb-4">
-                        {p.plan.currency === 'USD' ? '$' : '€'}{Number(p.plan.price).toFixed(2)}{' '}
+                        {formatPrice(p.plan.price, p.plan.currency)}{' '}
                         <span className="text-sm text-slate-400 font-normal drop-shadow-none">/m</span>
                       </div>
                       <a

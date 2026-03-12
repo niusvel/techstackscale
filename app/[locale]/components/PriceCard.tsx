@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import { Link } from '../../../i18n/routing';
+import { formatPrice } from '@/utils/currency';
 
 const CheckIcon = ({ className }: { className?: string }) => (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className={className || "w-4 h-4"}>
@@ -11,9 +11,7 @@ const CheckIcon = ({ className }: { className?: string }) => (
 export default function PriceCard({ name, price, currency, features, affiliateLink, isBestValue, lastUpdate, provider, verdict }: any) {
     const t = useTranslations('PriceCard');
 
-    const currencySymbol = currency === 'USD' ? '$' : '€';
-    const formattedPrice = Number(price).toFixed(2);
-    const displayPrice = currency === 'USD' ? `${currencySymbol}${formattedPrice}` : `${formattedPrice}${currencySymbol}`;
+    const displayPrice = formatPrice(price, currency);
 
     return (
         <div className={`relative h-full flex flex-col rounded-2xl overflow-hidden transition-all duration-300 ${isBestValue

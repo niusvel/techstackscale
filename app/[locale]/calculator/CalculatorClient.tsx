@@ -3,7 +3,8 @@
 import { useState, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
-import { getCurrency, parseValue } from './utils';
+import { parseValue } from './utils';
+import { formatPrice } from '@/utils/currency';
 
 export default function CalculatorClient({ providers, locale }: { providers: any[], locale: string }) {
     const t = useTranslations('Calculator');
@@ -20,7 +21,6 @@ export default function CalculatorClient({ providers, locale }: { providers: any
         minEmails: 0,
         minWebsites: 1,
         selectedProviders: [] as string[],
-        // Detectamos la moneda base (asumimos EUR si no se especifica)
         currency: 'EUR'
     };
 
@@ -237,9 +237,9 @@ export default function CalculatorClient({ providers, locale }: { providers: any
                                 </div>
 
                                 <div className="text-right flex flex-col items-end justify-center h-full gap-4 min-w-[120px]">
-                                    {/* Lógica de símbolo de moneda corregida */}
+                                    {/* Lógica de símbolo de moneda centralizada */}
                                     <p className="text-3xl font-mono font-bold text-green-400 tracking-tighter">
-                                        {plan.currency === 'USD' ? `$${plan.numericPrice}` : `${plan.numericPrice}€`}
+                                        {formatPrice(plan.numericPrice, plan.currency)}
                                     </p>
                                     <Link
                                         href={plan.link}
