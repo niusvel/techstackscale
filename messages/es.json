@@ -98,7 +98,10 @@
             "node_apps": "{value} Aplicaciones Node.js",
             "storage": "{value} de almacenamiento",
             "emails": "{value} Cuentas de correo"
-        }
+        },
+        "general_overview": "Descripción General",
+        "main_services": "Servicios Principales",
+        "key_features": "Características Clave"
     },
     "ProviderMetadata": {
         "title": "{name} - Planes y Precios 2026",

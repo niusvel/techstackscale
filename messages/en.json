@@ -98,7 +98,10 @@
             "node_apps": "{value}",
             "websites": "{value} Websites",
             "emails": "{value} Email Accounts"
-        }
+        },
+        "general_overview": "General Overview",
+        "main_services": "Main Services",
+        "key_features": "Key Features"
     },
     "ProviderMetadata": {
         "title": "{name} - Plans and Prices 2026",

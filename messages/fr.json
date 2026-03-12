@@ -98,7 +98,10 @@
             "node_apps": "{value}",
             "websites": "{value} Sites Web",
             "emails": "{value} Comptes E-mail"
-        }
+        },
+        "general_overview": "Vue Générale",
+        "main_services": "Services Principaux",
+        "key_features": "Caractéristiques Clés"
     },
     "ProviderMetadata": {
         "title": "{name} - Forfaits et tarifs 2026",
