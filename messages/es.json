@@ -109,7 +109,7 @@
     },
     "ComparePage": {
         "title": "Comparativa de Infraestructura",
-        "description": "Analiza y compara los mejores planes de Hostinger, DigitalOcean y Hetzner lado a lado.",
+        "description": "Analiza y compara los planes de los proveedores más recomendados lado a lado.",
         "provider": "Proveedor",
         "price": "Precio Mensual",
         "best_plan": "Mejor Plan",
@@ -124,6 +124,7 @@
         },
         "get_offer": "Obtener Oferta",
         "waiting_data": "Obteniendo datos de {provider}...",
-        "not_available": "No disponible"
+        "not_available": "No disponible",
+        "back_to_comparison": "Volver"
     }
 }

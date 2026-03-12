@@ -1,6 +1,7 @@
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 
 export default async function PageHeader() {
+    const locale = await getLocale();
     const t = await getTranslations('HomePage');
 
     return (
@@ -12,13 +13,17 @@ export default async function PageHeader() {
                 <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10 font-medium">
                     {t('description')}
                 </p>
-                <div className="hidden justify-center gap-4">
-                    <button className="bg-purple text-white px-8 py-4 rounded-2xl font-bold shadow-lg shadow-purple/20 hover:bg-purple/90 transition-all">
+                <div className="justify-center gap-4">
+                    <button className="hidden bg-purple text-white px-8 py-4 rounded-2xl font-bold shadow-lg shadow-purple/20 hover:bg-purple/90 transition-all">
                         {t('cta_explore')}
                     </button>
-                    <button className="bg-white/5 text-white border border-white/10 px-8 py-4 rounded-2xl font-bold hover:bg-white/10 transition-all">
+                    <a
+                        href={`/${locale}/compare`}
+                        target="_self"
+                        className="bg-white/5 text-white border border-white/10 px-8 py-4 rounded-2xl font-bold hover:bg-white/10 transition-all"
+                    >
                         {t('cta_compare')}
-                    </button>
+                    </a>
                 </div>
             </header>
         </div>

@@ -4,6 +4,7 @@ import path from 'path';
 import process from 'process';
 
 import CompareClient from './CompareClient';
+import { Link } from '@/i18n/routing';
 
 function getLocalData(fileName: string) {
   const filePath = path.join(process.cwd(), 'data', fileName);
@@ -36,8 +37,6 @@ export default async function ComparePage({ params }: Props) {
   const hostingerBestPlan = hostingerData?.plans?.find((p: any) => p.is_best_seller) || hostingerData?.plans?.[1];
   const doBestPlan = digitalOceanData?.plans?.[0];
   const hetznerBestPlan = hetznerData?.plans?.[0];
-
-
 
   const providers = [
     {
@@ -78,13 +77,21 @@ export default async function ComparePage({ params }: Props) {
   return (
     <div className="min-h-screen">
       <div className="bg-background rounded-b-[0.5rem] mb-10 shadow-2xl">
-        <header className="max-w-7xl mx-auto px-4 pt-10 pb-10 text-center">
-          <h1 className="text-4xl font-extrabold mb-6 tracking-tight text-white">
-            {t('title')}
-          </h1>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10 font-medium">
-            {t('description')}
-          </p>
+        <header className="max-w-7xl mx-auto px-4 pt-10 pb-10 flex">
+          <div>
+            <Link
+              href="/"
+              className="inline-flex items-center text-slate-400 hover:text-white mb-8 transition-colors"
+            >
+              <span className="mr-2">←</span> {t('back_to_comparison')}
+            </Link></div>
+          <div className="text-center w-full">
+            <h1 className="text-4xl font-extrabold mb-6 tracking-tight text-white">
+              {t('title')}
+            </h1>
+            <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10 font-medium">
+              {t('description')}
+            </p></div>
         </header>
       </div>
 

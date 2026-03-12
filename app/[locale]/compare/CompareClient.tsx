@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type FocusEvent } from 'react';
 import { useTranslations } from 'next-intl';
 
 export default function CompareClient({ initialProviders }: { initialProviders: any[] }) {
@@ -16,9 +16,25 @@ export default function CompareClient({ initialProviders }: { initialProviders: 
     return initialState;
   });
 
+  const [openProviderId, setOpenProviderId] = useState<string | null>(null);
+
   const getPlanById = (providerData: any, planId: string) => {
-    return providerData?.plans?.find((p: any) => p.plan_id === planId || p.name === planId) || providerData?.plans?.[0];
+    return (
+      providerData?.plans?.find(
+        (p: any) => String(p.plan_id) === String(planId) || p.name === planId
+      ) || providerData?.plans?.[0]
+    );
   };
+
+  const getPlanKey = (plan: any) => String(plan?.plan_id ?? plan?.name ?? '');
+
+  const getCurrencySymbol = (currency?: string) => (currency === 'USD' ? '$' : '\u20AC');
+
+  const formatPlanPrice = (plan: any) =>
+    `${getCurrencySymbol(plan?.currency)}${Number(plan?.price ?? 0).toFixed(2)}`;
+
+  const formatPlanName = (name: string, maxLength = 15) =>
+    name.length > maxLength ? `${name.slice(0, maxLength - 3)}...` : name;
 
   const getFeatureValue = (plan: any, featureKey: string) => {
     if (!plan) return '-';
@@ -44,6 +60,80 @@ export default function CompareClient({ initialProviders }: { initialProviders: 
     }));
   };
 
+  const handlePlanSelect = (providerId: string, planId: string) => {
+    handlePlanChange(providerId, planId);
+    setOpenProviderId(null);
+  };
+
+  const handleDropdownBlur = (event: FocusEvent<HTMLDivElement>) => {
+    const nextTarget = event.relatedTarget as Node | null;
+    if (!nextTarget || !event.currentTarget.contains(nextTarget)) {
+      setOpenProviderId(null);
+    }
+  };
+
+  const getPlanNameElement = (p: any) => {
+    return (
+      <div className="mb-2">
+        <div
+          className="relative inline-block w-full max-w-[200px]"
+          tabIndex={0}
+          onBlur={handleDropdownBlur}
+        >
+          <button
+            type="button"
+            aria-haspopup="listbox"
+            aria-expanded={openProviderId === p.id}
+            aria-controls={`plan-menu-${p.id}`}
+            onClick={() => setOpenProviderId(prev => (prev === p.id ? null : p.id))}
+            className={`relative w-full bg-transparent border-none text-lg font-black text-white transition-colors cursor-pointer text-center outline-none ${p.hoverColor || 'hover:text-cyan'}`}
+            style={{ paddingRight: '1.5rem' }}
+          >
+            <span className="block w-full pr-6 text-center" title={p.plan.name}>
+              {formatPlanName(p.plan.name)}
+            </span>
+            <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center justify-end text-slate-400 opacity-60">
+              <svg
+                className={`w-4 h-4 ml-1 transition-transform ${openProviderId === p.id ? 'rotate-180' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </button>
+          {openProviderId === p.id && (
+            <div
+              id={`plan-menu-${p.id}`}
+              role="listbox"
+              className="absolute z-20 mt-2 w-full rounded-xl border border-white/10 bg-slate-900/95 shadow-2xl backdrop-blur"
+            >
+              {p.data?.plans?.map((plan: any) => {
+                const planKey = getPlanKey(plan);
+                const isSelected = planKey === getPlanKey(p.plan);
+                return (
+                  <button
+                    type="button"
+                    role="option"
+                    aria-selected={isSelected}
+                    key={planKey}
+                    onClick={() => handlePlanSelect(p.id, planKey)}
+                    className={`flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm transition-colors ${isSelected ? 'bg-white/10 text-white' : 'text-slate-200 hover:bg-white/10'
+                      }`}
+                  >
+                    <span className="truncate">{plan.name}</span>
+                    <span className="shrink-0 text-slate-400 tabular-nums">{formatPlanPrice(plan)}</span>
+                  </button>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="bg-background rounded-3xl border border-white/10 overflow-hidden shadow-2xl">
       <div className="overflow-x-auto">
@@ -58,27 +148,7 @@ export default function CompareClient({ initialProviders }: { initialProviders: 
                   </div>
                   {p.plan ? (
                     <>
-                      <div className="mb-2">
-                        <div className="relative inline-block w-full max-w-[200px]">
-                          <select
-                            value={p.plan.plan_id || p.plan.name}
-                            onChange={(e) => handlePlanChange(p.id, e.target.value)}
-                            className={`appearance-none w-full bg-transparent border-none text-xl font-black text-white transition-colors cursor-pointer text-center outline-none !bg-none ![-webkit-text-fill-color:initial] ${p.hoverColor || 'hover:text-cyan'}`}
-                            style={{ paddingRight: '1.5rem', textOverflow: 'ellipsis' }}
-                          >
-                            {p.data?.plans?.map((plan: any) => (
-                              <option key={plan.plan_id || plan.name} value={plan.plan_id || plan.name} className="text-slate-900 text-base font-normal">
-                                {plan.name} ({plan.currency === 'USD' ? '$' : '€'}{Number(plan.price).toFixed(2)})
-                              </option>
-                            ))}
-                          </select>
-                          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center justify-end text-slate-400 opacity-60">
-                            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
+                      {getPlanNameElement(p)}
                       <div className="text-3xl font-black text-cyan drop-shadow-[0_0_12px_rgba(6,182,212,0.5)] mb-4">
                         {p.plan.currency === 'USD' ? '$' : '€'}{Number(p.plan.price).toFixed(2)}{' '}
                         <span className="text-sm text-slate-400 font-normal drop-shadow-none">/m</span>
@@ -164,3 +234,4 @@ export default function CompareClient({ initialProviders }: { initialProviders: 
     </div>
   );
 }
+
