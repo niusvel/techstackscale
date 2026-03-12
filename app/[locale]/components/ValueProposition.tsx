@@ -31,7 +31,7 @@ export default function ValueProposition() {
     ];
 
     return (
-        <section className="bg-slate-900 border border-white/10 rounded-3xl max-w-7xl mx-auto shadow-2xl py-12 px-6 my-16">
+        <section className="bg-slate-900 border border-white/10 rounded-3xl max-w-7xl mx-auto shadow-2xl py-12 px-6 mt-16 mb-0">
             <div className="relative z-10 w-full">
                 <div className="text-center max-w-3xl mx-auto mb-14">
                     <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">

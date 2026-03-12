@@ -43,11 +43,11 @@ export default async function Home({ params }: Props) {
   const hetznerBestPlan = hetznerData?.plans?.[0];
 
   return (
-    <div className="min-h-screen bg-metallic">
+    <div className="min-h-screen bg-metallic pb-16 overflow-hidden">
       <PageHeader />
 
       {/* Main Content Area */}
-      <section className="pb-20 mt-10">
+      <section className="mt-10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between mb-12">
             <div>
