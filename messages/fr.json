@@ -7,7 +7,23 @@
         "section_infra_title": "Infrastructure Relevante",
         "section_infra_description": "Prix mis à jour automatiquement via un scraping hebdomadaire.",
         "live_data": "LIVE DATA",
-        "loading_provider": "En attente des données de {provider}..."
+        "loading_provider": "En attente des données de {provider}...",
+        "why_us_title": "Pourquoi utiliser TechStackScale ?",
+        "why_us_subtitle": "Conçu pour les développeurs et DSI cherchant à optimiser les coûts sans sacrifier les performances.",
+        "features": {
+            "money": {
+                "title": "Gagnez du Temps et de l'Argent",
+                "desc": "Arrêtez de payer trop cher pour des serveurs surévalués. Nos comparatifs trouvent le meilleur rapport qualité-prix."
+            },
+            "data": {
+                "title": "Décisions Basées sur les Données",
+                "desc": "Nous comparons les fournisseurs côte à côte en utilisant des métriques réelles régulièrement mises à jour."
+            },
+            "algorithm": {
+                "title": "Moteur de Classement Intelligent",
+                "desc": "Nous évaluons les forfaits dynamiquement avec un algorithme qui pondère (RAM, CPU, Bande passante) par rapport au Prix."
+            }
+        }
     },
     "Metadata": {
         "title": "TechStackScale | Comparateur de Prix Cloud en Temps Réel",
@@ -27,7 +43,8 @@
             "node_apps": "{value}",
             "websites": "{value} Sites Web",
             "emails": "{value} Comptes E-mail"
-        }
+        },
+        "generate_docker_stack": "Générer Docker Stack"
     },
     "AdminEdit": {
         "get_admin_password": "Saisissez le mot de passe administrateur:",
@@ -121,10 +138,11 @@
             "node_apps": "Apps Node.js",
             "emails": "E-mails"
         },
-        "get_offer": "Obtenir l'Offre",
+        "get_offer": "Obtenir l'Offre →",
         "waiting_data": "Récupération des données pour {provider}...",
         "not_available": "N/A",
-        "back_to_comparison": "Retour"
+        "back_to_comparison": "Retour",
+        "generate_docker_stack": "Générer Docker Stack"
     },
     "Calculator": {
         "title": "Configurez votre serveur idéal",
@@ -144,6 +162,38 @@
         "nodes": "Nœuds d'App min: {value}",
         "unit_mb": "MB",
         "unit_gb": "GB",
-        "back_to_comparison": "Retour"
+        "back_to_comparison": "Retour",
+        "generate_docker_stack": "Générer Docker Stack"
+    },
+    "DockerModal": {
+        "title": "Configuration de Docker Stack",
+        "subtitle": "Optimisé pour: {providerName} - {planName}",
+        "tech_stack": "Stack Technologique",
+        "select_tech": "Sélectionnez votre stack technologique",
+        "copy_yaml": "Copier YAML",
+        "copied": "Copié!",
+        "stability_warning": "* Cette configuration limite l'utilisation des ressources pour assurer la stabilité de votre VPS de {ram}GB.",
+        "download_yaml": "Télécharger .yml",
+        "tip": "Les valeurs avec le préfixe 'changeme_' sont fictives, elles doivent être remplacées.",
+        "modal_no_docker": "Vous n'avez pas Docker installé ?",
+        "modal_learn_install": "Apprenez à l'installer en 1 minute"
+    },
+    "InstallDockerGuide": {
+        "read_time": "1 min de lecture",
+        "category_devops": "DevOps & Infrastructure",
+        "install_docker_title": "Installer Docker sur votre VPS en 1 minute",
+        "install_docker_subtitle": "La manière la plus rapide et officielle de préparer votre serveur pour déployer les stacks de TechStackScale.",
+        "step_1_title": "1. Connectez-vous via SSH",
+        "step_1_desc": "Utilisez votre terminal pour accéder à votre serveur. Vous aurez besoin de l'IP et du mot de passe fournis par votre hébergeur.",
+        "step_2_title": "2. Script d'installation officiel",
+        "step_2_desc": "Docker propose un script qui détecte automatiquement votre système (Ubuntu, Debian, CentOS...) et configure tout.",
+        "step_3_title": "3. Vérifiez l'installation",
+        "step_3_desc": "Si tout s'est bien passé, cette commande vous retournera les versions installées de Docker et Docker Compose.",
+        "guide_ready_title": "Tout est prêt !",
+        "guide_ready_desc": "Vous pouvez maintenant utiliser n'importe quel fichier docker-compose.yml généré par notre calculateur et déployer votre application avec une seule commande : 'docker compose up -d'."
+    },
+    "CopyButton": {
+        "copy": "Copier",
+        "copied": "Copié!"
     }
 }

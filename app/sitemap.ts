@@ -30,6 +30,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.9,
         },
+        {
+            url: `${baseUrl}/${locale}/guides/install-docker`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.6,
+        },
+        {
+            url: `${baseUrl}/${locale}/privacy`,
+            lastModified: new Date(),
+            changeFrequency: 'yearly' as const,
+            priority: 0.3,
+        },
+        {
+            url: `${baseUrl}/${locale}/terms`,
+            lastModified: new Date(),
+            changeFrequency: 'yearly' as const,
+            priority: 0.3,
+        },
+        {
+            url: `${baseUrl}/${locale}/cookies`,
+            lastModified: new Date(),
+            changeFrequency: 'yearly' as const,
+            priority: 0.3,
+        },
     ]);
 
     const providerRoutes = locales.flatMap((locale) =>

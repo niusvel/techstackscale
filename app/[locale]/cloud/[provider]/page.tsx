@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import fs from 'fs';
 import path from 'path';
 import { Link } from '@/i18n/routing';
+import { formatPrice } from '@/utils/currency';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string, provider: string }> }): Promise<Metadata> {
     const { locale, provider } = await params;
@@ -91,7 +92,7 @@ export default async function ProviderPage({ params }: { params: Promise<{ local
                                 </div>
                                 <div className="text-right">
                                     <span className="text-3xl font-mono font-bold text-cyan drop-shadow-[0_0_8px_rgba(42,161,152,0.3)]">
-                                        {plan.currency === 'USD' ? '$' : ''}{Number(plan.price).toFixed(2)}{plan.currency !== 'USD' ? '€' : ''}
+                                        {formatPrice(plan.price, plan.currency)}
                                     </span>
                                     <p className="text-xs text-slate-500 uppercase tracking-widest">{t('per_month')}</p>
                                 </div>

@@ -2,10 +2,14 @@
 
 import { useState, type FocusEvent } from 'react';
 import { useTranslations } from 'next-intl';
+import { formatPrice } from '@/utils/currency';
+import DockerModal from '../components/DockerModal';
+import { normalizePlanForDocker } from '@/utils/docker-generator';
 
 export default function CompareClient({ initialProviders }: { initialProviders: any[] }) {
   const t = useTranslations('ComparePage');
 
+  const [selectedPlanForDocker, setSelectedPlanForDocker] = useState<any>(null);
   const [selectedPlans, setSelectedPlans] = useState<Record<string, string>>(() => {
     const initialState: Record<string, string> = {};
     initialProviders.forEach(p => {
@@ -28,10 +32,7 @@ export default function CompareClient({ initialProviders }: { initialProviders: 
 
   const getPlanKey = (plan: any) => String(plan?.plan_id ?? plan?.name ?? '');
 
-  const getCurrencySymbol = (currency?: string) => (currency === 'USD' ? '$' : '\u20AC');
-
-  const formatPlanPrice = (plan: any) =>
-    `${getCurrencySymbol(plan?.currency)}${Number(plan?.price ?? 0).toFixed(2)}`;
+  const formatPlanPrice = (plan: any) => formatPrice(plan?.price, plan?.currency);
 
   const formatPlanName = (name: string, maxLength = 15) =>
     name.length > maxLength ? `${name.slice(0, maxLength - 3)}...` : name;
@@ -150,9 +151,16 @@ export default function CompareClient({ initialProviders }: { initialProviders: 
                     <>
                       {getPlanNameElement(p)}
                       <div className="text-3xl font-black text-cyan drop-shadow-[0_0_12px_rgba(6,182,212,0.5)] mb-4">
-                        {p.plan.currency === 'USD' ? '$' : '€'}{Number(p.plan.price).toFixed(2)}{' '}
+                        {formatPrice(p.plan.price, p.plan.currency)}{' '}
                         <span className="text-sm text-slate-400 font-normal drop-shadow-none">/m</span>
                       </div>
+
+                      <button
+                        onClick={() => setSelectedPlanForDocker(normalizePlanForDocker(p.plan, p.name))}
+                        className="w-full text-slate-950 mb-2 bg-slate-500 text-xs font-bold py-2.5 px-4 rounded-xl hover:bg-cyan transition-all transform active:scale-95 text-center shadow-lg"
+                      >
+                        {t('generate_docker_stack')}
+                      </button>
                       <a
                         href={p.link}
                         target="_blank"
@@ -231,6 +239,13 @@ export default function CompareClient({ initialProviders }: { initialProviders: 
           </tbody>
         </table>
       </div>
+      {selectedPlanForDocker && (
+        <DockerModal
+          plan={selectedPlanForDocker}
+          isOpen={!!selectedPlanForDocker}
+          onClose={() => setSelectedPlanForDocker(null)}
+        />
+      )}
     </div>
   );
 }
