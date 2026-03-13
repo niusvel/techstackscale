@@ -174,6 +174,22 @@
         "copied": "Copié!",
         "stability_warning": "* Cette configuration limite l'utilisation des ressources pour assurer la stabilité de votre VPS de {ram}GB.",
         "download_yaml": "Télécharger .yml",
-        "tip": "Les valeurs avec le préfixe 'changeme_' sont fictives, elles doivent être remplacées."
+        "tip": "Les valeurs avec le préfixe 'changeme_' sont fictives, elles doivent être remplacées.",
+        "modal_no_docker": "Vous n'avez pas Docker installé ?",
+        "modal_learn_install": "Apprenez à l'installer en 1 minute"
+    },
+    "InstallDockerGuide": {
+        "read_time": "1 min de lecture",
+        "category_devops": "DevOps & Infrastructure",
+        "install_docker_title": "Installer Docker sur votre VPS en 1 minute",
+        "install_docker_subtitle": "La manière la plus rapide et officielle de préparer votre serveur pour déployer les stacks de TechStackScale.",
+        "step_1_title": "1. Connectez-vous via SSH",
+        "step_1_desc": "Utilisez votre terminal pour accéder à votre serveur. Vous aurez besoin de l'IP et du mot de passe fournis par votre hébergeur.",
+        "step_2_title": "2. Script d'installation officiel",
+        "step_2_desc": "Docker propose un script qui détecte automatiquement votre système (Ubuntu, Debian, CentOS...) et configure tout.",
+        "step_3_title": "3. Vérifiez l'installation",
+        "step_3_desc": "Si tout s'est bien passé, cette commande vous retournera les versions installées de Docker et Docker Compose.",
+        "guide_ready_title": "Tout est prêt !",
+        "guide_ready_desc": "Vous pouvez maintenant utiliser n'importe quel fichier docker-compose.yml généré par notre calculateur et déployer votre application avec une seule commande : 'docker compose up -d'."
     }
 }

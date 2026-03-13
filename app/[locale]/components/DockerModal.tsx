@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { generateDockerCompose } from '@/utils/docker-generator';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 interface DockerModalProps {
     plan: any;
@@ -85,6 +86,18 @@ export default function DockerModal({ plan, isOpen, onClose }: DockerModalProps)
 
                 {/* Footer */}
                 <div className="p-4 bg-slate-950/50 text-center">
+                    <div className="p-4 bg-slate-950/50 text-center border-t border-slate-800/50">
+                        <p className="text-[11px] text-slate-500">
+                            {t('modal_no_docker')}{" "}
+                            <Link
+                                href="/guides/install-docker"
+                                className="text-cyan hover:underline font-bold"
+                                onClick={onClose} // Cerramos el modal para que puedan leer la guía
+                            >
+                                {t('modal_learn_install')}
+                            </Link>
+                        </p>
+                    </div>
                     <p className="text-[10px] text-slate-500 italic">
                         {t('stability_warning', { ram: plan.ramInGb })}
                     </p>
