@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server';
+import CopyButton from '@/app/[locale]/components/CopyButton';
 
 export default async function InstallDockerGuide({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -31,8 +32,11 @@ export default async function InstallDockerGuide({ params }: { params: Promise<{
                         <div className="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-cyan shadow-[0_0_10px_rgba(6,182,212,0.5)]"></div>
                         <h2 className="text-2xl font-bold mb-4">{t('step_1_title')}</h2>
                         <p className="text-slate-400 mb-4">{t('step_1_desc')}</p>
-                        <div className="bg-slate-900 rounded-xl p-4 border border-slate-800 font-mono text-sm text-cyan">
-                            <code>ssh root@your_server_ip</code>
+                        <div className="relative group">
+                            <div className="bg-slate-900 rounded-xl p-4 border border-slate-800 font-mono text-sm text-cyan overflow-x-auto">
+                                <code>ssh root@your_server_ip</code>
+                            </div>
+                            <CopyButton text="ssh root@your_server_ip" />
                         </div>
                     </section>
 
@@ -41,9 +45,11 @@ export default async function InstallDockerGuide({ params }: { params: Promise<{
                         <div className="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-slate-800 border-2 border-cyan"></div>
                         <h2 className="text-2xl font-bold mb-4">{t('step_2_title')}</h2>
                         <p className="text-slate-400 mb-4">{t('step_2_desc')}</p>
-                        <div className="bg-slate-900 rounded-xl p-4 border border-slate-800 font-mono text-sm text-cyan space-y-2">
-                            <p>curl -fsSL https://get.docker.com -o get-docker.sh</p>
-                            <p>sh get-docker.sh</p>
+                        <div className="relative group">
+                            <div className="bg-slate-900 rounded-xl p-4 border border-slate-800 font-mono text-sm text-cyan space-y-2 overflow-x-auto">
+                                <code>curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh</code>
+                            </div>
+                            <CopyButton text="curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh" />
                         </div>
                     </section>
 
@@ -52,14 +58,16 @@ export default async function InstallDockerGuide({ params }: { params: Promise<{
                         <div className="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-slate-800 border-2 border-cyan"></div>
                         <h2 className="text-2xl font-bold mb-4">{t('step_3_title')}</h2>
                         <p className="text-slate-400 mb-4">{t('step_3_desc')}</p>
-                        <div className="bg-slate-900 rounded-xl p-4 border border-slate-800 font-mono text-sm text-green-400">
-                            <code>docker --version && docker compose version</code>
+                        <div className="relative group">
+                            <div className="bg-slate-900 rounded-xl p-4 border border-slate-800 font-mono text-sm text-green-400 overflow-x-auto">
+                                <code>docker --version && docker compose version</code>
+                            </div>
+                            <CopyButton text="docker --version && docker compose version" />
                         </div>
                     </section>
                 </div>
 
-                {/* Footer de la guía */}
-                <footer className="mt-20 p-8 bg-cyan/5 border border-cyan/20 rounded-2xl">
+                <footer className="mt-20 p-8 bg-cyan/5 border border-cyan/20 rounded-2xl text-center">
                     <h3 className="text-xl font-bold mb-2 text-cyan">🚀 {t('guide_ready_title')}</h3>
                     <p className="text-slate-400">
                         {t('guide_ready_desc')}

@@ -191,5 +191,9 @@
         "step_3_desc": "Si todo ha ido bien, este comando te devolverá las versiones instaladas de Docker y Docker Compose.",
         "guide_ready_title": "¡Todo listo!",
         "guide_ready_desc": "Ahora puedes usar cualquier archivo docker-compose.yml generado por nuestra calculadora y desplegar tu app con un solo comando: 'docker compose up -d'."
+    },
+    "CopyButton": {
+        "copy": "Copiar",
+        "copied": "¡Copiado!"
     }
 }
