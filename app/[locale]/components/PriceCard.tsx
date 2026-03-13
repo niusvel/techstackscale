@@ -1,5 +1,8 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import { formatPrice } from '@/utils/currency';
+import { normalizePlanForDocker } from '@/utils/docker-generator';
 
 const CheckIcon = ({ className }: { className?: string }) => (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className={className || "w-4 h-4"}>
@@ -7,11 +10,10 @@ const CheckIcon = ({ className }: { className?: string }) => (
     </svg>
 );
 
-// Agregamos currency a las props
-export default function PriceCard({ name, price, currency, features, affiliateLink, isBestValue, lastUpdate, provider, verdict }: any) {
+export default function PriceCard({ plan, name, affiliateLink, isBestValue, lastUpdate, provider, verdict, setSelectedPlanForDocker }: any) {
     const t = useTranslations('PriceCard');
 
-    const displayPrice = formatPrice(price, currency);
+    const displayPrice = formatPrice(plan.price, plan.currency);
 
     return (
         <div className={`relative h-full flex flex-col rounded-2xl overflow-hidden transition-all duration-300 ${isBestValue
@@ -45,7 +47,7 @@ export default function PriceCard({ name, price, currency, features, affiliateLi
                 </div>
 
                 <div className="space-y-3 mb-8 flex-grow">
-                    {features.map((feature: any) => (
+                    {plan.features.map((feature: any) => (
                         feature.enabled && (
                             <div key={feature.key} className="flex items-start gap-3 text-[13px] text-white/90">
                                 <CheckIcon className="w-4 h-4 text-cyan flex-shrink-0 mt-0.5" />
@@ -65,6 +67,12 @@ export default function PriceCard({ name, price, currency, features, affiliateLi
                         </p>
                     </div>
                     <div className="flex flex-col gap-2">
+                        <button
+                            onClick={() => setSelectedPlanForDocker(normalizePlanForDocker(plan, provider))}
+                            className="w-full text-slate-950 mb-2 bg-slate-500 text-xs font-bold py-2.5 px-4 rounded-xl hover:bg-cyan transition-all transform active:scale-95 text-center shadow-lg"
+                        >
+                            {t('generate_docker_stack')}
+                        </button>
                         <a
                             href={affiliateLink}
                             target="_blank"

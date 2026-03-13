@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { parseValue } from './utils';
 import { formatPrice } from '@/utils/currency';
+import DockerModal from '../components/DockerModal';
 
 export default function CalculatorClient({ providers, locale }: { providers: any[], locale: string }) {
     const t = useTranslations('Calculator');
@@ -24,6 +25,7 @@ export default function CalculatorClient({ providers, locale }: { providers: any
         currency: 'EUR'
     };
 
+    const [selectedPlanForDocker, setSelectedPlanForDocker] = useState<any>(null);
     const [filters, setFilters] = useState(initialFilters);
 
     const mbValues = [128, 256, 512];
@@ -241,6 +243,12 @@ export default function CalculatorClient({ providers, locale }: { providers: any
                                     <p className="text-3xl font-mono font-bold text-green-400 tracking-tighter">
                                         {formatPrice(plan.numericPrice, plan.currency)}
                                     </p>
+                                    <button
+                                        onClick={() => setSelectedPlanForDocker(plan)}
+                                        className="w-full text-slate-950 bg-slate-500 text-xs font-bold py-2.5 px-4 rounded-xl hover:bg-cyan transition-all transform active:scale-95 text-center shadow-lg"
+                                    >
+                                        {t('generate_docker_stack')}
+                                    </button>
                                     <Link
                                         href={plan.link}
                                         target="_blank"
@@ -258,6 +266,13 @@ export default function CalculatorClient({ providers, locale }: { providers: any
                     </div>
                 )}
             </div>
+            {selectedPlanForDocker && (
+                <DockerModal
+                    plan={selectedPlanForDocker}
+                    isOpen={!!selectedPlanForDocker}
+                    onClose={() => setSelectedPlanForDocker(null)}
+                />
+            )}
         </div>
     );
 }

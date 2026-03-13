@@ -43,7 +43,8 @@
             "node_apps": "{value} Aplicaciones Node.js",
             "storage": "{value} de almacenamiento",
             "emails": "{value} Cuentas de correo"
-        }
+        },
+        "generate_docker_stack": "Generar Docker Stack"
     },
     "AdminEdit": {
         "get_admin_password": "Introduce la contraseña de administrador:",
@@ -137,10 +138,11 @@
             "node_apps": "Apps Node.js",
             "emails": "Correos"
         },
-        "get_offer": "Obtener Oferta",
+        "get_offer": "Obtener Oferta →",
         "waiting_data": "Obteniendo datos de {provider}...",
         "not_available": "No disponible",
-        "back_to_comparison": "Volver"
+        "back_to_comparison": "Volver",
+        "generate_docker_stack": "Generar Docker Stack"
     },
     "Calculator": {
         "title": "Configura tu servidor ideal",
@@ -160,6 +162,18 @@
         "nodes": "Nodos de App mín: {value}",
         "unit_mb": "MB",
         "unit_gb": "GB",
-        "back_to_comparison": "Volver"
+        "back_to_comparison": "Volver",
+        "generate_docker_stack": "Generar Docker Stack"
+    },
+    "DockerModal": {
+        "title": "Configuración de Docker Stack",
+        "subtitle": "Optimizado para: {providerName} - {planName}",
+        "tech_stack": "Stack Tecnológico",
+        "select_tech": "Selecciona tu stack tecnológico",
+        "copy_yaml": "Copiar YAML",
+        "copied": "¡Copiado!",
+        "stability_warning": "* Esta configuración limita el uso de recursos para asegurar la estabilidad de tu VPS de {ram}GB.",
+        "download_yaml": "Descargar .yml",
+        "tip": "Los valores con el prefijo 'changeme_' son ficticios, deben ser reemplazados."
     }
 }

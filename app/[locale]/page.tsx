@@ -3,9 +3,9 @@ import path from 'path';
 
 import { getTranslations } from 'next-intl/server';
 
-import PriceCard from './components/PriceCard';
 import PageHeader from './components/PageHeader';
 import ValueProposition from './components/ValueProposition';
+import HomeContent from './components/HomeContent';
 
 function getLocalData(fileName: string) {
   const filePath = path.join(process.cwd(), 'data', fileName);
@@ -42,6 +42,42 @@ export default async function Home({ params }: Props) {
   const doBestPlan = digitalOceanData?.plans?.[0];
   const hetznerBestPlan = hetznerData?.plans?.[0];
 
+  const cards = [
+    {
+      plan: hostingerBestPlan,
+      name: hostingerBestPlan ? `Hostinger ${hostingerBestPlan.name}` : '',
+      affiliateLink: hostingerData?.affiliate_link || "#",
+      isBestValue: true,
+      lastUpdate: hostingerData?.last_update || '',
+      provider: hostingerData?.provider || 'Hostinger',
+      verdict: hostingerData?.verdicts?.[locale] || '',
+    },
+    {
+      plan: doBestPlan,
+      name: doBestPlan?.name || '',
+      affiliateLink: digitalOceanData?.affiliate_link || "#",
+      isBestValue: true,
+      lastUpdate: digitalOceanData?.last_update || '',
+      provider: digitalOceanData?.provider || 'DigitalOcean',
+      verdict: digitalOceanData?.verdicts?.[locale] || '',
+    },
+    {
+      plan: hetznerBestPlan,
+      name: hetznerBestPlan ? `Hetzner ${hetznerBestPlan.name}` : '',
+      affiliateLink: hetznerData?.affiliate_link || "#",
+      isBestValue: true,
+      lastUpdate: hetznerData?.last_update || '',
+      provider: hetznerData?.provider || 'Hetzner',
+      verdict: hetznerData?.verdicts?.[locale] || '',
+    },
+  ];
+
+  const loadingTexts = [
+    t('loading_provider', { provider: 'Hostinger' }),
+    t('loading_provider', { provider: 'DigitalOcean' }),
+    t('loading_provider', { provider: 'Hetzner' }),
+  ];
+
   return (
     <div className="min-h-screen bg-metallic pb-16 overflow-hidden">
       <PageHeader />
@@ -60,62 +96,7 @@ export default async function Home({ params }: Props) {
             </span>
           </div>
 
-          {/* ToolsGrid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {hostingerBestPlan ? (
-              <PriceCard
-                name={`Hostinger ${hostingerBestPlan.name}`}
-                price={hostingerBestPlan.price}
-                features={hostingerBestPlan.features}
-                affiliateLink={hostingerData.affiliate_link || "#"}
-                isBestValue={true}
-                lastUpdate={hostingerData.last_update}
-                currency={hostingerBestPlan.currency}
-                provider={hostingerData.provider}
-                verdict={hostingerData.verdicts[locale]}
-              />
-            ) : (
-              <div className="p-6 border-2 border-dashed border-white/5 rounded-2xl flex items-center text-slate-400 text-sm italic glass">
-                {t('loading_provider', { provider: 'Hostinger' })}
-              </div>
-            )}
-
-            {doBestPlan ? (
-              <PriceCard
-                name={doBestPlan.name}
-                price={doBestPlan.price}
-                features={doBestPlan.features}
-                affiliateLink={digitalOceanData.affiliate_link || "#"}
-                isBestValue={true}
-                lastUpdate={digitalOceanData.last_update}
-                currency={doBestPlan.currency}
-                provider={digitalOceanData.provider}
-                verdict={digitalOceanData.verdicts[locale]}
-              />
-            ) : (
-              <div className="p-6 border-2 border-dashed border-slate-200 rounded-2xl flex items-center text-slate-500 text-sm italic bg-white/50">
-                {t('loading_provider', { provider: 'DigitalOcean' })}
-              </div>
-            )}
-
-            {hetznerBestPlan ? (
-              <PriceCard
-                name={`Hetzner ${hetznerBestPlan.name}`}
-                price={hetznerBestPlan.price}
-                features={hetznerBestPlan.features}
-                affiliateLink={hetznerData.affiliate_link || "#"}
-                isBestValue={true}
-                lastUpdate={hetznerData.last_update}
-                currency={hetznerBestPlan.currency}
-                provider={hetznerData.provider}
-                verdict={hetznerData.verdicts[locale]}
-              />
-            ) : (
-              <div className="p-6 border-2 border-dashed border-slate-200 rounded-2xl flex items-center text-slate-500 text-sm italic bg-white/50">
-                {t('loading_provider', { provider: 'Hetzner' })}
-              </div>
-            )}
-          </div>
+          <HomeContent cards={cards} loadingTexts={loadingTexts} />
         </div>
       </section>
 

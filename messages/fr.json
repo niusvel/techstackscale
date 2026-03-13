@@ -43,7 +43,8 @@
             "node_apps": "{value}",
             "websites": "{value} Sites Web",
             "emails": "{value} Comptes E-mail"
-        }
+        },
+        "generate_docker_stack": "Générer Docker Stack"
     },
     "AdminEdit": {
         "get_admin_password": "Saisissez le mot de passe administrateur:",
@@ -137,10 +138,11 @@
             "node_apps": "Apps Node.js",
             "emails": "E-mails"
         },
-        "get_offer": "Obtenir l'Offre",
+        "get_offer": "Obtenir l'Offre →",
         "waiting_data": "Récupération des données pour {provider}...",
         "not_available": "N/A",
-        "back_to_comparison": "Retour"
+        "back_to_comparison": "Retour",
+        "generate_docker_stack": "Générer Docker Stack"
     },
     "Calculator": {
         "title": "Configurez votre serveur idéal",
@@ -160,6 +162,18 @@
         "nodes": "Nœuds d'App min: {value}",
         "unit_mb": "MB",
         "unit_gb": "GB",
-        "back_to_comparison": "Retour"
+        "back_to_comparison": "Retour",
+        "generate_docker_stack": "Générer Docker Stack"
+    },
+    "DockerModal": {
+        "title": "Configuration de Docker Stack",
+        "subtitle": "Optimisé pour: {providerName} - {planName}",
+        "tech_stack": "Stack Technologique",
+        "select_tech": "Sélectionnez votre stack technologique",
+        "copy_yaml": "Copier YAML",
+        "copied": "Copié!",
+        "stability_warning": "* Cette configuration limite l'utilisation des ressources pour assurer la stabilité de votre VPS de {ram}GB.",
+        "download_yaml": "Télécharger .yml",
+        "tip": "Les valeurs avec le préfixe 'changeme_' sont fictives, elles doivent être remplacées."
     }
 }

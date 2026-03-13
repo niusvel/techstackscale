@@ -43,7 +43,8 @@
             "node_apps": "{value}",
             "websites": "{value} Websites",
             "emails": "{value} Email Accounts"
-        }
+        },
+        "generate_docker_stack": "Generate Docker Stack"
     },
     "AdminEdit": {
         "get_admin_password": "Get admin password:",
@@ -137,10 +138,11 @@
             "node_apps": "Node.js Apps",
             "emails": "Emails"
         },
-        "get_offer": "Get Offer",
+        "get_offer": "Get Offer →",
         "waiting_data": "Fetching data for {provider}...",
         "not_available": "N/A",
-        "back_to_comparison": "Back"
+        "back_to_comparison": "Back",
+        "generate_docker_stack": "Generate Docker Stack"
     },
     "Calculator": {
         "title": "Configure your ideal server",
@@ -160,6 +162,18 @@
         "nodes": "Min App Nodes: {value}",
         "unit_mb": "MB",
         "unit_gb": "GB",
-        "back_to_comparison": "Back"
+        "back_to_comparison": "Back",
+        "generate_docker_stack": "Generate Docker Stack"
+    },
+    "DockerModal": {
+        "title": "Docker Stack Config",
+        "subtitle": "Optimized for: {providerName} - {planName}",
+        "tech_stack": "Tech Stack",
+        "select_tech": "Select your tech stack",
+        "copy_yaml": "Copy YAML",
+        "copied": "Copied!",
+        "stability_warning": "* This configuration limits resource usage to ensure the stability of your {ram}GB VPS.",
+        "download_yaml": "Download .yml",
+        "tip": "Values with the prefix 'changeme_' are placeholders, they must be replaced."
     }
 }
