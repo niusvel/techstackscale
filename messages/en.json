@@ -2,10 +2,6 @@
     "HomePage": {
         "title": "Scale your Stack with Real Data",
         "description": "We analyze and compare infrastructure costs so you can make data-driven decisions.",
-        "cta_calculator": "Explore Calculators",
-        "cta_compare": "View Comparisons",
-        "section_infra_title": "Relevant Infrastructure",
-        "section_infra_description": "Prices automatically updated via weekly scraping.",
         "live_data": "LIVE DATA",
         "loading_provider": "Waiting for {provider} data...",
         "why_us_title": "Why use TechStackScale?",
@@ -23,6 +19,23 @@
                 "title": "Intelligent Ranking Engine",
                 "desc": "We dynamically evaluate plans using a custom algorithm that weighs (RAM, CPU, Bandwidth) against Price."
             }
+        },
+        "live_updates": "Updated: {date}",
+        "title_start": "Scale your infra at the",
+        "title_accent": "Best Price",
+        "cta_calculator": "Try Calculator",
+        "cta_compare": "View Comparison",
+        "section_infra_title": "Featured Plans",
+        "section_infra_description": "Manual selection of the best value-for-money options this month.",
+        "stats": {
+            "providers": "Providers",
+            "plans": "Plans Indexed",
+            "benchmarks": "Benchmarks",
+            "update_frequency": "Update Frequency",
+            "real_time": "Real-Time",
+            "daily": "Daily",
+            "weekly": "Weekly",
+            "monthly": "Monthly"
         }
     },
     "Metadata": {

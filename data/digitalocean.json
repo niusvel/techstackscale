@@ -1,6 +1,7 @@
 {
     "last_update": "2026-03-10 22:08:37",
     "provider": "DigitalOcean",
+    "affiliation_id": "TU_ID_AFILIADO",
     "affiliate_link": "https://www.digitalocean.com/pricing/droplets",
     "verdicts": {
         "es": "El estándar para desarrolladores. Gran ecosistema de herramientas y documentación.",

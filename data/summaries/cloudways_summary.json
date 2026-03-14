@@ -1,0 +1,80 @@
+{
+    "en": {
+        "description": "Cloudways is a managed cloud hosting platform that simplifies deployment on industry-leading infrastructures like DigitalOcean, AWS, and Google Cloud. It acts as an abstraction layer, providing a custom control panel, advanced caching, and 24/7 support over raw unmanaged servers.",
+        "services": [
+            {
+                "title": "Flexible Managed Hosting",
+                "info": "Choose your preferred cloud provider (DO, Vultr, Linode, AWS, GCP) and manage everything through the Cloudways console. Includes 1-click staging, cloning, and vertical scaling."
+            },
+            {
+                "title": "Cloudways Autonomous",
+                "info": "A high-availability, auto-scaling WordPress hosting solution built on Kubernetes (GKE), designed to handle massive traffic spikes without manual intervention."
+            },
+            {
+                "title": "Cloudways Lightning Stack",
+                "info": "An optimized performance stack consisting of Nginx, Apache, Memcached, Varnish, and Redis, designed to deliver up to 65% faster load times for PHP applications."
+            },
+            {
+                "title": "Managed Security",
+                "info": "Dedicated firewalls, bot protection, and regular security patching are included in every plan. They also offer a proactive Malware Protection add-on."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Choice of Infrastructure",
+                "info": "Deploy your applications across 65+ data centers globally by picking the specific cloud provider that fits your budget and geographic needs."
+            },
+            {
+                "title": "Simplified Management",
+                "info": "No root access is provided, as Cloudways manages the OS and security for you, making it ideal for agencies and developers who want to skip server administration."
+            },
+            {
+                "title": "Advanced Caching (Breeze)",
+                "info": "Includes their proprietary Breeze cache plugin for WordPress, pre-configured to work seamlessly with Varnish and Redis for maximum speed."
+            },
+            {
+                "title": "Pay-As-You-Go",
+                "info": "Monthly or hourly billing based on actual usage. You only pay for the resources your server consumes, with no long-term contracts."
+            }
+        ]
+    },
+    "es": {
+        "description": "Cloudways es una plataforma de hosting cloud gestionada que simplifica el despliegue en infraestructuras líderes como DigitalOcean, AWS y Google Cloud. Actúa como una capa de abstracción, proporcionando un panel de control personalizado, caché avanzada y soporte 24/7 sobre servidores no gestionados.",
+        "services": [
+            {
+                "title": "Hosting Gestionado Flexible",
+                "info": "Elige tu proveedor cloud preferido (DO, Vultr, Linode, AWS, GCP) y gestiónalo todo desde la consola de Cloudways. Incluye staging en un clic, clonación y escalado vertical."
+            },
+            {
+                "title": "Cloudways Autonomous",
+                "info": "Una solución de hosting WordPress con auto-escalado y alta disponibilidad basada en Kubernetes (GKE), diseñada para picos de tráfico masivos."
+            },
+            {
+                "title": "Cloudways Lightning Stack",
+                "info": "Un stack de rendimiento optimizado (Nginx, Apache, Memcached, Varnish y Redis) diseñado para ofrecer cargas hasta un 65% más rápidas en apps PHP."
+            },
+            {
+                "title": "Seguridad Gestionada",
+                "info": "Firewalls dedicados, protección contra bots y parches de seguridad regulares incluidos en todos los planes. Ofrecen protección proactiva contra malware."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Elección de Infraestructura",
+                "info": "Despliega tus aplicaciones en más de 65 centros de datos globales eligiendo el proveedor cloud que mejor se adapte a tu presupuesto y necesidades."
+            },
+            {
+                "title": "Gestión Simplificada",
+                "info": "No se proporciona acceso root, ya que Cloudways gestiona el SO por ti. Es ideal para agencias y desarrolladores que quieren evitar la administración de servidores."
+            },
+            {
+                "title": "Caché Avanzada (Breeze)",
+                "info": "Incluye su plugin de caché Breeze para WordPress, preconfigurado para trabajar con Varnish y Redis para obtener la máxima velocidad."
+            },
+            {
+                "title": "Pago por Uso",
+                "info": "Facturación mensual u horaria basada en el uso real. Solo pagas por los recursos que consume tu servidor, sin contratos a largo plazo."
+            }
+        ]
+    }
+}

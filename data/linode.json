@@ -1,0 +1,112 @@
+{
+    "provider": "Linode",
+    "id": "linode",
+    "affiliation_id": "TU_ID_AFILIADO",
+    "affiliate_link": "https://www.linode.com/?r=TU_ID_AFILIADO",
+    "last_update": "2026-03-14",
+    "currency": "USD",
+    "verdicts": {
+        "es": "Referente en estabilidad y soporte técnico. Ideal para desarrolladores que buscan documentación impecable y una red global respaldada por Akamai.",
+        "en": "A benchmark in stability and technical support. Ideal for developers seeking impeccable documentation and a global network backed by Akamai.",
+        "fr": "Une référence en matière de stabilité et de support technique. Idéal pour les développeurs à la recherche d'une documentation impeccable et d'un réseau mondial soutenu par Akamai."
+    },
+    "plans": [
+        {
+            "name": "Nanode 1GB",
+            "price": 5,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "1GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "25GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "1TB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "1",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "Linode 2GB",
+            "price": 12,
+            "currency": "USD",
+            "is_best_seller": true,
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "2GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "50GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "2TB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "2",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "Linode 4GB",
+            "price": 24,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "80GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "4TB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "4",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}

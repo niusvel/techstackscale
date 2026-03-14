@@ -2,10 +2,6 @@
     "HomePage": {
         "title": "Optimisez votre Stack avec des Données Réelles",
         "description": "Nous analysons et comparons les coûts d'infrastructure pour des décisions basées sur les données.",
-        "cta_calculator": "Explorer les Calculateurs",
-        "cta_compare": "Voir les Comparaisons",
-        "section_infra_title": "Infrastructure Relevante",
-        "section_infra_description": "Prix mis à jour automatiquement via un scraping hebdomadaire.",
         "live_data": "LIVE DATA",
         "loading_provider": "En attente des données de {provider}...",
         "why_us_title": "Pourquoi utiliser TechStackScale ?",
@@ -23,6 +19,23 @@
                 "title": "Moteur de Classement Intelligent",
                 "desc": "Nous évaluons les forfaits dynamiquement avec un algorithme qui pondère (RAM, CPU, Bande passante) par rapport au Prix."
             }
+        },
+        "live_updates": "Mis à jour: {date}",
+        "title_start": "Optimisez votre Stack au",
+        "title_accent": "Meilleur Prix",
+        "cta_calculator": "Essayer Calculatrice",
+        "cta_compare": "Voir Comparaison",
+        "section_infra_title": "Plans en Vedette",
+        "section_infra_description": "Sélection manuelle des meilleures options qualité-prix du mois.",
+        "stats": {
+            "providers": "Providers",
+            "plans": "Plans Indexés",
+            "benchmarks": "Benchmarks",
+            "update_frequency": "Fréquence de Mise à Jour",
+            "real_time": "Temps Réel",
+            "daily": "Quotidien",
+            "weekly": "Hebdomadaire",
+            "monthly": "Mensuel"
         }
     },
     "Metadata": {

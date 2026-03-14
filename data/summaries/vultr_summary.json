@@ -1,0 +1,131 @@
+{
+    "en": {
+        "description": "Vultr is a premium cloud hosting provider known for its massive global footprint and high-performance infrastructure. Launched in 2014, it has quickly become a top choice for developers seeking high-frequency compute power and low-latency networking across more than 32 locations worldwide.",
+        "services": [
+            {
+                "title": "Cloud Compute (Shared & Dedicated)",
+                "info": "Vultr's core service. They offer flexible virtual instances with NVMe storage. Options include 'Regular' for standard workloads, 'High Frequency' for high-performance apps, and 'Dedicated Cloud' for isolated resources."
+            },
+            {
+                "title": "Bare Metal Servers",
+                "info": "Fully dedicated physical servers with no virtualization layer. These provide 100% of the hardware resources to the user, ideal for intensive workloads that require maximum throughput."
+            },
+            {
+                "title": "Managed Kubernetes",
+                "info": "Vultr Kubernetes Engine (VKE) is a fully managed service that simplifies the deployment and management of containerized applications, offering high availability at no extra management cost."
+            },
+            {
+                "title": "Vultr Managed Databases",
+                "info": "Managed hosting for MySQL, PostgreSQL, and Redis. Vultr handles the maintenance, security, and scaling, allowing developers to focus strictly on their application code."
+            },
+            {
+                "title": "Block Storage & Object Storage",
+                "info": "Highly available and scalable storage solutions. Block storage is ideal for mounting extra NVMe volumes to instances, while S3-compatible Object Storage is perfect for unstructured data and media files."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Global Edge Presence",
+                "info": "With 32+ data centers strategically located across 6 continents, Vultr offers one of the lowest latency networks in the industry, allowing you to deploy your code closer to your users."
+            },
+            {
+                "title": "Performance-First Hardware",
+                "info": "Vultr pioneered the widespread use of NVMe SSDs and high-clock speed CPUs (3.0GHz+) in their High Frequency line, setting a high bar for raw compute performance in the cloud."
+            },
+            {
+                "title": "One-Click Deployments",
+                "info": "Their marketplace allows for the instant deployment of dozens of operating systems and applications, including Docker, WordPress, and specialized dev-stacks, in seconds."
+            },
+            {
+                "title": "Developer-Centric API",
+                "info": "Every feature available in the control panel is also accessible via their robust API and CLI, making it a favorite for automation and Infrastructure as Code (IaC) workflows."
+            }
+        ]
+    },
+    "es": {
+        "description": "Vultr es un proveedor de hosting cloud premium conocido por su enorme presencia global e infraestructura de alto rendimiento. Lanzado en 2014, se ha convertido rápidamente en la opción preferida para desarrolladores que buscan potencia de cómputo de alta frecuencia y redes de baja latencia en más de 32 ubicaciones en todo el mundo.",
+        "services": [
+            {
+                "title": "Cloud Compute (Compartido y Dedicado)",
+                "info": "El servicio principal de Vultr. Ofrecen instancias virtuales flexibles con almacenamiento NVMe. Las opciones incluyen 'Regular' para cargas estándar, 'High Frequency' para apps de alto rendimiento y 'Dedicated Cloud' para recursos aislados."
+            },
+            {
+                "title": "Servidores Bare Metal",
+                "info": "Servidores físicos totalmente dedicados sin capa de virtualización. Proporcionan el 100% de los recursos de hardware al usuario, ideales para cargas intensivas que requieren el máximo rendimiento."
+            },
+            {
+                "title": "Kubernetes Gestionado",
+                "info": "Vultr Kubernetes Engine (VKE) es un servicio totalmente gestionado que simplifica el despliegue y la gestión de aplicaciones en contenedores, ofreciendo alta disponibilidad sin costes de gestión adicionales."
+            },
+            {
+                "title": "Bases de Datos Gestionadas",
+                "info": "Hosting gestionado para MySQL, PostgreSQL y Redis. Vultr se encarga del mantenimiento, la seguridad y el escalado, permitiendo a los desarrolladores centrarse estrictamente en el código de su aplicación."
+            },
+            {
+                "title": "Block Storage y Object Storage",
+                "info": "Soluciones de almacenamiento escalables y de alta disponibilidad. El almacenamiento en bloque es ideal para montar volúmenes NVMe extra, mientras que el Object Storage compatible con S3 es perfecto para archivos multimedia."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Presencia Global en el Edge",
+                "info": "Con más de 32 centros de datos ubicados estratégicamente en 6 continentes, Vultr ofrece una de las redes de menor latencia de la industria, permitiéndote desplegar tu código más cerca de tus usuarios."
+            },
+            {
+                "title": "Hardware Enfocado al Rendimiento",
+                "info": "Vultr fue pionero en el uso masivo de SSD NVMe y CPUs de alta velocidad (3.0GHz+) en su línea High Frequency, estableciendo un estándar alto para el rendimiento de cómputo en la nube."
+            },
+            {
+                "title": "Despliegue en un Clic",
+                "info": "Su marketplace permite el despliegue instantáneo de decenas de sistemas operativos y aplicaciones, incluyendo Docker, WordPress y stacks especializados de desarrollo, en cuestión de segundos."
+            },
+            {
+                "title": "API para Desarrolladores",
+                "info": "Cada función disponible en el panel de control también es accesible a través de su robusta API y CLI, lo que lo convierte en un favorito para la automatización y flujos de Infraestructura como Código (IaC)."
+            }
+        ]
+    },
+    "fr": {
+        "description": "Vultr est un fournisseur d'hébergement cloud haut de gamme connu pour son empreinte mondiale massive et son infrastructure haute performance. Lancé en 2014, il est rapidement devenu un choix de premier plan pour les développeurs recherchant une puissance de calcul haute fréquence et des réseaux à faible latence dans plus de 32 sites à travers le monde.",
+        "services": [
+            {
+                "title": "Cloud Compute (Partagé et Dédié)",
+                "info": "Le service phare de Vultr. Ils proposent des instances virtuelles flexibles avec stockage NVMe. Les options incluent 'Regular' pour les charges standards, 'High Frequency' pour les apps performantes, et 'Dedicated Cloud' pour les ressources isolées."
+            },
+            {
+                "title": "Serveurs Bare Metal",
+                "info": "Serveurs physiques entièrement dédiés sans couche de virtualisation. Ils fournissent 100% des ressources matérielles à l'utilisateur, idéal pour les charges intensives nécessitant un débit maximal."
+            },
+            {
+                "title": "Kubernetes Géré",
+                "info": "Vultr Kubernetes Engine (VKE) est un service entièrement géré qui simplifie le déploiement et la gestion d'applications conteneurisées, offrant une haute disponibilité sans frais de gestion supplémentaires."
+            },
+            {
+                "title": "Bases de données gérées",
+                "info": "Hébergement géré pour MySQL, PostgreSQL et Redis. Vultr gère la maintenance, la sécurité et l'évolution, permettant aux développeurs de se concentrer strictement sur le code de leur application."
+            },
+            {
+                "title": "Block Storage & Object Storage",
+                "info": "Solutions de stockage hautement disponibles et évolutives. Le stockage par blocs est idéal pour monter des volumes NVMe supplémentaires, tandis que l'Object Storage compatible S3 est parfait pour les fichiers multimédias."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Présence Mondiale en Bordure (Edge)",
+                "info": "Avec plus de 32 centres de données stratégiquement situés sur 6 continents, Vultr offre l'un des réseaux à la latence la plus faible du secteur, vous permettant de déployer votre code au plus près de vos utilisateurs."
+            },
+            {
+                "title": "Matériel Privilégiant la Performance",
+                "info": "Vultr a été le pionnier de l'utilisation généralisée des SSD NVMe et des processeurs à haute fréquence (3,0 GHz+) dans sa gamme High Frequency, fixant la barre très haut pour les performances de calcul."
+            },
+            {
+                "title": "Déploiements en un Clic",
+                "info": "Leur marketplace permet le déploiement instantané de dizaines de systèmes d'exploitation et d'applications, y compris Docker, WordPress et des stacks de développement spécialisés, en quelques secondes."
+            },
+            {
+                "title": "API Axée sur les Développeurs",
+                "info": "Chaque fonctionnalité disponible dans le panneau de contrôle est également accessible via leur API robuste et leur CLI, ce qui en fait un favori pour l'automatisation et l'Infrastructure as Code (IaC)."
+            }
+        ]
+    }
+}

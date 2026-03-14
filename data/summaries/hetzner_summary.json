@@ -1,0 +1,131 @@
+{
+    "en": {
+        "description": "Hetzner (Hetzner Online GmbH) is a German web hosting provider and data center operator recognized globally for its aggressive low-cost, high-performance hardware philosophy. They stand out for offering an incredible price/raw power ratio, making them the preferred choice for European users or anyone seeking the most affordable infrastructure at scale.",
+        "services": [
+            {
+                "title": "Dedicated Root Servers",
+                "info": "Hetzner's legacy flagship service. They provide 100% dedicated physical machines (bare-metal) with root access. They offer EX/AX lines with modern Intel or AMD processors, and an SX line for massive storage."
+            },
+            {
+                "title": "Hetzner Cloud (VPS and Cloud Servers)",
+                "info": "Provides highly scalable NVMe storage virtual machines with hourly billing. The control panel is modern and clean. They offer shared vCPU instances (CX/CPX) or dedicated vCPUs (CCX/CAX)."
+            },
+            {
+                "title": "Shared Web Hosting",
+                "info": "Very affordable plans under their own panel (konsoleH) for beginners focused on domains, emails, PHP, and SQL, primarily recommended regionally in Europe."
+            },
+            {
+                "title": "Storage Boxes",
+                "info": "Ready-to-connect online storage boxes. They require no server configuration and are accessed directly via SMB/CIFS, FTP, SFTP, or Rsync. Ideal for keeping remote backups."
+            },
+            {
+                "title": "Storage Share",
+                "info": "A managed hosting service with Nextcloud pre-installed, focused as a private and secure Google Drive or Dropbox style solution for SMEs."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Incredibly Low Pricing Policy",
+                "info": "Ranked as the infrastructure company with the lowest margin and highest global performance, offering massive amounts of RAM and modern processors for a fraction of the competitor's cost."
+            },
+            {
+                "title": "Modern and Custom Hardware",
+                "info": "Reluctant to use virtual network storage, preferring to locally install ultra-fast SSD/NVMe storage directly into the server chassis."
+            },
+            {
+                "title": "Eco-friendly Approach",
+                "info": "Their datacenters in Europe run on hydroelectric power and utilize direct Free Cooling technologies to minimize their carbon footprint."
+            },
+            {
+                "title": "DIY Philosophy",
+                "info": "They guarantee top-tier connectivity and hardware, but expect the client to have the technical knowledge to manage the operating system and software on their dedicated servers."
+            }
+        ]
+    },
+    "es": {
+        "description": "Hetzner (Hetzner Online GmbH) es un proveedor de alojamiento web y operador de centros de datos alemán reconocido mundialmente por su filosofía agresiva de bajo costo frente a hardware de máximo rendimiento. Destacan por ofrecer una increíble relación precio/potencia bruta, siendo la opción predilecta para usuarios europeos o para cualquiera que busque la infraestructura más asequible a gran escala.",
+        "services": [
+            {
+                "title": "Servidores Dedicados (Dedicated Root Servers)",
+                "info": "El servicio insignia de Hetzner. Proporcionan máquinas físicas completas (bare-metal) cien por cien dedicadas con acceso root. Ofrecen líneas EX/AX con procesadores modernos Intel o AMD, y línea SX de almacenamiento masivo."
+            },
+            {
+                "title": "Hetzner Cloud (VPS y Cloud Servers)",
+                "info": "Provee máquinas virtuales con almacenamiento NVMe altamente escalables con facturación por hora. Su panel de control es moderno y limpio. Ofrecen instancias con vCPU compartidas (CX/CPX) o vCPU dedicados (CCX/CAX)."
+            },
+            {
+                "title": "Alojamiento Web Compartido",
+                "info": "Planes muy asequibles bajo su propio panel (konsoleH) para principiantes enfocados a dominios, correos, PHP y SQL, principalmente recomendados a nivel regional en Europa."
+            },
+            {
+                "title": "Storage Boxes",
+                "info": "Cajas de almacenamiento online listas para conectar. No requieren configuración de servidor, se accede directamente vía SMB/CIFS, FTP, SFTP o Rsync. Ideales para mantener respaldos remotos."
+            },
+            {
+                "title": "Storage Share",
+                "info": "Un alojamiento gestionado que ya tiene Nextcloud preinstalado, enfocado como una solución estilo Google Drive o Dropbox privada y segura para Pymes."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Política de Precios Increíblemente Baja",
+                "info": "Se ubican como la empresa de infraestructura con menos margen y mayor desempeño global, ofreciendo enormes cantidades de RAM y procesadores modernos por una fracción del costo de la competencia."
+            },
+            {
+                "title": "Hardware Moderno y Personalizado",
+                "info": "Son reacios al almacenamiento en red virtualizado, prefiriendo instalar localmente almacenamiento SSD/NVMe ultrarrápido directamente en el chasis del servidor."
+            },
+            {
+                "title": "Enfoque Ecológico",
+                "info": "Sus datacenters en Europa funcionan con energía hidroeléctrica y utilizan tecnologías de Free Cooling directo para minimizar la huella de carbono."
+            },
+            {
+                "title": "Filosofía 'Hazlo Tú Mismo'",
+                "info": "Garantizan conectividad y hardware de primer nivel, pero esperan que el cliente tenga los conocimientos técnicos para gestionar el sistema operativo y el software en los servidores dedicados."
+            }
+        ]
+    },
+    "fr": {
+        "description": "Hetzner (Hetzner Online GmbH) est un fournisseur d'hébergement web et exploitant de centres de données allemand mondialement reconnu pour sa philosophie tarifaire extrêmement basse face à son matériel très performant. Ils se démarquent en offrant un ratio prix/puissance brute incroyable, ce qui en fait le choix privilégié des utilisateurs européens ou de quiconque cherchant l'infrastructure à grande échelle la plus abordable.",
+        "services": [
+            {
+                "title": "Serveurs Dédiés (Dedicated Root Servers)",
+                "info": "Le service phare historique de Hetzner. Ils fournissent des machines physiques entières (bare-metal) 100% dédiées avec un accès root. Ils proposent les gammes EX/AX avec des processeurs modernes Intel ou AMD, et la gamme SX pour le stockage massif."
+            },
+            {
+                "title": "Hetzner Cloud (VPS et Serveurs Cloud)",
+                "info": "Fournit des machines virtuelles hautement évolutives avec un stockage NVMe et une facturation horaire. Leur panneau de contrôle est moderne et épuré. Ils proposent des instances vCPU partagées (CX/CPX) ou dédiées (CCX/CAX)."
+            },
+            {
+                "title": "Hébergement Web Mutualisé",
+                "info": "Des plans très abordables sous leur propre panneau (konsoleH) pour les débutants, axés sur les domaines, les courriels, PHP et SQL, principalement recommandés au niveau régional en Europe."
+            },
+            {
+                "title": "Storage Boxes",
+                "info": "Espaces de stockage en ligne prêts à être connectés. Ils ne nécessitent aucune configuration de serveur et sont accessibles directement via SMB/CIFS, FTP, SFTP ou Rsync. Idéal pour conserver des sauvegardes à distance."
+            },
+            {
+                "title": "Storage Share",
+                "info": "Un hébergement géré ayant déjà Nextcloud de préinstallé, présenté comme une solution de type Google Drive ou Dropbox privée et sécurisée pour les PME."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Politique de Prix Incroyablement Basse",
+                "info": "Se positionne comme l'entreprise d'infrastructure avec la marge la plus faible et le plus grand ratio de performances mondiales, offrant des quantités massives de RAM et de processeurs modernes à une fraction du coût des concurrents."
+            },
+            {
+                "title": "Matériel Moderne et Personnalisé",
+                "info": "Réticents au stockage réseau virtualisé, ils préfèrent installer localement des stockages SSD/NVMe ultra-rapides directement dans le châssis du serveur."
+            },
+            {
+                "title": "Approche Écologique",
+                "info": "Leurs datacenters en Europe fonctionnent à l'énergie hydroélectrique et utilisent des technologies de Free Cooling pour minimiser l'empreinte carbone."
+            },
+            {
+                "title": "Philosophie DIY (Faites-le vous-même)",
+                "info": "Ils garantissent une connectivité et un matériel de premier ordre, mais s'attendent à ce que le client ait les connaissances techniques pour gérer le système d'exploitation et les logiciels sur ses serveurs dédiés."
+            }
+        ]
+    }
+}

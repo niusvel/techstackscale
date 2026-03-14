@@ -1,0 +1,80 @@
+{
+    "en": {
+        "description": "Kamatera is a global cloud services provider providing enterprise-grade cloud infrastructure. Founded in 1995, it specializes in highly scalable and customizable VPS hosting, allowing users to deploy servers in seconds with surgical precision in resource allocation.",
+        "services": [
+            {
+                "title": "Cloud Servers",
+                "info": "Instant, scalable virtual servers. You can choose your exact operating system, number of CPU cores, RAM size, and storage capacity, with the ability to scale up or down at any time."
+            },
+            {
+                "title": "Managed Cloud Services",
+                "info": "A service where Kamatera's experts manage your servers, including monitoring, security updates, and daily backups, so you can focus on your business logic."
+            },
+            {
+                "title": "Cloud Load Balancer",
+                "info": "Distributes incoming traffic across multiple servers to ensure high availability and prevent resource congestion, enhancing the overall user experience."
+            },
+            {
+                "title": "Cloud Firewall",
+                "info": "Advanced security layer that protects your infrastructure from unauthorized access and DDoS attacks, fully configurable through the Kamatera console."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Surgical Resource Customization",
+                "info": "Unlike competitors with fixed plans, Kamatera lets you pick 1GB of RAM today and 1.5GB tomorrow. You pay only for what you define, making it the most cost-efficient for unique workloads."
+            },
+            {
+                "title": "Enterprise-Grade Performance",
+                "info": "Utilizes the fastest Intel Xeon Platinum processors and 600Gbit bandwidth networks, ensuring that your applications run on the highest tier of hardware available."
+            },
+            {
+                "title": "30-Day Free Trial",
+                "info": "Offers a full-access 30-day trial with a $100 credit, allowing developers to stress-test the infrastructure before committing to any payment."
+            },
+            {
+                "title": "Global Datacenter Footprint",
+                "info": "Strategically located data centers across North America, Europe, Asia, and the Middle East, ensuring low latency for a global user base."
+            }
+        ]
+    },
+    "es": {
+        "description": "Kamatera es un proveedor global de servicios en la nube que ofrece infraestructura de grado empresarial. Fundada en 1995, se especializa en hosting VPS altamente escalable y personalizable, permitiendo desplegar servidores en segundos con precisión quirúrgica en la asignación de recursos.",
+        "services": [
+            {
+                "title": "Servidores Cloud",
+                "info": "Servidores virtuales instantáneos y escalables. Puedes elegir el sistema operativo exacto, núcleos de CPU, RAM y almacenamiento, con capacidad de escalar en cualquier momento."
+            },
+            {
+                "title": "Servicios Cloud Gestionados",
+                "info": "Expertos de Kamatera gestionan tus servidores, incluyendo monitorización, actualizaciones de seguridad y respaldos diarios."
+            },
+            {
+                "title": "Balanceador de Carga Cloud",
+                "info": "Distribuye el tráfico entre múltiples servidores para garantizar la alta disponibilidad y evitar la congestión de recursos."
+            },
+            {
+                "title": "Firewall Cloud",
+                "info": "Capa de seguridad avanzada que protege tu infraestructura de accesos no autorizados y ataques DDoS, configurable desde la consola."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Personalización Quirúrgica",
+                "info": "A diferencia de los planes fijos, Kamatera te permite elegir exactamente lo que necesitas. Pagas solo por los recursos definidos, siendo muy eficiente en costes."
+            },
+            {
+                "title": "Rendimiento Empresarial",
+                "info": "Utiliza procesadores Intel Xeon Platinum y redes de 600Gbit, asegurando que tus aplicaciones corran sobre el hardware más potente del mercado."
+            },
+            {
+                "title": "Prueba Gratuita de 30 Días",
+                "info": "Ofrece una prueba completa de 30 días con un crédito de $100, permitiendo probar la infraestructura sin compromiso inicial."
+            },
+            {
+                "title": "Presencia Global",
+                "info": "Centros de datos estratégicos en América del Norte, Europa, Asia y Oriente Medio, garantizando baja latencia para usuarios en todo el mundo."
+            }
+        ]
+    }
+}

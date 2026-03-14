@@ -42,9 +42,9 @@ export default function ValueProposition() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-6 lg:px-12">
+                <div className="grid md:grid-cols-3 gap-8">
                     {features.map((feature) => (
-                        <div key={feature.key} className="bg-background rounded-2xl p-8 border border-white/10 hover:border-cyan/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.1)] group">
+                        <div key={feature.key} className="bg-slate-900/50 backdrop-blur-xl rounded-3xl p-8 border border-slate-800 hover:border-cyan/50 transition-all">
                             <div className="bg-slate-800 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                 {feature.icon}
                             </div>

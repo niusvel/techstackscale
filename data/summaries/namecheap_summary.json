@@ -1,0 +1,48 @@
+{
+    "en": {
+        "description": "Namecheap is an ICANN-accredited domain name registrar and technology company. Beyond domains, it provides a variety of hosting services that are widely considered some of the most budget-friendly in the market today.",
+        "services": [
+            {
+                "title": "Stellar Shared Hosting",
+                "info": "Highly affordable plans including domain name registration and free CDN."
+            },
+            {
+                "title": "EasyWP",
+                "info": "A fast and simplified managed WordPress hosting solution for everyone."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Free Website Builder",
+                "info": "Includes an intuitive drag-and-drop tool to launch professional sites without coding."
+            },
+            {
+                "title": "Supersonic Support",
+                "info": "Renowned for their 24/7 live chat support with extremely fast response times."
+            }
+        ]
+    },
+    "es": {
+        "description": "Namecheap es un registrador de dominios acreditado por ICANN y empresa tecnológica. Proporciona una variedad de servicios de hosting considerados de los más económicos del mercado.",
+        "services": [
+            {
+                "title": "Hosting Stellar",
+                "info": "Planes muy asequibles que incluyen registro de dominio y CDN gratuito."
+            },
+            {
+                "title": "EasyWP",
+                "info": "Una solución de hosting WordPress gestionado rápido y simplificado para todos."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Creador de sitios gratuito",
+                "info": "Incluye una herramienta intuitiva de arrastrar y soltar para lanzar sitios profesionales."
+            },
+            {
+                "title": "Soporte Supersónico",
+                "info": "Conocido por su chat en vivo 24/7 con tiempos de respuesta extremadamente rápidos."
+            }
+        ]
+    }
+}

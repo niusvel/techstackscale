@@ -1,0 +1,80 @@
+{
+    "en": {
+        "description": "Oracle Cloud Infrastructure (OCI) is a deep and broad platform of public cloud services that enables customers to build and run a wide range of applications in a scalable, secure, and high-performance environment. OCI is specially optimized for high-performance database workloads and enterprise applications.",
+        "services": [
+            {
+                "title": "Compute (Bare Metal & VMs)",
+                "info": "Offers high-performance computing instances including Intel, AMD, and the industry-leading Ampere ARM shapes with superior price-performance ratios."
+            },
+            {
+                "title": "Autonomous Database",
+                "info": "The world's first self-driving database that uses machine learning to automate database tuning, security, backups, and updates."
+            },
+            {
+                "title": "OCI Kubernetes Engine (OKE)",
+                "info": "A developer-friendly managed service for deploying and managing containerized applications with full control over the underlying infrastructure."
+            },
+            {
+                "title": "High-Performance Storage",
+                "info": "Scalable object, block, and file storage with consistent low-latency performance, designed to handle even the most data-intensive enterprise apps."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Industry's Best Free Tier",
+                "info": "Their 'Always Free' tier includes 2 Autonomous Databases, up to 4 Ampere A1 Compute instances with 24GB of RAM, and 200GB of block storage."
+            },
+            {
+                "title": "Superior Network Performance",
+                "info": "Built with a non-blocking Clos network fabric, ensuring that every compute node can talk to every other node at maximum speed with zero congestion."
+            },
+            {
+                "title": "Predictable Low Pricing",
+                "info": "OCI offers flat pricing across all regions globally, avoiding the common 'hidden' costs of data egress that plague other hyperscalers."
+            },
+            {
+                "title": "Enterprise Security by Default",
+                "info": "Zero-trust architecture and automated security zones protect your data from the moment of deployment, without requiring complex manual configuration."
+            }
+        ]
+    },
+    "es": {
+        "description": "Oracle Cloud Infrastructure (OCI) es una plataforma de servicios en la nube diseñada para ejecutar aplicaciones de alto rendimiento y bases de datos empresariales. Destaca por su arquitectura de red superior y por ofrecer los recursos gratuitos más potentes del sector.",
+        "services": [
+            {
+                "title": "Computación (VMs y Bare Metal)",
+                "info": "Instancias de alto rendimiento que incluyen Intel, AMD y las formas Ampere ARM con relaciones precio-rendimiento líderes en la industria."
+            },
+            {
+                "title": "Base de Datos Autónoma",
+                "info": "La primera base de datos del mundo que se gestiona sola, automatizando el ajuste, la seguridad, los respaldos y las actualizaciones."
+            },
+            {
+                "title": "OCI Kubernetes Engine (OKE)",
+                "info": "Servicio gestionado para desplegar aplicaciones en contenedores con control total y sin costes ocultos de gestión."
+            },
+            {
+                "title": "Almacenamiento de Alto Rendimiento",
+                "info": "Almacenamiento de objetos y bloques escalable con latencia baja y consistente, diseñado para aplicaciones intensivas en datos."
+            }
+        ],
+        "sections": [
+            {
+                "title": "La Mejor Capa Gratuita",
+                "info": "Su nivel 'Always Free' incluye hasta 4 instancias Ampere A1 con 24GB de RAM y 200GB de almacenamiento en bloque para siempre."
+            },
+            {
+                "title": "Rendimiento de Red Superior",
+                "info": "Construido con una red de alto rendimiento que garantiza velocidad máxima entre nodos sin congestión, ideal para clusters de computación."
+            },
+            {
+                "title": "Precios Bajos y Previsibles",
+                "info": "OCI ofrece precios uniformes en todas las regiones del mundo y costes de transferencia de datos (egress) significativamente más bajos."
+            },
+            {
+                "title": "Seguridad Empresarial por Defecto",
+                "info": "Arquitectura de confianza cero (Zero-Trust) que protege tus datos desde el despliegue sin configuraciones manuales complejas."
+            }
+        ]
+    }
+}

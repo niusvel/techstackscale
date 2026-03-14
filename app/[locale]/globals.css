@@ -2,18 +2,27 @@
 
 :root {
   /* Solarized Dark Palette */
-  --background: #002b36; /* base03 */
-  --foreground: #839496; /* base0 */
-  
-  --accent-purple: #6c71c4; /* violet */
-  --accent-cyan: #2aa198; /* cyan */
-  --accent-blue: #268bd2; /* blue */
-  --accent-silver: #586e75; /* base01 for metallic/subtle elements */
-  
-  --card-bg: rgba(7, 54, 66, 0.7); /* base02 with transparency */
-  --card-border: rgba(88, 110, 117, 0.3); /* base01 */
-  --metallic-bg: #eee8d5; /* base2 - Lightest background color for contrast */
-  
+  --background: #002b36;
+  /* base03 */
+  --foreground: #839496;
+  /* base0 */
+
+  --accent-purple: #6c71c4;
+  /* violet */
+  --accent-cyan: #2aa198;
+  /* cyan */
+  --accent-blue: #268bd2;
+  /* blue */
+  --accent-silver: #586e75;
+  /* base01 for metallic/subtle elements */
+
+  --card-bg: rgba(7, 54, 66, 0.7);
+  /* base02 with transparency */
+  --card-border: rgba(88, 110, 117, 0.3);
+  /* base01 */
+  --metallic-bg: #eee8d5;
+  /* base2 - Lightest background color for contrast */
+
   /* Additional Solarized accents for potential use */
   --accent-yellow: #b58900;
   --accent-orange: #cb4b16;
@@ -135,5 +144,40 @@ h3 {
   /* Sección Inferior (Botón, Fecha): Se queda abajo */
   .price-card-v2-footer {
     @apply mt-auto space-y-4;
+  }
+}
+
+@layer utilities {
+  .glow-card {
+    position: relative;
+    z-index: 1;
+    /* Crea un contexto de apilamiento */
+  }
+
+  .glow-card::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    /* Aumentado un poco para que sobresalga */
+    background: linear-gradient(45deg, #2aa198, #268bd2, #2aa198);
+    /* Colores Solarized Cyan y Blue */
+    border-radius: 1.1rem;
+    /* Un poco mayor que la card para seguir la curva */
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+    filter: blur(15px);
+  }
+
+  .glow-card:hover::before {
+    opacity: 0.6;
+    /* Más visible */
+    filter: blur(20px);
+  }
+
+  .glow-card:hover {
+    transform: translateY(-8px);
+    /* Salto más pronunciado */
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 }

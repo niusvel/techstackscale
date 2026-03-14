@@ -1,0 +1,88 @@
+{
+    "en": {
+        "description": "OVHcloud is the leading European cloud provider, managing over 450,000 servers in 43 data centers across 4 continents. Known for its vertical integration, OVHcloud builds its own servers and operates its own fiber optic network, ensuring data sovereignty and highly predictable pricing.",
+        "services": [
+            {
+                "title": "Virtual Private Servers (VPS)",
+                "info": "Scalable virtual machines with NVMe storage and unmetered bandwidth. They are perfect for hosting websites, staging environments, or small business applications."
+            },
+            {
+                "title": "Bare Metal Cloud",
+                "info": "A global leader in dedicated servers. OVHcloud offers massive hardware variety, from affordable 'Rise' servers to high-end 'Advance' and 'HG' lines for big data and AI."
+            },
+            {
+                "title": "Public Cloud",
+                "info": "Based on OpenStack, providing on-demand instances, managed Kubernetes (OKP), and a wide range of PaaS services like managed databases and AI training tools."
+            },
+            {
+                "title": "Web Hosting & Domains",
+                "info": "Extremely affordable shared hosting plans. They include free SSL, anti-DDoS protection, and are a top choice for WordPress starters in Europe."
+            },
+            {
+                "title": "Private Cloud (VMware)",
+                "info": "A fully managed, isolated software-defined data center (SDDC) powered by VMware technology, designed for enterprise-grade security and compliance."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Data Sovereignty & Privacy",
+                "info": "As a European company, OVHcloud guarantees that your data is not subject to extraterritorial laws like the US Cloud Act, ensuring total data freedom."
+            },
+            {
+                "title": "Unmetered Bandwidth",
+                "info": "Unlike many competitors, OVHcloud does not charge for outgoing traffic in most regions, making it ideal for content-heavy applications."
+            },
+            {
+                "title": "Eco-Friendly Water Cooling",
+                "info": "They pioneered industrial water-cooling systems for servers, which significantly reduces energy consumption and the environmental impact of their data centers."
+            },
+            {
+                "title": "Anti-DDoS Protection",
+                "info": "Every service includes their industry-leading, custom-built anti-DDoS protection at no extra cost, capable of mitigating massive cyberattacks."
+            }
+        ]
+    },
+    "es": {
+        "description": "OVHcloud es el proveedor de nube líder en Europa, gestionando más de 450.000 servidores en 43 centros de datos en 4 continentes. Conocido por su integración vertical, fabrica sus propios servidores y opera su propia red de fibra óptica, garantizando la soberanía de los datos y precios altamente previsibles.",
+        "services": [
+            {
+                "title": "Servidores Privados Virtuales (VPS)",
+                "info": "Máquinas virtuales escalables con almacenamiento NVMe y ancho de banda ilimitado. Perfectos para alojar sitios web, entornos de pruebas o aplicaciones empresariales pequeñas."
+            },
+            {
+                "title": "Bare Metal Cloud (Dedicados)",
+                "info": "Líder mundial en servidores dedicados. Ofrece una enorme variedad de hardware, desde la línea económica 'Rise' hasta las líneas 'Advance' y 'HG' para big data e IA."
+            },
+            {
+                "title": "Public Cloud",
+                "info": "Basado en OpenStack, ofrece instancias bajo demanda, Kubernetes gestionado y una amplia gama de servicios PaaS como bases de datos gestionadas."
+            },
+            {
+                "title": "Hosting Web y Dominios",
+                "info": "Planes de hosting compartido extremadamente asequibles. Incluyen SSL gratuito, protección anti-DDoS y son la opción top para WordPress en Europa."
+            },
+            {
+                "title": "Private Cloud (VMware)",
+                "info": "Un centro de datos definido por software (SDDC) totalmente gestionado y aislado, basado en tecnología VMware, diseñado para seguridad corporativa."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Soberanía y Privacidad de Datos",
+                "info": "Como empresa europea, garantiza que sus datos no están sujetos a leyes extraterritoriales como la Cloud Act de EE. UU., asegurando total libertad de datos."
+            },
+            {
+                "title": "Ancho de Banda Ilimitado",
+                "info": "A diferencia de muchos competidores, no cobra por el tráfico de salida en la mayoría de sus regiones, ideal para aplicaciones con mucho contenido."
+            },
+            {
+                "title": "Refrigeración Líquida Ecológica",
+                "info": "Pioneros en sistemas de refrigeración por agua para servidores, lo que reduce significativamente el consumo energético y el impacto ambiental."
+            },
+            {
+                "title": "Protección Anti-DDoS Incluida",
+                "info": "Cada servicio incluye su protección anti-DDoS personalizada de vanguardia sin coste adicional, capaz de mitigar ciberataques masivos."
+            }
+        ]
+    }
+}

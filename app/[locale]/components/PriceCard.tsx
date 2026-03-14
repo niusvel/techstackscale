@@ -16,10 +16,10 @@ export default function PriceCard({ plan, name, affiliateLink, isBestValue, last
     const displayPrice = formatPrice(plan.price, plan.currency);
 
     return (
-        <div className={`relative h-full flex flex-col rounded-2xl overflow-hidden transition-all duration-300 ${isBestValue
-            ? 'border-silver/40 shadow-lg shadow-silver/5 scale-105 z-10 bg-background'
-            : 'border-white/10 bg-background'
-            }`}>
+        <div className={`relative h-full flex flex-col rounded-2xl overflow-hidden transition-all duration-300 border ${isBestValue
+            ? 'border-cyan/50 bg-slate-900/90 shadow-2xl'
+            : 'border-white/10 bg-slate-950/80'
+            } backdrop-blur-md`}>
 
             {isBestValue && (
                 <div className="absolute inset-0 border border-silver/20 rounded-2xl pointer-events-none animate-pulse"></div>

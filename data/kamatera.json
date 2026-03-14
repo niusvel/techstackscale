@@ -1,0 +1,112 @@
+{
+    "provider": "Kamatera",
+    "id": "kamatera",
+    "affiliate_id": "TU_ID_AFILIADO",
+    "affiliate_link": "https://www.kamatera.com/?ref=TU_ID_AFILIADO",
+    "last_update": "2026-03-14",
+    "currency": "USD",
+    "verdicts": {
+        "es": "La nube más flexible. Permite configurar recursos al detalle y ofrece un rendimiento de CPU superior gracias a sus procesadores de última generación.",
+        "en": "The most flexible cloud. Allows detailed resource configuration and offers superior CPU performance thanks to its latest-generation processors.",
+        "fr": "Le cloud le plus flexible. Permet une configuration détaillée des ressources et offre des performances CPU supérieures grâce à ses processeurs de dernière génération."
+    },
+    "plans": [
+        {
+            "name": "Custom Entry",
+            "price": 4,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "1GB RAM",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1 vCPU",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "20GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "5TB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "1",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "Balanced Pro",
+            "price": 12,
+            "currency": "USD",
+            "is_best_seller": true,
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "2GB RAM",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2 vCPU",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "50GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "5TB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "3",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "Power Instance",
+            "price": 28,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4GB RAM",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4 vCPU",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "100GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "5TB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "6",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}

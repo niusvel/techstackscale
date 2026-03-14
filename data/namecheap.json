@@ -1,0 +1,79 @@
+{
+    "provider": "Namecheap",
+    "id": "namecheap",
+    "affiliate_link": "https://www.namecheap.com/hosting/?affId=TU_ID_AFILIADO",
+    "last_update": "2026-03-14",
+    "currency": "USD",
+    "verdicts": {
+        "es": "La opción más económica para proyectos iniciales. Excelente soporte 24/7 y una interfaz muy clara, ideal si ya tienes tus dominios con ellos.",
+        "en": "The most economical option for initial projects. Excellent 24/7 support and a very clear interface, ideal if you already have your domains with them.",
+        "fr": "L'option la plus économique pour les projets initiaux. Excellent support 24/7 et une interface très claire, idéale si vous avez déjà vos domaines chez eux."
+    },
+    "plans": [
+        {
+            "name": "Stellar (Shared)",
+            "price": 1.98,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "Shared",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "Shared",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "20GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "3",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "EasyWP Starter",
+            "price": 6.88,
+            "currency": "USD",
+            "is_best_seller": true,
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "Managed",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "Managed",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "10GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "1",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}

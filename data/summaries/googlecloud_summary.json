@@ -1,0 +1,80 @@
+{
+    "en": {
+        "description": "Google Cloud Platform (GCP) is a suite of cloud computing services that runs on the same infrastructure that Google uses internally for its end-user products. It is highly regarded for its industry-leading data analytics, machine learning capabilities, and efficient container management via Google Kubernetes Engine (GKE).",
+        "services": [
+            {
+                "title": "Compute Engine",
+                "info": "Scalable virtual machines running in Google's data centers. It offers customizable machine types, high-speed networking, and per-second billing."
+            },
+            {
+                "title": "BigQuery",
+                "info": "A fully managed, serverless data warehouse that enables scalable analysis over petabytes of data, making it a favorite for business intelligence and big data."
+            },
+            {
+                "title": "Google Kubernetes Engine (GKE)",
+                "info": "The pioneer and industry leader in managed Kubernetes. GKE simplifies deploying, managing, and scaling containerized applications using Google's infrastructure."
+            },
+            {
+                "title": "Vertex AI",
+                "info": "A unified machine learning platform that allows developers to build, deploy, and scale high-quality AI models faster with pre-trained and custom tooling."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Premier Data & Analytics",
+                "info": "GCP is widely considered the best cloud for data-heavy organizations, offering tools like BigQuery and Looker that process massive datasets in seconds."
+            },
+            {
+                "title": "Automatic Sustained Use Discounts",
+                "info": "Google Cloud automatically provides discounts when you run specific instances for a significant portion of the month, with no upfront commitment required."
+            },
+            {
+                "title": "Global Fiber Network",
+                "info": "Your data travels on one of the largest and most advanced private networks in the world, ensuring lower latency and higher security compared to the public internet."
+            },
+            {
+                "title": "Always Free Tier",
+                "info": "Offers a generous 'Always Free' tier, including one free e2-micro instance per month in specific US regions, plus $300 in free credits for new users."
+            }
+        ]
+    },
+    "es": {
+        "description": "Google Cloud Platform (GCP) es un conjunto de servicios de computación en la nube que se ejecutan en la misma infraestructura que Google utiliza internamente. Es muy valorado por su análisis de datos líder en la industria, capacidades de aprendizaje automático y gestión eficiente de contenedores a través de GKE.",
+        "services": [
+            {
+                "title": "Compute Engine",
+                "info": "Máquinas virtuales escalables que se ejecutan en los centros de datos de Google. Ofrece tipos de máquinas personalizables y facturación por segundo."
+            },
+            {
+                "title": "BigQuery",
+                "info": "Un almacén de datos (data warehouse) totalmente gestionado y sin servidor que permite el análisis escalable de petabytes de datos."
+            },
+            {
+                "title": "Google Kubernetes Engine (GKE)",
+                "info": "El pionero y líder en Kubernetes gestionado. Simplifica el despliegue y escalado de aplicaciones en contenedores."
+            },
+            {
+                "title": "Vertex AI",
+                "info": "Plataforma unificada de IA que permite construir, desplegar y escalar modelos de alta calidad con herramientas personalizadas y preentrenadas."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Análisis de Datos de Primer Nivel",
+                "info": "GCP es considerada la mejor nube para organizaciones orientadas a datos, con herramientas que procesan conjuntos masivos en segundos."
+            },
+            {
+                "title": "Descuentos por Uso Continuo",
+                "info": "Google Cloud ofrece automáticamente descuentos cuando ejecutas instancias específicas durante gran parte del mes, sin compromisos iniciales."
+            },
+            {
+                "title": "Red Global de Fibra",
+                "info": "Tus datos viajan por una de las redes privadas más avanzadas del mundo, garantizando menor latencia y mayor seguridad."
+            },
+            {
+                "title": "Capa 'Siempre Gratuita'",
+                "info": "Incluye una instancia e2-micro gratuita al mes en regiones específicas de EE. UU., además de $300 en créditos gratuitos para nuevos usuarios."
+            }
+        ]
+    }
+}

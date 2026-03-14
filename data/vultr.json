@@ -1,0 +1,112 @@
+{
+    "provider": "Vultr",
+    "id": "vultr",
+    "affiliation_id": "TU_ID_AFILIADO",
+    "affiliate_link": "https://www.vultr.com/?ref=TU_ID_AFILIADO",
+    "last_update": "2026-03-14",
+    "currency": "USD",
+    "verdicts": {
+        "es": "Excelente presencia global con más de 32 ubicaciones y un rendimiento de disco NVMe sobresaliente.",
+        "en": "Excellent global presence with 32+ locations and outstanding NVMe disk performance.",
+        "fr": "Excellente présence mondiale avec plus de 32 emplacements et des performances de disque NVMe exceptionnelles."
+    },
+    "plans": [
+        {
+            "name": "Regular Cloud Compute",
+            "price": 5,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "1GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "25GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "1000 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "1",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "High Frequency",
+            "price": 6,
+            "currency": "USD",
+            "is_best_seller": true,
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "1GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1 High Frequency",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "32GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "1000 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "1",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "Optimized Cloud",
+            "price": 12,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "2GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "50GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "2000 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "2",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}
