@@ -1,0 +1,112 @@
+{
+    "provider": "Scaleway",
+    "id": "scaleway",
+    "affiliation_id": "TU_ID_AFILIADO",
+    "affiliate_link": "https://www.scaleway.com/en/?ref=TU_ID_AFILIADO",
+    "last_update": "2026-03-14",
+    "currency": "EUR",
+    "verdicts": {
+        "es": "La alternativa francesa por excelencia. Destaca por su ecosistema completo de servicios cloud (S3, K8s, DB) y sus instancias de bajo coste con discos NVMe locales.",
+        "en": "The quintessential French alternative. Stands out for its complete ecosystem of cloud services (S3, K8s, DB) and its low-cost instances with local NVMe disks.",
+        "fr": "L'alternative française par excellence. Se distingue par son écosystème complet de services cloud (S3, K8s, DB) et ses instances à bas prix avec disques NVMe locaux."
+    },
+    "plans": [
+        {
+            "name": "PLAY2-PICO",
+            "price": 4.50,
+            "currency": "EUR",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "2GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "20GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "1",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "PLAY2-NANO",
+            "price": 9.00,
+            "currency": "EUR",
+            "is_best_seller": true,
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "40GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "4",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "PRO2-XXS",
+            "price": 18.00,
+            "currency": "EUR",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "80GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "8",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "provider": "Cloudways",
+    "id": "cloudways",
+    "affiliation_id": "TU_ID_AFILIADO",
+    "affiliate_link": "https://www.cloudways.com/en/?id=TU_ID_AFILIADO",
+    "last_update": "2026-03-14",
+    "currency": "USD",
+    "verdicts": {
+        "es": "La mejor opción para quienes quieren la potencia de DigitalOcean o AWS pero con un panel de control gestionado y soporte técnico 24/7.",
+        "en": "The best choice for those who want the power of DigitalOcean or AWS but with a managed control panel and 24/7 technical support.",
+        "fr": "Le meilleur choix pour ceux qui veulent la puissance de DigitalOcean ou AWS mais avec un panneau de contrôle géré et un support technique 24/7."
+    },
+    "plans": [
+        {
+            "name": "DO-1GB (Managed)",
+            "price": 11,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "1GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "25GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "1TB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "DO-2GB (Premium)",
+            "price": 28,
+            "currency": "USD",
+            "is_best_seller": true,
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "2GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "50GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "2TB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "DO-4GB (Premium)",
+            "price": 54,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "80GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "4TB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}

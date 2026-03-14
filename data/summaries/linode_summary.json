@@ -1,0 +1,131 @@
+{
+    "en": {
+        "description": "Linode, now part of Akamai, is one of the most respected cloud providers in the developer community. Since 2003, it has focused on making cloud computing simple, affordable, and accessible. With Akamai's global edge network, Linode now offers massive scale combined with its legendary technical support.",
+        "services": [
+            {
+                "title": "Linode Compute (VPS)",
+                "info": "Their flagship virtual machines. They offer Shared Instances for general use, Dedicated CPU for heavy workloads, and High Memory instances for large databases or caching layers."
+            },
+            {
+                "title": "LKE (Linode Kubernetes Engine)",
+                "info": "A fully managed container orchestration service. It is highly praised for being one of the easiest Kubernetes platforms to deploy, with a free management plane."
+            },
+            {
+                "title": "Akamai Connected Cloud",
+                "info": "The integration with Akamai allows users to push their logic and data to the edge of the internet, significantly reducing latency for global audiences."
+            },
+            {
+                "title": "Object Storage",
+                "info": "S3-compatible storage service that allows you to store and manage unstructured data sets efficiently and cost-effectively."
+            },
+            {
+                "title": "One-Click Apps",
+                "info": "A vast library of pre-configured applications like Docker, GitLab, and Minecraft, ready to deploy in seconds through their Cloud Manager."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Legendary 24/7/365 Support",
+                "info": "Linode is famous for its 'human-first' support. You can reach a real person via phone or ticket at any time, without complex escalation layers."
+            },
+            {
+                "title": "Award-Winning Documentation",
+                "info": "They possess one of the most comprehensive libraries of technical guides and tutorials in the industry, making it a favorite for learning and troubleshooting."
+            },
+            {
+                "title": "Predictable Pricing",
+                "info": "They maintain a flat pricing structure across all their global data centers, avoiding the complex 'regional pricing' models of larger competitors."
+            },
+            {
+                "title": "Cloud Manager & CLI",
+                "info": "Their interface is clean and intuitive, complemented by a powerful CLI and API for developers who prefer automated workflows."
+            }
+        ]
+    },
+    "es": {
+        "description": "Linode, ahora parte de Akamai, es uno de los proveedores cloud más respetados en la comunidad de desarrolladores. Desde 2003, se ha centrado en hacer que la computación en la nube sea simple, asequible y accesible. Con la red global de Akamai, Linode ahora ofrece una escala masiva combinada con su legendario soporte técnico.",
+        "services": [
+            {
+                "title": "Linode Compute (VPS)",
+                "info": "Sus máquinas virtuales insignia. Ofrecen instancias compartidas para uso general, CPU dedicada para cargas pesadas e instancias de alta memoria para bases de datos grandes."
+            },
+            {
+                "title": "LKE (Linode Kubernetes Engine)",
+                "info": "Un servicio de orquestación de contenedores totalmente gestionado. Es elogiado por ser una de las plataformas Kubernetes más fáciles de desplegar, con el plano de control gratuito."
+            },
+            {
+                "title": "Akamai Connected Cloud",
+                "info": "La integración con Akamai permite a los usuarios llevar su lógica y datos al borde (edge) de internet, reduciendo significativamente la latencia para audiencias globales."
+            },
+            {
+                "title": "Object Storage",
+                "info": "Servicio de almacenamiento compatible con S3 que te permite guardar y gestionar conjuntos de datos no estructurados de forma eficiente y económica."
+            },
+            {
+                "title": "Apps en un Clic",
+                "info": "Una amplia biblioteca de aplicaciones preconfiguradas como Docker, GitLab y WordPress, listas para desplegar en segundos a través de su gestor en la nube."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Soporte Legendario 24/7/365",
+                "info": "Linode es famoso por su soporte enfocado en humanos. Puedes contactar con una persona real por teléfono o ticket en cualquier momento, sin capas complejas de escalada."
+            },
+            {
+                "title": "Documentación Premiada",
+                "info": "Poseen una de las bibliotecas más completas de guías técnicas y tutoriales de la industria, lo que los convierte en favoritos para el aprendizaje y la resolución de problemas."
+            },
+            {
+                "title": "Precios Predictibles",
+                "info": "Mantienen una estructura de precios plana en todos sus centros de datos globales, evitando los complejos modelos de precios regionales de sus competidores más grandes."
+            },
+            {
+                "title": "Cloud Manager y CLI",
+                "info": "Su interfaz es limpia e intuitiva, complementada por una potente CLI y API para desarrolladores que prefieren flujos de trabajo automatizados."
+            }
+        ]
+    },
+    "fr": {
+        "description": "Linode, qui fait maintenant partie d'Akamai, est l'un des fournisseurs de cloud les plus respectés de la communauté des développeurs. Depuis 2003, il s'est efforcé de rendre le cloud computing simple, abordable et accessible. Grâce au réseau mondial d'Akamai, Linode offre désormais une envergure massive combinée à son support technique légendaire.",
+        "services": [
+            {
+                "title": "Linode Compute (VPS)",
+                "info": "Leurs machines virtuelles phares. Elles proposent des instances partagées pour un usage général, des CPU dédiés pour les charges lourdes et des instances à haute mémoire pour les bases de données."
+            },
+            {
+                "title": "LKE (Linode Kubernetes Engine)",
+                "info": "Un service d'orchestration de conteneurs entièrement géré. Il est reconnu comme l'une des plateformes Kubernetes les plus simples à déployer, avec un plan de gestion gratuit."
+            },
+            {
+                "title": "Akamai Connected Cloud",
+                "info": "L'intégration avec Akamai permet aux utilisateurs de pousser leur logique et leurs données à la bordure (edge) de l'internet, réduisant ainsi la latence pour les audiences mondiales."
+            },
+            {
+                "title": "Object Storage",
+                "info": "Service de stockage compatible S3 qui vous permet de stocker et de gérer des ensembles de données non structurées de manière efficace et rentable."
+            },
+            {
+                "title": "Applications en un clic",
+                "info": "Une vaste bibliothèque d'applications préconfigurées comme Docker, GitLab et Minecraft, prêtes à être déployées en quelques secondes."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Support légendaire 24/7/365",
+                "info": "Linode est célèbre pour son support humain. Vous pouvez joindre une personne réelle par téléphone ou ticket à tout moment, sans étapes d'escalade complexes."
+            },
+            {
+                "title": "Documentation primée",
+                "info": "Ils possèdent l'une des bibliothèques de guides techniques les plus complètes du secteur, ce qui en fait un outil privilégié pour l'apprentissage."
+            },
+            {
+                "title": "Tarification prévisible",
+                "info": "Ils maintiennent une structure tarifaire stable dans tous leurs centres de données mondiaux, évitant les modèles de tarification régionale complexes."
+            },
+            {
+                "title": "Cloud Manager & CLI",
+                "info": "Leur interface est épurée et intuitive, complétée par une CLI et une API puissantes pour l'automatización."
+            }
+        ]
+    }
+}

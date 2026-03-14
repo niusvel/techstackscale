@@ -1,0 +1,112 @@
+{
+    "provider": "OVHcloud",
+    "id": "ovhcloud",
+    "affiliation_id": null,
+    "affiliate_link": "https://www.ovhcloud.com/en-es/vps/",
+    "last_update": "2026-03-14",
+    "currency": "EUR",
+    "verdicts": {
+        "es": "El gigante europeo. Destaca por su ancho de banda no medido y su excelente relación entre núcleos de CPU y RAM en la gama VPS.",
+        "en": "The European giant. Stands out for unmetered bandwidth and an excellent CPU-to-RAM ratio in its VPS lineup.",
+        "fr": "Le géant européen. Se distingue par sa bande passante non mesurée et un excellent rapport CPU/RAM dans sa gamme VPS."
+    },
+    "plans": [
+        {
+            "name": "VPS Starter",
+            "price": 6.68,
+            "currency": "EUR",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "2 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "20 GB SSD NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "1",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "VPS-1 (Performance)",
+            "price": 10.27,
+            "currency": "EUR",
+            "is_best_seller": true,
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "100 GB SSD NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "4",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "VPS-2 (Advanced)",
+            "price": 20.56,
+            "currency": "EUR",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "12 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "6",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "160 GB SSD NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "8",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}

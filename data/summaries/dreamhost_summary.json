@@ -1,0 +1,52 @@
+{
+    "en": {
+        "description": "DreamHost is an award-winning web hosting provider that powers over 1.5 million websites for over 400,000 customers. They are one of only three hosts officially recommended by WordPress.org, focusing on privacy, open-source advocacy, and 100% carbon-neutral operations.",
+        "services": [
+            {
+                "title": "Shared Hosting",
+                "info": "Affordable entry-level plans featuring fast SSD storage and a custom control panel."
+            },
+            {
+                "title": "DreamPress",
+                "info": "Managed WordPress hosting with built-in caching, staging, and automatic backups."
+            },
+            {
+                "title": "DreamCompute",
+                "info": "Highly scalable public cloud computing (OpenStack) based on NVMe storage."
+            }
+        ],
+        "sections": [
+            {
+                "title": "97-Day Money Back Guarantee",
+                "info": "Offering one of the longest refund periods in the hosting industry for shared plans."
+            },
+            {
+                "title": "WordPress Expertise",
+                "info": "Deeply integrated with the WordPress community, offering specialized support and easy migrations."
+            }
+        ]
+    },
+    "es": {
+        "description": "DreamHost es un proveedor de hosting premiado que gestiona más de 1.5 millones de sitios web. Es uno de los tres únicos hosts recomendados oficialmente por WordPress.org.",
+        "services": [
+            {
+                "title": "Hosting Compartido",
+                "info": "Planes económicos de entrada con almacenamiento SSD rápido y panel de control personalizado."
+            },
+            {
+                "title": "DreamPress",
+                "info": "Hosting WordPress gestionado con caché integrada, entornos de pruebas y respaldos automáticos."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Garantía de 97 días",
+                "info": "Ofrece uno de los periodos de reembolso más largos de la industria para planes compartidos."
+            },
+            {
+                "title": "Experiencia en WordPress",
+                "info": "Integración profunda con la comunidad, ofreciendo soporte especializado y migraciones fáciles."
+            }
+        ]
+    }
+}

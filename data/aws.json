@@ -1,0 +1,112 @@
+{
+    "provider": "AWS",
+    "id": "aws",
+    "affiliate_id": null,
+    "affiliate_link": "https://aws.amazon.com/free/",
+    "last_update": "2026-03-14",
+    "currency": "USD",
+    "verdicts": {
+        "es": "El estándar de la industria. Su ecosistema es infinito y su fiabilidad inigualable, aunque su estructura de precios puede ser compleja para principiantes.",
+        "en": "The industry standard. Its ecosystem is infinite and its reliability unmatched, though its pricing structure can be complex for beginners.",
+        "fr": "Le standard de l'industrie. Son écosystème est infini et sa fiabilité inégalée, bien que sa structure tarifaire puisse être complexe pour les débutants."
+    },
+    "plans": [
+        {
+            "name": "t4g.small (ARM)",
+            "price": 12.41,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "2GB RAM",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2 vCPU",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "EBS Only",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "100GB Free",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "t3.medium",
+            "price": 30.36,
+            "currency": "USD",
+            "is_best_seller": true,
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4GB RAM",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2 vCPU",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "EBS Only",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "100GB Free",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "t3.large",
+            "price": 60.72,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8GB RAM",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2 vCPU",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "EBS Only",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "100GB Free",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}

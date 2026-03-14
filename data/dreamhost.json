@@ -1,0 +1,79 @@
+{
+    "provider": "DreamHost",
+    "id": "dreamhost",
+    "affiliate_link": "https://www.dreamhost.com/r.cgi?TU_ID_AFILIADO",
+    "last_update": "2026-03-14",
+    "currency": "USD",
+    "verdicts": {
+        "es": "Recomendado oficialmente por WordPress. Destaca por su panel personalizado intuitivo, almacenamiento ilimitado y una de las mejores políticas de reembolso (97 días).",
+        "en": "Officially recommended by WordPress. It stands out for its intuitive custom panel, unlimited storage, and one of the best refund policies (97 days).",
+        "fr": "Officiellement recommandé par WordPress. Il se distingue par son panneau personnalisé intuitif, son stockage illimité et l'une des meilleures politiques de remboursement (97 jours)."
+    },
+    "plans": [
+        {
+            "name": "Shared Starter",
+            "price": 2.59,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "Shared",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "Shared",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "50GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "1",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "DreamPress (Managed WP)",
+            "price": 16.95,
+            "currency": "USD",
+            "is_best_seller": true,
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "Isolated",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "Isolated",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "30GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "1",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}

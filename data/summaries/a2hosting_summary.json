@@ -1,0 +1,80 @@
+{
+    "en": {
+        "description": "A2 Hosting is a high-performance hosting company known for its 'Turbo' servers that promise up to 20x faster page loads compared to standard hosting. Founded in 2001, they have carved out a niche by focusing on speed, developer-friendly features, and ultra-reliable uptime.",
+        "services": [
+            {
+                "title": "Turbo Shared Hosting",
+                "info": "Optimized shared environments using LiteSpeed servers and advanced caching. Perfect for WordPress, Magento, and small e-commerce sites needing fast response times."
+            },
+            {
+                "title": "Managed VPS",
+                "info": "The power of a virtual private server with the ease of a managed control panel. Includes security patches, updates, and 24/7 Guru Crew support."
+            },
+            {
+                "title": "Dedicated Hosting",
+                "info": "High-end bare metal servers for large enterprise applications. Available in both managed and unmanaged configurations depending on technical needs."
+            },
+            {
+                "title": "Reseller Hosting",
+                "info": "White-label hosting packages that allow entrepreneurs to launch their own hosting business using A2's high-speed infrastructure."
+            }
+        ],
+        "sections": [
+            {
+                "title": "The Turbo Difference",
+                "info": "Their Turbo servers feature limited occupancy, NVMe drives, and enhanced LiteSpeed software, resulting in significantly lower Time To First Byte (TTFB)."
+            },
+            {
+                "title": "Anytime Money Back Guarantee",
+                "info": "A2 Hosting offers one of the most flexible refund policies in the industry, allowing users to try their services with virtually no risk."
+            },
+            {
+                "title": "Developer Friendly",
+                "info": "Full support for Python, PHP, Node.js, and SSH access even on basic plans, making it a favorite for web developers."
+            },
+            {
+                "title": "Perpetual Security",
+                "info": "Includes free HackScan protection, dual firewalls, and reinforced DDoS defense to keep sites safe from common web threats."
+            }
+        ]
+    },
+    "es": {
+        "description": "A2 Hosting es una empresa de hosting de alto rendimiento conocida por sus servidores 'Turbo' que prometen cargas de página hasta 20 veces más rápidas. Fundada en 2001, se han especializado en velocidad, funciones para desarrolladores y un tiempo de actividad ultra confiable.",
+        "services": [
+            {
+                "title": "Hosting Compartido Turbo",
+                "info": "Entornos compartidos optimizados usando servidores LiteSpeed y caché avanzada. Perfecto para WordPress y tiendas online que necesitan rapidez."
+            },
+            {
+                "title": "VPS Gestionado",
+                "info": "La potencia de un servidor privado virtual con la facilidad de un panel de control gestionado. Incluye parches de seguridad y soporte Guru Crew 24/7."
+            },
+            {
+                "title": "Hosting Dedicado",
+                "info": "Servidores bare metal de alta gama para aplicaciones empresariales grandes. Disponibles en configuraciones gestionadas y no gestionadas."
+            },
+            {
+                "title": "Hosting para Revendedores",
+                "info": "Paquetes de marca blanca que permiten a emprendedores lanzar su propio negocio de hosting usando la infraestructura de alta velocidad de A2."
+            }
+        ],
+        "sections": [
+            {
+                "title": "La Diferencia Turbo",
+                "info": "Sus servidores Turbo tienen ocupación limitada, discos NVMe y software LiteSpeed mejorado, lo que resulta en un tiempo de respuesta (TTFB) mucho menor."
+            },
+            {
+                "title": "Garantía de Reembolso en Cualquier Momento",
+                "info": "Ofrecen una de las políticas de reembolso más flexibles de la industria, permitiendo probar sus servicios prácticamente sin riesgo."
+            },
+            {
+                "title": "Amigable para Desarrolladores",
+                "info": "Soporte completo para Python, PHP, Node.js y acceso SSH incluso en los planes básicos, siendo un favorito para los creadores de web."
+            },
+            {
+                "title": "Seguridad Perpetua",
+                "info": "Incluye protección HackScan gratuita, firewalls duales y defensa DDoS reforzada para mantener los sitios seguros frente a amenazas comunes."
+            }
+        ]
+    }
+}

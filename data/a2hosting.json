@@ -1,0 +1,112 @@
+{
+    "provider": "A2 Hosting",
+    "id": "a2hosting",
+    "affiliation_id": "TU_ID_AFILIADO",
+    "affiliate_link": "https://www.a2hosting.com/?referral=TU_ID_AFILIADO",
+    "last_update": "2026-03-14",
+    "currency": "USD",
+    "verdicts": {
+        "es": "Líder en velocidad para sitios de contenido. Sus servidores Turbo optimizados para WordPress y su soporte técnico experto lo hacen ideal para proyectos que no quieren gestionar la infra a bajo nivel.",
+        "en": "Speed leader for content sites. Their Turbo servers optimized for WordPress and expert technical support make it ideal for projects that don't want to manage low-level infra.",
+        "fr": "Leader de la vitesse pour les sites de contenu. Leurs serveurs Turbo optimisés pour WordPress et leur support technique expert le rendent idéal pour les projets qui ne veulent pas gérer l'infra à bas niveau."
+    },
+    "plans": [
+        {
+            "name": "Startup (Shared)",
+            "price": 2.99,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "1GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "100GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "1",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "Turbo Boost",
+            "price": 6.99,
+            "currency": "USD",
+            "is_best_seller": true,
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "2GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "Unlimited NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "5",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "Managed VPS (Lift 4)",
+            "price": 35.99,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "150GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "2TB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}

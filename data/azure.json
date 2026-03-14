@@ -1,0 +1,111 @@
+{
+    "provider": "Microsoft Azure",
+    "id": "azure",
+    "affiliate_link": "https://azure.microsoft.com/free/",
+    "last_update": "2026-03-14",
+    "currency": "USD",
+    "verdicts": {
+        "es": "La mejor opción para entornos empresariales. Su integración con Windows y servicios de Microsoft es insuperable, ofreciendo una escalabilidad masiva y seguridad de grado gubernamental.",
+        "en": "The best choice for enterprise environments. Its integration with Windows and Microsoft services is second to none, offering massive scalability and government-grade security.",
+        "fr": "Le meilleur choix pour les environnements d'entreprise. Son intégration avec Windows et les services Microsoft est inégalée, offrant une évolutivité massive et une sécurité de niveau gouvernemental."
+    },
+    "plans": [
+        {
+            "name": "B1s (Economical)",
+            "price": 7.59,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "1GB RAM",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1 vCPU",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "4GB Temp SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "5GB Free",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "1",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B2s (Balanced)",
+            "price": 30.36,
+            "currency": "USD",
+            "is_best_seller": true,
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4GB RAM",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2 vCPU",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "8GB Temp SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "5GB Free",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "4",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B2ms (Pro)",
+            "price": 60.73,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8GB RAM",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2 vCPU",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "16GB Temp SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "5GB Free",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "8",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}

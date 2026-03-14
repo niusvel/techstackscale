@@ -1,0 +1,111 @@
+{
+    "provider": "Oracle Cloud",
+    "id": "oracle",
+    "affiliate_link": "https://www.oracle.com/cloud/free/",
+    "last_update": "2026-03-14",
+    "currency": "USD",
+    "verdicts": {
+        "es": "La mejor capa gratuita del mercado. Sus instancias ARM ofrecen un rendimiento asombroso y su red de alto rendimiento es ideal para bases de datos pesadas.",
+        "en": "The best free tier on the market. Its ARM instances offer amazing performance and its high-performance network is ideal for heavy databases.",
+        "fr": "Le meilleur niveau gratuit du marché. Ses instances ARM offrent des performances étonnantes et son réseau haute performance est idéal pour les bases de données lourdes."
+    },
+    "plans": [
+        {
+            "name": "Ampere A1 (Always Free*)",
+            "price": 0,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "24GB RAM",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4 vCPU (ARM)",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "200GB Block",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "10TB Free",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "Standard.E4.Flex",
+            "price": 14.60,
+            "currency": "USD",
+            "is_best_seller": true,
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8GB RAM",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1 OCPU (AMD)",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "50GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "10TB Free",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "4",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "Standard.E4.Pro",
+            "price": 29.20,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "16GB RAM",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2 OCPU (AMD)",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "100GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "10TB Free",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "8",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}

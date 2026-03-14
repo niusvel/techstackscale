@@ -8,7 +8,7 @@ interface ProviderSummaryProps {
 }
 
 export default async function ProviderSummary({ provider, locale }: ProviderSummaryProps) {
-    const filePath = path.join(process.cwd(), 'data', `${provider}_summary_${locale}.json`);
+    const filePath = path.join(process.cwd(), 'data', 'summaries', `${provider}_summary.json`);
     const t = await getTranslations({ locale, namespace: 'ProviderPage' });
 
     let summaryData = null;
@@ -16,7 +16,8 @@ export default async function ProviderSummary({ provider, locale }: ProviderSumm
     try {
         if (fs.existsSync(filePath)) {
             const fileContent = fs.readFileSync(filePath, 'utf8');
-            summaryData = JSON.parse(fileContent);
+            const allData = JSON.parse(fileContent);
+            summaryData = allData[locale] || allData['en'];
         }
     } catch (error) {
         console.error(`Error reading summary json file for provider ${provider}:`, error);

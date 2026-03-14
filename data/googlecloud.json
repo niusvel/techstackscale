@@ -1,0 +1,111 @@
+{
+    "provider": "Google Cloud",
+    "id": "googlecloud",
+    "affiliate_link": "https://cloud.google.com/free",
+    "last_update": "2026-03-14",
+    "currency": "USD",
+    "verdicts": {
+        "es": "Líder en análisis de datos e IA. Sus instancias E2 ofrecen un excelente equilibrio entre coste y rendimiento, con una de las consolas más intuitivas del mercado.",
+        "en": "Leader in data analytics and AI. Its E2 instances offer an excellent balance between cost and performance, with one of the most intuitive consoles on the market.",
+        "fr": "Leader de l'analyse de données et de l'IA. Ses instances E2 offrent un excellent équilibre entre coût et performance, avec l'une des consoles les plus intuitives du marché."
+    },
+    "plans": [
+        {
+            "name": "e2-micro",
+            "price": 6.11,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "1GB RAM",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2 vCPU (Shared)",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "Disk Extra",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "1GB Free",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "1",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "e2-small",
+            "price": 12.23,
+            "currency": "USD",
+            "is_best_seller": true,
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "2GB RAM",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2 vCPU (Shared)",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "Disk Extra",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "1GB Free",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "2",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "e2-medium",
+            "price": 24.46,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4GB RAM",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2 vCPU (Shared)",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "Disk Extra",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "1GB Free",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "4",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}

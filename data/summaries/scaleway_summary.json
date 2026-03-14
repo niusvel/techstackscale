@@ -1,0 +1,80 @@
+{
+    "en": {
+        "description": "Scaleway is a major European cloud service provider offering a wide range of infrastructure services. Known for its innovation in energy-efficient data centers and its comprehensive ecosystem, it provides everything from VPS and Bare Metal to managed Kubernetes and Object Storage, all while ensuring European data sovereignty.",
+        "services": [
+            {
+                "title": "Elastic Metal",
+                "info": "Combines the flexibility of the cloud with the raw power of dedicated servers. Provisioned in minutes, these servers offer 100% dedicated resources and local NVMe storage."
+            },
+            {
+                "title": "Kapsule (Managed Kubernetes)",
+                "info": "A powerful managed Kubernetes service that integrates seamlessly with Scaleway's load balancers, block storage, and private networks, with a free management plane."
+            },
+            {
+                "title": "Object Storage",
+                "info": "S3-compatible storage designed for high durability. It includes multiple classes, including 'One Zone - IA' for cost-effective infrequent access and 'Glacier' for long-term archiving."
+            },
+            {
+                "title": "Serverless Functions & Containers",
+                "info": "Allows developers to deploy code without managing servers. Scaleway handles the scaling and execution, charging only for the resources consumed during run-time."
+            }
+        ],
+        "sections": [
+            {
+                "title": "European Data Sovereignty",
+                "info": "Headquartered in France, Scaleway offers full compliance with GDPR and ensures your data is protected from non-European extraterritorial laws like the Cloud Act."
+            },
+            {
+                "title": "Eco-Responsible Infrastructure",
+                "info": "Scaleway operates some of the most efficient data centers in the world (DC5), using innovative cooling technologies that consume significantly less water and electricity."
+            },
+            {
+                "title": "Developer-First Ecosystem",
+                "info": "Offers a rich set of tools including a robust API, CLI, and Terraform providers, designed to facilitate automated DevOps workflows and Infrastructure as Code."
+            },
+            {
+                "title": "Multi-AZ Resilience",
+                "info": "With data centers in Paris, Amsterdam, and Warsaw, Scaleway allows for the design of high-availability architectures across multiple European geographic zones."
+            }
+        ]
+    },
+    "es": {
+        "description": "Scaleway es un importante proveedor europeo de servicios en la nube que ofrece una amplia gama de servicios de infraestructura. Conocido por su innovación en centros de datos eficientes y su ecosistema integral, ofrece desde VPS y Bare Metal hasta Kubernetes gestionado y Object Storage, garantizando la soberanía de los datos europeos.",
+        "services": [
+            {
+                "title": "Elastic Metal",
+                "info": "Combina la flexibilidad de la nube con la potencia de los servidores dedicados. Listos en minutos, ofrecen recursos 100% dedicados y almacenamiento NVMe local."
+            },
+            {
+                "title": "Kapsule (Kubernetes Gestionado)",
+                "info": "Un potente servicio de Kubernetes gestionado que se integra con balanceadores de carga y almacenamiento de Scaleway, con el plano de control gratuito."
+            },
+            {
+                "title": "Object Storage",
+                "info": "Almacenamiento compatible con S3 diseñado para una alta durabilidad. Incluye clases de bajo coste para acceso infrecuente y archivado a largo plazo (Glacier)."
+            },
+            {
+                "title": "Serverless Functions",
+                "info": "Permite desplegar código sin gestionar servidores. Scaleway se encarga del escalado y la ejecución, cobrando solo por los recursos consumidos."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Soberanía de Datos Europea",
+                "info": "Con sede en Francia, Scaleway cumple totalmente con el RGPD y asegura que tus datos no estén sujetos a leyes extraterritoriales no europeas."
+            },
+            {
+                "title": "Infraestructura Eco-Responsable",
+                "info": "Opera centros de datos (como el DC5) con tecnologías de refrigeración innovadoras que consumen mucha menos agua y electricidad."
+            },
+            {
+                "title": "Ecosistema para Desarrolladores",
+                "info": "Ofrece un conjunto rico de herramientas que incluyen API robusta, CLI y proveedores de Terraform para flujos de trabajo DevOps automatizados."
+            },
+            {
+                "title": "Resiliencia Multi-AZ",
+                "info": "Con centros de datos en París, Ámsterdam y Varsovia, permite diseñar arquitecturas de alta disponibilidad en múltiples zonas geográficas europeas."
+            }
+        ]
+    }
+}

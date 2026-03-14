@@ -1,0 +1,80 @@
+{
+    "en": {
+        "description": "Microsoft Azure is a massive cloud computing platform providing over 200 products and cloud services. Designed for the modern enterprise, it stands out for its seamless integration with Microsoft technologies and its market-leading capabilities in hybrid cloud and enterprise security.",
+        "services": [
+            {
+                "title": "Azure Virtual Machines",
+                "info": "On-demand computing resources. Azure offers a wide range of VM sizes for any workload, from light testing (B-series) to high-performance computing (H-series)."
+            },
+            {
+                "title": "Azure SQL Database",
+                "info": "A fully managed relational database service based on the latest stable version of Microsoft SQL Server, offering high availability and AI-powered optimization."
+            },
+            {
+                "title": "Azure Kubernetes Service (AKS)",
+                "info": "A managed container orchestration service that simplifies the deployment, management, and operations of Kubernetes on Azure."
+            },
+            {
+                "title": "Azure App Service",
+                "info": "An HTTP-based service for hosting web applications, REST APIs, and mobile backends. It supports multiple languages including .NET, Java, Node.js, and Python."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Hybrid Cloud Leadership",
+                "info": "Azure provides a consistent experience across on-premises and cloud environments, allowing companies to easily bridge their legacy infrastructure with the cloud."
+            },
+            {
+                "title": "Unrivaled Microsoft Integration",
+                "info": "If your company uses Windows, Active Directory, or SQL Server, Azure offers the most native and efficient way to migrate and scale these services."
+            },
+            {
+                "title": "Comprehensive Compliance",
+                "info": "Azure leads the industry with more than 90 compliance offerings, including specific certifications for healthcare, finance, and government sectors."
+            },
+            {
+                "title": "Azure Free Account",
+                "info": "Includes 12 months of popular free services, a $200 credit for the first 30 days, and more than 55 services that are always free, including the B1s VM instance."
+            }
+        ]
+    },
+    "es": {
+        "description": "Microsoft Azure es una enorme plataforma de computación en la nube que ofrece más de 200 productos y servicios. Diseñada para la empresa moderna, destaca por su integración nativa con tecnologías de Microsoft y sus capacidades líderes en nube híbrida y seguridad.",
+        "services": [
+            {
+                "title": "Azure Virtual Machines",
+                "info": "Recursos de computación bajo demanda. Azure ofrece una amplia gama de tamaños de VM, desde pruebas ligeras (serie B) hasta computación de alto rendimiento (serie H)."
+            },
+            {
+                "title": "Azure SQL Database",
+                "info": "Servicio de base de datos relacional totalmente gestionado basado en SQL Server, que ofrece alta disponibilidad y optimización basada en IA."
+            },
+            {
+                "title": "Azure Kubernetes Service (AKS)",
+                "info": "Servicio gestionado que simplifica el despliegue, la gestión y las operaciones de Kubernetes en Azure."
+            },
+            {
+                "title": "Azure App Service",
+                "info": "Servicio para alojar aplicaciones web y APIs. Soporta múltiples lenguajes como .NET, Java, Node.js y Python."
+            }
+        ],
+        "sections": [
+            {
+                "title": "Liderazgo en Nube Híbrida",
+                "info": "Azure proporciona una experiencia consistente entre entornos locales y en la nube, permitiendo conectar fácilmente infraestructuras legacy."
+            },
+            {
+                "title": "Integración Microsoft Inigualable",
+                "info": "Si tu empresa utiliza Windows o SQL Server, Azure ofrece la forma más nativa y eficiente de migrar y escalar estos servicios."
+            },
+            {
+                "title": "Cumplimiento Integral",
+                "info": "Azure lidera la industria con más de 90 certificaciones de cumplimiento, incluyendo sectores de salud, finanzas y gobierno."
+            },
+            {
+                "title": "Cuenta Gratuita de Azure",
+                "info": "Incluye 12 meses de servicios populares gratuitos, un crédito de $200 los primeros 30 días y más de 55 servicios siempre gratuitos, incluyendo la instancia B1s."
+            }
+        ]
+    }
+}
