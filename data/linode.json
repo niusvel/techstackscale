@@ -10,6 +10,7 @@
         "en": "A benchmark in stability and technical support. Ideal for developers seeking impeccable documentation and a global network backed by Akamai.",
         "fr": "Une référence en matière de stabilité et de support technique. Idéal pour les développeurs à la recherche d'une documentation impeccable et d'un réseau mondial soutenu par Akamai."
     },
+    "category": "cloud VPS (IaaS)",
     "plans": [
         {
             "name": "Nanode 1GB",

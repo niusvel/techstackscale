@@ -1,244 +1,130 @@
 'use client';
 
-import { useState, type FocusEvent } from 'react';
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { formatPrice } from '@/utils/currency';
 import DockerModal from '../components/DockerModal';
 import { normalizePlanForDocker } from '@/utils/docker-generator';
+import ComparisonModal from '../components/ComparisonModal';
 
-export default function CompareClient({ initialProviders }: { initialProviders: any[] }) {
+export default function CompareClient({ providers }: { providers: any[] }) {
   const t = useTranslations('ComparePage');
-
   const [selectedPlanForDocker, setSelectedPlanForDocker] = useState<any>(null);
-  const [selectedPlans, setSelectedPlans] = useState<Record<string, string>>(() => {
-    const initialState: Record<string, string> = {};
-    initialProviders.forEach(p => {
-      if (p.plan) {
-        initialState[p.id] = p.plan.plan_id || p.plan.name; // Fallback to name if plan_id is missing, though we should have it
-      }
-    });
-    return initialState;
+  const [isCompareModalOpen, setIsCompareModalOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedIds, setSelectedIds] = useState<string[]>([]);
+
+  const filteredProviders = providers.filter(p => {
+    const hasPlans = p.plans && p.plans.length > 0;
+    if (!hasPlans) return false;
+    if (searchTerm.trim() === '') return true;
+    return p.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
-  const [openProviderId, setOpenProviderId] = useState<string | null>(null);
-
-  const getPlanById = (providerData: any, planId: string) => {
-    return (
-      providerData?.plans?.find(
-        (p: any) => String(p.plan_id) === String(planId) || p.name === planId
-      ) || providerData?.plans?.[0]
-    );
-  };
-
-  const getPlanKey = (plan: any) => String(plan?.plan_id ?? plan?.name ?? '');
-
-  const formatPlanPrice = (plan: any) => formatPrice(plan?.price, plan?.currency);
-
-  const formatPlanName = (name: string, maxLength = 15) =>
-    name.length > maxLength ? `${name.slice(0, maxLength - 3)}...` : name;
-
-  const getFeatureValue = (plan: any, featureKey: string) => {
-    if (!plan) return '-';
-    const feature = plan.features.find((f: any) => f.key === featureKey);
-    if (!feature) return '-';
-    if (!feature.enabled) return '❌';
-    return feature.value || '✅';
-  };
-
-  const providers = initialProviders.map(p => {
-    const activePlanId = selectedPlans[p.id];
-    const activePlan = getPlanById(p.data, activePlanId);
-    return {
-      ...p,
-      plan: activePlan
-    };
-  });
-
-  const handlePlanChange = (providerId: string, planId: string) => {
-    setSelectedPlans(prev => ({
-      ...prev,
-      [providerId]: planId
-    }));
-  };
-
-  const handlePlanSelect = (providerId: string, planId: string) => {
-    handlePlanChange(providerId, planId);
-    setOpenProviderId(null);
-  };
-
-  const handleDropdownBlur = (event: FocusEvent<HTMLDivElement>) => {
-    const nextTarget = event.relatedTarget as Node | null;
-    if (!nextTarget || !event.currentTarget.contains(nextTarget)) {
-      setOpenProviderId(null);
-    }
-  };
-
-  const getPlanNameElement = (p: any) => {
-    return (
-      <div className="mb-2">
-        <div
-          className="relative inline-block w-full max-w-[200px]"
-          tabIndex={0}
-          onBlur={handleDropdownBlur}
-        >
-          <button
-            type="button"
-            aria-haspopup="listbox"
-            aria-expanded={openProviderId === p.id}
-            aria-controls={`plan-menu-${p.id}`}
-            onClick={() => setOpenProviderId(prev => (prev === p.id ? null : p.id))}
-            className={`relative w-full bg-transparent border-none text-lg font-black text-white transition-colors cursor-pointer text-center outline-none ${p.hoverColor || 'hover:text-cyan'}`}
-            style={{ paddingRight: '1.5rem' }}
-          >
-            <span className="block w-full pr-6 text-center" title={p.plan.name}>
-              {formatPlanName(p.plan.name)}
-            </span>
-            <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center justify-end text-slate-400 opacity-60">
-              <svg
-                className={`w-4 h-4 ml-1 transition-transform ${openProviderId === p.id ? 'rotate-180' : ''}`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </button>
-          {openProviderId === p.id && (
-            <div
-              id={`plan-menu-${p.id}`}
-              role="listbox"
-              className="absolute z-20 mt-2 w-full rounded-xl border border-white/10 bg-slate-900/95 shadow-2xl backdrop-blur"
-            >
-              {p.data?.plans?.map((plan: any) => {
-                const planKey = getPlanKey(plan);
-                const isSelected = planKey === getPlanKey(p.plan);
-                return (
-                  <button
-                    type="button"
-                    role="option"
-                    aria-selected={isSelected}
-                    key={planKey}
-                    onClick={() => handlePlanSelect(p.id, planKey)}
-                    className={`flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm transition-colors ${isSelected ? 'bg-white/10 text-white' : 'text-slate-200 hover:bg-white/10'
-                      }`}
-                  >
-                    <span className="truncate">{plan.name}</span>
-                    <span className="shrink-0 text-slate-400 tabular-nums">{formatPlanPrice(plan)}</span>
-                  </button>
-                );
-              })}
-            </div>
-          )}
-        </div>
-      </div>
+  const toggleSelection = (id: string) => {
+    setSelectedIds(prev =>
+      prev.includes(id)
+        ? prev.filter(item => item !== id)
+        : prev.length < 3 ? [...prev, id] : prev
     );
   };
 
   return (
-    <div className="bg-background rounded-3xl border border-white/10 overflow-hidden shadow-2xl">
-      <div className="overflow-x-auto">
+    <div className="max-w-[1400px] mx-auto px-4 py-12">
+      {/* Header & Buscador */}
+      <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 gap-4">
+        <div>
+          <h1 className="text-4xl font-black text-white mb-2">
+            {t('title_start')} <span className="text-cyan">{t('title_accent')}</span>
+          </h1>
+          <p className="text-slate-400">{t('subtitle', { count: providers.length })}</p>
+        </div>
+
+        <input
+          type="text"
+          placeholder={t('search_placeholder')}
+          className="bg-slate-900 border border-slate-800 rounded-xl px-4 py-2 text-white focus:border-cyan outline-none transition-all w-full md:w-64"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </div>
+
+      {/* Tabla de Comparación */}
+      <div className="relative overflow-x-auto rounded-2xl border border-slate-800 bg-slate-950/50 backdrop-blur-sm mb-20">
         <table className="w-full text-left border-collapse">
           <thead>
-            <tr className="border-b border-white/10">
-              <th className="p-6 text-slate-400 font-medium w-1/4" />
-              {providers.map((p) => (
-                <th key={p.id} className="p-6 text-center w-1/4 align-top">
-                  <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold border mb-4 ${p.color}`}>
-                    {p.name}
-                  </div>
-                  {p.plan ? (
-                    <>
-                      {getPlanNameElement(p)}
-                      <div className="text-3xl font-black text-cyan drop-shadow-[0_0_12px_rgba(6,182,212,0.5)] mb-4">
-                        {formatPrice(p.plan.price, p.plan.currency)}{' '}
-                        <span className="text-sm text-slate-400 font-normal drop-shadow-none">/m</span>
-                      </div>
-
-                      <button
-                        onClick={() => setSelectedPlanForDocker(normalizePlanForDocker(p.plan, p.name))}
-                        className="w-full text-slate-950 mb-2 bg-slate-500 text-xs font-bold py-2.5 px-4 rounded-xl hover:bg-cyan transition-all transform active:scale-95 text-center shadow-lg"
-                      >
-                        {t('generate_docker_stack')}
-                      </button>
-                      <a
-                        href={p.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`block w-full py-3 rounded-xl font-bold transition-all ${p.btnColor} shadow-lg`}
-                      >
-                        {t('get_offer')}
-                      </a>
-                    </>
-                  ) : (
-                    <div className="text-sm text-slate-500 italic p-4">
-                      {t('waiting_data', { provider: p.name })}
-                    </div>
-                  )}
-                </th>
-              ))}
+            <tr className="bg-slate-900/80 sticky top-0 z-20">
+              <th className="p-5 border-b border-slate-800 text-slate-500 text-xs uppercase tracking-widest font-bold w-10"></th>
+              <th className="p-5 border-b border-slate-800 text-slate-500 text-xs uppercase tracking-widest font-bold">{t('table.provider')}</th>
+              <th className="p-5 border-b border-slate-800 text-slate-500 text-xs uppercase tracking-widest font-bold text-center">{t('table.price')}</th>
+              <th className="p-5 border-b border-slate-800 text-slate-500 text-xs uppercase tracking-widest font-bold text-center">{t('table.ram')}</th>
+              <th className="p-5 border-b border-slate-800 text-slate-500 text-xs uppercase tracking-widest font-bold text-center">{t('table.cpu')}</th>
+              <th className="p-5 border-b border-slate-800 text-slate-500 text-xs uppercase tracking-widest font-bold text-center">{t('table.actions')}</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-white/5">
-            <tr className="hover:bg-white/[0.02] transition-colors">
-              <td className="p-6 font-medium text-slate-300">{t('features.memory')}</td>
-              {providers.map((p) => (
-                <td key={p.id} className="p-6 text-center text-white font-medium">
-                  {getFeatureValue(p.plan, 'memory')}
-                </td>
-              ))}
-            </tr>
-            <tr className="hover:bg-white/[0.02] transition-colors bg-white/[0.01]">
-              <td className="p-6 font-medium text-slate-300">{t('features.vcpu')}</td>
-              {providers.map((p) => (
-                <td key={p.id} className="p-6 text-center text-white font-medium">
-                  {getFeatureValue(p.plan, 'vcpu')}
-                </td>
-              ))}
-            </tr>
-            <tr className="hover:bg-white/[0.02] transition-colors">
-              <td className="p-6 font-medium text-slate-300">{t('features.transfer')}</td>
-              {providers.map((p) => (
-                <td key={p.id} className="p-6 text-center text-white font-medium">
-                  {getFeatureValue(p.plan, 'transfer')}
-                </td>
-              ))}
-            </tr>
-            <tr className="hover:bg-white/[0.02] transition-colors bg-white/[0.01]">
-              <td className="p-6 font-medium text-slate-300">{t('features.storage')}</td>
-              {providers.map((p) => (
-                <td key={p.id} className="p-6 text-center text-white font-medium">
-                  {getFeatureValue(p.plan, 'storage')}
-                </td>
-              ))}
-            </tr>
-            <tr className="hover:bg-white/[0.02] transition-colors">
-              <td className="p-6 font-medium text-slate-300">{t('features.websites')}</td>
-              {providers.map((p) => (
-                <td key={p.id} className="p-6 text-center text-white font-medium">
-                  {getFeatureValue(p.plan, 'websites')}
-                </td>
-              ))}
-            </tr>
-            <tr className="hover:bg-white/[0.02] transition-colors bg-white/[0.01]">
-              <td className="p-6 font-medium text-slate-300">{t('features.node_apps')}</td>
-              {providers.map((p) => (
-                <td key={p.id} className="p-6 text-center text-white font-medium">
-                  {getFeatureValue(p.plan, 'node_apps')}
-                </td>
-              ))}
-            </tr>
-            <tr className="hover:bg-white/[0.02] transition-colors">
-              <td className="p-6 font-medium text-slate-300">{t('features.emails')}</td>
-              {providers.map((p) => (
-                <td key={p.id} className="p-6 text-center text-white font-medium">
-                  {getFeatureValue(p.plan, 'emails')}
-                </td>
-              ))}
-            </tr>
+          <tbody className="divide-y divide-slate-900">
+            {filteredProviders.map((provider) => {
+              const mainPlan = provider.plans[0];
+              if (!mainPlan) return null;
+
+              const isSelected = selectedIds.includes(provider.id);
+              return (
+                <tr key={provider.id} className={`transition-colors group ${isSelected ? 'bg-cyan/10' : 'hover:bg-white/5'}`}>
+                  <td className="p-5">
+                    <input
+                      type="checkbox"
+                      checked={isSelected}
+                      onChange={() => toggleSelection(provider.id)}
+                      className="w-5 h-5 rounded border-slate-700 bg-slate-800 text-cyan focus:ring-cyan"
+                    />
+                  </td>
+                  <td className="p-5">
+                    <div className="flex items-center gap-3">
+                      <span className="font-bold text-white">{provider.name}</span>
+                    </div>
+                  </td>
+                  <td className="p-5 text-center font-mono text-cyan font-bold">{mainPlan.price}</td>
+                  <td className="p-5 text-center text-slate-300 font-medium">
+                    {mainPlan.features?.find((f: any) => f.key === 'memory')?.value || '-'}
+                  </td>
+                  <td className="p-5 text-center text-slate-300 font-medium">
+                    {mainPlan.features?.find((f: any) => f.key === 'vcpu')?.value || '-'}
+                  </td>
+                  <td className="p-5 text-center">
+                    <button
+                      onClick={() => setSelectedPlanForDocker(normalizePlanForDocker(mainPlan, provider.name))}
+                      className="p-2 hover:bg-slate-800 rounded-lg text-slate-400 hover:text-cyan transition-all"
+                      title={t('table.tooltip_docker')}
+                    >
+                      🐳
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
+
+      {/* Floating Action Bar - Aparece al seleccionar */}
+      {selectedIds.length > 0 && (
+        <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 bg-slate-900 border border-cyan/30 px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-6">
+          <div className="text-sm font-medium text-white">
+            {t('selection_bar.count', { count: selectedIds.length })}
+          </div>
+          <div className="flex gap-2">
+            <button onClick={() => setSelectedIds([])} className="text-slate-400 hover:text-white text-sm px-3 py-1">
+              {t('selection_bar.clear')}
+            </button>
+            <button
+              onClick={() => setIsCompareModalOpen(true)}
+              className="bg-cyan text-slate-950 px-5 py-2 rounded-xl font-bold text-sm hover:scale-105 transition-transform"
+            >
+              {t('selection_bar.btn_compare')}
+            </button>
+          </div>
+        </div>
+      )}
+
       {selectedPlanForDocker && (
         <DockerModal
           plan={selectedPlanForDocker}
@@ -246,7 +132,14 @@ export default function CompareClient({ initialProviders }: { initialProviders: 
           onClose={() => setSelectedPlanForDocker(null)}
         />
       )}
+
+      {isCompareModalOpen && (
+        <ComparisonModal
+          isOpen={isCompareModalOpen}
+          onClose={() => setIsCompareModalOpen(false)}
+          selectedProviders={providers.filter(p => selectedIds.includes(p.id))}
+        />
+      )}
     </div>
   );
 }
-

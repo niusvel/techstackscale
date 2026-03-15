@@ -8,6 +8,7 @@
         "en": "Raw power at the best price. Ideal for scalable infrastructure in Europe.",
         "fr": "Puissance brute au meilleur prix. Idéal pour l'infrastructure évolutive en Europe."
     },
+    "category": "cloud VPS (IaaS)",
     "plans": [
         {
             "plan_id": "hetzner_cx23",
@@ -24,7 +25,7 @@
                 {
                     "key": "vcpu",
                     "enabled": true,
-                    "value": "2 vCPU"
+                    "value": "2"
                 },
                 {
                     "key": "storage",
@@ -53,7 +54,7 @@
                 {
                     "key": "vcpu",
                     "enabled": true,
-                    "value": "2 vCPU"
+                    "value": "2"
                 },
                 {
                     "key": "storage",
@@ -82,7 +83,7 @@
                 {
                     "key": "vcpu",
                     "enabled": true,
-                    "value": "4 vCPU"
+                    "value": "4"
                 },
                 {
                     "key": "storage",
@@ -111,7 +112,7 @@
                 {
                     "key": "vcpu",
                     "enabled": true,
-                    "value": "4 vCPU"
+                    "value": "4"
                 },
                 {
                     "key": "storage",

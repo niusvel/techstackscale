@@ -8,6 +8,7 @@
         "en": "The most economical option for initial projects. Excellent 24/7 support and a very clear interface, ideal if you already have your domains with them.",
         "fr": "L'option la plus économique pour les projets initiaux. Excellent support 24/7 et une interface très claire, idéale si vous avez déjà vos domaines chez eux."
     },
+    "category": "shared Hosting",
     "plans": [
         {
             "name": "Stellar (Shared)",

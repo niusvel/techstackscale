@@ -10,6 +10,7 @@
         "en": "The industry standard. Its ecosystem is infinite and its reliability unmatched, though its pricing structure can be complex for beginners.",
         "fr": "Le standard de l'industrie. Son écosystème est infini et sa fiabilité inégalée, bien que sa structure tarifaire puisse être complexe pour les débutants."
     },
+    "category": "cloud VPS (IaaS)",
     "plans": [
         {
             "name": "t4g.small (ARM)",
@@ -18,12 +19,12 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "2GB RAM",
+                    "value": "2 GB",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "2 vCPU",
+                    "value": "2",
                     "enabled": true
                 },
                 {
@@ -51,12 +52,12 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "4GB RAM",
+                    "value": "4 GB",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "2 vCPU",
+                    "value": "2",
                     "enabled": true
                 },
                 {
@@ -83,12 +84,12 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "8GB RAM",
+                    "value": "8 GB",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "2 vCPU",
+                    "value": "2",
                     "enabled": true
                 },
                 {

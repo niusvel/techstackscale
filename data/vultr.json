@@ -10,6 +10,7 @@
         "en": "Excellent global presence with 32+ locations and outstanding NVMe disk performance.",
         "fr": "Excellente présence mondiale avec plus de 32 emplacements et des performances de disque NVMe exceptionnelles."
     },
+    "category": "cloud VPS (IaaS)",
     "plans": [
         {
             "name": "Regular Cloud Compute",

@@ -8,6 +8,7 @@
         "en": "The simplest option. Intuitive panel and 24/7 support for those who don't want complications.",
         "fr": "L'option la plus simple. Panneau intuitif et support 24/7 pour ceux qui ne veulent pas de complications."
     },
+    "category": "shared Hosting",
     "plans": [
         {
             "plan_id": "hostinger_single_1",
