@@ -55,7 +55,9 @@
             "websites": "{value} Sitios web",
             "node_apps": "{value} Aplicaciones Node.js",
             "storage": "{value} de almacenamiento",
-            "emails": "{value} Cuentas de correo"
+            "emails": "{value} Cuentas de correo",
+            "offert": "{value} Oferta",
+            "type": "Tipo: {value}"
         },
         "generate_docker_stack": "Generar Docker Stack"
     },
@@ -126,7 +128,9 @@
             "websites": "{value} Sitios web",
             "node_apps": "{value} Aplicaciones Node.js",
             "storage": "{value} de almacenamiento",
-            "emails": "{value} Cuentas de correo"
+            "emails": "{value} Cuentas de correo",
+            "offert": "{value} Oferta",
+            "type": "Tipo: {value}"
         },
         "general_overview": "Descripción General",
         "main_services": "Servicios Principales",

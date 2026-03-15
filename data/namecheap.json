@@ -1,9 +1,8 @@
 {
+    "last_update": "2026-03-15 08:12:15",
     "provider": "Namecheap",
-    "id": "namecheap",
+    "affiliate_id": "TU_ID_AFILIADO",
     "affiliate_link": "https://www.namecheap.com/hosting/?affId=TU_ID_AFILIADO",
-    "last_update": "2026-03-14",
-    "currency": "USD",
     "verdicts": {
         "es": "La opción más económica para proyectos iniciales. Excelente soporte 24/7 y una interfaz muy clara, ideal si ya tienes tus dominios con ellos.",
         "en": "The most economical option for initial projects. Excellent 24/7 support and a very clear interface, ideal if you already have your domains with them.",
@@ -12,9 +11,14 @@
     "plans": [
         {
             "name": "Stellar (Shared)",
-            "price": 1.98,
-            "currency": "USD",
+            "price": "4.25",
+            "currency": "EUR",
             "features": [
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "0.00€ (30 - D)"
+                },
                 {
                     "key": "memory",
                     "value": "Shared",
@@ -27,7 +31,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "20GB SSD",
+                    "value": "20 GB SSD",
                     "enabled": true
                 },
                 {
@@ -39,28 +43,42 @@
                     "key": "node_apps",
                     "value": "3",
                     "enabled": true
+                },
+                {
+                    "key": "emails",
+                    "enabled": true,
+                    "value": "30"
+                },
+                {
+                    "key": "type",
+                    "enabled": true,
+                    "value": "Any"
                 }
             ]
         },
         {
-            "name": "EasyWP Starter",
-            "price": 6.88,
-            "currency": "USD",
-            "is_best_seller": true,
+            "name": "Stellar (Plus)",
+            "price": "6",
+            "currency": "EUR",
             "features": [
                 {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "0.00€ (30 - D)"
+                },
+                {
                     "key": "memory",
-                    "value": "Managed",
+                    "value": "Shared",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "Managed",
+                    "value": "Shared",
                     "enabled": true
                 },
                 {
                     "key": "storage",
-                    "value": "10GB SSD",
+                    "value": "30 GB SSD",
                     "enabled": true
                 },
                 {
@@ -70,10 +88,218 @@
                 },
                 {
                     "key": "node_apps",
-                    "value": "1",
+                    "value": "3",
                     "enabled": true
+                },
+                {
+                    "key": "emails",
+                    "enabled": true,
+                    "value": "Unlimited"
+                },
+                {
+                    "key": "type",
+                    "enabled": true,
+                    "value": "Any"
                 }
-            ]
+            ],
+            "plan_id": "namecheap_stellar_(plus)_3",
+            "is_best_seller": true
+        },
+        {
+            "name": "Stellar (Business)",
+            "price": "8.61",
+            "currency": "EUR",
+            "features": [
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "0.00€ (30 - D)"
+                },
+                {
+                    "key": "memory",
+                    "value": "Shared",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "Shared",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "50 GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "emails",
+                    "enabled": true,
+                    "value": "Unlimited"
+                },
+                {
+                    "key": "type",
+                    "enabled": true,
+                    "value": "Any"
+                }
+            ],
+            "plan_id": "namecheap_stellar_(business)_3",
+            "is_best_seller": false
+        },
+        {
+            "name": "EasyWP (Starter)",
+            "price": "8.61",
+            "currency": "EUR",
+            "features": [
+                {
+                    "key": "offert",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "memory",
+                    "value": "Shared",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "Shared",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "10 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "type",
+                    "enabled": true,
+                    "value": "Wordpress"
+                }
+            ],
+            "plan_id": "namecheap_easywp_(starter)_4",
+            "is_best_seller": false
+        },
+        {
+            "name": "EasyWP (Turbo)",
+            "price": "16.45",
+            "currency": "EUR",
+            "features": [
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "12.09€ (30 - D)"
+                },
+                {
+                    "key": "memory",
+                    "value": "1.5 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2 CPU",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "50 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "type",
+                    "enabled": true,
+                    "value": "Wordpress"
+                }
+            ],
+            "plan_id": "namecheap_easywp_(turbo)_5",
+            "is_best_seller": false
+        },
+        {
+            "name": "EasyWP (Supersonic)",
+            "price": "23.42",
+            "currency": "EUR",
+            "features": [
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "18.19€ (30 - D)"
+                },
+                {
+                    "key": "memory",
+                    "value": "2 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4 CPU",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "100 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "type",
+                    "enabled": true,
+                    "value": "Wordpress"
+                }
+            ],
+            "plan_id": "namecheap_easywp_(supersonic)_6",
+            "is_best_seller": false
         }
     ]
 }

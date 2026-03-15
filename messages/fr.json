@@ -55,7 +55,9 @@
             "storage": "{value} Stockage",
             "node_apps": "{value}",
             "websites": "{value} Sites Web",
-            "emails": "{value} Comptes E-mail"
+            "emails": "{value} Comptes E-mail",
+            "offert": "{value} Offre",
+            "type": "Type: {value}"
         },
         "generate_docker_stack": "Générer Docker Stack"
     },
@@ -126,7 +128,9 @@
             "storage": "{value} Stockage",
             "node_apps": "{value}",
             "websites": "{value} Sites Web",
-            "emails": "{value} Comptes E-mail"
+            "emails": "{value} Comptes E-mail",
+            "offert": "{value} Offre",
+            "type": "Type: {value}"
         },
         "general_overview": "Vue Générale",
         "main_services": "Services Principaux",
