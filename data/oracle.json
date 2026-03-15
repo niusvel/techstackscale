@@ -9,6 +9,7 @@
         "en": "The best free tier on the market. Its ARM instances offer amazing performance and its high-performance network is ideal for heavy databases.",
         "fr": "Le meilleur niveau gratuit du marché. Ses instances ARM offrent des performances étonnantes et son réseau haute performance est idéal pour les bases de données lourdes."
     },
+    "category": "cloud VPS (IaaS)",
     "plans": [
         {
             "name": "Ampere A1 (Always Free*)",
@@ -17,22 +18,22 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "24GB RAM",
+                    "value": "24 GB",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "4 vCPU (ARM)",
+                    "value": "4 (ARM)",
                     "enabled": true
                 },
                 {
                     "key": "storage",
-                    "value": "200GB Block",
+                    "value": "200 GB Block",
                     "enabled": true
                 },
                 {
                     "key": "transfer",
-                    "value": "10TB Free",
+                    "value": "10 TB Free",
                     "enabled": true
                 },
                 {
@@ -50,7 +51,7 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "8GB RAM",
+                    "value": "8 GB",
                     "enabled": true
                 },
                 {
@@ -60,12 +61,12 @@
                 },
                 {
                     "key": "storage",
-                    "value": "50GB NVMe",
+                    "value": "50 GB NVMe",
                     "enabled": true
                 },
                 {
                     "key": "transfer",
-                    "value": "10TB Free",
+                    "value": "10 TB Free",
                     "enabled": true
                 },
                 {
@@ -82,7 +83,7 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "16GB RAM",
+                    "value": "16 GB",
                     "enabled": true
                 },
                 {
@@ -92,12 +93,12 @@
                 },
                 {
                     "key": "storage",
-                    "value": "100GB NVMe",
+                    "value": "100 GB NVMe",
                     "enabled": true
                 },
                 {
                     "key": "transfer",
-                    "value": "10TB Free",
+                    "value": "10 TB Free",
                     "enabled": true
                 },
                 {

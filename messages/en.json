@@ -55,7 +55,10 @@
             "storage": "{value} Storage",
             "node_apps": "{value}",
             "websites": "{value} Websites",
-            "emails": "{value} Email Accounts"
+            "emails": "{value} Email Accounts",
+            "offert": "{value} Offer",
+            "type": "Type: {value}",
+            "category": "Category: {value}"
         },
         "generate_docker_stack": "Generate Docker Stack"
     },
@@ -126,7 +129,10 @@
             "storage": "{value} Storage",
             "node_apps": "{value}",
             "websites": "{value} Websites",
-            "emails": "{value} Email Accounts"
+            "emails": "{value} Email Accounts",
+            "offert": "{value} Offer",
+            "type": "Type: {value}",
+            "category": "Category: {value}"
         },
         "general_overview": "General Overview",
         "main_services": "Main Services",
@@ -137,8 +143,41 @@
         "description": "Full analysis of {name}. Compare costs and performance to make the best decision."
     },
     "ComparePage": {
+        "title_start": "Comparison",
+        "title_accent": "Global",
+        "subtitle": "Analyze the {count} providers indexed in real time.",
+        "search_placeholder": "Search provider...",
+        "table": {
+            "provider": "Provider",
+            "plan": "Popular Plan",
+            "price": "Price",
+            "ram": "RAM",
+            "cpu": "vCPU",
+            "actions": "Actions",
+            "tooltip_docker": "Generate Docker Configuration",
+            "feature": "Feature",
+            "type": "Type",
+            "storage": "Storage",
+            "transfer": "Transfer",
+            "websites": "Websites",
+            "node_apps": "Apps",
+            "emails": "Emails",
+            "offert": "Offer",
+            "category": "Category",
+            "btn_offer": "View Offer"
+        },
+        "selection_bar": {
+            "count": "{count} providers selected",
+            "clear": "Clear",
+            "btn_compare": "Compare Now"
+        },
+        "modal": {
+            "compare_title": "Detailed Comparison",
+            "close": "Close View",
+            "features": "Features"
+        },
         "title": "Infrastructure Comparison",
-        "description": "Analyze and compare the plans from the most recommended providers side-by-side.",
+        "description": "Compare the recommended plans side-by-side.",
         "provider": "Provider",
         "price": "Monthly Price",
         "best_plan": "Best Plan",
@@ -148,8 +187,11 @@
             "transfer": "Bandwidth",
             "storage": "Storage",
             "websites": "Websites",
-            "node_apps": "Node.js Apps",
-            "emails": "Emails"
+            "node_apps": "Apps",
+            "emails": "Emails",
+            "category": "Category",
+            "offert": "Offer",
+            "type": "Type"
         },
         "get_offer": "Get Offer →",
         "waiting_data": "Fetching data for {provider}...",

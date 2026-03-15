@@ -10,6 +10,7 @@
         "en": "The best choice for those who want the power of DigitalOcean or AWS but with a managed control panel and 24/7 technical support.",
         "fr": "Le meilleur choix pour ceux qui veulent la puissance de DigitalOcean ou AWS mais avec un panneau de contrôle géré et un support technique 24/7."
     },
+    "category": "Managed PaaS",
     "plans": [
         {
             "name": "DO-1GB (Managed)",
@@ -18,7 +19,7 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "1GB",
+                    "value": "1 GB",
                     "enabled": true
                 },
                 {
@@ -28,12 +29,12 @@
                 },
                 {
                     "key": "storage",
-                    "value": "25GB SSD",
+                    "value": "25 GB SSD",
                     "enabled": true
                 },
                 {
                     "key": "transfer",
-                    "value": "1TB",
+                    "value": "1 TB",
                     "enabled": true
                 },
                 {
@@ -51,7 +52,7 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "2GB",
+                    "value": "2 GB",
                     "enabled": true
                 },
                 {
@@ -61,12 +62,12 @@
                 },
                 {
                     "key": "storage",
-                    "value": "50GB NVMe",
+                    "value": "50 GB NVMe",
                     "enabled": true
                 },
                 {
                     "key": "transfer",
-                    "value": "2TB",
+                    "value": "2 TB",
                     "enabled": true
                 },
                 {
@@ -83,7 +84,7 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "4GB",
+                    "value": "4 GB",
                     "enabled": true
                 },
                 {
@@ -93,12 +94,12 @@
                 },
                 {
                     "key": "storage",
-                    "value": "80GB NVMe",
+                    "value": "80 GB NVMe",
                     "enabled": true
                 },
                 {
                     "key": "transfer",
-                    "value": "4TB",
+                    "value": "4 TB",
                     "enabled": true
                 },
                 {

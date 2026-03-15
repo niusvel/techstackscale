@@ -7,6 +7,9 @@ export default function AdminEdit() {
 
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [provider, setProvider] = useState('Proveedor');
+    const [affiliationId, setAffiliationId] = useState('');
+    const [category, setCategory] = useState('Cloud VPS (IaaS)');
+
     const [plans, setPlans] = useState([
         {
             plan_id: 'proveedor_plan_1',
@@ -55,7 +58,10 @@ export default function AdminEdit() {
                 setProvider(json.provider || 'Proveedor');
                 setAffiliateLink(json.affiliate_link || '');
 
-                // Cargamos los veredictos o inicializamos si no existen
+                // Carga de nuevos campos
+                setAffiliationId(json.affiliation_id || '');
+                setCategory(json.category || 'Cloud VPS (IaaS)');
+
                 setVerdicts({
                     es: json.verdicts?.es || '',
                     en: json.verdicts?.en || '',
@@ -113,8 +119,10 @@ export default function AdminEdit() {
         const finalData = {
             last_update: new Date().toISOString().replace('T', ' ').split('.')[0],
             provider,
+            category, // Guardado en el JSON
+            affiliation_id: affiliationId, // Guardado en el JSON
             affiliate_link: affiliateLink,
-            verdicts, // Se guarda como objeto: { es: "...", en: "...", fr: "..." }
+            verdicts,
             plans
         };
         const blob = new Blob([JSON.stringify(finalData, null, 4)], { type: 'application/json' });
@@ -158,6 +166,31 @@ export default function AdminEdit() {
                             <div>
                                 <label className="admin-label">Enlace de Afiliación</label>
                                 <input value={affiliateLink} onChange={(e) => setAffiliateLink(e.target.value)} className="admin-input text-slate-400" placeholder="https://..." />
+                            </div>
+                        </div>
+
+                        {/* Fila 2: Category y Affiliation ID */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 border-t border-white/5 pt-4">
+                            <div>
+                                <label className="admin-label">Categoría del Servicio</label>
+                                <select
+                                    value={category}
+                                    onChange={(e) => setCategory(e.target.value)}
+                                    className="admin-input"
+                                >
+                                    <option value="Cloud VPS (IaaS)">Cloud VPS (IaaS)</option>
+                                    <option value="Managed PaaS">Managed PaaS</option>
+                                    <option value="Shared Hosting">Shared Hosting</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label className="admin-label">ID de Afiliado (Tracking ID)</label>
+                                <input
+                                    value={affiliationId}
+                                    onChange={(e) => setAffiliationId(e.target.value)}
+                                    className="admin-input font-mono text-cyan/70"
+                                    placeholder="Ej: vultr_ref_2024"
+                                />
                             </div>
                         </div>
 

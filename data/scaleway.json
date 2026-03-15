@@ -10,6 +10,7 @@
         "en": "The quintessential French alternative. Stands out for its complete ecosystem of cloud services (S3, K8s, DB) and its low-cost instances with local NVMe disks.",
         "fr": "L'alternative française par excellence. Se distingue par son écosystème complet de services cloud (S3, K8s, DB) et ses instances à bas prix avec disques NVMe locaux."
     },
+    "category": "cloud VPS (IaaS)",
     "plans": [
         {
             "name": "PLAY2-PICO",

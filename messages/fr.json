@@ -55,7 +55,10 @@
             "storage": "{value} Stockage",
             "node_apps": "{value}",
             "websites": "{value} Sites Web",
-            "emails": "{value} Comptes E-mail"
+            "emails": "{value} Comptes E-mail",
+            "offert": "{value} Offre",
+            "type": "Type: {value}",
+            "category": "Catégorie: {value}"
         },
         "generate_docker_stack": "Générer Docker Stack"
     },
@@ -126,7 +129,10 @@
             "storage": "{value} Stockage",
             "node_apps": "{value}",
             "websites": "{value} Sites Web",
-            "emails": "{value} Comptes E-mail"
+            "emails": "{value} Comptes E-mail",
+            "offert": "{value} Offre",
+            "type": "Type: {value}",
+            "category": "Catégorie: {value}"
         },
         "general_overview": "Vue Générale",
         "main_services": "Services Principaux",
@@ -137,8 +143,41 @@
         "description": "Analyse complète de {name}. Comparez les coûts et les performances pour prendre la meilleure décision."
     },
     "ComparePage": {
+        "title_start": "Comparaison",
+        "title_accent": "Globale",
+        "subtitle": "Analysez les {count} fournisseurs indexés en temps réel.",
+        "search_placeholder": "Rechercher un fournisseur...",
+        "table": {
+            "provider": "Fournisseur",
+            "plan": "Plan Populaire",
+            "price": "Prix",
+            "ram": "RAM",
+            "cpu": "vCPU",
+            "actions": "Actions",
+            "tooltip_docker": "Générer la Configuration Docker",
+            "feature": "Caractéristique",
+            "type": "Type",
+            "storage": "Stockage",
+            "transfer": "Transfert",
+            "websites": "Sites Web",
+            "node_apps": "Apps",
+            "emails": "E-mails",
+            "offert": "Offre",
+            "category": "Catégorie",
+            "btn_offer": "Voir l'Offre"
+        },
+        "selection_bar": {
+            "count": "{count} fournisseurs sélectionnés",
+            "clear": "Nettoyer",
+            "btn_compare": "Comparer Maintenant"
+        },
+        "modal": {
+            "compare_title": "Comparaison Détaillée",
+            "close": "Fermer la Vue",
+            "features": "Caractéristiques"
+        },
         "title": "Comparaison d'Infrastructure",
-        "description": "Analysez et comparez les forfaits des fournisseurs les plus recommandés côte à côte.",
+        "description": "Comparez les forfaits recommandés côte à côte.",
         "provider": "Fournisseur",
         "price": "Prix Mensuel",
         "best_plan": "Meilleur Forfait",
@@ -148,8 +187,11 @@
             "transfer": "Bande Passante",
             "storage": "Stockage",
             "websites": "Sites Web",
-            "node_apps": "Apps Node.js",
-            "emails": "E-mails"
+            "node_apps": "Apps",
+            "emails": "E-mails",
+            "category": "Catégorie",
+            "offert": "Offre",
+            "type": "Type"
         },
         "get_offer": "Obtenir l'Offre →",
         "waiting_data": "Récupération des données pour {provider}...",

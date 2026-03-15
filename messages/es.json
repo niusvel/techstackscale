@@ -53,9 +53,12 @@
             "vcpu": "{value} vCPUs Dedicadas",
             "transfer": "{value} Transferencia",
             "websites": "{value} Sitios web",
-            "node_apps": "{value} Aplicaciones Node.js",
+            "node_apps": "{value}",
             "storage": "{value} de almacenamiento",
-            "emails": "{value} Cuentas de correo"
+            "emails": "{value} Cuentas de correo",
+            "offert": "{value} Oferta",
+            "type": "Tipo: {value}",
+            "category": "Categoría: {value}"
         },
         "generate_docker_stack": "Generar Docker Stack"
     },
@@ -124,9 +127,12 @@
             "vcpu": "{value} vCPUs Dedicadas",
             "transfer": "{value} Transferencia",
             "websites": "{value} Sitios web",
-            "node_apps": "{value} Aplicaciones Node.js",
+            "node_apps": "{value}",
             "storage": "{value} de almacenamiento",
-            "emails": "{value} Cuentas de correo"
+            "emails": "{value} Cuentas de correo",
+            "offert": "{value} Oferta",
+            "type": "Tipo: {value}",
+            "category": "Categoría: {value}"
         },
         "general_overview": "Descripción General",
         "main_services": "Servicios Principales",
@@ -137,8 +143,43 @@
         "description": "Análisis completo de {name}. Compara costos y rendimiento para tomar la mejor decisión."
     },
     "ComparePage": {
+        "title_start": "Comparativa",
+        "title_accent": "Global",
+        "subtitle": "Analiza los {count} proveedores indexados en tiempo real.",
+        "search_placeholder": "Buscar proveedor...",
+        "table": {
+            "provider": "Proveedor",
+            "plan": "Plan Popular",
+            "price": "Precio",
+            "ram": "RAM",
+            "cpu": "vCPU",
+            "actions": "Acciones",
+            "tooltip_docker": "Generar Configuración Docker",
+            "feature": "Característica",
+            "btn_offer": "Ver Oferta",
+            "type": "Tipo",
+            "storage": "Almacenamiento",
+            "transfer": "Transferencia",
+            "websites": "Sitios web",
+            "node_apps": "Aplicaciones",
+            "emails": "Correos",
+            "offert": "Oferta",
+            "memory": "Memoria RAM",
+            "vcpu": "vCPUs",
+            "category": "Categoría"
+        },
+        "selection_bar": {
+            "count": "{count} proveedores seleccionados",
+            "clear": "Limpiar",
+            "btn_compare": "Comparar Ahora"
+        },
+        "modal": {
+            "compare_title": "Comparativa Detallada",
+            "close": "Cerrar Vista",
+            "features": "Características"
+        },
         "title": "Comparativa de Infraestructura",
-        "description": "Analiza y compara los planes de los proveedores más recomendados lado a lado.",
+        "description": "Compara los planes recomendados de los proveedores lado a lado.",
         "provider": "Proveedor",
         "price": "Precio Mensual",
         "best_plan": "Mejor Plan",
@@ -148,8 +189,11 @@
             "transfer": "Transferencia",
             "storage": "Almacenamiento",
             "websites": "Sitios web",
-            "node_apps": "Apps Node.js",
-            "emails": "Correos"
+            "node_apps": "Aplicaciones",
+            "emails": "Correos",
+            "category": "Categoría",
+            "offert": "Oferta",
+            "type": "Tipo"
         },
         "get_offer": "Obtener Oferta →",
         "waiting_data": "Obteniendo datos de {provider}...",

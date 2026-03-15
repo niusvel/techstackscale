@@ -10,6 +10,7 @@
         "en": "The European giant. Stands out for unmetered bandwidth and an excellent CPU-to-RAM ratio in its VPS lineup.",
         "fr": "Le géant européen. Se distingue par sa bande passante non mesurée et un excellent rapport CPU/RAM dans sa gamme VPS."
     },
+    "category": "cloud VPS (IaaS)",
     "plans": [
         {
             "name": "VPS Starter",

@@ -1,110 +1,97 @@
 {
+    "last_update": "2026-03-15",
     "provider": "AWS",
-    "id": "aws",
-    "affiliate_id": null,
+    "affiliation_id": null,
     "affiliate_link": "https://aws.amazon.com/free/",
-    "last_update": "2026-03-14",
-    "currency": "USD",
+    "category": "Cloud VPS (IaaS)",
     "verdicts": {
-        "es": "El estándar de la industria. Su ecosistema es infinito y su fiabilidad inigualable, aunque su estructura de precios puede ser compleja para principiantes.",
-        "en": "The industry standard. Its ecosystem is infinite and its reliability unmatched, though its pricing structure can be complex for beginners.",
-        "fr": "Le standard de l'industrie. Son écosystème est infini et sa fiabilité inégalée, bien que sa structure tarifaire puisse être complexe pour les débutants."
+        "es": "El gigante global. Ofrece desde Lightsail para VPS sencillos hasta EC2 para infraestructura compleja de alta disponibilidad.",
+        "en": "The global giant. Offers everything from Lightsail for simple VPS to EC2 for complex high-availability infrastructure.",
+        "fr": "Le géant mondial. Offre tout, de Lightsail pour les VPS simples à EC2 pour les infrastructures complexes à haute disponibilité."
     },
     "plans": [
         {
-            "name": "t4g.small (ARM)",
+            "plan_id": "aws_lightsail_1",
+            "name": "Lightsail Starter",
+            "price": 3.50,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "512 MB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "20 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "1 TB"
+                }
+            ]
+        },
+        {
+            "plan_id": "aws_t4g_small",
+            "name": "t4g.small (ARM EC2)",
             "price": 12.41,
             "currency": "USD",
             "features": [
                 {
                     "key": "memory",
-                    "value": "2GB RAM",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "2 GB"
                 },
                 {
                     "key": "vcpu",
-                    "value": "2 vCPU",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "2"
                 },
                 {
                     "key": "storage",
-                    "value": "EBS Only",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "EBS Only"
                 },
                 {
                     "key": "transfer",
-                    "value": "100GB Free",
-                    "enabled": true
-                },
-                {
-                    "key": "node_apps",
-                    "value": "Unlimited",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "100 GB Free"
                 }
             ]
         },
         {
-            "name": "t3.medium",
+            "plan_id": "aws_t3_medium",
+            "name": "t3.medium (Standard EC2)",
             "price": 30.36,
             "currency": "USD",
             "is_best_seller": true,
             "features": [
                 {
                     "key": "memory",
-                    "value": "4GB RAM",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "4 GB"
                 },
                 {
                     "key": "vcpu",
-                    "value": "2 vCPU",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "2"
                 },
                 {
                     "key": "storage",
-                    "value": "EBS Only",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "EBS Only"
                 },
                 {
                     "key": "transfer",
-                    "value": "100GB Free",
-                    "enabled": true
-                },
-                {
-                    "key": "node_apps",
-                    "value": "Unlimited",
-                    "enabled": true
-                }
-            ]
-        },
-        {
-            "name": "t3.large",
-            "price": 60.72,
-            "currency": "USD",
-            "features": [
-                {
-                    "key": "memory",
-                    "value": "8GB RAM",
-                    "enabled": true
-                },
-                {
-                    "key": "vcpu",
-                    "value": "2 vCPU",
-                    "enabled": true
-                },
-                {
-                    "key": "storage",
-                    "value": "EBS Only",
-                    "enabled": true
-                },
-                {
-                    "key": "transfer",
-                    "value": "100GB Free",
-                    "enabled": true
-                },
-                {
-                    "key": "node_apps",
-                    "value": "Unlimited",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "100 GB Free"
                 }
             ]
         }

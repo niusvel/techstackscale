@@ -9,6 +9,7 @@
         "en": "The best choice for enterprise environments. Its integration with Windows and Microsoft services is second to none, offering massive scalability and government-grade security.",
         "fr": "Le meilleur choix pour les environnements d'entreprise. Son intégration avec Windows et les services Microsoft est inégalée, offrant une évolutivité massive et une sécurité de niveau gouvernemental."
     },
+    "category": "cloud VPS (IaaS)",
     "plans": [
         {
             "name": "B1s (Economical)",
@@ -17,22 +18,22 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "1GB RAM",
+                    "value": "1 GB",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "1 vCPU",
+                    "value": "1",
                     "enabled": true
                 },
                 {
                     "key": "storage",
-                    "value": "4GB Temp SSD",
+                    "value": "4 GB Temp SSD",
                     "enabled": true
                 },
                 {
                     "key": "transfer",
-                    "value": "5GB Free",
+                    "value": "5 GB Free",
                     "enabled": true
                 },
                 {
@@ -50,22 +51,22 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "4GB RAM",
+                    "value": "4 GB",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "2 vCPU",
+                    "value": "2",
                     "enabled": true
                 },
                 {
                     "key": "storage",
-                    "value": "8GB Temp SSD",
+                    "value": "8 GB Temp SSD",
                     "enabled": true
                 },
                 {
                     "key": "transfer",
-                    "value": "5GB Free",
+                    "value": "5 GB Free",
                     "enabled": true
                 },
                 {
@@ -82,17 +83,17 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "8GB RAM",
+                    "value": "8 GB",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "2 vCPU",
+                    "value": "2",
                     "enabled": true
                 },
                 {
                     "key": "storage",
-                    "value": "16GB Temp SSD",
+                    "value": "16 GB Temp SSD",
                     "enabled": true
                 },
                 {

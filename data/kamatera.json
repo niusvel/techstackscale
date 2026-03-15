@@ -10,6 +10,7 @@
         "en": "The most flexible cloud. Allows detailed resource configuration and offers superior CPU performance thanks to its latest-generation processors.",
         "fr": "Le cloud le plus flexible. Permet une configuration détaillée des ressources et offre des performances CPU supérieures grâce à ses processeurs de dernière génération."
     },
+    "category": "cloud VPS (IaaS)",
     "plans": [
         {
             "name": "Custom Entry",
@@ -18,22 +19,22 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "1GB RAM",
+                    "value": "1 GB",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "1 vCPU",
+                    "value": "1",
                     "enabled": true
                 },
                 {
                     "key": "storage",
-                    "value": "20GB SSD",
+                    "value": "20 GB SSD",
                     "enabled": true
                 },
                 {
                     "key": "transfer",
-                    "value": "5TB",
+                    "value": "5 TB",
                     "enabled": true
                 },
                 {
@@ -51,22 +52,22 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "2GB RAM",
+                    "value": "2 GB",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "2 vCPU",
+                    "value": "2",
                     "enabled": true
                 },
                 {
                     "key": "storage",
-                    "value": "50GB SSD",
+                    "value": "50 GB SSD",
                     "enabled": true
                 },
                 {
                     "key": "transfer",
-                    "value": "5TB",
+                    "value": "5 TB",
                     "enabled": true
                 },
                 {
@@ -83,17 +84,17 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "4GB RAM",
+                    "value": "4 GB",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "4 vCPU",
+                    "value": "4",
                     "enabled": true
                 },
                 {
                     "key": "storage",
-                    "value": "100GB SSD",
+                    "value": "100 GB SSD",
                     "enabled": true
                 },
                 {

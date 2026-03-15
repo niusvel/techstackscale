@@ -10,6 +10,7 @@
         "en": "Speed leader for content sites. Their Turbo servers optimized for WordPress and expert technical support make it ideal for projects that don't want to manage low-level infra.",
         "fr": "Leader de la vitesse pour les sites de contenu. Leurs serveurs Turbo optimisés pour WordPress et leur support technique expert le rendent idéal pour les projets qui ne veulent pas gérer l'infra à bas niveau."
     },
+    "category": "shared Hosting",
     "plans": [
         {
             "name": "Startup (Shared)",
@@ -18,7 +19,7 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "1GB",
+                    "value": "1 GB",
                     "enabled": true
                 },
                 {
@@ -51,7 +52,7 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "2GB",
+                    "value": "2 GB",
                     "enabled": true
                 },
                 {
@@ -83,7 +84,7 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "4GB",
+                    "value": "4 GB",
                     "enabled": true
                 },
                 {

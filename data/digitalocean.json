@@ -8,6 +8,7 @@
         "en": "The standard for developers. Great ecosystem of tools and documentation.",
         "fr": "La référence pour les développeurs. Grand écosystème d'outils et de documentation."
     },
+    "category": "cloud VPS (IaaS)",
     "plans": [
         {
             "plan_id": "digitalocean_regular_512_mb_1",

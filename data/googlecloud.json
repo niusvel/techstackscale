@@ -9,6 +9,7 @@
         "en": "Leader in data analytics and AI. Its E2 instances offer an excellent balance between cost and performance, with one of the most intuitive consoles on the market.",
         "fr": "Leader de l'analyse de données et de l'IA. Ses instances E2 offrent un excellent équilibre entre coût et performance, avec l'une des consoles les plus intuitives du marché."
     },
+    "category": "cloud VPS (IaaS)",
     "plans": [
         {
             "name": "e2-micro",
@@ -17,12 +18,12 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "1GB RAM",
+                    "value": "1 GB",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "2 vCPU (Shared)",
+                    "value": "2 (Shared)",
                     "enabled": true
                 },
                 {
@@ -32,7 +33,7 @@
                 },
                 {
                     "key": "transfer",
-                    "value": "1GB Free",
+                    "value": "1 GB Free",
                     "enabled": true
                 },
                 {
@@ -50,12 +51,12 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "2GB RAM",
+                    "value": "2 GB",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "2 vCPU (Shared)",
+                    "value": "2 (Shared)",
                     "enabled": true
                 },
                 {
@@ -65,7 +66,7 @@
                 },
                 {
                     "key": "transfer",
-                    "value": "1GB Free",
+                    "value": "1 GB Free",
                     "enabled": true
                 },
                 {
@@ -82,12 +83,12 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "4GB RAM",
+                    "value": "4 GB",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "2 vCPU (Shared)",
+                    "value": "2 (Shared)",
                     "enabled": true
                 },
                 {
@@ -97,7 +98,7 @@
                 },
                 {
                     "key": "transfer",
-                    "value": "1GB Free",
+                    "value": "1 GB Free",
                     "enabled": true
                 },
                 {
