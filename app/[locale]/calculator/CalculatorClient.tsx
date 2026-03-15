@@ -100,7 +100,7 @@ export default function CalculatorClient({ providers, locale }: { providers: any
     return (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* BARRA LATERAL DE FILTROS */}
-            <aside className="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-6 h-fit sticky top-8">
+            <aside className="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-6 h-fit">
                 <div className="flex justify-between items-center">
                     <h2 className="font-bold text-white uppercase tracking-wider text-xs">{t('providers')}</h2>
                     <button onClick={resetFilters} className="text-[10px] text-cyan hover:text-white transition-colors underline uppercase font-bold">

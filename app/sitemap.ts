@@ -3,67 +3,35 @@ import fs from 'fs';
 import path from 'path';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://techstackscale.vercel.app';
-    const locales = ['es', 'en', 'fr'];
+    const baseUrl = 'https://techstackscale.com';
     const dataDirectory = path.join(process.cwd(), 'data');
-    const filenames = fs.readdirSync(dataDirectory);
-    const providers = filenames
-        .filter((file) => file.endsWith('.json') && !file.includes('_summary_'))
-        .map((file) => file.replace('.json', ''));
 
-    const staticRoutes = locales.flatMap((locale) => [
+    // Obtenemos los nombres de los archivos de proveedores
+    const filenames = fs.readdirSync(dataDirectory);
+    const providerFiles = filenames.filter(f => f.endsWith('.json') && !f.includes('_summary'));
+
+    // Generamos las URLs para cada proveedor
+    const providerEntries = providerFiles.map((file) => ({
+        url: `${baseUrl}/compare/${file.replace('.json', '')}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.8,
+    }));
+
+    // Rutas estáticas principales
+    return [
         {
-            url: `${baseUrl}/${locale}`,
+            url: baseUrl,
             lastModified: new Date(),
-            changeFrequency: 'daily' as const,
+            changeFrequency: 'daily',
             priority: 1,
         },
         {
-            url: `${baseUrl}/${locale}/compare`,
+            url: `${baseUrl}/compare`,
             lastModified: new Date(),
-            changeFrequency: 'daily' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/${locale}/calculator`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
+            changeFrequency: 'daily',
             priority: 0.9,
         },
-        {
-            url: `${baseUrl}/${locale}/guides/install-docker`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.6,
-        },
-        {
-            url: `${baseUrl}/${locale}/privacy`,
-            lastModified: new Date(),
-            changeFrequency: 'yearly' as const,
-            priority: 0.3,
-        },
-        {
-            url: `${baseUrl}/${locale}/terms`,
-            lastModified: new Date(),
-            changeFrequency: 'yearly' as const,
-            priority: 0.3,
-        },
-        {
-            url: `${baseUrl}/${locale}/cookies`,
-            lastModified: new Date(),
-            changeFrequency: 'yearly' as const,
-            priority: 0.3,
-        },
-    ]);
-
-    const providerRoutes = locales.flatMap((locale) =>
-        providers.map((provider) => ({
-            url: `${baseUrl}/${locale}/cloud/${provider}`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly' as const,
-            priority: 0.8,
-        }))
-    );
-
-    return [...staticRoutes, ...providerRoutes];
+        ...providerEntries,
+    ];
 }
