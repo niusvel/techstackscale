@@ -125,6 +125,58 @@
                 }
             ],
             "currency": "EUR"
+        },
+        {
+            "plan_id": "hostinger_premium_shared",
+            "name": "Premium Shared",
+            "price": 2.49,
+            "currency": "EUR",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "Shared"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "100 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "hostinger_kvm_2",
+            "name": "KVM 2 (VPS)",
+            "price": 5.99,
+            "currency": "EUR",
+            "is_best_seller": true,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "8 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "100 GB NVMe"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "8000 GB"
+                }
+            ]
         }
     ]
 }

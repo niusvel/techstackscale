@@ -1,79 +1,80 @@
 {
+    "last_update": "2026-03-15",
     "provider": "Vultr",
-    "id": "vultr",
     "affiliation_id": "TU_ID_AFILIADO",
     "affiliate_link": "https://www.vultr.com/?ref=TU_ID_AFILIADO",
-    "last_update": "2026-03-14",
-    "currency": "USD",
+    "category": "Cloud VPS (IaaS)",
     "verdicts": {
-        "es": "Excelente presencia global con más de 32 ubicaciones y un rendimiento de disco NVMe sobresaliente.",
-        "en": "Excellent global presence with 32+ locations and outstanding NVMe disk performance.",
-        "fr": "Excellente présence mondiale avec plus de 32 emplacements et des performances de disque NVMe exceptionnelles."
+        "es": "Especialistas en alto rendimiento. Sus instancias NVMe con CPUs de alta frecuencia son ideales para bases de datos y cargas de trabajo pesadas.",
+        "en": "High-performance specialists. Their NVMe instances with high-frequency CPUs are ideal for databases and heavy workloads.",
+        "fr": "Spécialistes de la haute performance. Leurs instances NVMe avec des CPU haute fréquence sont idéales pour les bases de données et les charges de travail lourdes."
     },
-    "category": "cloud VPS (IaaS)",
     "plans": [
         {
-            "name": "Regular Cloud Compute",
+            "plan_id": "vultr_cloud_compute",
+            "name": "Cloud Compute",
             "price": 5,
             "currency": "USD",
+            "is_best_seller": false,
             "features": [
                 {
                     "key": "memory",
-                    "value": "1GB",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "1 GB"
                 },
                 {
                     "key": "vcpu",
-                    "value": "1",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "1"
                 },
                 {
                     "key": "storage",
-                    "value": "25GB NVMe",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "25 GB SSD"
                 },
                 {
                     "key": "transfer",
-                    "value": "1000 GB",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "1000 GB"
                 },
                 {
                     "key": "node_apps",
-                    "value": "1",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "Unlimited"
                 }
             ]
         },
         {
-            "name": "High Frequency",
+            "plan_id": "vultr_hf_nvme",
+            "name": "High Frequency NVMe",
             "price": 6,
             "currency": "USD",
             "is_best_seller": true,
             "features": [
                 {
                     "key": "memory",
-                    "value": "1GB",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "1 GB"
                 },
                 {
                     "key": "vcpu",
-                    "value": "1 High Frequency",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "1 (High Clock)"
                 },
                 {
                     "key": "storage",
-                    "value": "32GB NVMe",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "32 GB NVMe"
                 },
                 {
                     "key": "transfer",
-                    "value": "1000 GB",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "1000 GB"
                 },
                 {
                     "key": "node_apps",
-                    "value": "1",
-                    "enabled": true
+                    "enabled": true,
+                    "value": "Unlimited"
                 }
             ]
         },
@@ -84,7 +85,7 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "2GB",
+                    "value": "2 GB",
                     "enabled": true
                 },
                 {
@@ -94,7 +95,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "50GB NVMe",
+                    "value": "50 GB NVMe",
                     "enabled": true
                 },
                 {
