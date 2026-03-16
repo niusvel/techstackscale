@@ -49,11 +49,6 @@
                     "key": "emails",
                     "enabled": true,
                     "value": "30"
-                },
-                {
-                    "key": "type",
-                    "enabled": true,
-                    "value": "Any"
                 }
             ]
         },
@@ -96,11 +91,6 @@
                     "key": "emails",
                     "enabled": true,
                     "value": "Unlimited"
-                },
-                {
-                    "key": "type",
-                    "enabled": true,
-                    "value": "Any"
                 }
             ],
             "plan_id": "namecheap_stellar_(plus)_3",
@@ -145,11 +135,6 @@
                     "key": "emails",
                     "enabled": true,
                     "value": "Unlimited"
-                },
-                {
-                    "key": "type",
-                    "enabled": true,
-                    "value": "Any"
                 }
             ],
             "plan_id": "namecheap_stellar_(business)_3",

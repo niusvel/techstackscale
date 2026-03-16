@@ -3,7 +3,7 @@
 import { useState, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
-import { parseValue } from './utils';
+import { formatDisplayValue, parseValue } from './utils';
 import { formatPrice } from '@/utils/currency';
 import DockerModal from '../components/DockerModal';
 
@@ -34,50 +34,64 @@ export default function CalculatorClient({ providers, locale }: { providers: any
     const allPlans = useMemo(() => {
         return providers.flatMap(provider =>
             provider.plans.map((plan: any) => {
-                // Función auxiliar para extraer features considerando que pueden no existir
+                const getFeatureObj = (key: string) => plan.features.find((f: any) => f.key === key);
                 const getF = (key: string) => {
-                    const feature = plan.features.find((f: any) => f.key === key);
-                    return (feature && feature.enabled) ? feature.value : null;
+                    const f = getFeatureObj(key);
+                    return (f && f.enabled) ? f.value : null;
                 };
 
-                // Aplicamos los fallbacks solicitados (500 transf, 1 node, 1 website)
-                const nRam = parseValue(getF('memory') || 0);
-                const nCpu = parseValue(getF('vcpu') || 1);
-                const nStorage = parseValue(getF('storage') || 10);
-                const nTransfer = parseValue(getF('transfer') || 500);
-                const nNodes = parseValue(getF('node_apps') || 1);
-                const nEmails = parseValue(getF('emails') || 0);
-                const nWebsites = parseValue(getF('websites') || 1);
-                const nPrice = parseValue(plan.price);
+                const rawStorage = String(getF('storage') || "");
+                const isNVMe = rawStorage.toLowerCase().includes('nvme');
 
-                // Normalización de RAM a GB
-                const isMBInJson = String(getF('memory')).toLowerCase().includes('mb');
-                const ramInGb = isMBInJson ? nRam / 1024 : nRam;
+                // 1. Lógica de Precio y Oferta
+                const hasOffer = plan.offert?.enabled;
+                const finalPrice = hasOffer ? parseValue(plan.offert.price, 'price') : parseValue(plan.price, 'price');
 
-                // Cálculo de Score mejorado
-                const score = nPrice > 0
-                    ? (((ramInGb * 2) + (nCpu * 2) + (nStorage * 0.1) + (nTransfer * 0.01)) / nPrice) * 10
+                // 2. Valores Numéricos para Filtrado y Score
+                const nRam = parseValue(getF('memory'), 'memory');
+                const nCpu = parseValue(getF('vcpu'), 'vcpu');
+                const nStorage = parseValue(getF('storage'), 'storage');
+                const nTransfer = parseValue(getF('transfer'), 'transfer');
+                const nNodes = parseValue(getF('node_apps'), 'node_apps');
+
+                const isMB = String(getF('memory')).toLowerCase().includes('mb');
+                const ramInGb = isMB ? nRam / 1024 : nRam;
+
+                // 3. Cálculo de Score (Ranking)
+                const storageBonus = isNVMe ? 1.2 : 1;
+                const score = finalPrice > 0
+                    ? (((ramInGb * 2.5) + (nCpu * 2) + (nStorage * 0.1 * storageBonus) + (nTransfer * 0.01)) / finalPrice) * 10
                     : 0;
 
                 return {
                     ...plan,
                     providerName: provider.provider || provider.name,
                     providerId: provider.id,
-                    numericPrice: nPrice,
-                    currency: plan.currency,
+                    numericPrice: finalPrice,
+                    originalPrice: parseValue(plan.price, 'price'),
+                    hasOffer,
+                    isNVMe,
                     ramInGb,
-                    nCpu,
-                    nStorage,
-                    nTransfer,
-                    nNodes,
-                    nEmails,
-                    nWebsites,
+                    // Guardamos el objeto completo de features para la UI
+                    allFeatures: plan.features,
                     score: parseFloat(score.toFixed(2)),
-                    link: provider.affiliate_link || '#'
+                    link: provider.affiliate_link || '#',
+                    // Guardamos los valores parseados para los filtros
+                    nCpu, nStorage, nTransfer, nNodes
                 };
             })
         );
     }, [providers]);
+
+    const dynamicMax = useMemo(() => ({
+        price: Math.max(...allPlans.map(p => p.numericPrice)),
+        ram: Math.max(...allPlans.map(p => p.ramInGb)),
+        cpu: Math.max(...allPlans.map(p => p.nCpu)),
+        storage: Math.max(...allPlans.map(p => p.nStorage === 999999 ? 0 : p.nStorage)), // Ignoramos Unlimited para el slider
+        transfer: Math.max(...allPlans.map(p => p.nTransfer === 999999 ? 0 : p.nTransfer)), // Ignoramos Unlimited para el slider
+        nodes: Math.max(...allPlans.map(p => p.nNodes === 999999 ? 0 : p.nNodes)) // Ignoramos Unlimited para el slider
+    }), [allPlans]);
+    console.log(dynamicMax);
 
     const filtered = allPlans.filter(p => {
         const filterRamInGb = filters.ramUnit === 'MB'
@@ -92,8 +106,6 @@ export default function CalculatorClient({ providers, locale }: { providers: any
             p.nStorage >= filters.minStorage &&
             p.nTransfer >= filters.minTransfer &&
             p.nNodes >= filters.minNodes &&
-            p.nWebsites >= filters.minWebsites &&
-            p.nEmails >= filters.minEmails &&
             matchesProvider;
     }).sort((a, b) => b.score - a.score);
 
@@ -152,7 +164,7 @@ export default function CalculatorClient({ providers, locale }: { providers: any
                     <input
                         type="range"
                         min="0"
-                        max={filters.ramUnit === 'MB' ? 2 : 64}
+                        max={filters.ramUnit === 'MB' ? 2 : dynamicMax.ram}
                         step="1"
                         value={filters.minRam}
                         onChange={(e) => setFilters({ ...filters, minRam: Number(e.target.value) })}
@@ -162,11 +174,11 @@ export default function CalculatorClient({ providers, locale }: { providers: any
 
                 {/* OTROS FILTROS DINÁMICOS */}
                 {[
-                    { key: 'maxPrice', label: 'max_price', min: 5, max: 500, step: 5 },
-                    { key: 'minCpu', label: 'min_cpu', min: 1, max: 16, step: 1 },
-                    { key: 'minStorage', label: 'storage', min: 0, max: 1000, step: 10 },
-                    { key: 'minTransfer', label: 'transfer', min: 0, max: 5000, step: 250 },
-                    { key: 'minNodes', label: 'nodes', min: 1, max: 20, step: 1 },
+                    { key: 'maxPrice', label: 'max_price', min: 0, max: dynamicMax.price, step: 5 },
+                    { key: 'minCpu', label: 'min_cpu', min: 0, max: dynamicMax.cpu, step: 1 },
+                    { key: 'minStorage', label: 'storage', min: 0, max: dynamicMax.storage, step: 10 },
+                    { key: 'minTransfer', label: 'transfer', min: 0, max: dynamicMax.transfer, step: 250 },
+                    { key: 'minNodes', label: 'nodes', min: 0, max: dynamicMax.nodes, step: 1 },
                 ].map(f => (
                     <div key={f.key} className="space-y-3">
                         <label className="block text-sm font-bold text-slate-300">
@@ -199,50 +211,65 @@ export default function CalculatorClient({ providers, locale }: { providers: any
                         <div key={index} className={`p-6 rounded-2xl border transition-all duration-300 ${index === 0 ? 'border-cyan bg-slate-900 shadow-[0_0_30px_rgba(6,182,212,0.1)]' : 'border-slate-800 bg-background hover:border-slate-700'}`}>
                             <div className="flex flex-col md:flex-row justify-between items-start gap-4">
                                 <div className="flex-1">
-                                    <div className="flex items-center gap-3 mb-3">
+                                    <div className="flex flex-wrap items-center gap-2 mb-3">
+                                        {/* Badge de Ranking */}
                                         <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full uppercase ${index === 0 ? 'bg-cyan text-slate-950' : 'bg-slate-800 text-slate-400'}`}>
-                                            {index === 0 ? t('recommendation') : `Rank #${index + 1}`}
+                                            {index === 0 ? t('recommendation') : `#${index + 1}`}
                                         </span>
-                                        <span className="text-[10px] font-bold border border-green-500/30 text-green-400 px-2 py-0.5 rounded-full uppercase">
-                                            Score: {plan.score}
-                                        </span>
-                                    </div>
-                                    <h3 className="text-xl font-bold text-white tracking-tight">{plan.providerName} — {plan.name}</h3>
 
-                                    {/* Grid de especificaciones técnico */}
-                                    <div className="grid grid-cols-2 md:grid-cols-4 gap-y-2 gap-x-4 mt-4 text-[11px] text-slate-400">
-                                        <div className="flex items-center gap-1.5">
-                                            <span className="text-slate-500 font-bold">RAM:</span>
-                                            <span className="text-slate-200">{plan.ramInGb < 1 ? (plan.ramInGb * 1024) + 'MB' : plan.ramInGb + 'GB'}</span>
-                                        </div>
-                                        <div className="flex items-center gap-1.5">
-                                            <span className="text-slate-500 font-bold">CPU:</span>
-                                            <span className="text-slate-200">{plan.nCpu} vCPU</span>
-                                        </div>
-                                        <div className="flex items-center gap-1.5">
-                                            <span className="text-slate-500 font-bold">DISK:</span>
-                                            <span className="text-slate-200">{plan.nStorage}GB SSD</span>
-                                        </div>
-                                        <div className="flex items-center gap-1.5">
-                                            <span className="text-slate-500 font-bold">TRAF:</span>
-                                            <span className="text-slate-200">{plan.nTransfer >= 1000 ? (plan.nTransfer / 1000).toFixed(1) + 'TB' : plan.nTransfer + 'GB'}</span>
-                                        </div>
-                                        <div className="flex items-center gap-1.5">
-                                            <span className="text-slate-500 font-bold">APPS:</span>
-                                            <span className="text-slate-200">{plan.nNodes}</span>
-                                        </div>
-                                        <div className="flex items-center gap-1.5">
-                                            <span className="text-slate-500 font-bold">WEBS:</span>
-                                            <span className="text-slate-200">{plan.nWebsites}</span>
-                                        </div>
+                                        {/* Badge de Tipo (si existe en el JSON, ej: Wordpress) */}
+                                        {plan.type && (
+                                            <span className="text-[10px] font-bold bg-purple-500/20 text-purple-400 border border-purple-500/30 px-2 py-0.5 rounded-full uppercase">
+                                                {plan.type}
+                                            </span>
+                                        )}
+
+                                        {/* Badge de NVMe */}
+                                        {plan.isNVMe && (
+                                            <span className="text-[10px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 px-2 py-0.5 rounded-full uppercase">
+                                                ⚡ NVMe
+                                            </span>
+                                        )}
+
+                                        {/* Badge de Oferta */}
+                                        {plan.hasOffer && (
+                                            <span className="text-[10px] font-bold bg-green-500 text-white px-2 py-0.5 rounded-full uppercase animate-pulse">
+                                                {t('special_offer')}
+                                            </span>
+                                        )}
+                                    </div>
+
+                                    <h3 className="text-xl font-bold text-white tracking-tight">
+                                        {plan.providerName} <span className="text-slate-500 font-medium mx-1">/</span> {plan.name}
+                                    </h3>
+
+                                    {/* Grid Dinámico de Features: Muestra TODO lo que hay en el JSON */}
+                                    <div className="grid grid-cols-2 md:grid-cols-4 gap-y-3 gap-x-4 mt-5">
+                                        {plan.allFeatures.map((feat: any) => (
+                                            <div key={feat.key} className="flex flex-col gap-0.5">
+                                                <span className="text-[9px] font-black text-slate-600 uppercase tracking-tighter">
+                                                    {feat.key.replace('_', ' ')}
+                                                </span>
+                                                <span className={`text-[11px] font-bold ${feat.enabled ? 'text-slate-200' : 'text-slate-600 line-through'}`}>
+                                                    {formatDisplayValue(feat.value)}
+                                                </span>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
 
                                 <div className="text-right flex flex-col items-end justify-center h-full gap-4 min-w-[120px]">
                                     {/* Lógica de símbolo de moneda centralizada */}
-                                    <p className="text-3xl font-mono font-bold text-green-400 tracking-tighter">
-                                        {formatPrice(plan.numericPrice, plan.currency)}
-                                    </p>
+                                    <div className="flex flex-col items-end">
+                                        {plan.hasOffer && (
+                                            <span className="text-xs text-slate-500 line-through mb-[-4px]">
+                                                {formatPrice(plan.originalPrice, plan.currency)}
+                                            </span>
+                                        )}
+                                        <p className="text-3xl font-mono font-bold text-green-400 tracking-tighter">
+                                            {formatPrice(plan.numericPrice, plan.currency)}
+                                        </p>
+                                    </div>
                                     <button
                                         onClick={() => setSelectedPlanForDocker(plan)}
                                         className="w-full text-slate-950 bg-slate-500 text-xs font-bold py-2.5 px-4 rounded-xl hover:bg-cyan transition-all transform active:scale-95 text-center shadow-lg"
