@@ -29,7 +29,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "20 GB SSD NVMe",
+                    "value": "20 GB NVMe",
                     "enabled": true
                 },
                 {
@@ -62,7 +62,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "100 GB SSD NVMe",
+                    "value": "100 GB NVMe",
                     "enabled": true
                 },
                 {
@@ -94,7 +94,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "160 GB SSD NVMe",
+                    "value": "160 GB NVMe",
                     "enabled": true
                 },
                 {

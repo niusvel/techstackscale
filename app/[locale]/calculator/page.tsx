@@ -37,10 +37,10 @@ export default async function CalculatorPage({ params }: { params: Promise<{ loc
                         </Link>
                     </div>
                     <div className="text-center w-full">
-                        <h1 className="text-4xl font-extrabold mb-6 tracking-tight text-white">
+                        <h1 className="text-2xl font-extrabold mb-6 tracking-tight text-white">
                             {t('title')}
                         </h1>
-                        <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10 font-medium">
+                        <p className="text-l text-slate-400 max-w-2xl mx-auto mb-10 font-medium">
                             {t('subtitle')}
                         </p>
                     </div>

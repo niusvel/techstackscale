@@ -19,7 +19,7 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "2GB",
+                    "value": "2 GB",
                     "enabled": true
                 },
                 {
@@ -29,7 +29,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "20GB NVMe",
+                    "value": "20 GB NVMe",
                     "enabled": true
                 },
                 {
@@ -52,7 +52,7 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "4GB",
+                    "value": "4 GB",
                     "enabled": true
                 },
                 {
@@ -62,7 +62,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "40GB NVMe",
+                    "value": "40 GB NVMe",
                     "enabled": true
                 },
                 {
@@ -84,7 +84,7 @@
             "features": [
                 {
                     "key": "memory",
-                    "value": "8GB",
+                    "value": "8 GB",
                     "enabled": true
                 },
                 {
@@ -94,7 +94,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "80GB NVMe",
+                    "value": "80 GB NVMe",
                     "enabled": true
                 },
                 {

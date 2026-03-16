@@ -48,9 +48,11 @@ export default async function PageFooter() {
 
                 {/* SECCIÓN: Cumplimiento legal y Afiliación */}
                 <div className="border-t border-white/5 pt-5 text-center">
-                    <p className="text-xs text-slate-500 max-w-3xl mx-auto leading-relaxed italic px-4">
-                        {tf('affiliate_disclosure')}
-                    </p>
+                    <div className="bg-white/[0.02] py-4 rounded-xl">
+                        <p className="text-[10px] md:text-xs text-slate-500 max-w-3xl mx-auto leading-relaxed italic px-4">
+                            {tf('affiliate_disclosure')}
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>
