@@ -13,14 +13,14 @@ export default function CalculatorClient({ providers, locale }: { providers: any
     // ESTADOS DE FILTROS - Valores iniciales más inclusivos
     const initialFilters = {
         maxPrice: 150,
-        minRam: 1,
+        minRam: 0,
         ramUnit: 'GB' as 'MB' | 'GB',
-        minCpu: 1,
-        minStorage: 10,
-        minTransfer: 500,
-        minNodes: 1,
+        minCpu: 0,
+        minStorage: 0,
+        minTransfer: 0,
+        minNodes: 0,
         minEmails: 0,
-        minWebsites: 1,
+        minWebsites: 0,
         selectedProviders: [] as string[],
         currency: 'EUR'
     };
@@ -59,9 +59,11 @@ export default function CalculatorClient({ providers, locale }: { providers: any
 
                 // 3. Cálculo de Score (Ranking)
                 const storageBonus = isNVMe ? 1.2 : 1;
+                const nTransferForScore = nTransfer === 999999 ? 10000 : nTransfer;
                 const score = finalPrice > 0
-                    ? (((ramInGb * 2.5) + (nCpu * 2) + (nStorage * 0.1 * storageBonus) + (nTransfer * 0.01)) / finalPrice) * 10
+                    ? (((ramInGb * 3) + (nCpu * 2) + (nStorage * 0.1 * storageBonus) + (nTransferForScore * 0.005)) / finalPrice)
                     : 0;
+                const normalizedScore = Math.min(score * 10, 1000);
 
                 return {
                     ...plan,
@@ -74,7 +76,7 @@ export default function CalculatorClient({ providers, locale }: { providers: any
                     ramInGb,
                     // Guardamos el objeto completo de features para la UI
                     allFeatures: plan.features,
-                    score: parseFloat(score.toFixed(2)),
+                    score: parseFloat(normalizedScore.toFixed(1)),
                     link: provider.affiliate_link || '#',
                     // Guardamos los valores parseados para los filtros
                     nCpu, nStorage, nTransfer, nNodes
@@ -216,6 +218,12 @@ export default function CalculatorClient({ providers, locale }: { providers: any
                                         <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full uppercase ${index === 0 ? 'bg-cyan text-slate-950' : 'bg-slate-800 text-slate-400'}`}>
                                             {index === 0 ? t('recommendation') : `#${index + 1}`}
                                         </span>
+                                        <div className="flex items-center gap-1.5 bg-slate-800/50 px-2 py-0.5 rounded-full border border-white/5">
+                                            <span className="text-[9px] font-black text-slate-500 uppercase tracking-tighter">Score</span>
+                                            <span className={`text-xs font-mono font-bold ${plan.score > 7 ? 'text-cyan' : 'text-amber-400'}`}>
+                                                {plan.score}
+                                            </span>
+                                        </div>
 
                                         {/* Badge de Tipo (si existe en el JSON, ej: Wordpress) */}
                                         {plan.type && (
