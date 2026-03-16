@@ -72,15 +72,15 @@
         "compare": "Comparar"
     },
     "Footer": {
-        "affiliate_disclosure": "TechStackScale participa en programas de afiliación. Podemos recibir una comisión por las compras realizadas a través de nuestros enlaces, sin coste adicional para ti.",
-        "privacy_policy": "Política de Privacidad",
-        "terms_of_service": "Términos de Servicio",
-        "cookies": "Política de Cookies",
-        "tagline": "Herramientas independientes para desarrolladores que buscan eficiencia técnica y financiera.",
+        "tagline": "Comparativas técnicas de infraestructura para desarrolladores.",
         "methodology_title": "Metodología",
-        "methodology_desc": "Nuestros bots rastrean los precios oficiales cada 7 días para garantizar que nunca tomes una decisión con datos obsoletos.",
+        "methodology_desc": "Analizamos planes reales de proveedores cloud basándonos en rendimiento, precio y escalabilidad de Docker.",
         "transparency_title": "Transparencia",
-        "transparency_desc": "Este sitio se mantiene mediante enlaces de afiliación. No influyen en el cálculo matemático de los costes."
+        "transparency_desc": "TechStackScale es un proyecto independiente. Nuestras comparativas son objetivas y basadas en datos técnicos actualizados.",
+        "affiliate_disclosure": "Divulgación de Afiliados: TechStackScale es un sitio de comparación financiado por los lectores. Cuando compras a través de nuestros enlaces, podemos recibir una comisión de los proveedores. Esto no afecta el precio que pagas y nos ayuda a mantener estas herramientas gratuitas para la comunidad.",
+        "privacy_policy": "Privacidad",
+        "terms_of_service": "Términos",
+        "cookies": "Cookies"
     },
     "Privacy": {
         "title": "Política de Privacidad",

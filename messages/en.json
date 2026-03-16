@@ -72,15 +72,15 @@
         "compare": "Compare"
     },
     "Footer": {
-        "affiliate_disclosure": "TechStackScale participates in affiliate programs. We may receive a commission for purchases made through our links, at no additional cost to you.",
-        "privacy_policy": "Privacy Policy",
-        "terms_of_service": "Terms of Service",
-        "cookies": "Cookie Policy",
-        "tagline": "Independent tools for developers seeking technical and financial efficiency.",
+        "tagline": "Technical infrastructure comparisons for developers.",
         "methodology_title": "Methodology",
-        "methodology_desc": "Our bots crawl official prices every 7 days to ensure you never make a decision based on outdated data.",
+        "methodology_desc": "We analyze real plans from cloud providers based on performance, price, and Docker scalability.",
         "transparency_title": "Transparency",
-        "transparency_desc": "This site is maintained through affiliate links. They do not influence the mathematical calculation of costs."
+        "transparency_desc": "TechStackScale is an independent project. Our comparisons are objective and based on updated technical data.",
+        "affiliate_disclosure": "Affiliate Disclosure: TechStackScale is a reader-funded comparison site. When you purchase through our links, we may receive a commission from providers. This does not affect the price you pay and helps us keep these tools free for the community.",
+        "privacy_policy": "Privacy",
+        "terms_of_service": "Terms",
+        "cookies": "Cookies"
     },
     "Privacy": {
         "title": "Privacy Policy",
