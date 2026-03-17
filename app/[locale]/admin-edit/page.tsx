@@ -1,9 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function AdminEdit() {
     const t = useTranslations('AdminEdit');
+    const locale = useLocale();
 
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [provider, setProvider] = useState('Proveedor');
@@ -133,6 +134,18 @@ export default function AdminEdit() {
         a.click();
     };
 
+    const downloadDateJSON = () => {
+        const dateData = {
+            date: new Date().toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' })
+        };
+        const blob = new Blob([JSON.stringify(dateData, null, 4)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'update_date.json';
+        a.click();
+    };
+
     return (
         <div className="min-h-screen bg-slate-950 text-slate-200 p-4 md:p-8 font-sans">
             <div className="max-w-6xl mx-auto">
@@ -147,6 +160,9 @@ export default function AdminEdit() {
                                 DATA <span className="text-cyan">FORGER</span> <span className="text-[10px] bg-white/10 px-2 py-1 rounded ml-2">i18n READY</span>
                             </h1>
                             <div className="flex gap-3">
+                                <button onClick={downloadDateJSON} className="bg-purple-500 text-white px-4 py-2 rounded-xl font-black text-xs shadow-lg hover:scale-105 transition-all">
+                                    📅 ACT. FECHA
+                                </button>
                                 <label className="cursor-pointer bg-white/5 hover:bg-white/10 border border-white/10 px-4 py-2 rounded-xl text-xs font-black transition-all">
                                     📂 CARGAR
                                     <input type="file" accept=".json" onChange={handleFileUpload} className="hidden" />

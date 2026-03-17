@@ -33,9 +33,7 @@
             "benchmarks": "Benchmarks",
             "update_frequency": "Update Frequency",
             "real_time": "Real-Time",
-            "daily": "Daily",
-            "weekly": "Weekly",
-            "monthly": "Monthly"
+            "weekly": "Weekly"
         }
     },
     "Metadata": {
@@ -57,8 +55,7 @@
             "websites": "{value} Websites",
             "emails": "{value} Email Accounts",
             "offert": "{value} Offer",
-            "type": "Type: {value}",
-            "category": "Category: {value}"
+            "type": "Type: {value}"
         },
         "generate_docker_stack": "Generate Docker Stack"
     },
@@ -117,8 +114,6 @@
         "control_text": "You can block or delete cookies through your browser settings. Please note that this may affect the functionality of the offer links."
     },
     "ProviderPage": {
-        "analysis_subtitle": "Detailed analysis of plans and costs for {name}",
-        "our_verdict": "Our Verdict",
         "available_plans": "Available Plans",
         "per_month": "/ month",
         "back_to_comparison": "Back",
@@ -131,8 +126,7 @@
             "websites": "{value} Websites",
             "emails": "{value} Email Accounts",
             "offert": "{value} Offer",
-            "type": "Type: {value}",
-            "category": "Category: {value}"
+            "type": "Type: {value}"
         },
         "general_overview": "General Overview",
         "main_services": "Main Services",
@@ -145,7 +139,7 @@
     "ComparePage": {
         "title_start": "Comparison",
         "title_accent": "Global",
-        "subtitle": "Analyze the {count} providers indexed in real time.",
+        "subtitle": "Compare the recommended plans from the {count} providers.",
         "search_placeholder": "Search provider...",
         "table": {
             "provider": "Provider",
@@ -163,44 +157,31 @@
             "node_apps": "Apps",
             "emails": "Emails",
             "offert": "Offer",
-            "category": "Category",
-            "btn_offer": "View Offer"
+            "memory": "Memory",
+            "vcpu": "vCPUs"
         },
         "selection_bar": {
             "count": "{count} providers selected",
             "clear": "Clear",
             "btn_compare": "Compare Now"
         },
+        "filters": {
+            "title": "Filters",
+            "max_price": "Max Price",
+            "min_ram": "Min RAM (GB)",
+            "min_cpu": "Min vCPU",
+            "min_storage": "Min Storage (GB)",
+            "min_nodes": "Min App Nodes"
+        },
         "modal": {
             "compare_title": "Detailed Comparison",
-            "close": "Close View",
-            "features": "Features"
+            "close": "Close View"
         },
-        "title": "Infrastructure Comparison",
-        "description": "Compare the recommended plans side-by-side.",
-        "provider": "Provider",
-        "price": "Monthly Price",
-        "best_plan": "Best Plan",
-        "features": {
-            "memory": "RAM",
-            "vcpu": "vCPUs",
-            "transfer": "Bandwidth",
-            "storage": "Storage",
-            "websites": "Websites",
-            "node_apps": "Apps",
-            "emails": "Emails",
-            "category": "Category",
-            "offert": "Offer",
-            "type": "Type"
-        },
-        "get_offer": "Get Offer →",
-        "waiting_data": "Fetching data for {provider}...",
-        "not_available": "N/A",
-        "back_to_comparison": "Back",
-        "generate_docker_stack": "Generate Docker Stack"
+        "back_to_comparison": "Back"
     },
     "Calculator": {
-        "title": "Configure your ideal server",
+        "title_start": "Configure your ",
+        "title_accent": "Ideal Server",
         "subtitle": "Find the perfect plan by filtering by your real needs.",
         "max_price": "Maximum budget: {value}",
         "min_ram": "Minimum RAM: {value}",
@@ -208,23 +189,19 @@
         "results_found": "Found {count} plans.",
         "no_results": "No plans match your filters. Try being flexible with some criteria.",
         "recommendation": "Our recommendation",
-        "best_match": "Best match for you",
+        "special_offer": "Special offer",
         "get_offer": "Get Offer →",
         "reset": "Reset filters",
         "providers": "Providers",
         "storage": "Min Storage: {value}GB",
         "transfer": "Min Transfer: {value}GB",
         "nodes": "Min App Nodes: {value}",
-        "unit_mb": "MB",
-        "unit_gb": "GB",
         "back_to_comparison": "Back",
         "generate_docker_stack": "Generate Docker Stack"
     },
     "DockerModal": {
         "title": "Docker Stack Config",
         "subtitle": "Optimized for: {providerName} - {planName}",
-        "tech_stack": "Tech Stack",
-        "select_tech": "Select your tech stack",
         "copy_yaml": "Copy YAML",
         "copied": "Copied!",
         "stability_warning": "* This configuration limits resource usage to ensure the stability of your {ram}GB VPS.",

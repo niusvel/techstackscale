@@ -29,7 +29,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "100GB SSD",
+                    "value": "100 GB SSD",
                     "enabled": true
                 },
                 {
@@ -94,7 +94,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "150GB SSD",
+                    "value": "150 GB SSD",
                     "enabled": true
                 },
                 {
