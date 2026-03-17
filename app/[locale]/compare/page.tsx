@@ -35,30 +35,32 @@ export default async function ComparePage({ params }: { params: Promise<{ locale
 
   return (
     <div className="min-h-screen">
-      <div className="bg-slate-950 rounded-b-[0.5rem] mb-10 shadow-2xl border-b border-white/5">
-        <header className="max-w-7xl mx-auto px-4 pt-10 pb-10">
-          <Link
-            href="/"
-            className="inline-flex items-center text-slate-400 hover:text-white mb-8 transition-colors"
-          >
-            <span className="mr-2">←</span> {t('back_to_comparison')}
-          </Link>
+      <div className="bg-background rounded-b-[0.5rem] mb-2 shadow-lg">
+        <header className="max-w-7xl mx-auto px-4 pt-10 pb-2 flex">
+          <div>
+            <Link
+              href="/"
+              className="inline-flex items-center text-slate-400 hover:text-white mb-8 transition-colors"
+            >
+              <span className="mr-2">←</span> {t('back_to_comparison')}
+            </Link>
+          </div>
           <div className="text-center w-full">
-            <h1 className="text-4xl font-extrabold mb-6 tracking-tight text-white italic">
-              {t('title')}
+            <h1 className="text-5xl md:text-4xl font-extrabold mb-6 tracking-tighter text-white">
+              {t('title_start')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan to-blue-500">{t('title_accent')}</span>
             </h1>
-            <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
-              {t('description')}
+            <p className="text-l text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
+              {t('subtitle', { count: providers.length })}
             </p>
           </div>
         </header>
       </div>
 
-      <section className="pb-20">
+      <main className="bg-metallic min-h-screen bg-slate-950 text-white p-2 md:p-12">
         <div className="max-w-7xl mx-auto px-4">
           <CompareClient providers={providers} />
         </div>
-      </section>
+      </main>
     </div>
   );
 }

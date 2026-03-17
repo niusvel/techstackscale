@@ -26,8 +26,8 @@ export default async function CalculatorPage({ params }: { params: Promise<{ loc
 
     return (
         <div className="min-h-screen">
-            <div className="bg-background rounded-b-[0.5rem] mb-10 shadow-2xl">
-                <header className="max-w-7xl mx-auto px-4 pt-10 pb-10 flex">
+            <div className="bg-background rounded-b-[0.5rem] mb-2 shadow-lg">
+                <header className="max-w-7xl mx-auto px-4 pt-10 pb-2 flex">
                     <div>
                         <Link
                             href="/"
@@ -37,20 +37,19 @@ export default async function CalculatorPage({ params }: { params: Promise<{ loc
                         </Link>
                     </div>
                     <div className="text-center w-full">
-                        <h1 className="text-2xl font-extrabold mb-6 tracking-tight text-white">
-                            {t('title')}
+                        <h1 className="text-5xl md:text-4xl font-extrabold mb-6 tracking-tighter text-white">
+                            {t('title_start')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan to-blue-500">{t('title_accent')}</span>
                         </h1>
-                        <p className="text-l text-slate-400 max-w-2xl mx-auto mb-10 font-medium">
+                        <p className="text-l text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
                             {t('subtitle')}
                         </p>
                     </div>
                 </header>
             </div>
 
-            <main className="bg-metallic min-h-screen bg-slate-950 text-white p-6 md:p-12">
+            <main className="bg-metallic min-h-screen bg-slate-950 text-white p-2 md:p-12">
                 <div className="max-w-5xl mx-auto">
 
-                    {/* Pasamos los datos al componente de cliente para la interactividad */}
                     <CalculatorClient
                         providers={allProviders}
                         locale={locale}

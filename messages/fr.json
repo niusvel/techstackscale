@@ -33,9 +33,7 @@
             "benchmarks": "Benchmarks",
             "update_frequency": "Fréquence de Mise à Jour",
             "real_time": "Temps Réel",
-            "daily": "Quotidien",
-            "weekly": "Hebdomadaire",
-            "monthly": "Mensuel"
+            "weekly": "Hebdomadaire"
         }
     },
     "Metadata": {
@@ -57,8 +55,7 @@
             "websites": "{value} Sites Web",
             "emails": "{value} Comptes E-mail",
             "offert": "{value} Offre",
-            "type": "Type: {value}",
-            "category": "Catégorie: {value}"
+            "type": "Type: {value}"
         },
         "generate_docker_stack": "Générer Docker Stack"
     },
@@ -117,8 +114,6 @@
         "control_text": "Vous pouvez bloquer ou supprimer les cookies via les paramètres de votre navigateur. Veuillez noter que cela peut affecter la fonctionnalité des liens d'offre."
     },
     "ProviderPage": {
-        "analysis_subtitle": "Analyse détaillée des forfaits et des coûts de {name}",
-        "our_verdict": "Notre verdict",
         "available_plans": "Forfaits disponibles",
         "per_month": "/ mois",
         "back_to_comparison": "Retour",
@@ -131,8 +126,7 @@
             "websites": "{value} Sites Web",
             "emails": "{value} Comptes E-mail",
             "offert": "{value} Offre",
-            "type": "Type: {value}",
-            "category": "Catégorie: {value}"
+            "type": "Type: {value}"
         },
         "general_overview": "Vue Générale",
         "main_services": "Services Principaux",
@@ -145,7 +139,7 @@
     "ComparePage": {
         "title_start": "Comparaison",
         "title_accent": "Globale",
-        "subtitle": "Analysez les {count} fournisseurs indexés en temps réel.",
+        "subtitle": "Comparez les forfaits recommandés par les {count} fournisseurs.",
         "search_placeholder": "Rechercher un fournisseur...",
         "table": {
             "provider": "Fournisseur",
@@ -163,68 +157,51 @@
             "node_apps": "Apps",
             "emails": "E-mails",
             "offert": "Offre",
-            "category": "Catégorie",
-            "btn_offer": "Voir l'Offre"
+            "memory": "M?moire RAM",
+            "vcpu": "vCPUs"
         },
         "selection_bar": {
             "count": "{count} fournisseurs sélectionnés",
             "clear": "Nettoyer",
             "btn_compare": "Comparer Maintenant"
         },
+        "filters": {
+            "title": "Filtres",
+            "max_price": "Prix Max",
+            "min_ram": "RAM Min (GB)",
+            "min_cpu": "vCPU Min",
+            "min_storage": "Stockage Min (GB)",
+            "min_nodes": "Nœuds App Min"
+        },
         "modal": {
             "compare_title": "Comparaison Détaillée",
-            "close": "Fermer la Vue",
-            "features": "Caractéristiques"
+            "close": "Fermer la Vue"
         },
-        "title": "Comparaison d'Infrastructure",
-        "description": "Comparez les forfaits recommandés côte à côte.",
-        "provider": "Fournisseur",
-        "price": "Prix Mensuel",
-        "best_plan": "Meilleur Forfait",
-        "features": {
-            "memory": "Mémoire RAM",
-            "vcpu": "vCPUs",
-            "transfer": "Bande Passante",
-            "storage": "Stockage",
-            "websites": "Sites Web",
-            "node_apps": "Apps",
-            "emails": "E-mails",
-            "category": "Catégorie",
-            "offert": "Offre",
-            "type": "Type"
-        },
-        "get_offer": "Obtenir l'Offre →",
-        "waiting_data": "Récupération des données pour {provider}...",
-        "not_available": "N/A",
-        "back_to_comparison": "Retour",
-        "generate_docker_stack": "Générer Docker Stack"
+        "back_to_comparison": "Retour"
     },
     "Calculator": {
-        "title": "Configurez votre serveur idéal",
+        "title_start": "Configurez votre ",
+        "title_accent": "Serveur Idéal",
         "subtitle": "Trouvez le forfait idéal en filtrant selon vos besoins réels.",
         "max_price": "Budget maximum: {value}",
         "min_ram": "RAM minimum: {value}",
-        "min_vcpu": "vCPUs minimum: {value}",
+        "min_cpu": "vCPUs minimum: {value}",
         "results_found": "Trouvés {count} forfaits.",
         "no_results": "Aucun forfait ne correspond à vos critères. Essayez d'être plus flexible sur certains critères.",
         "recommendation": "Notre recommendation",
-        "best_match": "La meilleure option pour vous",
+        "special_offer": "Offre sp?ciale",
         "get_offer": "Obtenir l'Offre →",
         "reset": "Réinitialiser les filtres",
         "providers": "Fournisseurs",
         "storage": "Stockage min: {value}GB",
         "transfer": "Transfert min: {value}GB",
         "nodes": "Nœuds d'App min: {value}",
-        "unit_mb": "MB",
-        "unit_gb": "GB",
         "back_to_comparison": "Retour",
         "generate_docker_stack": "Générer Docker Stack"
     },
     "DockerModal": {
         "title": "Configuration de Docker Stack",
         "subtitle": "Optimisé pour: {providerName} - {planName}",
-        "tech_stack": "Stack Technologique",
-        "select_tech": "Sélectionnez votre stack technologique",
         "copy_yaml": "Copier YAML",
         "copied": "Copié!",
         "stability_warning": "* Cette configuration limite l'utilisation des ressources pour assurer la stabilité de votre VPS de {ram}GB.",

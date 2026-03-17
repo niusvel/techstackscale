@@ -22,6 +22,19 @@ export default async function PageHeader() {
     const displayProviders = providersFiles.length > 15 ? '15+' : providersFiles.length;
     const displayPlans = totalPlans > 100 ? '100+' : totalPlans;
 
+    let lastUpdateDate = new Date().toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
+    try {
+        const dateFilePath = path.join(process.cwd(), 'utils', 'update_date.json');
+        if (fs.existsSync(dateFilePath)) {
+            const dateContent = JSON.parse(fs.readFileSync(dateFilePath, 'utf8'));
+            if (dateContent.date) {
+                lastUpdateDate = dateContent.date;
+            }
+        }
+    } catch (e) {
+        console.error('Error reading update_date.json:', e);
+    }
+
     return (
         <div className="relative bg-slate-950 pt-10 pb-10 overflow-hidden rounded-b-[0.5rem]">
             {/* Efecto de Luces de Fondo */}
@@ -33,7 +46,7 @@ export default async function PageHeader() {
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan"></span>
                     </span>
-                    {t('live_updates', { date: new Date().toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' }) })}
+                    {t('live_updates', { date: lastUpdateDate })}
                 </div>
 
                 <h1 className="text-5xl md:text-4xl font-extrabold mb-6 tracking-tighter text-white">
