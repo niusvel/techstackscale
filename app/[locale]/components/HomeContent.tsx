@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import PriceCard from './PriceCard';
+import PlanCard from './PlanCard';
 import DockerModal from './DockerModal';
 
 interface HomeContentProps {
@@ -13,6 +13,7 @@ interface HomeContentProps {
         lastUpdate: string;
         provider: string;
         verdict: string;
+        navigateEnd: string;
     }[];
     loadingTexts: string[];
 }
@@ -22,12 +23,11 @@ export default function HomeContent({ cards, loadingTexts }: HomeContentProps) {
 
     return (
         <>
-            {/* Añadimos padding lateral para que el glow no se corte en los bordes de la pantalla */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 px-4">
                 {cards.map((card, index) =>
                     card.plan ? (
-                        <div key={index} className="glow-card"> {/* Quitamos rounded-2xl de aquí, ya lo tiene PriceCard */}
-                            <PriceCard
+                        <div key={index} className="glow-card">
+                            <PlanCard
                                 plan={card.plan}
                                 name={card.name}
                                 affiliateLink={card.affiliateLink}
@@ -36,6 +36,7 @@ export default function HomeContent({ cards, loadingTexts }: HomeContentProps) {
                                 provider={card.provider}
                                 verdict={card.verdict}
                                 setSelectedPlanForDocker={setSelectedPlanForDocker}
+                                navigateEnd={card.navigateEnd}
                             />
                         </div>
                     ) : (

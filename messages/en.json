@@ -37,10 +37,11 @@
         }
     },
     "Metadata": {
-        "title": "TechStackScale | Real-Time Cloud Price Comparison",
-        "description": "We analyze and compare infrastructure costs so you can make data-driven decisions."
+        "title": "TechStackScale | VPS Cloud Price Comparison",
+        "description": "Compare prices from AWS, Google Cloud, Hetzner and more. Find the best VPS for your needs with our real-time cost calculator.",
+        "keywords": "vps comparison, best vps, cloud computing prices, cheap docker hosting, vps server, vultr vs digitalocean, hetzner prices, calculate cloud costs"
     },
-    "PriceCard": {
+    "PlanCard": {
         "best_value": "Relevant",
         "per_month": "/month",
         "get_offer": "Get Offer →",
@@ -51,7 +52,7 @@
             "vcpu": "{value} Dedicated vCPUs",
             "transfer": "{value} Bandwidth Transfer",
             "storage": "{value} Storage",
-            "node_apps": "{value}",
+            "node_apps": "{value} Node Apps",
             "websites": "{value} Websites",
             "emails": "{value} Email Accounts",
             "offert": "{value} Offer",
@@ -133,8 +134,9 @@
         "key_features": "Key Features"
     },
     "ProviderMetadata": {
-        "title": "{name} - Plans and Prices 2026",
-        "description": "Full analysis of {name}. Compare costs and performance to make the best decision."
+        "title": "{name} Plans and Prices | Comparison of {count} servers",
+        "description": "We analyze all {name} plans. Technical comparison of RAM, NVMe CPU and performance for Docker. Compare costs from ({price}) and performance to make the best decision",
+        "keywords_suffix": "{name} reviews, {name} alternatives, {name} cloud vps"
     },
     "ComparePage": {
         "title_start": "Comparison",

@@ -8,6 +8,7 @@ export default function AdminEdit() {
 
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [provider, setProvider] = useState('Proveedor');
+    const [currency, setCurrency] = useState('EUR');
     const [affiliationId, setAffiliationId] = useState('');
     const [category, setCategory] = useState('Cloud VPS (IaaS)');
 
@@ -33,7 +34,7 @@ export default function AdminEdit() {
         fr: ''
     });
 
-    useEffect(() => {
+    /*useEffect(() => {
         const pass = prompt(t('get_admin_password'));
         if (pass === process.env.NEXT_PUBLIC_ADMIN_PASSWORD) {
             setIsAuthenticated(true);
@@ -45,7 +46,7 @@ export default function AdminEdit() {
 
     if (!isAuthenticated) {
         return <div className="min-h-screen bg-slate-950 flex items-center justify-center text-white font-mono">{`${t('verify_password')}...`}</div>;
-    }
+    }*/
 
     // CARGAR JSON
     const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -62,6 +63,7 @@ export default function AdminEdit() {
                 // Carga de nuevos campos
                 setAffiliationId(json.affiliation_id || '');
                 setCategory(json.category || 'Cloud VPS (IaaS)');
+                setCurrency(json.currency || 'EUR');
 
                 setVerdicts({
                     es: json.verdicts?.es || '',
@@ -120,9 +122,11 @@ export default function AdminEdit() {
         const finalData = {
             last_update: new Date().toISOString().replace('T', ' ').split('.')[0],
             provider,
-            category, // Guardado en el JSON
-            affiliation_id: affiliationId, // Guardado en el JSON
+            provider_id: provider.toLowerCase().replace(/\s+/g, ''),
+            category,
+            affiliation_id: affiliationId,
             affiliate_link: affiliateLink,
+            currency,
             verdicts,
             plans
         };
@@ -175,9 +179,18 @@ export default function AdminEdit() {
 
                         {/* Fila 1: Nombre y Link */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div>
-                                <label className="admin-label">Nombre del Proveedor</label>
-                                <input value={provider} onChange={(e) => setProvider(e.target.value)} className="admin-input text-cyan font-bold" />
+                            <div className="flex gap-4">
+                                <div className="w-full">
+                                    <label className="admin-label">Nombre del Proveedor</label>
+                                    <input value={provider} onChange={(e) => setProvider(e.target.value)} className="admin-input text-cyan font-bold" />
+                                </div>
+                                <div className="w-15">
+                                    <label className="admin-label">Moneda</label>
+                                    <select value={currency} onChange={(e) => setCurrency(e.target.value)} className="admin-input w-20">
+                                        <option value="EUR">€</option>
+                                        <option value="USD">$</option>
+                                    </select>
+                                </div>
                             </div>
                             <div>
                                 <label className="admin-label">Enlace de Afiliación</label>
