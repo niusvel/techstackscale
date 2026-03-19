@@ -4,6 +4,7 @@ import path from 'path';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://techstackscale.com';
+    const locales = ['es', 'en', 'fr'];
     const dataDirectory = path.join(process.cwd(), 'data');
 
     // Obtenemos los nombres de los archivos de proveedores
@@ -11,11 +12,41 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const providerFiles = filenames.filter(f => f.endsWith('.json') && !f.includes('_summary'));
 
     // Generamos las URLs para cada proveedor
-    const providerEntries = providerFiles.map((file) => ({
-        url: `${baseUrl}/compare/${file.replace('.json', '')}`,
+    const providerEntries = locales.flatMap((locale) =>
+        providerFiles.map((file) => ({
+            url: `${baseUrl}/${locale}/cloud/${file.replace('.json', '')}`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.8,
+        }))
+    );
+
+    const calculatorEntries = locales.flatMap((locale) => ({
+        url: `${baseUrl}/${locale}/calculator`,
         lastModified: new Date(),
         changeFrequency: 'weekly' as const,
-        priority: 0.8,
+        priority: 0.9,
+    }));
+
+    const compareEntries = locales.flatMap((locale) => ({
+        url: `${baseUrl}/${locale}/compare`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.9,
+    }));
+
+    const homeEntries = locales.flatMap((locale) => ({
+        url: `${baseUrl}/${locale}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 1.0,
+    }));
+
+    const dockerGuideEntries = locales.flatMap((locale) => ({
+        url: `${baseUrl}/${locale}/guides/install-docker`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly' as const,
+        priority: 0.5,
     }));
 
     // Rutas estáticas principales
@@ -23,15 +54,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         {
             url: baseUrl,
             lastModified: new Date(),
-            changeFrequency: 'daily',
-            priority: 1,
+            changeFrequency: 'weekly' as const,
+            priority: 1.0,
         },
-        {
-            url: `${baseUrl}/compare`,
-            lastModified: new Date(),
-            changeFrequency: 'daily',
-            priority: 0.9,
-        },
+        ...homeEntries,
+        ...calculatorEntries,
+        ...compareEntries,
         ...providerEntries,
+        ...dockerGuideEntries,
     ];
 }
