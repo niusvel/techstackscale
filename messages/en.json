@@ -89,7 +89,7 @@
         "data_title": "Data Collection",
         "data_text": "We do not store personal user data. Scrapers only collect public pricing information from official providers.",
         "third_party_title": "Third-Party Policies",
-        "third_party_text": "TechStackScale does not control the cookies used by third-party websites like Hostinger or DigitalOcean. We recommend you consult their respective Privacy Policies."
+        "third_party_text": "TechStackScale does not control the cookies used by third-party websites. We recommend you consult their respective Privacy Policies."
     },
     "Terms": {
         "title": "Terms of Service",
@@ -99,7 +99,7 @@
         "section2_title": "2. Accuracy of Information",
         "section2_text": "TechStackScale uses automatic systems to obtain prices from third parties. Although we strive to keep information updated, we do not guarantee that prices, features, or availability are accurate at all times. The final price will always be the one shown on the provider's official website.",
         "section3_title": "3. Responsibility",
-        "section3_text": "We are not responsible for contracts, services, or technical problems that arise between the user and external providers (Hostinger, DigitalOcean, etc.). TechStackScale is a purely informational tool.",
+        "section3_text": "We are not responsible for contracts, services, or technical problems that arise between the user and external providers. TechStackScale is a purely informational tool.",
         "section4_title": "4. Modifications",
         "section4_text": "We reserve the right to modify these terms or the site content without prior notice."
     },
@@ -110,7 +110,7 @@
         "what_are_title": "What are cookies?",
         "what_are_text": "Cookies are small text files stored on your device when you visit websites. They help us remember your preferences and understand how you interact with our tool.",
         "types_title": "Types of cookies we use",
-        "types_text": "1. Technical Cookies: Necessary for the site's operation and language selection. 2. Affiliate Cookies: Third-party cookies (Hostinger, DigitalOcean) that identify that you came from our site to process potential commissions.",
+        "types_text": "1. Technical Cookies: Necessary for the site's operation and language selection. 2. Affiliate Cookies: Third-party cookies that identify that you came from our site to process potential commissions.",
         "control_title": "Cookie control",
         "control_text": "You can block or delete cookies through your browser settings. Please note that this may affect the functionality of the offer links."
     },

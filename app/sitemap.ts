@@ -47,6 +47,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.5,
     }));
 
+    const legalPages = ['privacy', 'terms', 'cookies'];
+    const legalEntries = locales.flatMap((locale) =>
+        legalPages.map((page) => ({
+            url: `${baseUrl}/${locale}/${page}`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.3,
+        }))
+    );
+
     return [
         {
             url: baseUrl,
@@ -59,5 +69,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...compareEntries,
         ...providerEntries,
         ...dockerGuideEntries,
+        ...legalEntries,
     ];
 }
