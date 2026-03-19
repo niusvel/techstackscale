@@ -89,7 +89,7 @@
         "data_title": "Recogida de Datos",
         "data_text": "No almacenamos datos personales de los usuarios. Los scrapers solo recogen información pública de precios de proveedores oficiales.",
         "third_party_title": "Políticas de Terceros",
-        "third_party_text": "TechStackScale no tiene control sobre las cookies utilizadas por sitios web de terceros como Hostinger o DigitalOcean. Te recomendamos consultar sus respectivas Políticas de Privacidad."
+        "third_party_text": "TechStackScale no tiene control sobre las cookies utilizadas por sitios web de terceros. Te recomendamos consultar sus respectivas Políticas de Privacidad."
     },
     "Terms": {
         "title": "Términos de Servicio",
@@ -99,7 +99,7 @@
         "section2_title": "2. Exactitud de la Información",
         "section2_text": "TechStackScale utiliza sistemas automáticos para obtener precios de terceros. Aunque nos esforzamos por mantener la información actualizada, no garantizamos que los precios, características o disponibilidad sean exactos en todo momento. El precio final será siempre el que figure en el sitio oficial del proveedor.",
         "section3_title": "3. Responsabilidad",
-        "section3_text": "No somos responsables de los contratos, servicios o problemas técnicos que surjan entre el usuario y los proveedores externos (Hostinger, DigitalOcean, etc.). TechStackScale es una herramienta puramente informativa.",
+        "section3_text": "No somos responsables de los contratos, servicios o problemas técnicos que surjan entre el usuario y los proveedores externos. TechStackScale es una herramienta puramente informativa.",
         "section4_title": "4. Modificaciones",
         "section4_text": "Nos reservamos el derecho de modificar estos términos o el contenido del sitio sin previo aviso."
     },
@@ -110,7 +110,7 @@
         "what_are_title": "¿Qué son las cookies?",
         "what_are_text": "Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo al visitar sitios web. Nos ayudan a recordar tus preferencias y a entender cómo interactúas con nuestra herramienta.",
         "types_title": "Tipos de cookies que usamos",
-        "types_text": "1. Cookies Técnicas: Necesarias para el funcionamiento del sitio y la selección de idioma. 2. Cookies de Afiliación: Cookies de terceros (Hostinger, DigitalOcean) que identifican que procedes de nuestra web para procesar posibles comisiones.",
+        "types_text": "1. Cookies Técnicas: Necesarias para el funcionamiento del sitio y la selección de idioma. 2. Cookies de Afiliación: Cookies de terceros que identifican que procedes de nuestra web para procesar posibles comisiones.",
         "control_title": "Control de cookies",
         "control_text": "Puedes bloquear o eliminar las cookies a través de la configuración de tu navegador. Ten en cuenta que esto podría afectar a la funcionalidad de los enlaces de oferta."
     },
