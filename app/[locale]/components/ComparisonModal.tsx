@@ -2,6 +2,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { formatPrice } from '@/utils/currency';
 
 interface ComparisonModalProps {
     isOpen: boolean;
@@ -21,7 +22,7 @@ export default function ComparisonModal({ isOpen, onClose, selectedProviders }: 
                 p.plans[0]?.features?.map((f: any) => f.key) || []
             )
         )
-    ) as string[];
+    ).filter(k => k !== 'offert' && k !== 'type') as string[];
 
     return (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-950/95 backdrop-blur-md">
@@ -70,11 +71,38 @@ export default function ComparisonModal({ isOpen, onClose, selectedProviders }: 
                             {/* Fila de Precio */}
                             <tr className="bg-cyan/5">
                                 <td className="p-4 font-bold text-slate-300 text-xs uppercase">{t('table.price')}</td>
-                                {selectedProviders.map(p => (
-                                    <td key={p.id} className="p-4 text-center text-xl font-mono text-cyan font-black">
-                                        {p.plans[0]?.price}
-                                    </td>
-                                ))}
+                                {selectedProviders.map(p => {
+                                    const plan = p.plans[0];
+                                    if (!plan) return <td key={p.id} className="p-4"></td>;
+                                    
+                                    let offert = plan.features?.find((feature: any) => feature.key === 'offert');
+                                    let offertEndSlot = "";
+                                    if (offert && offert.enabled) {
+                                        const elements = offert.value.split(" ");
+                                        offert = elements[0];
+                                        offertEndSlot = elements.slice(1, elements.length).join(" ");
+                                    } else {
+                                        offert = undefined;
+                                    }
+
+                                    return (
+                                        <td key={p.id} className="p-4 text-center">
+                                            <div className="flex flex-col items-center justify-center">
+                                                <div className="flex items-center gap-2">
+                                                    <span className={`${offert ? "text-sm line-through text-slate-500 font-bold" : "text-xl font-mono text-cyan font-black drop-shadow-[0_0_8px_rgba(42,161,152,0.3)]"}`}>
+                                                        {formatPrice(plan.price, plan.currency)}
+                                                    </span>
+                                                    {offert && (
+                                                        <span className="text-xl font-mono text-green-500 font-black drop-shadow-[0_0_8px_rgba(34,197,94,0.3)]">{offert}</span>
+                                                    )}
+                                                </div>
+                                                {offertEndSlot && (
+                                                    <span className="text-green-600 text-[10px] font-semibold uppercase mt-0.5">{offertEndSlot}</span>
+                                                )}
+                                            </div>
+                                        </td>
+                                    );
+                                })}
                             </tr>
 
                             {/* Mapeo dinámico de todas las propiedades */}

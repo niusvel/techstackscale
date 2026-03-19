@@ -123,7 +123,7 @@
             "vcpu": "{value} Dedicated vCPUs",
             "transfer": "{value} Bandwidth Transfer",
             "storage": "{value} Storage",
-            "node_apps": "{value}",
+            "node_apps": "{value} Node Apps",
             "websites": "{value} Websites",
             "emails": "{value} Email Accounts",
             "offert": "{value} Offer",

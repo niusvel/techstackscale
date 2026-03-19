@@ -82,9 +82,19 @@ export default async function ProviderPage({ params }: { params: Promise<{ local
                 <section>
                     <h2 className="text-2xl font-semibold mb-6">{t('available_plans')}</h2>
                     <div className="flex flex-wrap gap-3 mt-3">
-                        {data.plans.map((plan: any, index: number) => (
-                            <a
-                                key={index}
+                        {data.plans.map((plan: any, index: number) => {
+                            let offert = plan.features.find((feature: any) => feature.key === 'offert');
+                            let offertEndSlot = "";
+                            if (offert && offert.enabled) {
+                                const elements = offert.value.split(" ");
+                                offert = elements[0];
+                                offertEndSlot = elements.slice(1, elements.length).join(" ");
+                            } else {
+                                offert = undefined;
+                            }
+                            return (
+                                <a
+                                    key={index}
                                 href={data.affiliate_link}
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -99,7 +109,7 @@ export default async function ProviderPage({ params }: { params: Promise<{ local
                                     </div>
                                     <div className="flex flex-wrap gap-3 mt-3">
                                         {plan.features
-                                            .filter((feature: any) => feature.enabled)
+                                            .filter((feature: any) => feature.enabled && feature.key !== 'offert' && feature.key !== 'type')
                                             .map((feature: any, fIndex: number) => {
                                                 return (
                                                     <span
@@ -112,14 +122,25 @@ export default async function ProviderPage({ params }: { params: Promise<{ local
                                             })}
                                     </div>
                                 </div>
-                                <div className="text-right">
-                                    <span className="text-3xl font-mono font-bold text-cyan drop-shadow-[0_0_8px_rgba(42,161,152,0.3)]">
-                                        {formatPrice(plan.price, plan.currency)}
-                                    </span>
-                                    <p className="text-xs text-slate-500 uppercase tracking-widest">{t('per_month')}</p>
+                                <div className="text-right flex flex-col justify-center items-end min-w-[120px]">
+                                    <div className="flex gap-1 items-end justify-end">
+                                        <span className={`${offert ? "text-lg line-through text-slate-500 mb-1 font-bold" : "text-3xl font-mono font-bold text-cyan drop-shadow-[0_0_8px_rgba(42,161,152,0.3)]"}`}>
+                                            {formatPrice(plan.price, plan.currency)}
+                                        </span>
+                                        {offert && (
+                                            <span className="text-3xl font-mono font-bold uppercase text-green-500 drop-shadow-[0_0_8px_rgba(34,197,94,0.3)]">{offert}</span>
+                                        )}
+                                    </div>
+                                    <div className="flex flex-col items-end mt-1">
+                                        {offertEndSlot && (
+                                            <span className="text-green-600 text-[10px] font-semibold uppercase">{offertEndSlot}</span>
+                                        )}
+                                        <p className="text-xs text-slate-500 uppercase tracking-widest">{t('per_month')}</p>
+                                    </div>
                                 </div>
                             </a>
-                        ))}
+                            );
+                        })}
                     </div>
                 </section>
             </div>

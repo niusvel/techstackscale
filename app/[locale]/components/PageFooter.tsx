@@ -25,8 +25,9 @@ export default async function PageFooter() {
 
                 <div className="grid md:grid-cols-3 gap-12 mb-5 mt-5">
                     <div>
-                        <div className="font-black text-2xl mb-4 italic text-white">
-                            TechStackScale<span className="text-cyan">.</span>
+                        <div className="font-black text-2xl mb-4 italic flex items-center">
+                            <img src="/logo.png" alt="Logo" className="w-10 h-10" />
+                            <div><span className="text-white">TechStack</span><span className="text-[#13b5ca]">Scale.</span></div>
                         </div>
                         <p className="text-slate-400 text-sm">
                             {tf('tagline')}
