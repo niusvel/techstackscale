@@ -14,6 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: 'Metadata' });
+  const baseUrl = 'https://techstackscale.com';
 
   return {
     title: {
@@ -21,33 +22,68 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
       template: `%s | TechStackScale`
     },
     description: t('description'),
-    icons: {
-      icon: '/favicon.ico',
-      shortcut: '/favicon.ico',
-      apple: '/favicon.ico',
+    alternates: {
+      canonical: `${baseUrl}/${locale}`,
+      languages: {
+        'es': `${baseUrl}/es`,
+        'en': `${baseUrl}/en`,
+        'fr': `${baseUrl}/fr`,
+        'x-default': `${baseUrl}/en`,
+      },
     },
+
+    icons: {
+      icon: [
+        { url: '/favicon.ico' },
+        { url: '/favicon.ico', sizes: '32x32', type: 'image/png' },
+      ],
+      apple: [
+        { url: '/favicon.ico', sizes: '180x180', type: 'image/png' },
+      ],
+    },
+
     verification: {
       google: 'jECji1cqX_NVvCBQS9Hia3VdmSEBl4gfrP9jB5fmr-4',
     },
-    keywords: ["cloud prices", "hosting comparison", "Hetzner vs DigitalOcean", "VPS 2026"],
+
+    keywords: t('keywords').split(','),
     authors: [{ name: "TechStackScale Team" }],
+
     openGraph: {
       title: t('title'),
       description: t('description'),
-      url: 'https://techstackscale.vercel.app',
+      url: `${baseUrl}/${locale}`,
       siteName: 'TechStackScale',
       locale: locale,
       type: 'website',
+      images: [
+        {
+          url: '/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: 'TechStackScale - Cloud Infrastructure Comparison',
+        },
+      ],
     },
+
     twitter: {
       card: 'summary_large_image',
       title: t('title'),
       description: t('description'),
+      images: ['/og-image.png'],
     },
+
     robots: {
       index: true,
       follow: true,
-    }
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
   };
 }
 

@@ -10,10 +10,22 @@ const CheckIcon = ({ className }: { className?: string }) => (
     </svg>
 );
 
-export default function PriceCard({ plan, name, affiliateLink, isBestValue, lastUpdate, provider, verdict, setSelectedPlanForDocker }: any) {
-    const t = useTranslations('PriceCard');
+export default function PlanCard({ plan, name, affiliateLink, isBestValue, lastUpdate, provider, verdict, setSelectedPlanForDocker, navigateEnd }: any) {
+    const t = useTranslations('PlanCard');
 
     const displayPrice = formatPrice(plan.price, plan.currency);
+    let offert = plan.features.find((feature: any) => feature.key === 'offert');
+    let offertEndSlot = "";
+    if (offert && offert.enabled) {
+        const elements = offert.value.split(" ");
+        offert = elements[0];
+        offertEndSlot = elements.slice(1, elements.length).join(" ");
+    } else {
+        offert = undefined;
+    }
+    let type = plan.features.find((feature: any) => feature.key === 'type');
+    type = type && type.enabled ? type.value : undefined;
+    const commonFeatures = plan.features.filter((feature: any) => feature.key !== 'offert' && feature.key !== 'type' && feature.enabled);
 
     return (
         <div className={`relative h-full flex flex-col rounded-2xl overflow-hidden transition-all duration-300 border ${isBestValue
@@ -35,24 +47,36 @@ export default function PriceCard({ plan, name, affiliateLink, isBestValue, last
 
             <div className="pb-6 px-6 pt-2 flex flex-col flex-grow relative z-10">
                 <header className="mb-4">
-                    <p className="text-cyan text-[10px] font-bold uppercase tracking-widest mb-1 opacity-80">{provider}</p>
+                    <div className="flex items-center gap-2 justify-between">
+                        <p className="text-cyan text-[10px] font-bold uppercase tracking-widest mb-1 opacity-80">{provider}</p>
+                        {type && (
+                            <span className="text-xs font-bold uppercase bg-red-400/10 px-2 py-1 rounded-lg text-red-400">{type}</span>
+                        )}
+                    </div>
                     <h3 className="text-lg font-bold leading-tight">{name}</h3>
                 </header>
 
-                <div className="mb-6 flex items-baseline gap-1">
-                    <span className="text-4xl font-black text-cyan drop-shadow-[0_0_12px_rgba(6,182,212,0.5)]">
+                <div className="mb-6 flex gap-1 items-end">
+                    <span className={`${offert ? "text-xl line-through text-slate-500" : "text-4xl text-cyan drop-shadow-[0_0_12px_rgba(6,182,212,0.5)]"} font-black`}>
                         {displayPrice}
                     </span>
-                    <span className="text-slate-400 text-xs font-semibold uppercase">{t('per_month')}</span>
+                    {offert && (
+                        <span className="text-4xl font-bold uppercase text-green-500 drop-shadow-[0_0_12px_rgba(6,182,212,0.5)]">{offert}</span>
+                    )}
+                    <div className={`${offertEndSlot ? "flex flex-col justify-between self-stretch" : ""}`}>
+                        {offertEndSlot && (
+                            <span className="text-green-600 text-xs font-semibold uppercase">{offertEndSlot}</span>
+                        )}
+                        <span className="text-slate-400 text-xs font-semibold uppercase">{t('per_month')}</span>
+                    </div>
                 </div>
 
                 <div className="space-y-3 mb-8 flex-grow">
-                    {plan.features.map((feature: any) => (
+                    {commonFeatures.map((feature: any) => (
                         feature.enabled && (
                             <div key={feature.key} className="flex items-start gap-3 text-[13px] text-white/90">
                                 <CheckIcon className="w-4 h-4 text-cyan flex-shrink-0 mt-0.5" />
                                 <span className="leading-snug">
-                                    {/* Next-intl manejará la traducción. Asegúrate de pasar 'value' */}
                                     {t(`features.${feature.key}`, { value: feature.value })}
                                 </span>
                             </div>
@@ -87,7 +111,7 @@ export default function PriceCard({ plan, name, affiliateLink, isBestValue, last
                         </a>
 
                         <a
-                            href={`/cloud/${provider.toLowerCase()}`}
+                            href={`/cloud/${navigateEnd.toLowerCase()}`}
                             target="_self"
                             className={`flex items-center justify-center w-full text-center text-sm font-bold py-3 px-4 rounded-xl transition-all active:scale-95 border ${isBestValue
                                 ? 'bg-silver text-slate-950 border-silver hover:bg-white hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]'

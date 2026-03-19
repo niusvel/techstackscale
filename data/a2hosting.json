@@ -1,35 +1,35 @@
 {
+    "last_update": "2026-03-19 03:23:59",
     "provider": "A2 Hosting",
-    "id": "a2hosting",
+    "provider_id": "a2hosting",
+    "category": "Cloud VPS (IaaS)",
     "affiliation_id": "TU_ID_AFILIADO",
     "affiliate_link": "https://www.a2hosting.com/?referral=TU_ID_AFILIADO",
-    "last_update": "2026-03-14",
     "currency": "USD",
     "verdicts": {
         "es": "Líder en velocidad para sitios de contenido. Sus servidores Turbo optimizados para WordPress y su soporte técnico experto lo hacen ideal para proyectos que no quieren gestionar la infra a bajo nivel.",
         "en": "Speed leader for content sites. Their Turbo servers optimized for WordPress and expert technical support make it ideal for projects that don't want to manage low-level infra.",
         "fr": "Leader de la vitesse pour les sites de contenu. Leurs serveurs Turbo optimisés pour WordPress et leur support technique expert le rendent idéal pour les projets qui ne veulent pas gérer l'infra à bas niveau."
     },
-    "category": "shared Hosting",
     "plans": [
         {
-            "name": "Startup (Shared)",
-            "price": 2.99,
+            "name": "Starter",
+            "price": "11.99",
             "currency": "USD",
             "features": [
                 {
                     "key": "memory",
-                    "value": "1 GB",
+                    "value": "2 GB (virtual)",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "1",
+                    "value": "2",
                     "enabled": true
                 },
                 {
                     "key": "storage",
-                    "value": "100 GB SSD",
+                    "value": "15 GB",
                     "enabled": true
                 },
                 {
@@ -39,20 +39,41 @@
                 },
                 {
                     "key": "node_apps",
-                    "value": "1",
-                    "enabled": true
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": true,
+                    "value": "10"
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$3.99 (67% OFF)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
                 }
-            ]
+            ],
+            "plan_id": "a2_hosting_starter_1"
         },
         {
-            "name": "Turbo Boost",
-            "price": 6.99,
+            "name": "Plus",
+            "price": "14.98",
             "currency": "USD",
             "is_best_seller": true,
             "features": [
                 {
                     "key": "memory",
-                    "value": "2 GB",
+                    "value": "3 GB (virtual)",
                     "enabled": true
                 },
                 {
@@ -62,7 +83,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "Unlimited NVMe",
+                    "value": "30 GB",
                     "enabled": true
                 },
                 {
@@ -72,29 +93,50 @@
                 },
                 {
                     "key": "node_apps",
-                    "value": "5",
-                    "enabled": true
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": true,
+                    "value": "10"
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$3.99 (73% OFF)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
                 }
-            ]
+            ],
+            "plan_id": "a2_hosting_plus_2"
         },
         {
-            "name": "Managed VPS (Lift 4)",
-            "price": 35.99,
+            "name": "Pro",
+            "price": "22.99",
             "currency": "USD",
             "features": [
                 {
                     "key": "memory",
-                    "value": "4 GB",
+                    "value": "6 GB (virtual)",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "2",
+                    "value": "4",
                     "enabled": true
                 },
                 {
                     "key": "storage",
-                    "value": "150 GB SSD",
+                    "value": "50 GB",
                     "enabled": true
                 },
                 {
@@ -105,9 +147,719 @@
                 {
                     "key": "node_apps",
                     "value": "Unlimited",
-                    "enabled": true
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": true,
+                    "value": "20"
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "10"
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$6.99 (70% OFF)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
                 }
-            ]
+            ],
+            "plan_id": "a2_hosting_pro_3"
+        },
+        {
+            "name": "Max",
+            "price": "27.99",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8 GB (virtual)",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "100 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unlimited",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": true,
+                    "value": "40"
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "100"
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$8.99 (68% OFF)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "a2_hosting_max_4"
+        },
+        {
+            "name": "Unmanaged VPS XS",
+            "price": "19.99",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4 GB (virtual)",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "80 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "websites",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$9.99 (50% OFF)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "a2_hosting_unmanaged_vps_xs_5"
+        },
+        {
+            "name": "Unmanaged VPS S",
+            "price": "39.99",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8 GB (virtual)",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "160 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "websites",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$19.99 (50% OFF)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "a2_hosting_unmanaged_vps_s_6"
+        },
+        {
+            "name": "Unmanaged VPS M",
+            "price": "79.99",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "16 GB (virtual)",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "8",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "320 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "websites",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$39.99 (50% OFF)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "a2_hosting_unmanaged_vps_m_7"
+        },
+        {
+            "name": "Unmanaged VPS L",
+            "price": "109.99",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "32 GB (virtual)",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "16",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "640 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "websites",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$54.98 (50% OFF)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "a2_hosting_unmanaged_vps_l_8"
+        },
+        {
+            "name": "Managed Linux VPS XS",
+            "price": "75.99",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4 GB (virtual)",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "80 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "websites",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$38.00 (50% OFF)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "a2_hosting_managed_linux_vps_xs_9"
+        },
+        {
+            "name": "Managed Linux VPS S",
+            "price": "86.99",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8 GB (virtual)",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "160 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "websites",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$43.50 (50% OFF)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "a2_hosting_managed_linux_vps_s_10"
+        },
+        {
+            "name": "Managed Linux VPS M",
+            "price": "90.99",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "16 GB (virtual)",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "8",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "320 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "websites",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$45.50 (50% OFF)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "a2_hosting_managed_linux_vps_m_11"
+        },
+        {
+            "name": "Managed Linux VPS L",
+            "price": "120.99",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "32 GB (virtual)",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "16",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "640 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "websites",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$60.50 (50% OFF)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "a2_hosting_managed_linux_vps_l_12"
+        },
+        {
+            "name": "Lite WordPress",
+            "price": "14.99",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "vcpu",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "storage",
+                    "value": "5 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "25 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$1.00 (30 Days)"
+                },
+                {
+                    "key": "type",
+                    "enabled": true,
+                    "value": "WordPress"
+                }
+            ],
+            "plan_id": "a2_hosting_lite_wordpress_13"
+        },
+        {
+            "name": "Starter WordPress",
+            "price": "29.99",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "vcpu",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "storage",
+                    "value": "10 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "50 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$1.00 (30 Days)"
+                },
+                {
+                    "key": "type",
+                    "enabled": true,
+                    "value": "WordPress"
+                }
+            ],
+            "plan_id": "a2_hosting_starter_wordpress_14"
+        },
+        {
+            "name": "Pro WordPress",
+            "price": "59.99",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "vcpu",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "storage",
+                    "value": "20 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "100 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "3"
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$1.00 (30 Days)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": "WordPress"
+                }
+            ],
+            "plan_id": "a2_hosting_pro_wordpress_15"
+        },
+        {
+            "name": "Business WordPress",
+            "price": "99.99",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "vcpu",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "storage",
+                    "value": "40 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "300 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "10"
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$1.00 (30 Days)"
+                },
+                {
+                    "key": "type",
+                    "enabled": true,
+                    "value": "WordPress"
+                }
+            ],
+            "plan_id": "a2_hosting_business_wordpress_16"
         }
     ]
 }

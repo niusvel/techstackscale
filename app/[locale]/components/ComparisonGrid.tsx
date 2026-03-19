@@ -2,7 +2,7 @@
 import hostingerData from '@/data/hostinger.json';
 import doData from '@/data/digitalocean.json';
 import hetznerData from '@/data/hetzner.json';
-import PriceCard from './PriceCard';
+import PlanCard from './PlanCard';
 
 const ComparisonGrid = () => {
     const providers = [
@@ -27,7 +27,7 @@ const ComparisonGrid = () => {
                             </span>
                         </div>
 
-                        <PriceCard
+                        <PlanCard
                             name={`${p.data.provider} ${p.data.plans[0].name}`}
                             price={p.data.plans[0].price}
                             features={p.data.plans[0].features}

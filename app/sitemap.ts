@@ -7,11 +7,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const locales = ['es', 'en', 'fr'];
     const dataDirectory = path.join(process.cwd(), 'data');
 
-    // Obtenemos los nombres de los archivos de proveedores
     const filenames = fs.readdirSync(dataDirectory);
     const providerFiles = filenames.filter(f => f.endsWith('.json') && !f.includes('_summary'));
 
-    // Generamos las URLs para cada proveedor
     const providerEntries = locales.flatMap((locale) =>
         providerFiles.map((file) => ({
             url: `${baseUrl}/${locale}/cloud/${file.replace('.json', '')}`,
@@ -49,7 +47,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.5,
     }));
 
-    // Rutas estáticas principales
     return [
         {
             url: baseUrl,

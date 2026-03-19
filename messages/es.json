@@ -37,10 +37,11 @@
         }
     },
     "Metadata": {
-        "title": "TechStackScale | Comparador de Precios Cloud en Tiempo Real",
-        "description": "Analizamos y comparamos los costos de infraestructura para que tomes decisiones basadas en datos reales."
+        "title": "TechStackScale | Comparativa de VPS Cloud y Precios en Tiempo Real",
+        "description": "Compara precios de AWS, Google Cloud, Hetzner y más. Encuentra el mejor VPS según tus necesidades con nuestra calculadora de costes en tiempo real.",
+        "keywords": "comparativa vps, mejores vps, precios cloud computing, hosting docker barato, servidor vps, vultr vs digitalocean, hetzner precios, calcular costes cloud"
     },
-    "PriceCard": {
+    "PlanCard": {
         "best_value": "Relevante",
         "per_month": "/mes",
         "get_offer": "Obtener Oferta →",
@@ -51,7 +52,7 @@
             "vcpu": "{value} vCPUs Dedicadas",
             "transfer": "{value} Transferencia",
             "websites": "{value} Sitios web",
-            "node_apps": "{value}",
+            "node_apps": "{value} Aplicaciones Node",
             "storage": "{value} de almacenamiento",
             "emails": "{value} Cuentas de correo",
             "offert": "{value} Oferta",
@@ -133,8 +134,9 @@
         "key_features": "Características Clave"
     },
     "ProviderMetadata": {
-        "title": "{name} - Planes y Precios 2026",
-        "description": "Análisis completo de {name}. Compara costos y rendimiento para tomar la mejor decisión."
+        "title": "Planes y Precios de {name} | Comparativa de {count} servidores",
+        "description": "Analizamos todos los planes de {name}. Comparativa técnica de RAM, CPU NVMe y rendimiento para Docker. Compara costos desde ({price}) y rendimiento para tomar la mejor decisión",
+        "keywords_suffix": "opiniones {name}, alternativas a {name}, {name} cloud vps"
     },
     "ComparePage": {
         "title_start": "Comparativa",

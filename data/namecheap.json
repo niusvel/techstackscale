@@ -1,14 +1,16 @@
 {
-    "last_update": "2026-03-15 08:12:15",
+    "last_update": "2026-03-19 04:25:58",
     "provider": "Namecheap",
-    "affiliate_id": "TU_ID_AFILIADO",
+    "provider_id": "namecheap",
+    "category": "Shared Hosting",
+    "affiliation_id": "TU_ID_AFILIADO",
     "affiliate_link": "https://www.namecheap.com/hosting/?affId=TU_ID_AFILIADO",
+    "currency": "EUR",
     "verdicts": {
         "es": "La opción más económica para proyectos iniciales. Excelente soporte 24/7 y una interfaz muy clara, ideal si ya tienes tus dominios con ellos.",
         "en": "The most economical option for initial projects. Excellent 24/7 support and a very clear interface, ideal if you already have your domains with them.",
         "fr": "L'option la plus économique pour les projets initiaux. Excellent support 24/7 et une interface très claire, idéale si vous avez déjà vos domaines chez eux."
     },
-    "category": "shared Hosting",
     "plans": [
         {
             "name": "Stellar (Shared)",
@@ -18,7 +20,7 @@
                 {
                     "key": "offert",
                     "enabled": true,
-                    "value": "0.00€ (30 - D)"
+                    "value": "0.00€ (30 Days)"
                 },
                 {
                     "key": "memory",
@@ -50,7 +52,8 @@
                     "enabled": true,
                     "value": "30"
                 }
-            ]
+            ],
+            "plan_id": "namecheap_stellar_(shared)_1"
         },
         {
             "name": "Stellar (Plus)",
@@ -60,7 +63,7 @@
                 {
                     "key": "offert",
                     "enabled": true,
-                    "value": "0.00€ (30 - D)"
+                    "value": "0.00€ (30 Days)"
                 },
                 {
                     "key": "memory",
@@ -104,7 +107,7 @@
                 {
                     "key": "offert",
                     "enabled": true,
-                    "value": "0.00€ (30 - D)"
+                    "value": "0.00€ (30 Days)"
                 },
                 {
                     "key": "memory",
@@ -197,7 +200,7 @@
                 {
                     "key": "offert",
                     "enabled": true,
-                    "value": "12.09€ (30 - D)"
+                    "value": "12.09€ (30 Days)"
                 },
                 {
                     "key": "memory",
@@ -246,7 +249,7 @@
                 {
                     "key": "offert",
                     "enabled": true,
-                    "value": "18.19€ (30 - D)"
+                    "value": "18.19€ (30 Days)"
                 },
                 {
                     "key": "memory",

@@ -9,28 +9,50 @@ import { formatPrice } from '@/utils/currency';
 export async function generateMetadata({ params }: { params: Promise<{ locale: string, provider: string }> }): Promise<Metadata> {
     const { locale, provider } = await params;
     const t = await getTranslations({ locale, namespace: 'ProviderMetadata' });
-    const name = provider.charAt(0).toUpperCase() + provider.slice(1);
+
+    const providerData = getLocalData(`${provider}.json`);
+    const name = providerData?.provider || (provider.charAt(0).toUpperCase() + provider.slice(1));
+
+    const minPrice = providerData?.plans?.length
+        ? Math.min(...providerData.plans.map((p: any) => p.offert?.enabled ? p.offert.price : p.price))
+        : 0;
+    const planCount = providerData?.plans?.length || 0;
 
     return {
-        title: t('title', { name }),
-        description: t('description', { name }),
+        title: t('title', { name, count: planCount }),
+        description: t('description', { name, price: minPrice }),
+        keywords: [
+            `${name} pricing 2026`,
+            `${name} vs DigitalOcean`,
+            `${name} docker hosting`,
+            `best ${name} vps plans`,
+            t('keywords_suffix', { name })
+        ],
         alternates: {
-            canonical: `https://techstackscale.vercel.app/${locale}/cloud/${provider}`,
+            canonical: `https://techstackscale.com/${locale}/cloud/${provider}`,
             languages: {
-                'es-ES': `https://techstackscale.vercel.app/es/cloud/${provider}`,
-                'en-US': `https://techstackscale.vercel.app/en/cloud/${provider}`,
-                'fr-FR': `https://techstackscale.vercel.app/fr/cloud/${provider}`,
+                'es': `https://techstackscale.com/es/cloud/${provider}`,
+                'en': `https://techstackscale.com/en/cloud/${provider}`,
+                'fr': `https://techstackscale.com/fr/cloud/${provider}`,
+                'x-default': `https://techstackscale.com/en/cloud/${provider}`,
             },
         },
+        openGraph: {
+            title: t('title', { name, count: planCount }),
+            description: t('description', { name, price: minPrice }),
+            type: 'website',
+            url: `https://techstackscale.com/${locale}/cloud/${provider}`,
+        }
     };
 }
 
 import ProviderSummary from '../../components/ProviderSummary';
+import getLocalData from '@/utils/getLocalData';
 
 export default async function ProviderPage({ params }: { params: Promise<{ locale: string, provider: string }> }) {
     const { locale, provider } = await params;
     const t = await getTranslations({ locale, namespace: 'ProviderPage' });
-    const tpc = await getTranslations({ locale, namespace: 'PriceCard' });
+    const tpc = await getTranslations({ locale, namespace: 'PlanCard' });
 
     const filePath = path.join(process.cwd(), 'data', `${provider}.json`);
 
@@ -52,7 +74,7 @@ export default async function ProviderPage({ params }: { params: Promise<{ local
                     >
                         <span className="mr-2">←</span> {t('back_to_comparison')}
                     </Link>
-                    <h1 className="text-4xl font-bold mb-4">{provider.toUpperCase()}</h1>
+                    <h1 className="text-4xl font-bold mb-4">{data.provider.toUpperCase()}</h1>
                 </header>
 
                 <ProviderSummary provider={provider} locale={locale} />
