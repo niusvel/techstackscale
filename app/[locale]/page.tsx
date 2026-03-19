@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import PageHeader from './components/PageHeader';
 import ValueProposition from './components/ValueProposition';
 import HomeContent from './components/HomeContent';
+import { calculatePlanScore } from '@/utils/score';
 
 function getAllProvidersData() {
   const dataDirectory = path.join(process.cwd(), 'data');
@@ -33,9 +34,11 @@ export default async function Home({ params }: Props) {
 
   const cards = allProviders.map(provider => {
     const bestPlan = provider.plans?.find((p: any) => p.is_best_seller) || provider.plans?.[0];
+    const score = bestPlan ? calculatePlanScore(bestPlan) : 0;
 
     return {
       plan: bestPlan,
+      score,
       name: bestPlan ? `${provider.provider} ${bestPlan.name}` : provider.provider,
       affiliateLink: provider.affiliate_link || "#",
       isBestValue: true,
@@ -44,7 +47,7 @@ export default async function Home({ params }: Props) {
       verdict: provider.verdicts?.[locale] || '',
       navigateEnd: provider.id,
     };
-  });
+  }).sort((a, b) => b.score - a.score);
 
   const loadingTexts = allProviders.map(p =>
     t('loading_provider', { provider: p.provider })

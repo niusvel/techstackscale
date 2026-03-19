@@ -8,8 +8,9 @@ export default async function PageNavbar() {
     return (
         <nav className="glass sticky top-0 z-50 border-b-0">
             <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-                <Link href="/" className="font-black text-xl italic text-white tracking-tighter">
-                    TechStackScale<span className="text-cyan">.</span>
+                <Link href="/" className="font-black text-xl italic tracking-tighter flex items-center">
+                    <img src="/logo.png" alt="Logo" className="w-10 h-10" />
+                    <div><span className="text-white">TechStack</span><span className="text-[#13b5ca]">Scale.</span></div>
                 </Link>
 
                 <div className="flex items-center gap-6">

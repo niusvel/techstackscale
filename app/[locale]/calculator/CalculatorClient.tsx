@@ -6,6 +6,7 @@ import { Link } from '@/i18n/routing';
 import { formatDisplayValue, parseValue } from './utils';
 import { formatPrice } from '@/utils/currency';
 import DockerModal from '../components/DockerModal';
+import { calculatePlanScore } from '@/utils/score';
 
 export default function CalculatorClient({ providers, locale }: { providers: any[], locale: string }) {
     const t = useTranslations('Calculator');
@@ -43,11 +44,11 @@ export default function CalculatorClient({ providers, locale }: { providers: any
                 const rawStorage = String(getF('storage') || "");
                 const isNVMe = rawStorage.toLowerCase().includes('nvme');
 
-                // 1. Lógica de Precio y Oferta
-                const hasOffer = plan.offert?.enabled;
-                const finalPrice = hasOffer ? parseValue(plan.offert.price, 'price') : parseValue(plan.price, 'price');
+                const offertFeature = plan.features?.find((f: any) => f.key === 'offert');
+                const hasOffer = offertFeature && offertFeature.enabled;
+                const finalPrice = hasOffer ? parseValue(offertFeature.value, 'price') : parseValue(plan.price, 'price');
 
-                // 2. Valores Numéricos para Filtrado y Score
+                // 2. Valores Numéricos para Filtrado
                 const nRam = parseValue(getF('memory'), 'memory');
                 const nCpu = parseValue(getF('vcpu'), 'vcpu');
                 const nStorage = parseValue(getF('storage'), 'storage');
@@ -57,13 +58,7 @@ export default function CalculatorClient({ providers, locale }: { providers: any
                 const isMB = String(getF('memory')).toLowerCase().includes('mb');
                 const ramInGb = isMB ? nRam / 1024 : nRam;
 
-                // 3. Cálculo de Score (Ranking)
-                const storageBonus = isNVMe ? 1.2 : 1;
-                const nTransferForScore = nTransfer === 999999 ? 10000 : nTransfer;
-                const score = finalPrice > 0
-                    ? (((ramInGb * 3) + (nCpu * 2) + (nStorage * 0.1 * storageBonus) + (nTransferForScore * 0.005)) / finalPrice)
-                    : 0;
-                const normalizedScore = Math.min(score * 10, 1000);
+                const scoreValue = calculatePlanScore(plan);
 
                 return {
                     ...plan,
@@ -76,7 +71,7 @@ export default function CalculatorClient({ providers, locale }: { providers: any
                     ramInGb,
                     // Guardamos el objeto completo de features para la UI
                     allFeatures: plan.features,
-                    score: parseFloat(normalizedScore.toFixed(1)),
+                    score: scoreValue,
                     link: provider.affiliate_link || '#',
                     // Guardamos los valores parseados para los filtros
                     nCpu, nStorage, nTransfer, nNodes
