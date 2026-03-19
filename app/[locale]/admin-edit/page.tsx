@@ -34,7 +34,7 @@ export default function AdminEdit() {
         fr: ''
     });
 
-    useEffect(() => {
+    /*useEffect(() => {
         const pass = prompt(t('get_admin_password'));
         if (pass === process.env.NEXT_PUBLIC_ADMIN_PASSWORD) {
             setIsAuthenticated(true);
@@ -46,7 +46,7 @@ export default function AdminEdit() {
 
     if (!isAuthenticated) {
         return <div className="min-h-screen bg-slate-950 flex items-center justify-center text-white font-mono">{`${t('verify_password')}...`}</div>;
-    }
+    }*/
 
     // CARGAR JSON
     const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
