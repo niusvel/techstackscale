@@ -7,9 +7,9 @@
     "affiliate_link": "https://www.a2hosting.com/?referral=TU_ID_AFILIADO",
     "currency": "USD",
     "verdicts": {
-        "es": "Líder en velocidad para sitios de contenido. Sus servidores Turbo optimizados para WordPress y su soporte técnico experto lo hacen ideal para proyectos que no quieren gestionar la infra a bajo nivel.",
-        "en": "Speed leader for content sites. Their Turbo servers optimized for WordPress and expert technical support make it ideal for projects that don't want to manage low-level infra.",
-        "fr": "Leader de la vitesse pour les sites de contenu. Leurs serveurs Turbo optimisés pour WordPress et leur support technique expert le rendent idéal pour les projets qui ne veulent pas gérer l'infra à bas niveau."
+        "es": "Excelente equilibrio entre hosting gestionado y VPS puro. Destaca por sus opciones 'Unmanaged' de alto rendimiento con hasta 32GB de RAM, ideales para despliegues de Docker que requieren escalabilidad vertical sin complicaciones.",
+        "en": "Excellent balance between managed hosting and raw VPS. Stands out for its high-performance 'Unmanaged' options with up to 32GB of RAM, ideal for Docker deployments requiring seamless vertical scalability.",
+        "fr": "Excellent équilibre entre hébergement infogéré et VPS brut. Se distingue par ses options 'Unmanaged' haute performance avec jusqu'à 32 Go de RAM, idéales pour les déploiements Docker nécessitant une évolutivité verticale fluide."
     },
     "plans": [
         {
@@ -69,7 +69,6 @@
             "name": "Plus",
             "price": "14.98",
             "currency": "USD",
-            "is_best_seller": true,
             "features": [
                 {
                     "key": "memory",
@@ -229,6 +228,7 @@
             "name": "Unmanaged VPS XS",
             "price": "19.99",
             "currency": "USD",
+            "is_best_seller": true,
             "features": [
                 {
                     "key": "memory",
@@ -242,7 +242,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "80 GB",
+                    "value": "80 GB NVMe",
                     "enabled": true
                 },
                 {
@@ -295,7 +295,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "160 GB",
+                    "value": "160 GB NVMe",
                     "enabled": true
                 },
                 {
@@ -401,7 +401,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "640 GB",
+                    "value": "640 GB NVMe",
                     "enabled": true
                 },
                 {
