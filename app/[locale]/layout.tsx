@@ -8,6 +8,7 @@ import PageNavbar from "./components/PageNavbar";
 import PageFooter from "./components/PageFooter";
 
 import "./globals.css";
+import CookieBanner from "./components/CookieBanner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +29,7 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
         'es': `${baseUrl}/es`,
         'en': `${baseUrl}/en`,
         'fr': `${baseUrl}/fr`,
-        'x-default': `${baseUrl}/en`,
+        'x-default': `${baseUrl}/es`,
       },
     },
 
@@ -109,6 +110,7 @@ export default async function RootLayout({
 
             <PageFooter />
           </div>
+          <CookieBanner locale={locale} />
         </NextIntlClientProvider>
         <script
           type="application/ld+json"

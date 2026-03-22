@@ -229,5 +229,10 @@
     "CopyButton": {
         "copy": "Copier",
         "copied": "Copié!"
+    },
+    "CookieBanner": {
+        "message": "Nous utilisons des cookies techniques et tiers (affiliation) pour améliorer votre expérience et garder notre calculatrice gratuite. En continuant, vous acceptez notre",
+        "link_text": "Politique relative aux cookies",
+        "accept": "Compris et Accepter"
     }
 }

@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
                 'es': `https://techstackscale.com/es/cloud/${provider}`,
                 'en': `https://techstackscale.com/en/cloud/${provider}`,
                 'fr': `https://techstackscale.com/fr/cloud/${provider}`,
-                'x-default': `https://techstackscale.com/en/cloud/${provider}`,
+                'x-default': `https://techstackscale.com/es/cloud/${provider}`,
             },
         },
         openGraph: {
@@ -95,50 +95,50 @@ export default async function ProviderPage({ params }: { params: Promise<{ local
                             return (
                                 <a
                                     key={index}
-                                href={data.affiliate_link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={`bg-white/5 w-full p-6 rounded-lg flex justify-between items-center border hover:border-cyan/50 transition-all group cursor-pointer ${plan.is_best_seller ? 'border-red-500 shadow-[0_0_15px_rgba(239,68,68,0.3)]' : 'border-white/10'}`}
-                            >
-                                <div>
-                                    <div className="flex items-center gap-2 justify-between align-center">
-                                        <h3 className="font-bold text-xl text-white group-hover:text-cyan transition-colors">
-                                            {plan.name}
-                                        </h3>
-                                        {plan.is_best_seller && <span className="ml-3 text-[10px] font-black tracking-widest uppercase bg-red-500/20 text-red-400 px-2 py-1 rounded-full border border-red-500/30">{tpc('best_value')}</span>}
+                                    href={data.affiliate_link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`bg-white/5 w-full p-6 rounded-lg flex justify-between items-center border hover:border-cyan/50 transition-all group cursor-pointer ${plan.is_best_seller ? 'border-red-500 shadow-[0_0_15px_rgba(239,68,68,0.3)]' : 'border-white/10'}`}
+                                >
+                                    <div>
+                                        <div className="flex items-center gap-2 justify-between align-center">
+                                            <h3 className="font-bold text-xl text-white group-hover:text-cyan transition-colors">
+                                                {plan.name}
+                                            </h3>
+                                            {plan.is_best_seller && <span className="ml-3 text-[10px] font-black tracking-widest uppercase bg-red-500/20 text-red-400 px-2 py-1 rounded-full border border-red-500/30">{tpc('best_value')}</span>}
+                                        </div>
+                                        <div className="flex flex-wrap gap-3 mt-3">
+                                            {plan.features
+                                                .filter((feature: any) => feature.enabled && feature.key !== 'offert' && feature.key !== 'type')
+                                                .map((feature: any, fIndex: number) => {
+                                                    return (
+                                                        <span
+                                                            key={fIndex}
+                                                            className="text-sm text-slate-400 bg-white/5 px-3 py-1 rounded-full border border-white/10"
+                                                        >
+                                                            {t(`features.${feature.key}`, { value: feature.value })}
+                                                        </span>
+                                                    );
+                                                })}
+                                        </div>
                                     </div>
-                                    <div className="flex flex-wrap gap-3 mt-3">
-                                        {plan.features
-                                            .filter((feature: any) => feature.enabled && feature.key !== 'offert' && feature.key !== 'type')
-                                            .map((feature: any, fIndex: number) => {
-                                                return (
-                                                    <span
-                                                        key={fIndex}
-                                                        className="text-sm text-slate-400 bg-white/5 px-3 py-1 rounded-full border border-white/10"
-                                                    >
-                                                        {t(`features.${feature.key}`, { value: feature.value })}
-                                                    </span>
-                                                );
-                                            })}
+                                    <div className="text-right flex flex-col justify-center items-end min-w-[120px]">
+                                        <div className="flex gap-1 items-end justify-end">
+                                            <span className={`${offert ? "text-lg line-through text-slate-500 mb-1 font-bold" : "text-3xl font-mono font-bold text-cyan drop-shadow-[0_0_8px_rgba(42,161,152,0.3)]"}`}>
+                                                {formatPrice(plan.price, plan.currency)}
+                                            </span>
+                                            {offert && (
+                                                <span className="text-3xl font-mono font-bold uppercase text-green-500 drop-shadow-[0_0_8px_rgba(34,197,94,0.3)]">{offert}</span>
+                                            )}
+                                        </div>
+                                        <div className="flex flex-col items-end mt-1">
+                                            {offertEndSlot && (
+                                                <span className="text-green-600 text-[10px] font-semibold uppercase">{offertEndSlot}</span>
+                                            )}
+                                            <p className="text-xs text-slate-500 uppercase tracking-widest">{t('per_month')}</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="text-right flex flex-col justify-center items-end min-w-[120px]">
-                                    <div className="flex gap-1 items-end justify-end">
-                                        <span className={`${offert ? "text-lg line-through text-slate-500 mb-1 font-bold" : "text-3xl font-mono font-bold text-cyan drop-shadow-[0_0_8px_rgba(42,161,152,0.3)]"}`}>
-                                            {formatPrice(plan.price, plan.currency)}
-                                        </span>
-                                        {offert && (
-                                            <span className="text-3xl font-mono font-bold uppercase text-green-500 drop-shadow-[0_0_8px_rgba(34,197,94,0.3)]">{offert}</span>
-                                        )}
-                                    </div>
-                                    <div className="flex flex-col items-end mt-1">
-                                        {offertEndSlot && (
-                                            <span className="text-green-600 text-[10px] font-semibold uppercase">{offertEndSlot}</span>
-                                        )}
-                                        <p className="text-xs text-slate-500 uppercase tracking-widest">{t('per_month')}</p>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
                             );
                         })}
                     </div>
