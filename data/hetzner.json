@@ -1,19 +1,21 @@
 {
-    "last_update": "2026-03-10 22:01:40",
+    "last_update": "2026-03-22 21:56:11",
     "provider": "Hetzner",
+    "provider_id": "hetzner",
+    "category": "cloud VPS (IaaS)",
     "affiliation_id": "TU_ID_AFILIADO",
     "affiliate_link": "https://www.hetzner.com/cloud",
+    "currency": "EUR",
     "verdicts": {
         "es": "Potencia bruta al mejor precio. Ideal para infraestructura escalable en Europa.",
         "en": "Raw power at the best price. Ideal for scalable infrastructure in Europe.",
         "fr": "Puissance brute au meilleur prix. Idéal pour l'infrastructure évolutive en Europe."
     },
-    "category": "cloud VPS (IaaS)",
     "plans": [
         {
             "plan_id": "hetzner_cx23",
             "name": "CX23 Intel/AMD",
-            "price": 3.49,
+            "price": "3.62",
             "currency": "EUR",
             "is_best_seller": true,
             "features": [
@@ -36,13 +38,18 @@
                     "key": "transfer",
                     "enabled": true,
                     "value": "20000 GB"
+                },
+                {
+                    "key": "app_node",
+                    "enabled": false,
+                    "value": ""
                 }
             ]
         },
         {
             "plan_id": "hetzner_cax11",
             "name": "CAX11 Ampere",
-            "price": 3.79,
+            "price": "3.98",
             "currency": "EUR",
             "is_best_seller": false,
             "features": [
@@ -65,13 +72,18 @@
                     "key": "transfer",
                     "enabled": true,
                     "value": "20000 GB"
+                },
+                {
+                    "key": "app_node",
+                    "enabled": false,
+                    "value": ""
                 }
             ]
         },
         {
             "plan_id": "hetzner_cx33",
             "name": "CX33 Intel/AMD",
-            "price": 5.49,
+            "price": "6.04",
             "currency": "EUR",
             "is_best_seller": false,
             "features": [
@@ -94,13 +106,18 @@
                     "key": "transfer",
                     "enabled": true,
                     "value": "20000 GB"
+                },
+                {
+                    "key": "app_node",
+                    "enabled": false,
+                    "value": ""
                 }
             ]
         },
         {
             "plan_id": "hetzner_cax21",
             "name": "CAX21 Ampere",
-            "price": 6.49,
+            "price": "7.25",
             "currency": "EUR",
             "is_best_seller": false,
             "features": [
@@ -123,6 +140,283 @@
                     "key": "transfer",
                     "enabled": true,
                     "value": "20000 GB"
+                },
+                {
+                    "key": "app_node",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "hetzner_cx43_intel/amd_5",
+            "name": "CX43 Intel/AMD",
+            "price": "10.88",
+            "currency": "EUR",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "16 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "8"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "160 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "20000 GB"
+                },
+                {
+                    "key": "app_node",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "hetzner_cax31_ampere_6",
+            "name": "CAX31 Ampere",
+            "price": "14.51",
+            "currency": "EUR",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "16 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "8"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "160 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "20000 GB"
+                },
+                {
+                    "key": "app_node",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "hetzner_cx53_intel/amd_7",
+            "name": "CX53 Intel/AMD",
+            "price": "20.56",
+            "currency": "EUR",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "32 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "16"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "320 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "20000 GB"
+                },
+                {
+                    "key": "app_node",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "hetzner_cax41_ampere_8",
+            "name": "CAX41 Ampere",
+            "price": "29.03",
+            "currency": "EUR",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "32 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "16"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "320 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "20000 GB"
+                },
+                {
+                    "key": "app_node",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "hetzner_webhosting_s_9",
+            "name": "Webhosting S",
+            "price": "1.94",
+            "currency": "EUR",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "129 MB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "10 GB"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "Unlimited mailboxes"
+                },
+                {
+                    "key": "app_node",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "hetzner_webhosting_m_10",
+            "name": "Webhosting M",
+            "price": "4.96",
+            "currency": "EUR",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "256 MB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "50 GB"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "Unlimited mailboxes"
+                },
+                {
+                    "key": "app_node",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "hetzner_webhosting_l_11",
+            "name": "Webhosting L",
+            "price": "10.07",
+            "currency": "EUR",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "384 MB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "100 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "Unlimited mailboxes"
+                },
+                {
+                    "key": "app_node",
+                    "enabled": true,
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "plan_id": "hetzner_webhosting_xl_12",
+            "name": "Webhosting XL",
+            "price": "20.23",
+            "currency": "EUR",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "512 MB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "300 GB"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "Unlimited mailboxes"
+                },
+                {
+                    "key": "app_node",
+                    "enabled": true,
+                    "value": "1"
                 }
             ]
         }
