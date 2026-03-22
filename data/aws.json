@@ -1,9 +1,11 @@
 {
-    "last_update": "2026-03-15",
+    "last_update": "2026-03-22 22:35:12",
     "provider": "AWS",
-    "affiliation_id": null,
-    "affiliate_link": "https://aws.amazon.com/free/",
+    "provider_id": "aws",
     "category": "Cloud VPS (IaaS)",
+    "affiliation_id": "",
+    "affiliate_link": "https://aws.amazon.com/lightsail/pricing/",
+    "currency": "EUR",
     "verdicts": {
         "es": "El gigante global. Ofrece desde Lightsail para VPS sencillos hasta EC2 para infraestructura compleja de alta disponibilidad.",
         "en": "The global giant. Offers everything from Lightsail for simple VPS to EC2 for complex high-availability infrastructure.",
@@ -11,9 +13,9 @@
     },
     "plans": [
         {
-            "plan_id": "aws_lightsail_1",
-            "name": "Lightsail Starter",
-            "price": 3.50,
+            "plan_id": "aws_linux_ipv4_5_1",
+            "name": "Linux IPv4 5",
+            "price": "5",
             "currency": "USD",
             "features": [
                 {
@@ -24,7 +26,7 @@
                 {
                     "key": "vcpu",
                     "enabled": true,
-                    "value": "1"
+                    "value": "2"
                 },
                 {
                     "key": "storage",
@@ -34,14 +36,363 @@
                 {
                     "key": "transfer",
                     "enabled": true,
-                    "value": "1 TB"
+                    "value": "1000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv4_7_2",
+            "name": "Linux IPv4 7",
+            "price": "7",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "1 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "40 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "2000 GB"
+                }
+            ],
+            "is_best_seller": true
+        },
+        {
+            "plan_id": "aws_linux_ipv4_12_3",
+            "name": "Linux IPv4 12",
+            "price": "12",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "2 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "80 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "4000 GB"
                 }
             ]
         },
         {
-            "plan_id": "aws_t4g_small",
-            "name": "t4g.small (ARM EC2)",
-            "price": 12.41,
+            "plan_id": "aws_linux_ipv4_24_4",
+            "name": "Linux IPv4 24",
+            "price": "24",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "4 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "80 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "4000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv4_44_5",
+            "name": "Linux IPv4 44",
+            "price": "44",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "8 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "160 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "5000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv4_84_6",
+            "name": "Linux IPv4 84",
+            "price": "84",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "16 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "4"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "320 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "6000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv4_164_7",
+            "name": "Linux IPv4 164",
+            "price": "164",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "32 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "8"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "640 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "7000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv4_384_8",
+            "name": "Linux IPv4 384",
+            "price": "384",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "64 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "16"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "8000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv4_884_9",
+            "name": "Linux IPv4 884",
+            "price": "884",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "128 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "32"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "9000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv4_1324_10",
+            "name": "Linux IPv4 1324",
+            "price": "1324",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "192 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "48"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "10000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv4_1764_11",
+            "name": "Linux IPv4 1764",
+            "price": "1764",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "256 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "64"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "10000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv6_3_12",
+            "name": "Linux IPv6 3",
+            "price": "3.50",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "512 MB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "20 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "1000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv6_5_13",
+            "name": "Linux IPv6 5",
+            "price": "5",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "1 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "40 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "2000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv6_10_14",
+            "name": "Linux IPv6 10",
+            "price": "10",
             "currency": "USD",
             "features": [
                 {
@@ -57,21 +408,21 @@
                 {
                     "key": "storage",
                     "enabled": true,
-                    "value": "EBS Only"
+                    "value": "60 GB SSD"
                 },
                 {
                     "key": "transfer",
                     "enabled": true,
-                    "value": "100 GB Free"
+                    "value": "3000 GB"
                 }
-            ]
+            ],
+            "is_best_seller": false
         },
         {
-            "plan_id": "aws_t3_medium",
-            "name": "t3.medium (Standard EC2)",
-            "price": 30.36,
+            "plan_id": "aws_linux_ipv6_20_15",
+            "name": "Linux IPv6 20",
+            "price": "20",
             "currency": "USD",
-            "is_best_seller": true,
             "features": [
                 {
                     "key": "memory",
@@ -86,14 +437,856 @@
                 {
                     "key": "storage",
                     "enabled": true,
-                    "value": "EBS Only"
+                    "value": "80 GB SSD"
                 },
                 {
                     "key": "transfer",
                     "enabled": true,
-                    "value": "100 GB Free"
+                    "value": "4000 GB"
                 }
-            ]
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv6_40_16",
+            "name": "Linux IPv6 40",
+            "price": "40",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "8 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "160 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "5000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv6_80_17",
+            "name": "Linux IPv6 80",
+            "price": "80",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "16 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "4"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "320 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "6000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv6_160_18",
+            "name": "Linux IPv6 160",
+            "price": "160",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "32 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "16"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "7000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv6_380_19",
+            "name": "Linux IPv6 380",
+            "price": "380",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "64 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "16"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "8000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv6_880_20",
+            "name": "Linux IPv6 880",
+            "price": "880",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "128 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "32"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "9000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv6_1320_21",
+            "name": "Linux IPv6 1320",
+            "price": "1320",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "192 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "48"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "10000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_linux_ipv6_1760_22",
+            "name": "Linux IPv6 1760",
+            "price": "1760",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "256 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "64"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "10000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv4_9_23",
+            "name": "Windows IPv4 9",
+            "price": "9.50",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "512 MB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "30 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "1000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv4_14_24",
+            "name": "Windows IPv4 14",
+            "price": "14",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "1 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "40 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "2000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv4_22_25",
+            "name": "Windows IPv4 22",
+            "price": "22",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "2 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "60 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "3000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv4_44_26",
+            "name": "Windows IPv4 44",
+            "price": "44",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "4 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "80 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "4000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv4_74_27",
+            "name": "Windows IPv4 74",
+            "price": "74",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "8 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "160 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "5000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv4_124_28",
+            "name": "Windows IPv4 124",
+            "price": "124",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "16 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "4"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "320 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "6000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv4_244_29",
+            "name": "Windows IPv4 244",
+            "price": "244",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "32 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "8"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "640 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "7000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv4_574_30",
+            "name": "Windows IPv4 574",
+            "price": "574",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "64 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "16"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "8000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv4_1254_31",
+            "name": "Windows IPv4 1254",
+            "price": "1254",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "128 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "32"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "9000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv4_1884_32",
+            "name": "Windows IPv4 1884",
+            "price": "1884",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "192 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "48"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "10000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv4_2504_33",
+            "name": "Windows IPv4 2504",
+            "price": "2504",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "256 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "64"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "10000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv6_8_34",
+            "name": "Windows IPv6 8",
+            "price": "8",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "512 MB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "30 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "1000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv6_12_35",
+            "name": "Windows IPv6 12",
+            "price": "12",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "1 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "40 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "2000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv6_20_36",
+            "name": "Windows IPv6 20",
+            "price": "20",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "2 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "60 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "3000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv6_40_37",
+            "name": "Windows IPv6 40",
+            "price": "40",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "4 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "80 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "4000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv6_70_38",
+            "name": "Windows IPv6 70",
+            "price": "70",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "8 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "160 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "5000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv6_120_39",
+            "name": "Windows IPv6 120",
+            "price": "120",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "16 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "4"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "320 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "6000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv6_240_40",
+            "name": "Windows IPv6 240",
+            "price": "240",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "32 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "8"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "640 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "7000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv6_570_41",
+            "name": "Windows IPv6 570",
+            "price": "570",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "64 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "16"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "8000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv6_1250_42",
+            "name": "Windows IPv6 1250",
+            "price": "1250",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "128 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "32"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "9000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv6_1880_43",
+            "name": "Windows IPv6 1880",
+            "price": "1880",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "192 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "48"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "10000 GB"
+                }
+            ],
+            "is_best_seller": false
+        },
+        {
+            "plan_id": "aws_windows_ipv6_2500_44",
+            "name": "Windows IPv6 2500",
+            "price": "2500",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "256 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "64"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "1280 GB SSD"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "10000 GB"
+                }
+            ],
+            "is_best_seller": false
         }
     ]
 }
