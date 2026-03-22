@@ -1,5 +1,5 @@
 {
-    "last_update": "2026-03-19 03:23:59",
+    "last_update": "2026-03-22 15:03:26",
     "provider": "A2 Hosting",
     "provider_id": "a2hosting",
     "category": "Cloud VPS (IaaS)",
@@ -116,7 +116,8 @@
                     "value": ""
                 }
             ],
-            "plan_id": "a2_hosting_plus_2"
+            "plan_id": "a2_hosting_plus_2",
+            "is_best_seller": false
         },
         {
             "name": "Pro",
@@ -140,12 +141,12 @@
                 },
                 {
                     "key": "transfer",
-                    "value": "2000 GB",
+                    "value": "Unlimited",
                     "enabled": true
                 },
                 {
                     "key": "node_apps",
-                    "value": "Unlimited",
+                    "value": "",
                     "enabled": false
                 },
                 {
@@ -438,13 +439,13 @@
             "plan_id": "a2_hosting_unmanaged_vps_l_8"
         },
         {
-            "name": "Managed Linux VPS XS",
-            "price": "75.99",
+            "name": "Managed cPanel 4GB",
+            "price": "57.50",
             "currency": "USD",
             "features": [
                 {
                     "key": "memory",
-                    "value": "4 GB (virtual)",
+                    "value": "4 GB",
                     "enabled": true
                 },
                 {
@@ -454,7 +455,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "80 GB",
+                    "value": "100 GB NVMe",
                     "enabled": true
                 },
                 {
@@ -480,7 +481,7 @@
                 {
                     "key": "offert",
                     "enabled": true,
-                    "value": "$38.00 (50% OFF)"
+                    "value": "$28,75 (50% OFF)"
                 },
                 {
                     "key": "type",
@@ -488,16 +489,16 @@
                     "value": ""
                 }
             ],
-            "plan_id": "a2_hosting_managed_linux_vps_xs_9"
+            "plan_id": "a2_hosting_managed_cpanel_4gb_9"
         },
         {
-            "name": "Managed Linux VPS S",
-            "price": "86.99",
+            "name": "Managed cPanel 8GB",
+            "price": "90.83",
             "currency": "USD",
             "features": [
                 {
                     "key": "memory",
-                    "value": "8 GB (virtual)",
+                    "value": "8 GB",
                     "enabled": true
                 },
                 {
@@ -507,7 +508,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "160 GB",
+                    "value": "150 GB NVMe",
                     "enabled": true
                 },
                 {
@@ -533,7 +534,7 @@
                 {
                     "key": "offert",
                     "enabled": true,
-                    "value": "$43.50 (50% OFF)"
+                    "value": "$45,42 (50% OFF)"
                 },
                 {
                     "key": "type",
@@ -541,16 +542,16 @@
                     "value": ""
                 }
             ],
-            "plan_id": "a2_hosting_managed_linux_vps_s_10"
+            "plan_id": "a2_hosting_managed_cpanel_8gb_10"
         },
         {
-            "name": "Managed Linux VPS M",
-            "price": "90.99",
+            "name": "Managed cPanel 16GB",
+            "price": "140.83",
             "currency": "USD",
             "features": [
                 {
                     "key": "memory",
-                    "value": "16 GB (virtual)",
+                    "value": "16 GB",
                     "enabled": true
                 },
                 {
@@ -560,7 +561,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "320 GB",
+                    "value": "300 GB NVMe",
                     "enabled": true
                 },
                 {
@@ -586,7 +587,7 @@
                 {
                     "key": "offert",
                     "enabled": true,
-                    "value": "$45.50 (50% OFF)"
+                    "value": "$70,42 (50% OFF)"
                 },
                 {
                     "key": "type",
@@ -594,16 +595,16 @@
                     "value": ""
                 }
             ],
-            "plan_id": "a2_hosting_managed_linux_vps_m_11"
+            "plan_id": "a2_hosting_managed_cpanel_16gb_11"
         },
         {
-            "name": "Managed Linux VPS L",
-            "price": "120.99",
+            "name": "Managed cPanel 32GB",
+            "price": "232.50",
             "currency": "USD",
             "features": [
                 {
                     "key": "memory",
-                    "value": "32 GB (virtual)",
+                    "value": "32 GB",
                     "enabled": true
                 },
                 {
@@ -613,7 +614,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "640 GB",
+                    "value": "400 GB NVMe",
                     "enabled": true
                 },
                 {
@@ -639,7 +640,7 @@
                 {
                     "key": "offert",
                     "enabled": true,
-                    "value": "$60.50 (50% OFF)"
+                    "value": "$116,25 (50% OFF)"
                 },
                 {
                     "key": "type",
@@ -647,7 +648,7 @@
                     "value": ""
                 }
             ],
-            "plan_id": "a2_hosting_managed_linux_vps_l_12"
+            "plan_id": "a2_hosting_managed_cpanel_32gb_12"
         },
         {
             "name": "Lite WordPress",
@@ -802,7 +803,7 @@
                 },
                 {
                     "key": "type",
-                    "enabled": false,
+                    "enabled": true,
                     "value": "WordPress"
                 }
             ],
@@ -860,6 +861,222 @@
                 }
             ],
             "plan_id": "a2_hosting_business_wordpress_16"
+        },
+        {
+            "name": "Managed cPanel 64GB",
+            "price": "415.83",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "64 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "24",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "800 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "websites",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$207,92 (50% OFF)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "a2_hosting_managed_cpanel_64gb_17",
+            "is_best_seller": false
+        },
+        {
+            "name": "Managed cPanel 128GB",
+            "price": "915.83",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "128 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "32",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "1200 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "websites",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$457,92 (50% OFF)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "a2_hosting_managed_cpanel_128gb_18",
+            "is_best_seller": false
+        },
+        {
+            "name": "Managed cPanel 160GB",
+            "price": "1165.83",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "160 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "48",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "1400 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "websites",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$582,92 (50% OFF)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "a2_hosting_managed_cpanel_160gb_19",
+            "is_best_seller": false
+        },
+        {
+            "name": "Managed cPanel 256GB",
+            "price": "1832.50",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "256 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "64",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "2000 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "websites",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "$916,25 (50% OFF)"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "a2_hosting_managed_cpanel_256gb_20",
+            "is_best_seller": false
         }
     ]
 }
