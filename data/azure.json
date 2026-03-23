@@ -1,8 +1,8 @@
 {
     "provider": "Microsoft Azure",
     "id": "azure",
-    "affiliate_link": "https://azure.microsoft.com/free/",
-    "last_update": "2026-03-14",
+    "affiliate_link": "https://azure.microsoft.com/es-es/pricing/details/virtual-machines/linux/",
+    "last_update": "2026-03-23",
     "currency": "USD",
     "verdicts": {
         "es": "La mejor opción para entornos empresariales. Su integración con Windows y servicios de Microsoft es insuperable, ofreciendo una escalabilidad masiva y seguridad de grado gubernamental.",
@@ -12,46 +12,256 @@
     "category": "cloud VPS (IaaS)",
     "plans": [
         {
-            "name": "B1s (Economical)",
+            "name": "B2pts v2",
+            "price": 6.13,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "1 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B2pls v2",
+            "price": 24.53,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B2ps v2",
+            "price": 49.06,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B4pls v2",
+            "price": 86.87,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B4ps v2",
+            "price": 97.82,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "16 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B8pls v2",
+            "price": 173.74,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "16 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "8",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B8ps v2",
+            "price": 196.37,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "32 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "8",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B16pls v2",
+            "price": 347.48,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "32 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "16",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B16ps v2",
+            "price": 392.74,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "64 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "16",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B2ts v2",
             "price": 7.59,
             "currency": "USD",
             "features": [
                 {
                     "key": "memory",
-                    "value": "1 GB",
+                    "value": "1 GiB",
                     "enabled": true
                 },
                 {
                     "key": "vcpu",
-                    "value": "1",
+                    "value": "2",
                     "enabled": true
                 },
                 {
                     "key": "storage",
-                    "value": "4 GB Temp SSD",
-                    "enabled": true
-                },
-                {
-                    "key": "transfer",
-                    "value": "5 GB Free",
-                    "enabled": true
-                },
-                {
-                    "key": "node_apps",
-                    "value": "1",
+                    "value": "0 GiB Temp",
                     "enabled": true
                 }
             ]
         },
         {
-            "name": "B2s (Balanced)",
-            "price": 30.36,
+            "name": "B2ls v2",
+            "price": 30.37,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B2s v2",
+            "price": 60.74,
             "currency": "USD",
             "is_best_seller": true,
             "features": [
                 {
                     "key": "memory",
-                    "value": "4 GB",
+                    "value": "8 GiB",
                     "enabled": true
                 },
                 {
@@ -61,29 +271,195 @@
                 },
                 {
                     "key": "storage",
-                    "value": "8 GB Temp SSD",
-                    "enabled": true
-                },
-                {
-                    "key": "transfer",
-                    "value": "5 GB Free",
-                    "enabled": true
-                },
-                {
-                    "key": "node_apps",
-                    "value": "4",
+                    "value": "0 GiB Temp",
                     "enabled": true
                 }
             ]
         },
         {
-            "name": "B2ms (Pro)",
-            "price": 60.73,
+            "name": "B4ls v2",
+            "price": 107.31,
             "currency": "USD",
             "features": [
                 {
                     "key": "memory",
-                    "value": "8 GB",
+                    "value": "8 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B4s v2",
+            "price": 121.18,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "16 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B8ls v2",
+            "price": 215.35,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "16 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "8",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B8s v2",
+            "price": 243.09,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "32 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "8",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B16ls v2",
+            "price": 429.97,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "32 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "16",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B16s v2",
+            "price": 486.18,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "64 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "16",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B32ls v2",
+            "price": 860.67,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "64 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "32",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B32s v2",
+            "price": 971.63,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "128 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "32",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B2ats v2",
+            "price": 6.86,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "1 GiB",
                     "enabled": true
                 },
                 {
@@ -93,17 +469,227 @@
                 },
                 {
                     "key": "storage",
-                    "value": "16 GB Temp SSD",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B2als v2",
+            "price": 27.45,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4 GiB",
                     "enabled": true
                 },
                 {
-                    "key": "transfer",
-                    "value": "5GB Free",
+                    "key": "vcpu",
+                    "value": "2",
                     "enabled": true
                 },
                 {
-                    "key": "node_apps",
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B2as v2",
+            "price": 54.90,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B4als v2",
+            "price": 97.09,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B4as v2",
+            "price": 109.50,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "16 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B8als v2",
+            "price": 194.18,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "16 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
                     "value": "8",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B8as v2",
+            "price": 219.73,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "32 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "8",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B16als v2",
+            "price": 389.09,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "32 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "16",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B16as v2",
+            "price": 439.46,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "64 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "16",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B32als v2",
+            "price": 777.45,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "64 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "32",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "B32as v2",
+            "price": 878.19,
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "128 GiB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "32",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "0 GiB Temp",
                     "enabled": true
                 }
             ]
