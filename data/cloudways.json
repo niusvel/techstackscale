@@ -1,20 +1,20 @@
 {
+    "last_update": "2026-03-23 17:19:17",
     "provider": "Cloudways",
-    "id": "cloudways",
+    "provider_id": "cloudways",
+    "category": "Managed PaaS",
     "affiliation_id": "TU_ID_AFILIADO",
-    "affiliate_link": "https://www.cloudways.com/en/?id=TU_ID_AFILIADO",
-    "last_update": "2026-03-14",
+    "affiliate_link": "https://www.cloudways.com/en/pricing.php",
     "currency": "USD",
     "verdicts": {
         "es": "La mejor opción para quienes quieren la potencia de DigitalOcean o AWS pero con un panel de control gestionado y soporte técnico 24/7.",
         "en": "The best choice for those who want the power of DigitalOcean or AWS but with a managed control panel and 24/7 technical support.",
         "fr": "Le meilleur choix pour ceux qui veulent la puissance de DigitalOcean ou AWS mais avec un panneau de contrôle géré et un support technique 24/7."
     },
-    "category": "Managed PaaS",
     "plans": [
         {
-            "name": "DO-1GB (Managed)",
-            "price": 11,
+            "name": "DO-Basic Micro",
+            "price": "14",
             "currency": "USD",
             "features": [
                 {
@@ -29,23 +29,29 @@
                 },
                 {
                     "key": "storage",
-                    "value": "25 GB SSD",
+                    "value": "25 GB NVMe",
                     "enabled": true
                 },
                 {
                     "key": "transfer",
-                    "value": "1 TB",
+                    "value": "1000 GB",
                     "enabled": true
                 },
                 {
                     "key": "node_apps",
                     "value": "Unlimited",
-                    "enabled": true
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
                 }
-            ]
+            ],
+            "plan_id": "cloudways_do-basic_micro_1"
         },
         {
-            "name": "DO-2GB (Premium)",
+            "name": "DO-Basic Small",
             "price": 28,
             "currency": "USD",
             "is_best_seller": true,
@@ -67,18 +73,24 @@
                 },
                 {
                     "key": "transfer",
-                    "value": "2 TB",
+                    "value": "2000 GB",
                     "enabled": true
                 },
                 {
                     "key": "node_apps",
                     "value": "Unlimited",
-                    "enabled": true
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
                 }
-            ]
+            ],
+            "plan_id": "cloudways_do-basic_small_2"
         },
         {
-            "name": "DO-4GB (Premium)",
+            "name": "DO-Basic Medium",
             "price": 54,
             "currency": "USD",
             "features": [
@@ -99,15 +111,684 @@
                 },
                 {
                     "key": "transfer",
-                    "value": "4 TB",
+                    "value": "4000 GB",
                     "enabled": true
                 },
                 {
                     "key": "node_apps",
                     "value": "Unlimited",
-                    "enabled": true
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
                 }
-            ]
+            ],
+            "plan_id": "cloudways_do-basic_medium_3"
+        },
+        {
+            "name": "DO-Basic Large",
+            "price": "99",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "160 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "5000 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_do-basic_large_4",
+            "is_best_seller": false
+        },
+        {
+            "name": "Vultr-Standard Micro",
+            "price": "14",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "1 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "25 GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "1000 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_vultr-standard_micro_5",
+            "is_best_seller": false
+        },
+        {
+            "name": "Vultr-Standard Small",
+            "price": "28",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "2 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "55 GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "2000 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_vultr-standard_small_6",
+            "is_best_seller": false
+        },
+        {
+            "name": "Vultr-Standard Medium",
+            "price": "54",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "80 GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "3000 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_vultr-standard_medium_7",
+            "is_best_seller": false
+        },
+        {
+            "name": "Vultr-Standard Large",
+            "price": "99",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "160 GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "4000 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_vultr-standard_large_8",
+            "is_best_seller": false
+        },
+        {
+            "name": "Linode-Standard Micro",
+            "price": "14",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "1 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "25 GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "1000 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_linode-standard_micro_9",
+            "is_best_seller": false
+        },
+        {
+            "name": "Linode-Standard Small",
+            "price": "28",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "2 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "50 GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "2000 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_linode-standard_small_10",
+            "is_best_seller": false
+        },
+        {
+            "name": "Linode-Standard Medium",
+            "price": "59",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "80 GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "4000 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_linode-standard_medium_11",
+            "is_best_seller": false
+        },
+        {
+            "name": "Linode-Standard Large",
+            "price": "105",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "160 GB SSD",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "5000 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_linode-standard_large_12",
+            "is_best_seller": false
+        },
+        {
+            "name": "AWS-Standard Micro",
+            "price": "20.56",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "1 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "20 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "2 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_aws-standard_micro_13",
+            "is_best_seller": false
+        },
+        {
+            "name": "AWS-Standard Small",
+            "price": "38.56",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "2 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "20 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "2 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_aws-standard_small_14",
+            "is_best_seller": false
+        },
+        {
+            "name": "AWS-Standard Medium",
+            "price": "91.84",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "20 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "2 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_aws-standard_medium_15",
+            "is_best_seller": false
+        },
+        {
+            "name": "AWS-Standard Large",
+            "price": "183.22",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "20 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "2 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_aws-standard_large_16",
+            "is_best_seller": false
+        },
+        {
+            "name": "GC-Standard Small",
+            "price": "37.33",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "1,7 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "Shared",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "20 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "1 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_gc-standard_small_17",
+            "is_best_seller": false
+        },
+        {
+            "name": "GC-Standard Medium",
+            "price": "84",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "3,75 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "20 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "1 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_gc-standard_medium_18",
+            "is_best_seller": false
+        },
+        {
+            "name": "GC-Standard Large",
+            "price": "152.02",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "7,5 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "20 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "1 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_gc-standard_large_19",
+            "is_best_seller": false
+        },
+        {
+            "name": "GC-Standard XL",
+            "price": "241.5",
+            "currency": "USD",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "15 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "20 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "1 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "Unlimited",
+                    "enabled": false
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                }
+            ],
+            "plan_id": "cloudways_gc-standard_xl_20",
+            "is_best_seller": false
         }
     ]
 }

@@ -1,19 +1,21 @@
 {
-    "last_update": "2026-03-10 22:08:37",
+    "last_update": "2026-03-23 17:39:49",
     "provider": "DigitalOcean",
+    "provider_id": "digitalocean",
+    "category": "cloud VPS (IaaS)",
     "affiliation_id": "TU_ID_AFILIADO",
     "affiliate_link": "https://www.digitalocean.com/pricing/droplets",
+    "currency": "EUR",
     "verdicts": {
         "es": "El estándar para desarrolladores. Gran ecosistema de herramientas y documentación.",
         "en": "The standard for developers. Great ecosystem of tools and documentation.",
         "fr": "La référence pour les développeurs. Grand écosystème d'outils et de documentation."
     },
-    "category": "cloud VPS (IaaS)",
     "plans": [
         {
             "plan_id": "digitalocean_regular_512_mb_1",
             "name": "Regular 512 MB",
-            "price": 4.00,
+            "price": 4,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
@@ -47,7 +49,7 @@
         {
             "plan_id": "digitalocean_regular_1_gb_2",
             "name": "Regular 1 GB",
-            "price": 6.00,
+            "price": 6,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
@@ -81,7 +83,7 @@
         {
             "plan_id": "digitalocean_regular_2_gb_3",
             "name": "Regular 2 GB",
-            "price": 12.00,
+            "price": 12,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
@@ -115,7 +117,7 @@
         {
             "plan_id": "digitalocean_regular_2_gb_2vcpu_4",
             "name": "Regular 2 GB 2vCPU",
-            "price": 18.00,
+            "price": 18,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
@@ -149,7 +151,7 @@
         {
             "plan_id": "digitalocean_regular_4_gb_5",
             "name": "Regular 4 GB",
-            "price": 24.00,
+            "price": 24,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
@@ -183,7 +185,7 @@
         {
             "plan_id": "digitalocean_regular_8_gb_6",
             "name": "Regular 8 GB",
-            "price": 48.00,
+            "price": 48,
             "currency": "USD",
             "is_best_seller": true,
             "features": [
@@ -217,7 +219,7 @@
         {
             "plan_id": "digitalocean_regular_16_gb_7",
             "name": "Regular 16 GB",
-            "price": 96.00,
+            "price": 96,
             "currency": "USD",
             "is_best_seller": false,
             "features": [
@@ -240,6 +242,618 @@
                     "key": "storage",
                     "enabled": true,
                     "value": "320 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_intel_11_8",
+            "name": "Premium Intel 11",
+            "price": "8",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "1 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "1000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "135GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_intel_21_9",
+            "name": "Premium Intel 21",
+            "price": "16",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "2 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "2000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "70 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_intel_22_10",
+            "name": "Premium Intel 22",
+            "price": "24",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "2 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "3000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "90 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_intel_42_11",
+            "name": "Premium Intel 42",
+            "price": "32",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "4 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "4000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "120 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_intel_82_12",
+            "name": "Premium Intel 82",
+            "price": "48",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "8 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "5000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "160 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_intel_84_13",
+            "name": "Premium Intel 84",
+            "price": "64",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "8 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "4"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "6000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "240 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_intel_164_14",
+            "name": "Premium Intel 164",
+            "price": "96",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "16 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "4"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "8000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "320 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_intel_168_15",
+            "name": "Premium Intel 168",
+            "price": "128",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "16 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "8"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "9000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "480 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_intel_328_16",
+            "name": "Premium Intel 328",
+            "price": "192",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "32 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "8"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "10000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "640 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_amd_11_17",
+            "name": "Premium AMD 11",
+            "price": "7",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "1 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "1000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "25 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_amd_21_18",
+            "name": "Premium AMD 21",
+            "price": "14",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "2 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "2000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "50 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_amd_22_19",
+            "name": "Premium AMD 22",
+            "price": "21",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "2 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "3000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "60 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_amd_42_20",
+            "name": "Premium AMD 42",
+            "price": "28",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "4 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "4000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "80 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_amd_82_21",
+            "name": "Premium AMD 82",
+            "price": "42",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "8 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "5000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "100 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_amd_84_22",
+            "name": "Premium AMD 84",
+            "price": "56",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "8 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "4"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "5000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "160 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_amd_164_23",
+            "name": "Premium AMD 164",
+            "price": "84",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "16 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "4"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "8000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "200 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_amd_168_24",
+            "name": "Premium AMD 168",
+            "price": "112",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "16 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "8"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "6000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "320 GB SSD"
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "plan_id": "digitalocean_premium_amd_328_25",
+            "name": "Premium AMD 328",
+            "price": "168",
+            "currency": "USD",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "32 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "8"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "10000 GB"
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "400 GB SSD"
                 },
                 {
                     "key": "node_apps",

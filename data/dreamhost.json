@@ -1,20 +1,21 @@
 {
+    "last_update": "2026-03-23 18:14:06",
     "provider": "DreamHost",
-    "id": "dreamhost",
+    "provider_id": "dreamhost",
+    "category": "Shared Hosting",
+    "affiliation_id": "TU_ID_AFILIADO",
     "affiliate_link": "https://www.dreamhost.com/r.cgi?TU_ID_AFILIADO",
-    "last_update": "2026-03-14",
-    "currency": "USD",
+    "currency": "EUR",
     "verdicts": {
         "es": "Recomendado oficialmente por WordPress. Destaca por su panel personalizado intuitivo, almacenamiento ilimitado y una de las mejores políticas de reembolso (97 días).",
         "en": "Officially recommended by WordPress. It stands out for its intuitive custom panel, unlimited storage, and one of the best refund policies (97 days).",
         "fr": "Officiellement recommandé par WordPress. Il se distingue par son panneau personnalisé intuitif, son stockage illimité et l'une des meilleures politiques de remboursement (97 jours)."
     },
-    "category": "Shared Hosting",
     "plans": [
         {
-            "name": "Shared Starter",
-            "price": 2.59,
-            "currency": "USD",
+            "name": "Web Hosting Launch",
+            "price": "11.99",
+            "currency": "EUR",
             "features": [
                 {
                     "key": "memory",
@@ -28,25 +29,46 @@
                 },
                 {
                     "key": "storage",
-                    "value": "50 GB SSD",
+                    "value": "25 GB NVMe",
                     "enabled": true
                 },
                 {
                     "key": "transfer",
-                    "value": "Unlimited",
+                    "value": "Unmetered",
                     "enabled": true
                 },
                 {
                     "key": "node_apps",
-                    "value": "1",
-                    "enabled": true
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "4,99€ (90 Days)"
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "25"
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
                 }
-            ]
+            ],
+            "plan_id": "dreamhost_web_hosting_launch_1"
         },
         {
-            "name": "DreamPress (Managed WP)",
-            "price": 16.95,
-            "currency": "USD",
+            "name": "DreamPress 1",
+            "price": "24.99",
+            "currency": "EUR",
             "is_best_seller": true,
             "features": [
                 {
@@ -56,25 +78,370 @@
                 },
                 {
                     "key": "vcpu",
-                    "value": "1 (Isolated)",
+                    "value": "1 (Shared)",
                     "enabled": true
                 },
                 {
                     "key": "storage",
-                    "value": "30 GB SSD",
+                    "value": "15 GB NVMe",
                     "enabled": true
                 },
                 {
                     "key": "transfer",
-                    "value": "Unlimited",
+                    "value": "Unmetered",
                     "enabled": true
                 },
                 {
                     "key": "node_apps",
-                    "value": "1",
-                    "enabled": true
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "19,99€ (90 Days)"
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "type",
+                    "enabled": true,
+                    "value": "WordPress"
                 }
-            ]
+            ],
+            "plan_id": "dreamhost_dreampress_1_2"
+        },
+        {
+            "name": "VPS Business",
+            "price": "37.96",
+            "currency": "EUR",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "2 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "60 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unmetered",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "15€ (30 Days)"
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                },
+                {
+                    "key": "emails",
+                    "enabled": true,
+                    "value": "Unlimited"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "dreamhost_vps_business_3",
+            "is_best_seller": false
+        },
+        {
+            "name": "DreamPress 2",
+            "price": "29.99",
+            "currency": "EUR",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "1 GB (Shared)",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1 (Shared)",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "25 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unmetered",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "23,99€ (90 Days)"
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "type",
+                    "enabled": true,
+                    "value": "WordPress"
+                }
+            ],
+            "plan_id": "dreamhost_dreampress_2_4",
+            "is_best_seller": false
+        },
+        {
+            "name": "DreamPress 3",
+            "price": "34.99",
+            "currency": "EUR",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "1 GB (Shared)",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "1 (Shared)",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "30 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unmetered",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "27,99€ (90 Days)"
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "3"
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "type",
+                    "enabled": true,
+                    "value": "WordPress"
+                }
+            ],
+            "plan_id": "dreamhost_dreampress_3_5",
+            "is_best_seller": false
+        },
+        {
+            "name": "VPS Professional",
+            "price": "69.99",
+            "currency": "EUR",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "4 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "2",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "120 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unmetered",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "30€ (30 Days)"
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                },
+                {
+                    "key": "emails",
+                    "enabled": true,
+                    "value": "Unlimited"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "dreamhost_vps_professional_6",
+            "is_best_seller": false
+        },
+        {
+            "name": "VPS Enterprise",
+            "price": "137.99",
+            "currency": "EUR",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "8 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "4",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "240 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unmetered",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "60€ (30 Days)"
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": "Unlimited"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "dreamhost_vps_enterprise_7",
+            "is_best_seller": false
+        },
+        {
+            "name": "VPS Premier",
+            "price": "169.99",
+            "currency": "EUR",
+            "features": [
+                {
+                    "key": "memory",
+                    "value": "12 GB",
+                    "enabled": true
+                },
+                {
+                    "key": "vcpu",
+                    "value": "6",
+                    "enabled": true
+                },
+                {
+                    "key": "storage",
+                    "value": "360 GB NVMe",
+                    "enabled": true
+                },
+                {
+                    "key": "transfer",
+                    "value": "Unmetered",
+                    "enabled": true
+                },
+                {
+                    "key": "node_apps",
+                    "value": "",
+                    "enabled": false
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "90€ (30 Days)"
+                },
+                {
+                    "key": "websites",
+                    "enabled": true,
+                    "value": "Unlimited"
+                },
+                {
+                    "key": "emails",
+                    "enabled": true,
+                    "value": "Unlimited"
+                },
+                {
+                    "key": "type",
+                    "enabled": false,
+                    "value": ""
+                }
+            ],
+            "plan_id": "dreamhost_vps_premier_8",
+            "is_best_seller": false
         }
     ]
 }

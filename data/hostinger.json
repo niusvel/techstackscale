@@ -1,19 +1,21 @@
 {
-    "last_update": "2026-03-10 22:00:17",
+    "last_update": "2026-03-23 19:03:12",
     "provider": "Hostinger",
-    "affiliation_id": "TU_ID_AFILIADO",
-    "affiliate_link": "https://www.hostinger.com/es/hosting-web",
-    "verdicts": {
-        "es": "La opción más sencilla. Panel intuitivo y soporte 24/7 para quienes no quieren complicaciones.",
-        "en": "The simplest option. Intuitive panel and 24/7 support for those who don't want complications.",
-        "fr": "L'option la plus simple. Panneau intuitif et support 24/7 pour ceux qui ne veulent pas de complications."
-    },
+    "provider_id": "hostinger",
     "category": "shared Hosting",
+    "affiliation_id": "TU_ID_AFILIADO",
+    "affiliate_link": "https://www.hostinger.com/es/precios#plan-selector",
+    "currency": "EUR",
+    "verdicts": {
+        "es": "La opción más sencilla con variedad de precios en dependencia de los rangos del contrato. Panel intuitivo y soporte 24/7 para quienes no quieren complicaciones.",
+        "en": "The simplest option with a variety of prices depending on the contract ranges. Intuitive panel and 24/7 support for those who don't want complications.",
+        "fr": "L'option la plus simple, avec des prix variés selon les gammes de contrats. Panneau intuitif et support 24/7 pour ceux qui ne veulent pas de complications."
+    },
     "plans": [
         {
             "plan_id": "hostinger_single_1",
             "name": "Single",
-            "price": 1.49,
+            "price": "7.99",
             "is_best_seller": false,
             "features": [
                 {
@@ -24,7 +26,7 @@
                 {
                     "key": "node_apps",
                     "enabled": false,
-                    "value": null
+                    "value": ""
                 },
                 {
                     "key": "storage",
@@ -35,6 +37,26 @@
                     "key": "emails",
                     "enabled": true,
                     "value": "1"
+                },
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": ""
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "offert",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "transfer",
+                    "enabled": false,
+                    "value": ""
                 }
             ],
             "currency": "EUR"
@@ -42,7 +64,7 @@
         {
             "plan_id": "hostinger_premium_2",
             "name": "Premium",
-            "price": 2.49,
+            "price": "12.19",
             "is_best_seller": false,
             "features": [
                 {
@@ -53,7 +75,7 @@
                 {
                     "key": "node_apps",
                     "enabled": false,
-                    "value": null
+                    "value": ""
                 },
                 {
                     "key": "storage",
@@ -64,6 +86,26 @@
                     "key": "emails",
                     "enabled": true,
                     "value": "2"
+                },
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "2 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "offert",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "transfer",
+                    "enabled": false,
+                    "value": ""
                 }
             ],
             "currency": "EUR"
@@ -71,7 +113,7 @@
         {
             "plan_id": "hostinger_business_3",
             "name": "Business",
-            "price": 3.29,
+            "price": "18.99",
             "is_best_seller": true,
             "features": [
                 {
@@ -87,12 +129,32 @@
                 {
                     "key": "storage",
                     "enabled": true,
-                    "value": "50 GB SSD"
+                    "value": "50 GB NVMe"
                 },
                 {
                     "key": "emails",
                     "enabled": true,
                     "value": "5"
+                },
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "3 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "2"
+                },
+                {
+                    "key": "offert",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "transfer",
+                    "enabled": false,
+                    "value": ""
                 }
             ],
             "currency": "EUR"
@@ -100,7 +162,7 @@
         {
             "plan_id": "hostinger_cloud_startup_4",
             "name": "Cloud Startup",
-            "price": 6.99,
+            "price": "25.99",
             "is_best_seller": false,
             "features": [
                 {
@@ -116,46 +178,111 @@
                 {
                     "key": "storage",
                     "enabled": true,
-                    "value": "100 GB SSD"
+                    "value": "100 GB NVMe"
                 },
                 {
                     "key": "emails",
                     "enabled": true,
                     "value": "10"
+                },
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "4 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "4"
+                },
+                {
+                    "key": "offert",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "transfer",
+                    "enabled": false,
+                    "value": ""
                 }
             ],
             "currency": "EUR"
         },
         {
-            "plan_id": "hostinger_premium_shared",
-            "name": "Premium Shared",
-            "price": 2.49,
-            "currency": "EUR",
+            "plan_id": "hostinger_kvm_1_5",
+            "name": "KVM 1",
+            "price": "17.99",
+            "is_best_seller": false,
             "features": [
                 {
-                    "key": "memory",
-                    "enabled": true,
-                    "value": "Shared"
-                },
-                {
-                    "key": "storage",
-                    "enabled": true,
-                    "value": "100 GB SSD"
+                    "key": "websites",
+                    "enabled": false,
+                    "value": ""
                 },
                 {
                     "key": "node_apps",
                     "enabled": false,
                     "value": ""
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "50 GB NVMe"
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "4 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "1"
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "7,99€ (30 Days)"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "4000 GB"
                 }
-            ]
+            ],
+            "currency": "EUR"
         },
         {
-            "plan_id": "hostinger_kvm_2",
-            "name": "KVM 2 (VPS)",
-            "price": 5.99,
-            "currency": "EUR",
-            "is_best_seller": true,
+            "plan_id": "hostinger_kvm_2_6",
+            "name": "KVM 2",
+            "price": "21.99",
+            "is_best_seller": false,
             "features": [
+                {
+                    "key": "websites",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "100 GB NVMe"
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
                 {
                     "key": "memory",
                     "enabled": true,
@@ -167,16 +294,115 @@
                     "value": "2"
                 },
                 {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "9,99€ (30 Days)"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": false,
+                    "value": "8000 GB"
+                }
+            ],
+            "currency": "EUR"
+        },
+        {
+            "plan_id": "hostinger_kvm_4_7",
+            "name": "KVM 4",
+            "price": "35.99",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "websites",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
                     "key": "storage",
                     "enabled": true,
-                    "value": "100 GB NVMe"
+                    "value": "200 GB NVMe"
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "16 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "4"
+                },
+                {
+                    "key": "offert",
+                    "enabled": true,
+                    "value": "19,99€ (30 Days)"
                 },
                 {
                     "key": "transfer",
                     "enabled": true,
-                    "value": "8000 GB"
+                    "value": "16000 GB"
                 }
-            ]
+            ],
+            "currency": "EUR"
+        },
+        {
+            "plan_id": "hostinger_kvm_8_8",
+            "name": "KVM 8",
+            "price": "64.96",
+            "is_best_seller": false,
+            "features": [
+                {
+                    "key": "websites",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "node_apps",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "storage",
+                    "enabled": true,
+                    "value": "400 GB NVMe"
+                },
+                {
+                    "key": "emails",
+                    "enabled": false,
+                    "value": ""
+                },
+                {
+                    "key": "memory",
+                    "enabled": true,
+                    "value": "32 GB"
+                },
+                {
+                    "key": "vcpu",
+                    "enabled": true,
+                    "value": "8"
+                },
+                {
+                    "key": "offert",
+                    "enabled": false,
+                    "value": "38,99€ (30 Days)"
+                },
+                {
+                    "key": "transfer",
+                    "enabled": true,
+                    "value": "32000 GB"
+                }
+            ],
+            "currency": "EUR"
         }
     ]
 }
