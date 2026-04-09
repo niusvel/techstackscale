@@ -1,5 +1,5 @@
 {
-    "last_update": "2026-03-22 15:03:26",
+    "last_update": "2026-04-09 07:06:12",
     "provider": "A2 Hosting",
     "provider_id": "a2hosting",
     "category": "Cloud VPS (IaaS)",
@@ -29,7 +29,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "15 GB",
+                    "value": "15 GB SSD",
                     "enabled": true
                 },
                 {
@@ -82,7 +82,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "30 GB",
+                    "value": "30 GB SSD",
                     "enabled": true
                 },
                 {
@@ -136,7 +136,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "50 GB",
+                    "value": "50 GB SSD",
                     "enabled": true
                 },
                 {
@@ -189,7 +189,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "100 GB",
+                    "value": "100 GB SSD",
                     "enabled": true
                 },
                 {
@@ -402,7 +402,7 @@
                 },
                 {
                     "key": "storage",
-                    "value": "640 GB NVMe",
+                    "value": "640 GB",
                     "enabled": true
                 },
                 {
